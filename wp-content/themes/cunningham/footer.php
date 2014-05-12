@@ -16,7 +16,7 @@
                 <div class="col6 last">
                     <a href="/trial/" class="footer-btn">体験授業の申し込みはこちら</a>
                     <p class="tel">☎045-620-0679</p>
-                    <p class="mail">Mail:yokohama@t-cial.com</p>
+                    <p class="mail">メールアドレス:info@tcial.jp</p>
                 </div>
             </div>
             <div class="footer-inner" id="footer-bottom">

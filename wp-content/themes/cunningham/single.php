@@ -12,7 +12,7 @@
                                     <a href="team">他のライター</a>
                                 </div>
                                 <div id="writer-profile">
-                                    <?php echo get_avatar($post->post_author); ?>
+                                    <?php echo get_simple_local_avatar($post->post_author); ?>
                                     <p id="writer-name"><?php the_author(); ?></p>
                                     <p id="writer-disc"><?php the_author_description(); ?></p>
                                 </div>
@@ -39,7 +39,6 @@
                                 <?php endforeach; ?>
                             </div>
                         </div>
-
                     </div>
                     <div class="col7">
                         <div class="blog-grid onerow" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -66,6 +65,7 @@
                             </div>-->
                         </div>
                         <?php endwhile; ?>
+                        <?php cunningham_post_nav(); ?>
                     </div>
                     <?php get_sidebar(); ?>
                 </div>

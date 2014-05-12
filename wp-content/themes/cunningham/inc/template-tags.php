@@ -20,15 +20,15 @@ function cunningham_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'cunningham' ); ?></h1>
+		<!--<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'cunningham' ); ?></h1>-->
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'cunningham' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> 前の10件', 'cunningham' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'cunningham' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( '次の10件 <span class="meta-nav">&rarr;</span>', 'cunningham' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->

@@ -8,11 +8,11 @@
         </div>-->
         <div id="main-text">
             <div id="catch">
-                <h1>あなたの未来を、あなたの手で。</h1>
-                <h2>Let's Make our Future!!</h2>
-                <p>Tcialは、勉強/受験/サークル/その他様々な活動を通じて、<br />
-                    未来をつくる人財を育てます。</p>
-                <a href="" class="mv-btn">もっと詳しく！</a>
+                <h1>未来をデザインする人を育てる塾</h1>
+                <h2>Design our Future!!</h2>
+                <p>Tcialは、個別指導/サークル/セミナー/その他様々な活動を通じて、<br />
+                    未来をデザインする人を育てます。</p>
+                <a href="#what" class="mv-btn">もっと詳しく！</a>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
                 <ul class="onerow features">
                 <?php query_posts('posts_per_page=4'); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                    <li class="col3 article <?php if($key === 3)echo "last"; ?>">
+                    <li class="col3 article">
                         <a href="<?php the_permalink(); ?>">
                             <div class="sidebar-article-img">
                                 <?php the_post_thumbnail(); ?>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="onerow vertical">
+                <!--<div class="onerow vertical">
                     <div class="col6">
                         <div class="disc-wrapper">
                         </div>
@@ -82,7 +82,7 @@
                     <div class="preparing">
                         <div class="coming">Coming Soon!</div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </section>
         <section id="reputation">
@@ -162,15 +162,15 @@
                         <img src="<?php bloginfo('template_directory');?>/img/gallary/8.jpg" alt="" />
                     </div>
                     <div class="col2-gl">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/22.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/9.jpg" alt="" />
                     </div>
                     <div class="col2-gl last">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/21.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/10.jpg" alt="" />
                     </div>
                 </div>
                 <div class="onerow">
                     <div class="col2-gl">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/20.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/11.jpg" alt="" />
                     </div>
                     <div class="col2-gl">
                         <img src="<?php bloginfo('template_directory');?>/img/gallary/12.jpg" alt="" />
@@ -190,22 +190,22 @@
                 </div>
                 <div class="onerow">
                     <div class="col2-gl">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/23.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/17.jpg" alt="" />
                     </div>
                     <div class="col2-gl">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/24.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/18.jpg" alt="" />
                     </div>
                     <div class="col2-gl">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/25.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/19.jpg" alt="" />
                     </div>
                     <div class="col2-gl">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/26.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/20.jpg" alt="" />
                     </div>
                     <div class="col2-gl">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/27.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/21.jpg" alt="" />
                     </div>
                     <div class="col2-gl last">
-                        <img src="<?php bloginfo('template_directory');?>/img/gallary/28.jpg" alt="" />
+                        <img src="<?php bloginfo('template_directory');?>/img/gallary/22.jpg" alt="" />
                     </div>
                 </div>
             </div>

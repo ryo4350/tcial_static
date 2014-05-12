@@ -100,7 +100,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, #top-description a:hover {
     color: rgb(80, 161,192);
 }
 
@@ -145,6 +145,7 @@ header {
 }
 
 #header-magazine {
+    position: relative;
     background: rgba(20, 20, 20, .8);
     height: 100px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
@@ -170,13 +171,16 @@ header h1 a {
    background: url('img/logo_60.png') no-repeat scroll 0px 0px / 184px 60px transparent;
 }
 
-#top-discription {
+#top-description {
     position: absolute;
     bottom: 8px;
     margin-left: 10px;
     font-size: 11px;
 }
 
+#header-magazine #top-description, #top-description a {
+    color: rgb(255, 255, 255);
+}
 
 #header nav, #header-magazine nav {
 	float: right;
@@ -415,7 +419,7 @@ img {
 		width: 100%;
 	}
 
-	#nav, #contact, #home, #secondary-nav, #secondary-case-nav, #gallary {
+	#nav, #contact, #home, #secondary-nav, #secondary-case-nav, #gallary, #reputation, #infobar {
 		display: none;
 	}
 
@@ -550,8 +554,8 @@ nav {
 .article {
     position: relative;
     background: rgb(255, 255, 255);
-    border-bottom: 2px solid #ced0d0;
-    border-right: 1px solid #ced0d0;
+/*    border-bottom: 2px solid #ced0d0;
+    border-right: 1px solid #ced0d0;*/
     overflow: hidden;
 }
 
@@ -659,7 +663,7 @@ nav {
 }
 
 #catch h1 {
-    font-size: 54px;
+    font-size: 48px;
     font-weight: normal;
     text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);
 }
@@ -672,7 +676,7 @@ nav {
 
 #catch p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -1260,6 +1264,10 @@ nav {
     margin: 20px 0 80px;
 }
 
+#new-post li:nth-child(4n) {
+    margin-right: 0;
+}
+
 /*reputation*/
 #reputation {
     background: rgb(255,255,255);    
@@ -1283,9 +1291,9 @@ nav {
 
 /*blog*/
 .blog-grid {
-    background: rgb(253, 253, 253);
-    border-bottom: 2px solid #ced0d0;
-    border-right: 1px solid #ced0d0;
+    background: rgb(255, 255, 255);
+/*    border-bottom: 2px solid #ced0d0;
+    border-right: 1px solid #ced0d0;*/
 }
 
 /*blog-info*/
@@ -1339,7 +1347,7 @@ nav {
 /*writers*/
 .writers li {
     margin: 0;
-    padding: 10px 0;
+    padding: 10px;
     border-bottom: 1px solid rgb(220, 220, 220);
 }
 
@@ -1378,21 +1386,12 @@ nav {
     font-size: 16px;
 }
 
-.authors a {
-    font-size: 10px;
-}
-
 .authors .link {
+    font-size: 11px;
     text-align: center;
 }
 
 /*tl*/
-.first-section {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .aricle-link {
     display: block;
     margin-top: 20px;
@@ -1405,7 +1404,7 @@ nav {
 
 .article-img-tl {
     position: relative;
-    max-height: 480px;
+    max-height: 360px;
     overflow: hidden;
 }
 
@@ -1451,15 +1450,15 @@ nav {
 
 .blog-header h1 {
     padding: 30px 20px 10px;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .blog-body {
-    padding: 40px;
+    padding: 40px 40px 20px;
 }
 
 .blog-body p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .blog-body h2 {
@@ -1526,7 +1525,7 @@ blockquote p {
 
 .recomended-article-info h4 {
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
@@ -1632,5 +1631,60 @@ blockquote p {
 .circle-content {
     
 }
+
+/*404-notfound*/
+.not-found {
+    text-align: center;
+}
+
+.not-found h2 {
+    font-size: 48px;
+    color: rgb(180, 180, 180);
+}
+
+.not-found p {
+    font-size: 28px;
+    color: rgb(120, 120, 120);
+}
+
+.not-found ul {
+    width: 420px;
+    margin: auto;
+}
+
+.not-found li {
+    margin: 15px;
+    color: rgb(40, 40, 40);
+    background: rgb(180, 180, 180);
+}
+
+.not-found li a {
+    display:block;
+    padding: 8px 20px;
+    color: rgb(80, 80, 80);
+    background: rgb(190, 190, 190);
+}
+
+.not-found li a:hover {
+    color: rgb(80, 161,192);
+    background: rgb(220, 220, 220);
+}
+
+/*paging*/
+.nav-previous, .nav-next a {
+    display: block;
+    padding: 8px 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(180, 180, 180);
+}
+
+.nav-previous {
+    float: left;
+}
+
+.nav-next {
+    float: right;
+}
+
 
 

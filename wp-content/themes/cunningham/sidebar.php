@@ -21,14 +21,14 @@
                         </div>
                         
                         <div class="onerow"> 
-                            <div class="col12 blog-grid">
+                            <div class="col12">
                                 <div class="widget-header">
                                     <h3>新着記事</h3>
                                 </div>
                                 <ul>
                                     <?php query_posts('posts_per_page=4'); ?>
                                     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                                    <li class="onerow">
+                                    <li class="onerow blog-grid">
                                         <div class="sidebar-article-img">
                                             <?php the_post_thumbnail(); ?>
                                             <div class="category-label"><?php the_category(); ?></div>
@@ -47,17 +47,20 @@
                         </div>
 
                         <div class="onerow"> 
-                            <div class="col12 blog-grid">
+                            <div class="col12">
                                 <div class="widget-header">
                                     <h3>facebook</h3>
                                 </div>
+<div class="fb-like-box" data-href="https://www.facebook.com/tcialcom" data-height="580" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
                             </div>
                         </div>
                         <div class="onerow"> 
-                            <div class="col12 blog-grid">
+                            <div class="col12">
                                 <div class="widget-header">
                                     <h3>twitter</h3>
                                 </div>
+<a class="twitter-timeline" href="https://twitter.com/Tcial315" data-widget-id="463296060354347008">@Tcial315 からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                             </div>
                         </div>
                     </div>

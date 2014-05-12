@@ -12,7 +12,7 @@ get_header(); ?>
         <div id="content">
             <div class="container">
                 <div class="onerow">
-                    <div class="col9 blog-grid">
+                    <div class="col9">
                         <div class="widget-header">
                             <h1><?php the_title(); ?></h1>
                         </div>
@@ -22,7 +22,7 @@ get_header(); ?>
                             <li class="onerow">
                                 <div class="col3">
                                     <div class="col12">
-                                        <?php echo get_avatar($user->ID, 200); ?>
+                                        <?php echo get_simple_local_avatar($user->ID, 200); ?>
                                     </div>
                                     <div class="col12">
                                         <h3><?php echo $user->display_name; ?></h3>

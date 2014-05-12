@@ -18,7 +18,7 @@ get_header(); ?>
                             <h1><?php the_title(); ?></h1>    
                         </div>
                         <div class="contact-form">
-                            <p>Tcailにご興味を持っていただいてありがとうございます。<br />
+                            <p>Tcialにご興味を持っていただいてありがとうございます。<br />
 ご意見、ご感想等ございましたらお気軽にお問い合わせください。<br />
 また、個別指導やサークルの体験も受け付けております。</p>
                             <?php the_content(); ?>

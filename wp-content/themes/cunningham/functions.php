@@ -125,27 +125,9 @@ if (function_exists('add_theme_support')) {
 
 add_filter( 'show_admin_bar', '__return_false' );
 
-//function create_post_type_authors() {
-//    $labels = array(
-//        'name'       => '著者',
-//        'all_items'  => '著者の一覧',
-//    );
-//    $args = array(
-//        'labels'   => $labels,
-//        'supports' => array('title','editor','excerpt','thumbnail'),
-//        'public'   => true, //公開するかどうか
-//        'show_ui'  => true, //メニューに表示するかどうか
-//        'menu_position' => 5, //メニューの表示位置
-//        'has_archive'   => true,//アーカイブページの作成
-//        'menu_icon'    => get_bloginfo('templete_url').'assets/img/icon-staff.png',  
-//    );
-//    register_post_type('authors', $args);
-//}
-//add_action('init', 'create_post_type_authors', 0);
-
 function new_excerpt_more($more) {
     return '...';
 }  
 
 add_filter('excerpt_more', 'new_excerpt_more');
-
+?>

@@ -5,43 +5,48 @@
  * @package cunningham
  */
 
-get_header(); ?>
+get_template_part('content', 'primary_header'); ?>
 
 	<!-- Content -->
 	<div id="content">
             <div class="container">
                 <section class="error-404 not-found">
-                    <h1 class="page-title"><?php _e( 'ページが見つかりませんでした。', 'cunningham' ); ?></h1>
-
-                    <div class="page-content">
-                        <p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'cunningham' ); ?></p>
-
-                        <?php get_search_form(); ?>
-                    </div><!-- .page-content -->
+                    <h2 class="page-title"><?php _e( '404 NOT FOUND', 'cunningham' ); ?></h2>
+                    <p><?php _e( 'お探しのページは見つかりませんでした。', 'cunningham' ); ?></p>
+                    <ul>
+                        <li><a href="/">個別指導塾ティーシャルホームページへ</a></li>
+                        <li><a href="/magazine/">ティーシャルブログトップへ</a></li>
+                    </ul>
                 </section><!-- .error-404 -->
-                <nav>
-                    <?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-                    <?php if ( cunningham_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-                    <div class="widget widget_categories">
-                            <h2 class="widgettitle"><?php _e( 'Most Used Categories', 'cunningham' ); ?></h2>
-                            <ul>
-                            <?php
-                                    wp_list_categories( array(
-                                            'orderby'    => 'count',
-                                            'order'      => 'DESC',
-                                            'show_count' => 1,
-                                            'title_li'   => '',
-                                            'number'     => 10,
-                                    ) );
-                            ?>
-                            </ul>
-                    </div><!-- .widget -->
-                    <?php endif; ?>
-
-                    <?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-                </nav>
             </div><!-- #primary -->
+            <section id="new-post">
+                <div class="container">
+                    <h2 class="center">最新記事</h2>
+                    <ul class="onerow features">
+                    <?php query_posts('posts_per_page=4'); ?>
+                    <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                        <li class="col3 article">
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="sidebar-article-img">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                                <div class="recomended-article-info">
+                                    <h4><?php the_title(); ?></h4>
+                                    <p class="post-date"><?php echo get_the_date(); ?></p>
+                                </div>
+                            </a>
+                            <div class="category-label"><?php the_category(); ?></div>
+                        </li>
+                        <?php endwhile;
+                    else :?>
+                        <?php get_template_part( 'content', 'none' ); ?>
+                    <?php endif; ?>
+                    </ul>
+                    <div class="center">
+                        <a href="magazine/" target="_blank" class=" font-blue">もっと記事をみる≫</a>
+                    </div>
+               </div>
+            </section>
         </div>
 
 <?php get_footer(); ?>

@@ -15,7 +15,16 @@
 <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 <?php wp_head(); ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-41472504-1', 'tcial.jp');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
@@ -25,7 +34,7 @@
         <div id="header">
             <div class="container">
                 <h1><a href="/" id="logo-tcial">個別指導塾ティーシャル</a></h1>
-                <h2 id="top-discription">ようこそ！横浜駅から徒歩10分にある個別指導塾ティーシャルのホームページです。</h2>
+                <h2 id="top-description">ようこそ！横浜駅から徒歩10分にある個別指導塾ティーシャルのホームページです。</h2>
             </div>
         </div>
         
@@ -71,7 +80,7 @@
     <nav class="contact" id="contact">
         <ul>
             <li>
-                <p class="phone-munber">☎045-620-0679</p>
+                <p class="phone-munber">☎ 045-620-0679</p>
                 <p class="office-hour">営業時間 13:00-22:00(日曜定休日)</p>
             </li>
 <!--            <li><a class="btn-flat-icon" id="fb-icon" href="https://www.facebook.com/tcialcom" target="_blank">f</a></li>
