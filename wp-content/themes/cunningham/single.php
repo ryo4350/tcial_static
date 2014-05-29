@@ -2,70 +2,53 @@
         <!-- Content -->
 	<div id="content">
             <div class="container">
+                <div class="breadcrumb">
+           <?php if(class_exists('WP_SiteManager_bread_crumb')){
+WP_SiteManager_bread_crumb::bread_crumb('home_label=top&type=string');} ?>
+                </div>
                 <div class="onerow">
-                    <?php while(have_posts()) : the_post(); ?>
-                    <div class="col2">
+                    <div class="col9">
                         <div class="onerow">
-                            <div class="col12 blog-grid">
-                                <div class="widget-header">
-                                    <h3>記事を書いた人</h3>
-                                    <a href="team">他のライター</a>
+                            <?php while(have_posts()) : the_post(); ?>
+                            <div class="blog-grid" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <div id="article-main">
+                                    <div class="blog-header">
+                                        <h1><?php the_title(); ?></h1>
+                                        <div class="blog-header-info">
+                                            <?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>
+                                        </div>
+                                    </div>
+                                    <div class="article-img">
+                                        <?php the_post_thumbnail(); ?>
+                                        <div class="category-label"><?php the_category(); ?></div>
+                                    </div>
+                                    <div class="blog-body">
+                                        <p><?php the_content(); ?></p>
+                                    </div>
+                                    <div class="blog-header-info">
+                                        <p><?php echo get_the_date(); ?></p>
+                                        <?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>
+                                    </div>
+        <!--                            <div class="blog-header-info">
+                                        <span class="comment-num"><?php comments_popup_link('Comment : 0', 'Comment : 1', 'Comments : %'); ?></span>
+                                    </div>-->
                                 </div>
-                                <div id="writer-profile">
-                                    <?php echo get_simple_local_avatar($post->post_author); ?>
-                                    <p id="writer-name"><?php the_author(); ?></p>
-                                    <p id="writer-disc"><?php the_author_description(); ?></p>
+                                <div id="article-side" class="article-side">
+                                    <p class="single-post-date"><?php echo get_the_date(); ?></p>
+                                    <ul id="single-post-info">
+                                        <li><?php echo get_simple_local_avatar($post->post_author); ?></li>
+                                        <li id="writer-name"><?php the_author(); ?></p></li>
+                                        <li id="writer-desc"><?php the_author_description(); ?></p></li>
+                                        <ul class="blog-keywords">
+                                            <li><p>カテゴリ</p><a><?php the_category(); ?></a></li>
+                                            <li><p>タグ</p><a><?php the_tags(); ?></a></li>
+                                        </ul>
+                                    </ul>
                                 </div>
-                                <ul class="blog-keywords">
-                                    <li><p>カテゴリ</p><a><?php the_category(); ?></a></li>
-                                    <li><p>タグ</p><a><?php the_tags(); ?></a></li>
-                                </ul>
+                                <?php cunningham_post_nav(); ?>
                             </div>
+                            <?php endwhile; ?>
                         </div>
-                        <div class="onerow">
-                            <div class="col12 blog-grid">
-                                <div class="widget-header">
-                                    <h3>カテゴリー</h3>
-                                </div>
-                                <?php
-                                $cats = get_terms( "category", "fields=all&get=all" );
-                                foreach($cats as $cat):
-                                ?>
-                                <ul class="post-categories">
-                                    <li>
-                                        <a href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name;?></a>
-                                    </li>
-                                <ul>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col7">
-                        <div class="blog-grid onerow" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                            <div class="blog-header">
-                                <h1><?php the_title(); ?></h1>
-                                <div class="blog-header-info">
-                                    <p><?php echo get_the_date(); ?></p>
-                                    <?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>
-                                </div>
-                            </div>
-                            <div class="article-img">
-                                <?php the_post_thumbnail(); ?>
-                                <div class="category-label"><?php the_category(); ?></div>
-                            </div>
-                            <div class="blog-body">
-                                <p><?php the_content(); ?></p>
-                            </div>
-                            <div class="blog-header-info">
-                                <p><?php echo get_the_date(); ?></p>
-                                <?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>
-                            </div>
-<!--                            <div class="blog-header-info">
-                                <span class="comment-num"><?php comments_popup_link('Comment : 0', 'Comment : 1', 'Comments : %'); ?></span>
-                            </div>-->
-                        </div>
-                        <?php endwhile; ?>
-                        <?php cunningham_post_nav(); ?>
                     </div>
                     <?php get_sidebar(); ?>
                 </div>
@@ -79,10 +62,15 @@ $(function() {
 	var nav = $('#nav');
 	var home = $('#home');
 	var contact = $('.contact');
-    offset = nav.offset();
+	var infobar = $('#infobar');
+        var side = $('#article-side');
+        var main = $('#article-main');
+        var nav_offset = nav.offset();
+        var main_offset = main.offset();
     $(window).scroll(function () {
-    	if($(window).scrollTop() > offset.top - 78) {
+    	if($(window).scrollTop() > nav_offset.top) {
     		nav.addClass('fixed');
+                infobar.addClass('fixed');
     		home.stop().animate({'marginLeft' : '0px'}, 200);
     		contact.stop().animate({'top' : '6px'}, 200);
     		contact.addClass('fixed');
@@ -91,7 +79,17 @@ $(function() {
     		home.stop().animate({'marginLeft' : '-60px'}, 200);
     		contact.removeClass('fixed');
     		contact.stop().animate({'top' : '24px'}, 200);
-		}
+	}
+   	if($(window).scrollTop() < main_offset.top - 50) {
+                side.removeClass('fixed-article-side');
+                side.removeClass('fixed-bottom-article-side');
+        } else if($(window).scrollTop() > main_offset.top + main.height() - side.height()){ 
+                side.removeClass('fixed-article-side');
+                side.addClass('fixed-bottom-article-side');        
+        } else {
+                side.removeClass('fixed-bottom-article-side');
+                side.addClass('fixed-article-side');        
+        }        
     });
 
     $(function(){
