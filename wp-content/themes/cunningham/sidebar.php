@@ -6,10 +6,10 @@
  */
 ?>
                     <div class="col3 last widgets">
-                        <div class="onerow"> 
+                        <div class="onerow cf">
                             <div class="col12 blog-grid">
                                 <div class="widget-header">
-                                    <h3>Tcialとは</h3>
+                                    <h3>ティーシャルとは</h3>
                                 </div>
                                 <div class="widget-about widget-content">
                                     <p>横浜に拠点を置く個別指導塾</p>
@@ -20,23 +20,58 @@
                             </div>
                         </div>
                         
+                        <div class="onerow cf">
+                            <div class="sbr-banner">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- blog-sidebar-250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:250px;height:250px"
+     data-ad-client="ca-pub-3257663944757805"
+     data-ad-slot="2440984776"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                            </div>
+                        </div>
+                        
+                        <div class="onerow cf">
+                            <div class="col12 blog-grid">
+                                <div class="widget-header">
+                                    <h3>カテゴリー</h3>
+                                </div>
+                                <div class="categories">
+                                <?php
+                                $cats = get_terms( "category", "fields=all&get=all" );
+                                foreach($cats as $cat):
+                                ?>
+                                <ul class="post-categories">
+                                    <li>
+                                        <a href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name; ?></a>
+                                    </li>
+                                <ul>
+                                <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="onerow"> 
                             <div class="col12">
                                 <div class="widget-header">
                                     <h3>新着記事</h3>
                                 </div>
                                 <ul>
-                                    <?php query_posts('posts_per_page=4'); ?>
                                     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                                     <li class="onerow blog-grid">
-                                        <div class="sidebar-article-img">
-                                            <?php the_post_thumbnail(); ?>
-                                            <div class="category-label"><?php the_category(); ?></div>
-                                        </div>
-                                        <div class="recomended-article-info">
-                                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                            <p class="post-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></p>
-                                        </div>
+                                        <a href="<?php the_permalink(); ?>">
+                                            <div class="sidebar-article-img">
+                                                <?php the_post_thumbnail(); ?>
+                                                <div class="category-label"><?php the_category(); ?></div>
+                                            </div>
+                                            <div class="recomended-article-info">
+                                                <h4><?php the_title(); ?></h4>
+                                                <p class="post-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></p>
+                                            </div>
+                                        </a>
                                     </li>
                                     <?php endwhile; ?> 
                                 </ul>
@@ -47,11 +82,11 @@
                         </div>
 
                         <div class="onerow"> 
-                            <div class="col12">
+                            <div class="col12 fb">
                                 <div class="widget-header">
                                     <h3>facebook</h3>
                                 </div>
-<div class="fb-like-box" data-href="https://www.facebook.com/tcialcom" data-height="580" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+<div class="fb-like-box" data-href="https://www.facebook.com/tcialcom" data-height="360" data-width="780" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
                             </div>
                         </div>
                         <div class="onerow"> 
