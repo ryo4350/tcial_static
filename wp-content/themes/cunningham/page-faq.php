@@ -2,10 +2,315 @@
 
 	<!-- Content -->
 	<div id="content">
-            <section id="value">
-                <div class="container-narrow">
+            <section id="faq">
                     <h2>よくあるご質問</h2>
-                    <div class="values" id="children">
+                    <ul id="faq-catlist">
+                        <li class="col2">
+                            <a>
+                                <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
+                                <h2>講師について</h2>
+                                <p>講師についてのご質問</p>
+                            </a>
+                        </li>
+                        <li class="col2">
+                            <a>
+                                <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
+                                <h2>授業料について</h2>
+                                <p>講師についてのご質問</p>
+                            </a>
+                        </li>
+                        <li class="col2">
+                            <a>
+                                <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
+                                <h2>テスト対策・入試対策について</h2>
+                                <p>講師についてのご質問</p>
+                            </a>
+                        </li>
+                        <li class="col2">
+                            <a>
+                                <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
+                                <h2>システムについて</h2>
+                                <p>講師についてのご質問</p>
+                            </a>
+                        </li>
+                        <li class="col2">
+                            <a>
+                                <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
+                                <h2>入塾について</h2>
+                                <p>講師についてのご質問</p>
+                            </a>
+                        </li>
+                        <li class="col2">
+                            <a>
+                                <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
+                                <h2>カリキュラム・指導内容について</h2>
+                                <p>講師についてのご質問</p>
+                            </a>
+                        </li>
+                        <li class="col2">
+                            <a>
+                                <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
+                                <h2>実績について</h2>
+                                <p>講師についてのご質問</p>
+                            </a>
+                        </li>
+                        <li class="col2 last">
+                            <a>
+                                <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
+                                <h2>体験授業について</h2>
+                                <p>講師についてのご質問</p>
+                            </a>
+                        </li>
+                    </ul>
+                <div class="container-narrow">
+                    <div id="faq-list">
+                        <h2>講師について</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>講師を選ぶことはできますか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p>もちろんできます。ティーシャルの講師には3つのランクがあります。また講師の指導実績やプロフィールを最大限公開しております。お子様の目標や正確にピッタリの先生をお選びください。</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>どんな講師がいますか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>社員・プロ・学生の比率が4:1:2ほどになっております。20代の講師が最も多く、30代、50代の講師も在籍しております。</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>講師が毎回変わってしまいませんか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>担任制になっておりますので、講師がコロコロ変更することはありません。</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>講師を変更することはできますか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>可能です。</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        
+                        
+                        <h2>授業料について</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>授業料はどれくらいですか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p>講師のランクによって異なりますが、平均すると月3万円前後になることが多いです。詳しくは→料金のご案内へ。</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>授業料以外に費用はかかりますか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>入会金が\10,000・設備費が\2,000/月になります。教材費は実費で頂いております。詳しくは→料金のご案内へ。</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>季節講習費はいくらくらいが普通ですか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>生徒にもよりますが、通常授業料の1～2倍程度です。教科1つにつき4〜6回程度の授業が復習には必要です。そのため、8回〜12回コースが一番受講生が多くなっています。目標達成プランについては、ご希望科目1つにつき1〜2回のご受講がオススメです。</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <h2>定期試験対策について</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>定期テスト前の対策は行っておりますか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p>無料の勉強会やテスト前限定個別トレーニング（無料）を行っております。テスト前臨時の個別指導も承っております。</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>個別指導で習っている科目以外も対策してもらえますか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>主要5科目（高校であれば世界史や物理も含む）であればどの科目でも対応しております。保健体育や音楽となると専門的な対応は致しかねます。</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <h2>システムについて</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>授業の振り替えはできますか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p>授業の前日までにお伝えいただければ可能です。（該当日の翌月まで）</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <h2>入塾・退塾について</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd>入塾するにはどうしたらよいですか？</dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p>まずはお問い合わせフォームもしくはお電話でお問い合わせください。詳しくは→入塾までの流れ</p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <h2>カリキュラム・指導内容について</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p></p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <h2>実績について</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p></p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <h2>体験について</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p></p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <h2>塾選びについて</h2>
+                        <ul>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd>
+                                        <p></p>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl class="q">
+                                    <dt>Q</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl class="a">
+                                    <dt>A</dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
                         <ul>
                             <li>
                                 <h4>Q. 授業料はどれくらいですか？</h4>
@@ -49,98 +354,9 @@
 <?php get_footer(); ?>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="/js/jquery.gmap3.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/script.js"></script>
 <script type="text/javascript">
-$(function() {
-	var nav = $('#nav');
-	var home = $('#home');
-	var contact = $('.contact');
-	var secondary = $('#secondary-nav');
-    offset = nav.offset();
-    $(window).scroll(function () {
-    	if($(window).scrollTop() > offset.top - 78) {
-    		nav.addClass('fixed');
-    		home.stop().animate({'marginLeft' : '0px'}, 200);
-    		contact.stop().animate({'top' : '6px'}, 200);
-    		contact.addClass('fixed');
-    		secondary.addClass('fixed-secondary');
-    	} else {
-    		nav.removeClass('fixed');
-    		home.stop().animate({'marginLeft' : '-60px'}, 200);
-    		contact.removeClass('fixed');
-    		contact.stop().animate({'top' : '24px'}, 200);
-    		secondary.removeClass('fixed-secondary');
-		}
-    });
-});
 $(function(){
-
-	// Googleマップの埋め込み
-	var gmap = $("#gmap").gmap3({
-            map:{
-                options:{
-                    // 初期表示位置の指定
-                    center: [35.471132, 139.618554],//緯度経度
-                    zoom: 16,              // ズームレベル
-
-                    // 各コントロールの表示／非表示
-                    navigationControl: true,
-                    scrollwheel: false,
-                    mapTypeControlOptions: {
-                        mapTypeIds: "style1"
-                    }
-                }
-            },
-            
-            styledmaptype:{
-                id: "style",
-                styles: [
-                    {
-                        featureType: "all",
-                        elementType: "all",
-                        stylers: [
-                            { hue: '#f39700' },
-                            { lightness: 12 },
-                            { saturation: -10 },
-                            { gamma: .7 }			
-                        ]
-                    }
-                ],
-                callback: function(){
-                    $(this).gmap3("get").setMapTypeId("style");
-                }
-            },
-
-            // マーカーの設置
-            marker: {
-                address: '〒221-0844 神奈川県横浜市神奈川区沢渡2-2 第二泉ビル3F',
-                options: {
-                    icon: new google.maps.MarkerImage(
-                        "http://gmap3.net/skin/gmap/magicshow.png",
-                        new google.maps.Size(32, 37, "px", "px")
-                    )
-                }
-            }
-	}).data('gmap');
-
-	// カスタムマップタイプを設定
-	var myStyledMapType = new google.maps.StyledMapType(
-		[
-			{
-				featureType: "all",
-				elementType: "all",
-				stylers: [
-					{ hue: '#f39700' },
-					{ lightness: 12 },
-					{ saturation: -10 },
-					{ gamma: .7 }
-				]
-			}
-		]
-	);
-	var $btn = $('#toPageTop a');
-	var isHidden = true;
-
 	// デフォルトは非表示
 	$btn.hide();
 
@@ -166,18 +382,6 @@ $(function(){
 			}, 900);
 		// デフォルトイベントのキャンセル
 		return false;
-	});
-
-	$(function(){
-		$("a[href^=#]").click(function(){
-			var Hash = $(this.hash);
-			var HashOffset = $(Hash).offset().top - 100;
-			$("html,body").animate({
-				scrollTop: HashOffset
-			}, 1000);
-
-			return false;
-		});
 	});
 });
 

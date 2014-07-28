@@ -31,31 +31,30 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-        <header>
-            <div id="header-magazine">
-                <div class="container">
-                    <h1 id="logo"><a href="<?php echo home_url('/magazine'); ?>"><?php bloginfo('name'); ?></a></h1>
-                    <h2 id="top-description" class="top-desc-magazine"><a href="/" target="_blank">個別指導ティーシャル</a>が運営するウェブマガジン</h2>
-                </div>
+    <header>
+        <div id="header-magazine">
+            <div class="container">
+                <h1><a href="<?php echo home_url('/magazine'); ?>"><?php bloginfo('name'); ?></a></h1>
+                <h2 id="top-description" class="top-desc-magazine"><a href="/" target="_blank">個別指導塾ティーシャル</a>が運営するウェブマガジン</h2>
             </div>
+        </div>
 
-            <nav id="nav" role="navigation">
-                <div class="container">
-                    <?php wp_nav_menu( array( 'theme_location' => 'category' ) ); ?>
-                </div>
-            </nav>
-	</header>
+        <nav id="nav" class="magazine-nav" role="navigation">
+            <div class="container">
+                <?php wp_nav_menu( array( 'theme_location' => 'category' ) ); ?>
+            </div>
+        </nav>
+    </header>
 
-	<nav class="contact" id="contact">
-            <?php wp_nav_menu( array( 'theme_location' => 'primary_magazine' ) ); ?>
-            <ul class="sns-contact">
-                <li><a class="btn-flat-icon" id="fb-icon" href="https://www.facebook.com/tcialcom" target="_blank">f</a></li>
-                <li><a class="btn-flat-icon" id="tw-icon" href="https://twitter.com/Tcial315" target="_blank">t</a></li>
-            </ul>
-	</nav>
+    <nav class="contact" id="contact">
+        <!--<?php wp_nav_menu( array( 'theme_location' => 'primary_magazine' ) ); ?>-->
+        <ul class="sns-contact">
+            <li><a class="btn-flat-icon" id="fb-icon" href="https://www.facebook.com/tcialcom" target="_blank">f</a></li>
+            <li><a class="btn-flat-icon" id="tw-icon" href="https://twitter.com/Tcial315" target="_blank">t</a></li>
+        </ul>
+    </nav>
 
-	<nav id="home">
-		<a href="<?php echo home_url('/magazine'); ?>" class="btn-flat-icon">Tcial</a>
-	</nav>
-        <!-- /header -->
+    <nav id="home-blog">
+        <a href="<?php echo home_url('/magazine'); ?>">Tcial</a>
+    </nav>
+    <!-- /header -->

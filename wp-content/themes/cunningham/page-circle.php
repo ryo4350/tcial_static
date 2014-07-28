@@ -10,7 +10,7 @@
                         昔の日本には、社会とつながるためのしくみがたくさんありました。しかし、今はそれはなくなりつつあります。<br />
                         また、やりたいことがない、わからないという子供たちも増えています。<br /><br />
                         だったらつくればいい！ということで"サークル活動"始めました。<br /><br />                    
-                        英会話、コンピュータ、美文字等さまざまな活動から好きなものを選んで参加することがでいます。<br />
+                        英会話、コンピュータ、美文字等さまざまな活動から好きなものを選んで参加することができます。<br />
                         私達は子供たちが活動するのアイテムと環境（サークル）と、最低限のファシリテートをします。<br />
                         仲間（参加者）とワイワイ楽しみながら学べるさまざまな活動を通じて、集団行動で必要な"コミュニケーション能力"、"自主性"、"思考力"が自然と高まります。<br />
                         </p>                    
@@ -186,41 +186,6 @@
 	</div>
 <?php get_footer() ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="/js/easy-pie-chart.js"></script>
-<script type="text/javascript">
-$(function() {
-	var nav = $('#nav');
-	var home = $('#home');
-	var contact = $('.contact');
-	var secondary = $('#secondary-nav');
-    offset = nav.offset();
-    $(window).scroll(function () {
-    	if($(window).scrollTop() > offset.top - 78) {
-    		nav.addClass('fixed');
-    		home.stop().animate({'marginLeft' : '0px'}, 200);
-    		contact.stop().animate({'top' : '6px'}, 200);
-    		contact.addClass('fixed');
-    		secondary.addClass('fixed-secondary');
-    	} else {
-    		nav.removeClass('fixed');
-    		home.stop().animate({'marginLeft' : '-60px'}, 200);
-    		contact.removeClass('fixed');
-    		contact.stop().animate({'top' : '24px'}, 200);
-    		secondary.removeClass('fixed-secondary');
-		}
-    });
-    $(function(){
-            $("a[href^=#]").click(function(){
-                    var Hash = $(this.hash);
-                    var HashOffset = $(Hash).offset().top - 100;
-                    $("html,body").animate({
-                            scrollTop: HashOffset
-                    }, 1000);
-
-                    return false;
-            });
-    });
-});
-</script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/script.js"></script>
 </body>
 </html>

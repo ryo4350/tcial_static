@@ -190,29 +190,29 @@
                 <div class="container-narrow">
                     <h2 class="center">ホワイトボードを使用したアウトプット型授業</h1>
                     <div class="onerow vertical article">
-                        <div class="col6-nm">
+                        <div class="col8 left">
                             <h3><span class="quote">❝</span>ホワイトボードに書けば勉強が楽しい！<span class="quote">❞</span></h3>
                             <p>数学の図形も、英作文も、嫌いな社会も、ホワイトボードに書くだけでこんなにも楽しくなります。</p>
                         </div>
-                        <div class="col6-nm">
+                        <div class="col4 right">
                             <img src="<?php bloginfo('template_directory');?>/img/gallary/10.jpg" alt="" class="" />
                         </div>
                     </div>
                     <div class="onerow article vertical">
-                        <div class="col6-nm">
+                        <div class="col4">
                             <img src="<?php bloginfo('template_directory');?>/img/gallary/11.jpg" alt="" />
                         </div>
-                        <div class="col6-nm">
+                        <div class="col8 right">
                             <h3><span class="quote">❝</span>アイデアがどんどん浮かぶ!?<span class="quote">❞</span></h3>
                             <p>解法のアイデアに困ったらいつもとちょっと違うことをするとアイデアが浮かんで切るかもしれません。</p>
                         </div>
                     </div>
                     <div class="onerow article vertical">
-                        <div class="col6-nm">
+                        <div class="col8">
                             <h3><span class="quote">❝</span>生徒と先生が逆転？<span class="quote">❞</span></h3>
                             <p>時には生徒自身に説明してもらいます。他人に説明することで初めて、“本当の理解”が可能になります。</p>
                         </div>
-                        <div class="col6-nm">
+                        <div class="col4 right">
                             <img src="<?php bloginfo('template_directory');?>/img/gallary/9.jpg" alt="" />
                         </div>
                     </div>
@@ -260,7 +260,7 @@
                             <h4>中学３年生理科社会</h4>
                             <p>公立高校受験を目指す中学3年生対象の理科・社会</p>
                         </div>
-                        <p class="fee">￥4,000/月4回</p>
+                        <p class="fee">￥6,000/月4回</p>
                         <p class="fee-info">原則理社２科目まとめての受講となります</p>
                     </div>
 
@@ -303,41 +303,6 @@
 	</div>
 <?php get_footer(); ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="/js/easy-pie-chart.js"></script>
-<script type="text/javascript">
-$(function() {
-	var nav = $('#nav');
-	var home = $('#home');
-	var contact = $('.contact');
-	var secondary = $('#secondary-nav');
-    offset = nav.offset();
-    $(window).scroll(function () {
-    	if($(window).scrollTop() > offset.top - 78) {
-    		nav.addClass('fixed');
-    		home.stop().animate({'marginLeft' : '0px'}, 200);
-    		contact.stop().animate({'top' : '6px'}, 200);
-    		contact.addClass('fixed');
-    		secondary.addClass('fixed-secondary');
-    	} else {
-    		nav.removeClass('fixed');
-    		home.stop().animate({'marginLeft' : '-60px'}, 200);
-    		contact.removeClass('fixed');
-    		contact.stop().animate({'top' : '24px'}, 200);
-    		secondary.removeClass('fixed-secondary');
-		}
-    });
-    $(function(){
-            $("a[href^=#]").click(function(){
-                    var Hash = $(this.hash);
-                    var HashOffset = $(Hash).offset().top - 100;
-                    $("html,body").animate({
-                            scrollTop: HashOffset
-                    }, 1000);
-
-                    return false;
-            });
-    });
-});
-</script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/script.js"></script>
 </body>
 </html>

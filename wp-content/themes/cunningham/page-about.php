@@ -6,8 +6,18 @@
                     <h2>私たちの活動</h2>
                     <div class="onerow">
                         <ul>
-                            <li class="col6"><h4><a href="/lesson/">個別指導</a></h4></li>
-                            <li class="col6 last"><h4><a href="/circle/">サークル</a></h4></li>
+                            <li class="col6">
+                                <a href="/lesson/">
+                                    <img src="<?php bloginfo('template_directory');?>/img/group.jpg">
+                                    <span>個別指導</span>
+                                </a>
+                            </li>
+                            <li class="col6 last">
+                                <a href="/circle/">
+                                    <img src="<?php bloginfo('template_directory');?>/img/circle.jpg">
+                                    <span>サークル</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -173,32 +183,10 @@
 <?php get_footer(); ?>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/script.js"></script>
 <script type="text/javascript" src="/js/jquery.gmap3.js"></script>
 <script type="text/javascript">
-$(function() {
-	var nav = $('#nav');
-	var home = $('#home');
-	var contact = $('.contact');
-	var secondary = $('#secondary-nav');
-    offset = nav.offset();
-    $(window).scroll(function () {
-    	if($(window).scrollTop() > offset.top - 78) {
-    		nav.addClass('fixed');
-    		home.stop().animate({'marginLeft' : '0px'}, 200);
-    		contact.stop().animate({'top' : '6px'}, 200);
-    		contact.addClass('fixed');
-    		secondary.addClass('fixed-secondary');
-    	} else {
-    		nav.removeClass('fixed');
-    		home.stop().animate({'marginLeft' : '-60px'}, 200);
-    		contact.removeClass('fixed');
-    		contact.stop().animate({'top' : '24px'}, 200);
-    		secondary.removeClass('fixed-secondary');
-		}
-    });
-});
 $(function(){
-
 	// Googleマップの埋め込み
 	var gmap = $("#gmap").gmap3({
             map:{
@@ -240,8 +228,8 @@ $(function(){
                 address: '〒221-0844 神奈川県横浜市神奈川区沢渡2-2 第二泉ビル3F',
                 options: {
                     icon: new google.maps.MarkerImage(
-                        "<?php bloginfo('template_directory');?>/img/symbol.png",
-                        new google.maps.Size(48, 46, "px", "px")
+                        "<?php bloginfo('template_directory');?>/img/symbol_new_0.png",
+                        new google.maps.Size(50, 54, "px", "px")
                     )
                 }
             }
@@ -290,18 +278,6 @@ $(function(){
 			}, 900);
 		// デフォルトイベントのキャンセル
 		return false;
-	});
-
-	$(function(){
-		$("a[href^=#]").click(function(){
-			var Hash = $(this.hash);
-			var HashOffset = $(Hash).offset().top - 100;
-			$("html,body").animate({
-				scrollTop: HashOffset
-			}, 1000);
-
-			return false;
-		});
 	});
 });
 

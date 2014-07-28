@@ -1,18 +1,17 @@
 <?php get_template_part('content', 'primary_header'); ?>
     <!-- Content -->
     <div id="key-visual">
-<!--        <div id="mv-wrap">
-            <video autoplay loop muted>
-                <source src="/video/vdo.mov">
+        <div id="mv-wrap">
+            <video autoplay loop>
+                <source src="<?php bloginfo('template_directory');?>/video/key-visual.mp4" poster="<?php bloginfo('template_directory');?>/img/key-visual.png" width="auto" height="640px">
             </video>
-        </div>-->
+        </div>
         <div id="main-text">
             <div id="catch">
-                <h1>未来をデザインする人を育てる塾</h1>
-                <h2>Design our Future!!</h2>
-                <p>Tcialは、個別指導/サークル/セミナー/その他様々な活動を通じて、<br />
-                    未来をデザインする人を育てます。</p>
-                <a href="#what" class="mv-btn">もっと詳しく！</a>
+                <h1>夏期講習、受講生受付中！</h1>
+                <h2>7/21 (mon.) - 8/30 (fri.)</h2>
+                <p>個別指導/サークルを通じて、未来を切り拓く人を育てる。</p>
+                <a href="/summer2014/" class="mv-btn">夏期講習についてもっと知る</a>
             </div>
         </div>
     </div>
@@ -25,7 +24,7 @@
                 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                     <li class="col3 article">
                         <a href="<?php the_permalink(); ?>">
-                            <div class="sidebar-article-img">
+                            <div class="front-article-img">
                                 <?php the_post_thumbnail(); ?>
                             </div>
                             <div class="recomended-article-info">
@@ -213,24 +212,28 @@
     </div>
 <?php get_footer(); ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript">
+<script>
 $(function() {
-	var nav = $('#nav');
+        var logo = $('#nav-logo');
+	var nav = $('#nav.primary-nav');
 	var home = $('#home');
-	var contact = $('.contact');
-    offset = nav.offset();
+//	var contact = $('.contact');
+        nav.removeClass('nav-scroll');
+        logo.removeClass('nav-scroll');
     $(window).scroll(function () {
-    	if($(window).scrollTop() > offset.top - 78) {
-    		nav.addClass('fixed');
-    		home.stop().animate({'marginLeft' : '0px'}, 200);
-    		contact.stop().animate({'top' : '6px'}, 200);
-    		contact.addClass('fixed');
-    	} else {
-    		nav.removeClass('fixed');
-    		home.stop().animate({'marginLeft' : '-60px'}, 200);
-    		contact.removeClass('fixed');
-    		contact.stop().animate({'top' : '24px'}, 200);
-		}
+        if($(window).scrollTop() > 540){
+            nav.addClass('fixed');
+            nav.addClass('nav-scroll');
+        } else if($(window).scrollTop() > 4) {
+            nav.addClass('fixed');
+            nav.removeClass('nav-scroll');
+            home.stop().animate({'marginLeft' : '0px'}, 200);
+//            contact.stop().animate({'top' : '10px'}, 200);
+        }  else {
+            nav.removeClass('fixed');
+            home.stop().animate({'marginLeft' : '-60px'}, 200);
+//            contact.stop().animate({'top' : '10px'}, 200);
+        }
     });
 
     $(function(){
@@ -253,7 +256,6 @@ $(function() {
             $cat.hide();
         });
     });
-});
-</script>
+});</script>
 </body>
 </html>

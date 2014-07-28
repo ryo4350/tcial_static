@@ -74,7 +74,19 @@ get_header(); ?>
                             <div class="blog-grid onerow">
                                 <div class="blog-header">
                                     <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                                    <p class="blog-header-info"><?php echo get_the_date(); ?></p>
+                                    <span class="author">
+                                        <a href="<?php echo home_url('magazine/author/').$user; ?>">
+                                            <?php echo get_simple_local_avatar($post->post_author); ?>
+                                            <span>
+                                                <?php the_author(); ?>
+                                            </span>
+                                        </a>
+                                    </span>
+                                    <ul>
+                                        <li><?php echo get_the_date(); ?></li>
+                                        <li>カテゴリ - <?php the_category(); ?></li>
+                                        <li>タグ - <?php the_tags(); ?></li>
+                                    </ul>
                                 </div>
                                 <div class="article-img-tl">
                                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>

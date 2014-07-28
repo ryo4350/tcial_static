@@ -30,7 +30,7 @@
                             <h3>保護者と直接つながります</h3>
                             <p>授業後には講師から直接報告メールをお送りしています。授業の理解度や宿題の達成度がわかるので安心です。</p>
                             <h4>メールでのご報告例</h4>
-                            <div class="mail-example">
+                            <div id="mail-example">
                                 <p>田中（仮名）様</p>
 
 <p>お世話になっております。個別指導塾ティーシャルの坂本です。</p>
@@ -56,21 +56,106 @@
 <p>以上になります。<br>
 最後までお読みいただきありがとうございました。</p>
                             </div>
+                            <button id="mail-open" class="btn-flat">全体を見る</button>
                         </li>
                         <li>
                             <span>6</span>
                             <h3>興味の幅を広げるサークル活動</h3>
-                            <p></p>              
-                            <a>サークル活動とは？</a>
+                            <p>英会話、コンピュータ、美文字等さまざまな活動から好きなものを選び、仲間（参加者）とワイワイ楽しみながら学べるさまざまな活動を通じて、集団行動で必要な"コミュニケーション能力"、"自主性"、"思考力"が自然と高めます。</p>              
+                            <a href="/circle/" target="_blank">サークル活動についてより詳しく知る</a>
                         </li>
                         <li>
                             <span>7</span>
                             <h3>決まりきったマニュアルはありません</h3>
-                            <p>本塾には"○○メソッド"といったありきたりなマニュアルはありません。講師がマニュアルに頼り、生徒一人一人のことをよく観察しなくなることを防ぐためです。各講師は生徒一人一人としっかりとコミニュケーションをとり生徒の理解、精神状態、計画の進捗等を総合的に考え指導しています。</p>
+                            <p>本塾には"○○メソッド"といったありきたりなマニュアルはありません。講師がマニュアルに頼り、生徒一人一人のことをよく観察しなくなることを防ぐためです。各講師は生徒一人一人としっかりとコミニュケーションをとり生徒の理解、精神状態、計画の進捗等を総合的に考え常に最適な指導を目指しています。</p>
                         </li>
                     </ul>
                 </div>
             </section>
+             
+            <section id="smr-training">
+                <h2>個別トレーニング</h2>
+                <div class="container-narrow">
+                    <h3>個別トレーニングとは？</h3>
+                    <p id="training-desc">個別トレーニングは「わかったつもり」を「できる！」に変えるための演習中心のコースです。生徒一人一人の課題や学力に合わせた問題をスパイラル形式で演習してきます。講師がそばにいるのでわからないところはいつでも質問することができます。</p>
+                    <h3>個別トレーニングのすすめかた</h3>
+                    <ul id="training-system">
+                        <li class="start">
+                            <h3>スタート</h3>
+                        </li>
+                        <li class="start">
+                            <div class="pink">
+                                <h3>ラーニング</h3>
+                                <p>最初に単元の基礎がまとめられているプリントでを確認します。予習が十分な人は飛ばすこともできます。</p>
+                            </div>
+                        </li>
+                        <li class="step">
+                            <div class="blue">
+                                <h3>ステップ１</h3>
+                                <p>単元の基礎問題を解きます。合格なら次のステップへ、不合格ならリトライへ進みます。</p>
+                            </div>
+                        </li>
+                        <li class="retry">
+                            <div class="yellow">
+                                <h3>リトライ１</h3>
+                                <p>ステップ１の類題で単元の復習を行います。合格すると次のステップに進むことができます。</p>
+                            </div>
+                        </li>
+                        <li class="step">
+                            <div class="blue">
+                                <h3>ステップ２</h3>
+                                <p>単元の基礎問題を解きます。合格なら次のステップへ、不合格ならリトライへ進みます。</p>
+                            </div>
+                        </li>
+                        <li class="retry">
+                            <div class="yellow">
+                                <h3>リトライ２</h3>
+                                <p>ステップ２の類題で単元の復習を行います。合格すると次のステップに進むことができます。</p>
+                            </div>
+                        </li>
+                        <li class="step">
+                            <div class="blue">
+                                <h3>ステップ３</h3>
+                                <p>単元の基礎問題を解きます。合格なら次のステップへ、不合格ならリトライへ進みます。</p>
+                            </div>
+                        </li>
+                        <li class="retry">
+                            <div class="yellow">
+                                <h3>リトライ３</h3>
+                                <p>ステップ３の類題で単元の復習を行います。合格すると次のステップに進むことができます。</p>
+                            </div>
+                        </li>
+                        <li class="step">
+                            <div class="pink">
+                                <h3>チェック</h3>
+                                <p>単元の総合問題を解きます。合格するとクリアー！不合格ならリチェックへ進みます。</p>
+                            </div>
+                        </li>
+                        <li class="retry">
+                            <div class="pink">
+                                <h3>リチェック</h3>
+                                <p>ステップ３の類題で単元の復習を行います。合格するとクリアー！次の単元に進むことができます。</p>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div>
+                                <h3>クリアー</h3>
+                                <p>おめでとう！単元クリアーです。次の単元に進むことができます。</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>こんな人におススメ</h3>
+                    <ul id="smr-rmd">
+                        <li class="col6"><p class="pink">計算ミスが多い</p></li>
+                        <li class="col6 last"><p class="yellow">勉強会をしても遊ぶだけ</p></li>
+                        <li><p class="blue">勉強計画を立てても三日で崩れてしまう</p></li>
+                        <li><p class="yellow">たくさんの問題を解いて基礎力をつけたい</p></li>
+                        <li><p class="pink">家にいるとついダラダラしてしまう</p></li>
+                        <li><p class="blue">わかっていたはずなのにテストになると間違えてしまう</p></li>
+                    </ul>
+                </div>
+            </section>
+           
             <section id="smr-plan">
                 <h2>受講プラン</h2>
                 <div class="container-narrow">
@@ -340,75 +425,73 @@
                 <img src="<?php bloginfo('template_directory');?>/img/2014summer.png">
             </article>
             <section id="smr-summary">   
+                <h2>夏期講習の概要</h2>
                 <div class="container-narrow">
-                    <h2>夏期講習の概要</h2>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>期間</th>
-                                <td>2014/7/21-8/30</td>
-                            </tr>
-                            <tr>
-                                <th>授業時間</th>
-                                <td>①9:00-10:30
-                                    ②10:40-12:10
-                                    ③13:10-14:40
-                                    ④14:50-16:20<br />
-                                    ⑤16:30-18:00
-                                    ⑥18:10-19:40
-                                    ⑦19:50-21:20
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>対象</th>
-                                <td>小学生・中学生・高校生・高卒生・社会人</td>
-                            </tr>
-                            <tr>
-                                <th>授業形式</th>
-                                <td>
-                                    １対２の個別指導
-                                    １授業90分
-                                    
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>コース・授業料</th>
-                                <td>
-                                    ちょっぴりコース（90分×5回）| \18,750～<br />
-                                    しっかりコース（90分×10回）| \37,500～<br />
-                                    がっつりコース（90分×20回）| \75,000～<br />
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>指導場所</th>
-                                <td>
-                                    個別指導塾ティーシャル横浜
-                                    〒221-0825
-                                    神奈川県横浜市神奈川区沢渡第二泉ビル3F
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <dl>
+                        <dt>期間</dt><dd>2014/7/21-8/30</dd>
+                        <dt>授業時間</dt>
+                        <dd>
+                            <p class="col3">①9:00-10:30</p>
+                            <p class="col3">②10:40-12:10</p>
+                            <p class="col3">③13:10-14:40</p>
+                            <p class="col3 last">④14:50-16:20</p>
+                            <p class="col3">⑤16:30-18:00</p>
+                            <p class="col3">⑥18:10-19:40</p>
+                            <p class="col3">⑦19:50-21:20</p>
+                        </dd>
+                        <dt>対象</dt><dd>小学生・中学生・高校生・高卒生・社会人</dd>
+                        <dt>授業形式</dt>
+                        <dd>
+                           １対２の個別指導
+                            １授業90分<br>
+                            個別トレーニング（個別カリキュラムの演習コース）
+                        </dd>
+                        <dt>コース/<br>授業料</dt>
+                        <dd>
+                            <p class="col6">個別指導（90分×5回）</p><p class="col6 last">\18,750～</p>
+                            <p class="col6">個別指導（90分×10回）</p><p class="col6 last"> \37,500～</p>
+                            <p class="col6">個別指導（90分×20回）</p><p class="col6 last"> \75,000～</p>
+                            <p class="col6">個別トレーニング（90分×1回）</p><p class="col6 last"> \1,000（小）～1,500（高）</p>
+                            <p class="col6">個別トレーニング（90分×10回）</p><p class="col6 last"> \9,500（小）～14,500（高）</p>
+                            <p class="col6">個別トレーニング（90分×20回）</p><p class="col6 last"> \18,000（小）～23,000（高）</p>
+                            30回以上も承っております。お気軽にお問い合わせください。
+                        </dd>
+                        <dt>指導場所</dt>
+                        <dd>
+                            個別指導塾ティーシャル横浜
+                            〒221-0825
+                            神奈川県横浜市神奈川区沢渡第二泉ビル3F
+                        </dd>
+                    </dl>
                 </div>
-            </section>
-            <section id="smr-apply">
-                <div class="container">
-                    <h2>お申し込みの流れ</h2>
-                    <ul>
-                        <li class="col3">
-                            <span>①WEB/電話/メールでお問い合わせ</span>
-                        </li>
-                        <li class="col3">
-                            <span>②カウンセリング・授業日相談</span>
-                        </li>
-                        <li class="col3">
-                            <span>③ご来塾/ご面談</span>
-                        </li>
-                        <li class="col3 last">
-                            <span>④ご来塾/ご面談</span>
-                        </li>
-                    </ul>
-                </div>
+                <div id="smr-apply">
+                   <div class="container-narrow">
+                       <h2>お申し込みの流れ</h2>
+                       <ul>
+                           <li class="col4 pink">
+                               <div>
+                                   <span>1</span>
+                                   <h3>お問い合わせ</h3>
+                                   <p>まずはWEB/電話/メールでお気軽にお問い合わせください。</p>
+                               </div>
+                           </li>
+                           <li class="col4 blue">
+                               <div>
+                                   <span>2</span>
+                                   <h3>カウンセリング・授業日相談</h3>
+                                   <p>ご来塾頂きお子様の学力や課題についてカウンセリングを行います。</p>
+                               </div>
+                           </li>
+                           <li class="col4 yellow last">
+                               <div>
+                                   <span>3</span>
+                                   <h3>いよいよ授業！</h3>
+                                   <p>カウンセリングの結果をもとにカリキュラムを作成し授業を行います。</p>
+                               </div>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
             </section>
             <div id="smr-msg">
                 <div class="container-narrow">
@@ -471,6 +554,14 @@ $(function(){
 		// デフォルトイベントのキャンセル
 		return false;
 	});
+        
+        var $mail = $('#mail-example');
+        var $opn = $('#mail-open');
+        $mail.css('height', 80);
+        $opn.click(function(){
+            $(this).hide();
+            $mail.css('height', 'auto');
+        });
 });
 
 </script>
