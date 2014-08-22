@@ -1,0 +1,30 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+a {
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+}
+
+a:hover {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: rgb(80, 161,192);
+}
+
+/*--------------------------------------------------------------
+8.0 - Clearings
+--------------------------------------------------------------*/
+.cf:before, .cf:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear:both;
+}
+

@@ -1,0 +1,33 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+body {
+    color: rgb(40, 40, 40);
+    font-family:
+        "メイリオ", Meiryo,
+        "ヒラギノ角ゴ Pro W3",
+        "HIragino Kaku Gothic Pro W3",
+        "HIragino Kaku Gothic Pro",
+        Osaka,
+        "ＭＳ Ｐゴシック", "MS P Gothic",
+        sans-serif;
+}
+
+.font-green {
+    color: rgb(135, 191, 112);
+}
+
+.font-orange {
+    color: rgb(239, 126, 23);    
+}
+
+.font-red {
+    color: rgb(219, 101, 101);    
+}
+
+.font-blue {
+    color: rgb(80, 161,192);    
+}
+#top-content h2 {
+    font-size: 36px;
+}

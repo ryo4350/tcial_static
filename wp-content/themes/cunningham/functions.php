@@ -46,6 +46,7 @@ function cunningham_setup() {
 		'primary_magazine' => __( 'Primary Menu Mgazine', 'cunningham' ),
                 'category' => __( 'Category Menu', 'cunningham' ),
                 'footer' => __( 'Footer Menu', 'cunningham' ),
+                'footer_magazine' => __( 'Footer Magazine Menu', 'cunningham' ),
 	) );
 
 	// Enable support for Post Formats.
@@ -130,4 +131,9 @@ function new_excerpt_more($more) {
 }  
 
 add_filter('excerpt_more', 'new_excerpt_more');
-?>
+
+remove_action( 'wp_head', 'rsd_link' );
+remove_action( 'wp_head', 'wlwmanifest_link' );
+remove_action( 'wp_head', 'wp_generator' );
+remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 )
+        ?>

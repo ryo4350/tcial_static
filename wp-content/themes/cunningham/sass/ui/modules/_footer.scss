@@ -1,0 +1,54 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+/*--------------------------------------------------------------
+3.3 - Footers
+--------------------------------------------------------------*/
+
+#footer {
+    padding-top: 40px;
+    background: rgb(80, 161,192);
+}
+
+#footer-nav {
+    padding: 40px 0;
+    position: relative;
+}
+
+.footer-nav-about {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.footer-nav-blog {
+    overflow: hidden;
+    padding: 20px;
+}
+
+#footer-nav .menu li {
+    font-size: 14px;
+}
+
+#footer-nav .menu li a {
+    color: rgb(255, 255, 255);
+}
+
+#footer-nav img {
+    margin-bottom: 20px;
+    height: 36px;
+    width: auto;
+}
+
+.footer-fb {
+    padding: 10px;
+    background: rgba(255, 255, 255, .6);
+    overflow: hidden;
+}
+
+.site-info{
+    padding: 30px 10px;
+    background: rgba(52, 73, 80, .9);
+    text-align: center;
+    font-size: 12px;
+    color: rgb(210, 210, 210);
+}

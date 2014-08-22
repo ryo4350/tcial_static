@@ -5,22 +5,23 @@
  * @package cunningham
  */
 ?>
-                    <div class="col3 last widgets">
+                    <div class="col3 last">
                         <div class="onerow cf">
                             <div class="col12 blog-grid">
-                                <div class="widget-header">
-                                    <h3>ティーシャルとは</h3>
-                                </div>
                                 <div class="widget-about widget-content">
-                                    <p>横浜に拠点を置く個別指導塾</p>
+                                    <p class="powered">powered by</p>
+                                    <a href="/" target="_blank">
+                                        <img src="<?php bloginfo('template_directory');?>/img/logo.png" class="sidebar-logo" alt="個別指導塾ティーシャル">
+                                    </a>
+                                    <p>横浜にある個別指導塾ティーシャルが運営しています。</p>
                                     <a href="/" target="_blank">もっと詳しく</a>
                                     <a href="/contact_from_blog/">お問い合わせ</a>
-                                    <p>045-620-0679</p>
+                                    <p>☎045-620-0679</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="onerow cf">
+                        <div class="onerow cf blog-grid">
                             <div class="sbr-banner">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- blog-sidebar-250 -->
@@ -59,17 +60,17 @@
                                 <div class="widget-header">
                                     <h3>新着記事</h3>
                                 </div>
-                                <ul>
+                                <ul class="articles">
                                     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                                    <li class="onerow blog-grid">
+                                    <li>
                                         <a href="<?php the_permalink(); ?>">
                                             <div class="sidebar-article-img">
                                                 <?php the_post_thumbnail(); ?>
                                                 <div class="category-label"><?php the_category(); ?></div>
                                             </div>
                                             <div class="recomended-article-info">
-                                                <h4><?php the_title(); ?></h4>
-                                                <p class="post-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></p>
+                                                <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                                                <p class="post-date"><?php echo get_the_date(); ?></p>
                                             </div>
                                         </a>
                                     </li>
@@ -90,7 +91,7 @@
                             </div>
                         </div>
                         <div class="onerow"> 
-                            <div class="col12">
+                            <div class="col12 twtr">
                                 <div class="widget-header">
                                     <h3>twitter</h3>
                                 </div>

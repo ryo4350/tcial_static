@@ -2,8 +2,8 @@
     <!-- Content -->
     <div id="key-visual">
         <div id="mv-wrap">
-            <video autoplay loop>
-                <source src="<?php bloginfo('template_directory');?>/video/key-visual.mp4" poster="<?php bloginfo('template_directory');?>/img/key-visual.png" width="auto" height="640px">
+            <video autoplay loop poster="<?php bloginfo('template_directory');?>/img/key-visual.png">
+                <source src="<?php bloginfo('template_directory');?>/video/key-visual.mp4">
             </video>
         </div>
         <div id="main-text">
@@ -11,18 +11,18 @@
                 <h1>夏期講習、受講生受付中！</h1>
                 <h2>7/21 (mon.) - 8/30 (fri.)</h2>
                 <p>個別指導/サークルを通じて、未来を切り拓く人を育てる。</p>
-                <a href="/summer2014/" class="mv-btn">夏期講習についてもっと知る</a>
+                <a href="/summer2014/" class="btn btn-shadow mv-btn">夏期講習についてもっと知る</a>
             </div>
         </div>
     </div>
     <div id="top-content">
         <section id="new-post">
             <div class="container">
-                <h2 class="center">ブログはじめました。</h2>
-                <ul class="onerow features">
+                <h2 class="center">スタッフブログ</h2>
+                <ul class="articles">
                 <?php query_posts('posts_per_page=4'); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                    <li class="col3 article">
+                    <li class="col3 onerow">
                         <a href="<?php the_permalink(); ?>">
                             <div class="front-article-img">
                                 <?php the_post_thumbnail(); ?>
@@ -52,7 +52,7 @@
                         <div class="disc-wrapper">
                             <h3>個別指導</h3>
                             <p>あなたの第一志望へむけて、講師陣が全力サポートしたします。一人ひとりに最適なカリキュラムを作成し効率的な学習をします。</p>
-                            <a href="/lesson/" class="btn-flat">詳しく見る≫</a>
+                            <a href="/lesson/" class="btn btn-flat">詳しく見る≫</a>
                         </div>
                     </div>
                     <div class="col6 last">
@@ -67,21 +67,10 @@
                         <div class="disc-wrapper">
                             <h3>サークル（脳力開発塾）</h3>
                             <p>さまざまなサークル活動を通じて脳を刺激し地頭とコミュニケーションスキルを鍛えます。</p>
-                            <a href="/circle/" class="btn-flat">詳しく見る≫</a>
+                            <a href="/circle/" class="btn btn-flat">詳しく見る≫</a>
                         </div>
                     </div>
                 </div>
-                <!--<div class="onerow vertical">
-                    <div class="col6">
-                        <div class="disc-wrapper">
-                        </div>
-                    </div>
-                    <div class="col6 last">                       
-                    </div>
-                    <div class="preparing">
-                        <div class="coming">Coming Soon!</div>
-                    </div>
-                </div>-->
             </div>
         </section>
         <section id="reputation">
@@ -90,44 +79,41 @@
                 <div class="onerow">
                     <div class="col4">
                         <div class="onerow">
-                            <div id="bubble">
-                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_1.png" />
+                            <div class="bubble">
+                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_1.png" alt="先生が身近に感じる塾です！"/>
                             </div>
                         </div>
                         <div class="onerow">
-                            <div id="bubble">
-                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_3.png" />
+                            <div class="bubble">
+                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_3.png" alt="夢と希望にあふれた塾です！" />
                             </div>
                         </div>
                     </div>
                     <div class="col4">
                         <div class="onerow">
-                            <div id="bubble">
-                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_4.png" />
+                            <div class="bubble">
+                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_4.png" alt="自然と勉強したくなる、そんな塾です!!" />
                             </div>
                         </div>
                         <div class="onerow">
-                            <div id="bubble">
-                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_2.png" />
+                            <div class="bubble">
+                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_2.png" alr="楽しくて、自然とやる気の出る塾です！" />
                             </div>
                         </div>
                     </div>
                     <div class="col4 last">
                         <div class="onerow">
-                            <div id="bubble">
-                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_5.png" />
+                            <div class="bubble">
+                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_5.png" alt="教えるよりも、一緒に考えてくれる。Tcialはそんなところです。" />
                             </div>
                         </div>
                         <div class="onerow">
-                            <div id="bubble">
-                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_6.png" />
+                            <div class="bubble">
+                                <img src="<?php bloginfo('template_directory');?>/img/msg/msg_6.png" alt="絆がある塾です。" />
                             </div>
                         </div>
                     </div>
                 </div>
-<!--                <div class="center">
-                    <a href="/about/" class="font-blue">指導実績を見る≫</a>
-                </div>-->
             </div>
         </section>
         <section id="gallary">
@@ -214,12 +200,11 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
 $(function() {
-        var logo = $('#nav-logo');
+        var header = $('#header');
 	var nav = $('#nav.primary-nav');
 	var home = $('#home');
-//	var contact = $('.contact');
         nav.removeClass('nav-scroll');
-        logo.removeClass('nav-scroll');
+        header.removeClass('nav-scroll');
     $(window).scroll(function () {
         if($(window).scrollTop() > 540){
             nav.addClass('fixed');
@@ -228,11 +213,9 @@ $(function() {
             nav.addClass('fixed');
             nav.removeClass('nav-scroll');
             home.stop().animate({'marginLeft' : '0px'}, 200);
-//            contact.stop().animate({'top' : '10px'}, 200);
         }  else {
             nav.removeClass('fixed');
             home.stop().animate({'marginLeft' : '-60px'}, 200);
-//            contact.stop().animate({'top' : '10px'}, 200);
         }
     });
 

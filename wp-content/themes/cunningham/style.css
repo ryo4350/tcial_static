@@ -1,45 +1,14 @@
-/*
-Theme Name: cunningham
-Author: Ryo Sakamoto
-Author URI: http://tcial.jp
-Description: tcialコーポレート＆ブログ用デザインテンプレート
-Version: 1.0
-
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
- cunningham is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
-*/
-
+@charset "Windows-31J";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
 1.0 - Reset
-2.0 - Typography
-3.0 - Elements
-4.0 - Inputs and buttons
-5.0 - Navigation
-	5.1 - Links
-	5.2 - Menus
-6.0 - Accessibility
-7.0 - Alignments
-8.0 - Clearings
-9.0 - Widgets
-10.0 - Content
-	10.1 - Posts and pages
-	10.2 - Asides
-	10.3 - Comments
-11.0 - Infinite scroll
-12.0 - Media
 --------------------------------------------------------------*/
-
-@CHARSET "UTF-8";
+/* line 16, sass/core/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,2489 +19,2920 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td
 article, header, section, aside, footer, figure, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
-body {
-	color: rgb(40, 40, 40);
-	font-family:
-		"メイリオ", Meiryo,
-		"ヒラギノ角ゴ Pro W3",
-		"HIragino Kaku Gothic Pro W3",
-		"HIragino Kaku Gothic Pro",
-		Osaka,
-		"ＭＳ Ｐゴシック", "MS P Gothic",
-		sans-serif;
-}
+
+/* line 25, sass/core/_reset.scss */
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
+/* line 28, sass/core/_reset.scss */
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
+/* line 32, sass/core/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 
 /* remember to define focus styles! */
+/* line 38, sass/core/_reset.scss */
 :focus {
-	outline: 0;
+  outline: 0;
 }
 
 /* remember to highlight inserts somehow! */
+/* line 43, sass/core/_reset.scss */
 ins {
-	text-decoration: none;
+  text-decoration: none;
 }
+
+/* line 46, sass/core/_reset.scss */
 del {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 /* tables still need 'cellspacing=&quot;0&quot;' in the markup */
+/* line 51, sass/core/_reset.scss */
 table {
-/*	border-collapse: collapse;
-	border-spacing: 0;*/
+  /*	border-collapse: collapse;
+  	border-spacing: 0;*/
 }
 
-a {
-    color: rgb(40, 40, 40);
-    text-decoration: none;
-}
-
-a:hover {
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    color: rgb(80, 161,192);
-}
-
-.container {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 0 0 1%;
-}
-
-.container-narrow {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 0 0 1%;
-}
-
+/* line 56, sass/core/_reset.scss */
 #wpstats {
-    display: none;
-}
-
-/*header----------------------------------------------------------------------*/
-header {
-    top: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
-}
-
-.spectrum {
-    background: url('img/spectrum.png');
-    display: block;
-    width: 100%;
-    height: 8px;
-}
-
-#header {
-    position: relative;
-    /*background: rgb(255, 255, 255);*/
-    height: 100px;
-    /*border-bottom: 1px solid #ccd0d1;*/
-    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);*/
-    z-index: 1001;
-}
-
-#header-magazine {
-    position: relative;
-    background: rgb(55, 155, 225);
-    height: 100px;
-    z-index: 1001;
-}
-
-#header-magazine h1 a {
-    width: 325px;
-    height: 72px;
-    position: relative;
-    top: 14px;
-    left: 10px;
-    text-indent: -999999px;
-    background: url('img/logo-blog-kana.png') no-repeat scroll 0px 0px / 325px 72px transparent;
-    float: left;
-}
-
-#nav-logo {
-    position: relative;
-    height: 68px;
-    z-index: 1001;
-}
-
-
-#logo {
-    padding-top: 12px;
-    padding-left: 10px;    
-}
-
-#logo a {
-    height: 44px;
-    text-indent: -999999px;
-    float: left;
-    display: block;
-    width: 384px;
-    background: url('img/logo_new_0_w.png') no-repeat scroll 0px 0px / 384px 44px transparent;   
-}
-
-@media all and (max-width: 768px) {
-    #nav-logo {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 44px;
-        background: rgb(255, 255, 255);
-    }
-    
-    #logo a {
-        height: 22px;
-        text-indent: -999999px;
-        float: left;
-        display: block;
-        width: 196px;
-        background: url('img/logo_new_0.png') no-repeat scroll 0px 0px / 196px 22px transparent;   
-    }
-
-    .contact {
-        display: none;
-    }
-}
-
-#top-description {
-    position: absolute;
-    left: 480px;
-    bottom: 40px;
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-}
-
-#top-description a {
-    color: rgb(255, 255, 255);
-}
-
-#top-description a:hover {
-    color: rgb(220, 220, 220);
-}
-
-#header nav, #header-magazine nav {
-	float: right;
-}
-
-#header li, #header-magazine li {
-	float: left;
-	margin: 11px 0px 9px 6px;
-}
-
-#header li a, #header-magazine li a {
-    font-weight: bold;
-}
-
-#nav {
-    /*background: rgba(240, 240, 240, .8);*/
-    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);*/
-    width: 100%;
-    z-index: 9999;
-    /*overflow: visible;*/
-}
-
-#nav a{
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-}
-
-.primary-nav {
-    position: fixed;
-}
-
-.magazine-nav {
-    height: 60px;
-    background: rgba(255, 255, 255, .8);
-}
-
-#menu-category a {
-    color: rgb(40, 40, 40);
-}
-
-#menu-category > li, #menu-primary > li {
-    float: left;
-    padding: 0 20px;
-    text-align: center;
-}
-
-#menu-category > li {
-    line-height: 60px;
-}
-
-#menu-primary > li {
-    line-height: 72px;
-}
-
-#menu-primary > li > a:hover {
-    color: rgb(80, 161,192);
-}
- 
- #menu-primary .current_page_item a {
-    color: rgb(120, 120, 120);
-}
-
-
-.menu > li > a{
-    font-weight: bold;
-}
-
-.menu-primary_magazine-container {
-    float: left;
-}
-
-#menu-category .sub-menu {
-    position: absolute;
-    left: 0;
-    width: 88%;
-    padding: 0 6%;
-    background: rgba(52, 73, 80, .7);
-}
-
-#menu-category .sub-menu li {
-    width: 20%;
-    line-height: 50px;
-    float: left;
-}
-
-.sub-menu > li > a{
-    font-size: 14px;
-}
-
-#secondary-nav {
-    position: relative;
-    background: rgba(210, 210, 210, .9);
-    width: 100%;
-    height: 40px;
-    z-index: 9999;
-    top: 72px;
-}
-
-#secondary-nav  li {
-    float: left;
-    /*width: 140px;*/
-    padding: 0 30px 0;
-    text-align: center;
-    line-height: 40px;
-}
-
-
-#secondary-nav  li a{
-	font-weight: bold;
-	font-size: 12px;
-        color: rgb(80, 80, 80);
-}
-
-#secondary-nav.fixed-secondary {
-	position: fixed;
-	top:72px;
-}
-
-.contact {
-	position: fixed;
-	top: 24px;
-	right: 10px;
-	z-index: 10000;
-}
-
-.contact-primary {
-    top: 8px;
-}
-
-.contact li {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.fixed {
-	position: fixed;
-	top: 0;
-}
-
-.nav-scroll {
-        background: rgba(80, 161,192, .6);
-}
-
-#home {
-    position: fixed;
-    display: block;
-    width: 50px;
-    height: 54px;
-    top: 8px;
-    left: 10px;
-    margin-left: -60px;
-    z-index: 10000;
-    background: url('img/symbol_new_0.png') no-repeat scroll 0px 0px / 50px 54px transparent;
-    text-indent: -999999px;
-}
-
-#home-blog {
-    position: fixed;
-    top: 8px;
-    left: 10px;
-    margin-left: -60px;
-    z-index: 10000;
-    background: url('img/symbol.png') no-repeat scroll 0px 0px / 48px 46px transparent;
-    text-indent: -999999px;
-}
-
-.active:after {
-    content: ' ';
-    height: 0;
-    position: absolute;
-    width: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid rgb(220, 220, 220);
-    bottom: 0;
-    left: 50%;
-    margin-left: -10px;
-}
-
-/* *********************************************************************************************************************
- * Common columns definitions
- */
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
-    float: left;
-    margin: 0 3% 0 0;
-}
-
-.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
-    margin: 0;
-}
-
-.col1 { width: 5.5%; }
-.col2 { width: 14%; }
-.col3 { width: 22.5%; }
-.col4 { width: 31%; }
-.col5 { width: 39.5%; }
-.col6 { width: 48%; }
-.col7 { width: 56.5%; }
-.col8 { width: 65%; }
-.col9 { width: 73.5%; }
-.col10 { width: 82%; }
-.col11 { width: 90.5%; }
-.col12 { width: 99%; margin: 0; }
-
-.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.col1-gl, .col2-gl, .col3-gl, .col4-gl, .col5-gl, .col6-gl, .col7-gl, .col8-gl, .col9-gl, .col10-gl, .col11-gl, .col12-gl {
-    float: left;
-    margin: 0 1% 0 0;
-    border: 4px solid rgb(210, 210, 210);
-    box-sizing: border-box;
-    border-radius: 2px;
-}
-
-.col1-gl.last, .col2-gl.last, .col3-gl.last, .col4-gl.last, .col5-gl.last, .col6-gl.last, .col7-gl.last, .col8-gl.last, .col9-gl.last, .col10-gl.last, .col11-gl.last, .col12-gl {
-    margin: 0;
-}
-
-.col1-gl { width: 7.4166666666666666666666%; }
-.col2-gl { width: 15.8333333333333333333333%; }
-.col3-gl { width: 24.25%; }
-.col4-gl { width: 32.6666666666666666666666%; }
-.col5-gl { width: 41.0833333333333333333333%; }
-.col6-gl { width: 49.5%; }
-.col7-gl { width: 57.9166666666666666666666%; }
-.col8-gl { width: 66.3333333333333333333333%; }
-.col9-gl { width: 74.7499999999999999999999%; }
-.col10-gl { width: 83.1666666666666666666666%; }
-.col11-gl { width: 91.5833333333333333333333%; }
-.col12-gl { width: 100%; margin: 0; }
-
-.col1-gl img, .col2-gl img, .col3-gl img, .col4-gl img, .col5-gl img, .col6-gl img, .col7-gl img, .col8-gl img, .col9-gl img, .col1-gl img, .col11-gl img, .col12-gl img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.right {
-    margin: 0;
-    float: right;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    vertical-align: bottom;
-}
-
-
-.onerow {
-    position: relative;
-    margin-bottom: 20px;
-}
-.vertical {
-    margin-bottom: 80px;
-}
-
-
-#content {
-    margin-top: 180px;
-}
-
-.cf:after {
-    content: "";
-    display: block;
-    height: 0;
-    visibility: hidden;
-    clear:both;
-}
-
-
-/* *********************************************************************************************************************
- * Small devices
- */
-@media all and (max-width: 960px) {
-	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col6-nm {
-		float: none;
-		width: 100%;
-	}
-
-	#menu-primary, #home, #secondary-nav, #secondary-case-nav, #gallary, #reputation, #infobar {
-            display: none;
-	}
-
-	#content {
-            padding-top: 120px;
-	}
-        
-        #contact .btn-flat {
-            width: 50px;    
-        }
-        
-        #smr-msg {
-            display: none;
-        }
-}
-
-#footer {
-    clear: both;
-    background: rgb(80, 161,192);
-}
-
-#footer-top {
-    position: relative;
-    color: rgb(255, 255, 255);
-}
-
-#footer-bottom {
-    position: relative;
-    background: rgba(52, 73, 80, .75);
-    color: rgb(210, 210, 210);
-}
-
-#footer-bottom img {
-    margin-top: 20px;
-}
-
-.footer-btn {
-    display: block;
-    text-align: center;
-    padding: 20px 20px 16px;
-    font-size: 24px;
-    font-weight: bold;
-    background: rgb(255, 255, 255);
-    border: 3px solid rgb(255, 255, 255);
-    color: rgb(80, 161,192);
-}
-
-.footer-btn:hover {
-    background: rgb(80, 161,192);
-    color: rgb(255, 255, 255);
-    border: 3px solid rgb(255, 255, 255);
-}
-
-.footer-fb {
-    padding: 10px;
-    background: rgba(255, 255, 255, .6);
-    overflow: hidden;
-}
-
-.mail {
-    font-size: 24px;
-    text-align: center
-}
-
-.tel {
-    margin-top: 10px;
-    font-size: 48px;
-    text-align: center
-}
-
-.footer-inner {
-    padding: 80px 10px;
-    overflow: hidden;
-}
-
-#footer-top h4 {
-    font-size: 32px;
-}
-
-.site-info{
-    padding: 30px 10px;
-    background: rgba(52, 73, 80, .9);
-    text-align: center;
-    font-size: 12px;
-    color: rgb(210, 210, 210);
-}
-
-#footer-link {
-    background: rgba(52, 73, 80, .8);
-    overflow: hidden;
-}
-
-#footer-link h5 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-}
-
-
-#footer-link li {
-    float: left;
-}
-
-#footer-link img {
-    width: auto;
-    height: 40px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-/*breadcrumb*/
-.breadcrumb {
-    padding: 5px;
-}
-
-.breadcrumb a {
-    font-size: 11px;
-}
-
-.breadcrumb strong {
-    font-size: 12px;
-}
-
-/*font*/
+  display: none;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+/* line 7, sass/core/_base.scss */
+a {
+  color: #282828;
+  text-decoration: none;
+}
+
+/* line 12, sass/core/_base.scss */
+a:hover {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  color: #50a1c0;
+}
+
+/*--------------------------------------------------------------
+8.0 - Clearings
+--------------------------------------------------------------*/
+/* line 23, sass/core/_base.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/* line 4, sass/core/_typography.scss */
+body {
+  color: #282828;
+  font-family: "���C���I", Meiryo, "�q���M�m�p�S Pro W3", "HIragino Kaku Gothic Pro W3", "HIragino Kaku Gothic Pro", Osaka, "�l�r �o�S�V�b�N", "MS P Gothic", sans-serif;
+}
+
+/* line 16, sass/core/_typography.scss */
 .font-green {
-    color: rgb(135, 191, 112);
+  color: #87bf70;
 }
 
+/* line 20, sass/core/_typography.scss */
 .font-orange {
-    color: rgb(239, 126, 23);    
+  color: #ef7e17;
 }
 
+/* line 24, sass/core/_typography.scss */
 .font-red {
-    color: rgb(219, 101, 101);    
+  color: #db6565;
 }
 
+/* line 28, sass/core/_typography.scss */
 .font-blue {
-    color: rgb(80, 161,192);    
+  color: #50a1c0;
 }
 
+/* line 31, sass/core/_typography.scss */
 #top-content h2 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+3.0 - Layouts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 - Containers
+--------------------------------------------------------------*/
+/* line 11, sass/core/_layout.scss */
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 0 0 1%;
+}
 
+/* line 17, sass/core/_layout.scss */
+.container-narrow {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0 0 1%;
+}
+
+/* line 23, sass/core/_layout.scss */
+#content {
+  margin-top: 180px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+/* line 29, sass/core/_layout.scss */
+.onerow {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 34, sass/core/_layout.scss */
 #content section, #top-content section {
-	padding: 80px 0;
-        overflow: hidden;
+  padding: 80px 0;
+  overflow: hidden;
 }
 
-nav {
-       overflow: hidden;
-       height: 73px;
+/*--------------------------------------------------------------
+3.2 - Grids
+--------------------------------------------------------------*/
+/* line 42, sass/core/_layout.scss */
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+  float: left;
+  margin: 0 3% 0 0;
 }
 
-.center {
-    display: block;
-    margin-top: 40px;
-    text-align: center;
+/* line 47, sass/core/_layout.scss */
+.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
+  margin: 0;
 }
 
-#event {
-    background: rgba(80, 161,192, .8);
+/* line 51, sass/core/_layout.scss */
+.col1 {
+  width: 5.5%;
 }
 
-#news {
-	background: rgb(180, 180, 180);
+/* line 52, sass/core/_layout.scss */
+.col2 {
+  width: 14%;
 }
 
-
-.article {
-    position: relative;
-    background: rgb(255, 255, 255);
-/*    border-bottom: 2px solid #ced0d0;
-    border-right: 1px solid #ced0d0;*/
-    overflow: hidden;
+/* line 53, sass/core/_layout.scss */
+.col3 {
+  width: 22.5%;
 }
 
-.article h3 {
+/* line 54, sass/core/_layout.scss */
+.col4 {
+  width: 31%;
 }
 
-/*btn*/
-.btn-flat, #contact .menu a {
-    display: block;
-    height: 48px;
-    width: 140px;
-    line-height: 48px;
-    text-align: center;
-    border: none;
-    border-radius: 2px;
-    background: rgb(80, 161,192);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+/* line 55, sass/core/_layout.scss */
+.col5 {
+  width: 39.5%;
 }
 
-#contact {
-    overflow: hidden;
+/* line 56, sass/core/_layout.scss */
+.col6 {
+  width: 48%;
 }
 
-.btn-flat:hover, .btn-flat-icon:hover {
-    opacity: .7;
-    color: rgb(255, 255, 255);
+/* line 57, sass/core/_layout.scss */
+.col7 {
+  width: 56.5%;
 }
 
-#contact li.topbar-info {
-    text-align: right;
-    margin-right: 20px;
+/* line 58, sass/core/_layout.scss */
+.col8 {
+  width: 65%;
 }
 
-#contact li.topbar-info p {
-    color: rgb(255, 255, 255);
+/* line 59, sass/core/_layout.scss */
+.col9 {
+  width: 73.5%;
 }
 
-.route {
-    font-size: 13px;
-    line-height: 1.1;
+/* line 60, sass/core/_layout.scss */
+.col10 {
+  width: 82%;
 }
 
-.phone-munber {
-    margin-top: 1px;
-    margin-bottom: 1px;
-    font-size: 26px;
-    line-height: 1;
+/* line 61, sass/core/_layout.scss */
+.col11 {
+  width: 90.5%;
 }
 
-.office-hour {
-    font-size: 11px;
-    line-height: 1;
-}
-    
-
-
-.sns-contact {
-    display: inline;
-    margin-left: 5px;    
+/* line 62, sass/core/_layout.scss */
+.col12 {
+  width: 99%;
+  margin: 0;
 }
 
+/* line 64, sass/core/_layout.scss */
+.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 70, sass/core/_layout.scss */
+.col1-gl, .col2-gl, .col3-gl, .col4-gl, .col5-gl, .col6-gl, .col7-gl, .col8-gl, .col9-gl, .col10-gl, .col11-gl, .col12-gl {
+  float: left;
+  margin: 0 1% 0 0;
+  border: 4px solid #d2d2d2;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+/* line 78, sass/core/_layout.scss */
+.col1-gl.last, .col2-gl.last, .col3-gl.last, .col4-gl.last, .col5-gl.last, .col6-gl.last, .col7-gl.last, .col8-gl.last, .col9-gl.last, .col10-gl.last, .col11-gl.last, .col12-gl {
+  margin: 0;
+}
+
+/* line 82, sass/core/_layout.scss */
+.col1-gl {
+  width: 7.4166666666666666666666%;
+}
+
+/* line 83, sass/core/_layout.scss */
+.col2-gl {
+  width: 15.8333333333333333333333%;
+}
+
+/* line 84, sass/core/_layout.scss */
+.col3-gl {
+  width: 24.25%;
+}
+
+/* line 85, sass/core/_layout.scss */
+.col4-gl {
+  width: 32.6666666666666666666666%;
+}
+
+/* line 86, sass/core/_layout.scss */
+.col5-gl {
+  width: 41.0833333333333333333333%;
+}
+
+/* line 87, sass/core/_layout.scss */
+.col6-gl {
+  width: 49.5%;
+}
+
+/* line 88, sass/core/_layout.scss */
+.col7-gl {
+  width: 57.9166666666666666666666%;
+}
+
+/* line 89, sass/core/_layout.scss */
+.col8-gl {
+  width: 66.3333333333333333333333%;
+}
+
+/* line 90, sass/core/_layout.scss */
+.col9-gl {
+  width: 74.7499999999999999999999%;
+}
+
+/* line 91, sass/core/_layout.scss */
+.col10-gl {
+  width: 83.1666666666666666666666%;
+}
+
+/* line 92, sass/core/_layout.scss */
+.col11-gl {
+  width: 91.5833333333333333333333%;
+}
+
+/* line 93, sass/core/_layout.scss */
+.col12-gl {
+  width: 100%;
+  margin: 0;
+}
+
+/* line 95, sass/core/_layout.scss */
+.col1-gl img, .col2-gl img, .col3-gl img, .col4-gl img, .col5-gl img, .col6-gl img, .col7-gl img, .col8-gl img, .col9-gl img, .col1-gl img, .col11-gl img, .col12-gl img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media all and (max-width: 1024px) {
+  /* line 102, sass/core/_layout.scss */
+  #tl {
+    width: 73.5%;
+  }
+
+  /* line 105, sass/core/_layout.scss */
+  #infobar {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 111, sass/core/_layout.scss */
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col6-nm, #tl {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 116, sass/core/_layout.scss */
+  #menu-primary, #home, #secondary-nav, #secondary-case-nav, #gallary, #reputation {
+    display: none;
+  }
+
+  /* line 120, sass/core/_layout.scss */
+  #content {
+    margin-top: 120px;
+  }
+
+  /* line 124, sass/core/_layout.scss */
+  #contact .btn-flat {
+    width: 50px;
+  }
+
+  /* line 128, sass/core/_layout.scss */
+  #smr-msg {
+    display: none;
+  }
+}
+/*--------------------------------------------------------------
+3.4 - Others
+--------------------------------------------------------------*/
+/* line 138, sass/core/_layout.scss */
+.right {
+  margin: 0;
+  float: right;
+}
+
+/* line 143, sass/core/_layout.scss */
+.vertical {
+  margin-bottom: 80px;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/* line 5, sass/core/_images.scss */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: bottom;
+}
+
+/* line 12, sass/core/_images.scss */
+.front-article-img img, .article-img-tl img, .sidebar-article-img img {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 20, sass/core/_images.scss */
+.front-article-img img:hover, .sidebar-article-img img:hover, .article-img-tl img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  opacity: 1;
+}
+
+/* Welcome to Compass. Use this file to define button styles.
+ * use @import "ui/elements/buttons)" */
+/* line 5, sass/ui/elements/_buttons.scss */
+.btn {
+  display: inline-block;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 13, sass/ui/elements/_buttons.scss */
+.btn-flat {
+  height: 48px;
+  width: 140px;
+  line-height: 48px;
+  background: #4099ff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 19, sass/ui/elements/_buttons.scss */
+.btn-flat:hover {
+  opacity: .7;
+  color: white;
+}
+
+/* line 25, sass/ui/elements/_buttons.scss */
 .btn-flat-icon {
-    display: block;
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    font-size: 32px;
-    color: rgb(255, 255, 255);
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 32px;
+  font-weight: bold;
+}
+/* line 31, sass/ui/elements/_buttons.scss */
+.btn-flat-icon:hover {
+  opacity: .7;
+  color: white;
 }
 
-#fb-icon {
-    background: rgb(59, 89, 152);
+/* line 37, sass/ui/elements/_buttons.scss */
+.btn-shadow {
+  position: relative;
+  top: 0;
+  -webkit-box-shadow: #18539b 0 4px 0;
+  -moz-box-shadow: #18539b 0 4px 0;
+  box-shadow: #18539b 0 4px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 42, sass/ui/elements/_buttons.scss */
+.btn-shadow:hover {
+  transition: none;
+  top: 2px;
+  color: white;
+  -webkit-box-shadow: #18539b 0 2px 0;
+  -moz-box-shadow: #18539b 0 2px 0;
+  box-shadow: #18539b 0 2px 0;
 }
 
-#tw-icon {
-    background: rgb(85, 172, 238);
-}
-
-#key-visual {
-    position: relative;
-    width: 100%;
-}
-
-#mv-wrap {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    max-height: 640px;
-    overflow: hidden;
-}
-
-#mv-wrap video {
-    display: block;
-    min-height: 640px;
-}
-
-#main-text {
-    padding-top: 20%;
-    padding-bottom: 6%;
-    position: relative;
-}
-
-#catch {
-    display: block;
-    color: rgb(255, 255, 255);
-    z-index: 998;
-    text-align: center;
-    font-weight: normal;
-}
-
-#catch h1 {
-    font-size: 48px;
-    /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
-}
-
-#catch h2 {
-    font-family: 'Lily Script One', cursive;
-    font-size: 24px;
-    font-weight: normal;
-}
-
-#catch p {
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: normal;
-}
-
+/* line 50, sass/ui/elements/_buttons.scss */
 .mv-btn {
-    display: inline-block;
-    margin: 40px auto;
-    padding: 16px 24px 12px;
-    border-radius: 2px;
-    font-size: 24px;
-    font-weight: bold;
-    background: rgb(80, 161,192);
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255);
+  margin: 40px auto;
+  padding: 16px 24px 12px;
+  font-size: 24px;
+  font-weight: bold;
+  background: #4099ff;
 }
 
-.mv-btn:hover {
-    background: rgb(255, 255, 255);
-    border: 2px solid rgb(80, 161,192);
-    color: rgb(80, 161,192);
+/* line 58, sass/ui/elements/_buttons.scss */
+#fb-icon {
+  background: #3b5998;
 }
 
+/* line 62, sass/ui/elements/_buttons.scss */
+#tw-icon {
+  background: #55acee;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+4.4 - Breadcrumb
+--------------------------------------------------------------*/
+/* line 7, sass/ui/elements/_breadcrumb.scss */
+.breadcrumb {
+  padding: 5px;
+}
+
+/* line 11, sass/ui/elements/_breadcrumb.scss */
+.breadcrumb a {
+  font-size: 11px;
+}
+
+/* line 15, sass/ui/elements/_breadcrumb.scss */
+.breadcrumb strong {
+  font-size: 12px;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*ad*/
+/* line 5, sass/ui/modules/_ad.scss */
+.l-banner {
+  width: 728px;
+  height: 90px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 12, sass/ui/modules/_ad.scss */
+.sbr-banner {
+  overflow: hidden;
+  width: 250px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+/* line 19, sass/ui/modules/_ad.scss */
+.fb {
+  overflow: hidden;
+}
+
+/* line 23, sass/ui/modules/_ad.scss */
+.recommend-wrap {
+  margin: 40px 0;
+}
 
 @media all and (max-width: 768px) {
-    #catch h1 {
-        font-size: 22px;
-        /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
-    }
-
-    #catch h2 {
-        font-size: 12px;
-    }
-    
-    #catch p {
-        font-size: 9px;
-    }
-
-    .mv-btn {
-        padding: 8px 10px 4px;
-        font-size: 16px;
-    }
-    #mv-wrap {
-        display: none;
-    }
-    #key-visual {
-        background-image: url('img/key-visual.png');
-        background-size: auto 100%; 
-    }
-    .nav-scroll {
-        background: none;
-    }
-    
-    #top-content h2 {
-        font-size: 24px;
-    }
-}
-
-#top-content {
-    position: relative;
-    z-index: 999;
-}
-
-.front-article-img, .article-img-tl, .sidebar-article-img {
-    clear: both;
-    position: relative;
-    max-height: 160px;
-    overflow: hidden;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-.front-article-img img, .article-img-tl img, .sidebar-article-img img {
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-.front-article-img img:hover, .sidebar-article-img img:hover {
-    -webkit-transform:scale(1.2,1.2);
-    -moz-transform:scale(1.2,1.2);
-    -ms-transform:scale(1.2,1.2);
-    -o-transform:scale(1.2,1.2);
-    transform:scale(1.2,1.2);
-    opacity: 1;
-}
-
-.article-img-tl img:hover {
-    -webkit-transform:scale(1.1,1.1);
-    -moz-transform:scale(1.1,1.1);
-    -ms-transform:scale(1.1,1.1);
-    -o-transform:scale(1.1,1.1);
-    transform:scale(1.1,1.1);
-    opacity: 1;   
-}
-
-/*features*/
-.features li h4{
-}
-
-.article-info {
-    padding: 20px;
-}
-
-.article-info h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.article-info p {
-    padding: 0;
-    font-size: 12px;
-}
-
-
-/*whiteboard*/
-.onerow h2 {
-    padding: 20px;
-    font-size: 18px;
-}
-
-.onerow p {
-    /*padding: 10px;*/
-}
-
-
-
-#wb {
-    background-image: url('/img/whiteboard.jpg');
-    height: 640px;
-}
-
-.features-info {
-    text-align: center;
-}
-
-.features-info h4 {
-    font-size: 20px;
-}
-
-.features-info p {
-    padding: 10px 30px;
-    font-size: 14px;
-}
-
-/*access*/
-#access {
-    position: relative;
-}
-
-#gmap {
-    height: 480px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-#addrress {
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    padding: 40px;
-    background: rgb(120, 120, 120);
-    color: rgb(255, 255, 255);
-}
-
-#addrress h2 {
-    font-size: 24px;
-}
-
-#addrress address {
-    font-size: 14px;
-} 
-
-/*case*/
-#secondary-case-nav {
-	background: rgb(220, 220, 220);
-	width: 100%;
-        height: 80px;
-	z-index: 9999;
-}
-
-#secondary-case-nav  li {
-	display: inline-block;
-        float: left;
-}
-
-#secondary-case-nav  li a {
-    display: block;
-    width: 80px;
-    height: 80px;
-}
-
-#case-nav-1 a {
-    background-image: url('/img/case/nav/shun.jpg');
-}
-
-#case-nav-2 a {
-    background-image: url('/img/case/nav/toru.jpg');
-}
-
-#case-nav-3 a {
-    background-image: url('/img/case/nav/yuta.jpg');
-}
-
-.case h2 {
-    font-size: 28px;
-    padding: 40px;
-}
-
-.case p {
-    padding: 20px 40px;
-}
-
-.case-info p {
-    padding: 40px 20px;
-}
-
-/*lesson-features*/
-#features-person {
-    background: rgb(219, 101, 101);
-    background: rgb(80, 161,192);
-    color: rgb(240, 240, 240);
-}
-
-#features-person h2 {
-    font-size: 36px;
-    margin: 40px 0;
-    color: rgb(255, 255, 255);
-}
-
-.person-disc {
-    font-size: 18px;
-    margin: 20px;
-}
-
-#features-person ul {
-    overflow: hidden;
-}
-
-#features-person li div {
-    text-align: center;
-    padding: 30px;
-    background: rgba(0, 0, 0, .3);
-    margin-bottom: 30px;
-    border: 1px solid rgb(50, 101,132);
-    border-radius: 4px;
-}
-#features-person h3 {
-    text-align: center;
-    font-size: 28px;
-    margin-top: 80px;
-}
-
-#features-person li h4 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-#features-person li p {
-    padding: 10px;
-}
-
-#features-person a {
-    color: rgb(255, 255, 255);
-}
-
-#features-person a:hover {
-    color: rgb(180, 180, 180);
-}
-
-.cross {
-    text-align: center;
-    font-size: 128px;
-    margin: 0;
-}
-
-#features-communication {
-    background: rgb(255, 255, 255);
-}
-
-#features-communication h2 {
-    font-size: 36px;
-    margin: 40px 0 0;
-}
-
-#features-communication h2 + p {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 80px;
-    color: rgb(180, 180, 180);
-}
-
-#features-wb {
-    background: rgb(220, 220, 220);
-}
-
-#features-wb h2 {
-    font-size: 36px;
-    margin: 40px 0 80px;
-    color: rgb(80, 80, 80);
-}
-
-#features-wb h3 {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 60px;
-    color: rgb(100, 100, 100);
-} 
-
-#features-wb p {
-    font-size: 12px;
-    padding: 0 80px;
-    color: rgb(140, 140, 140);
-}
-
-.quote {
-    font-size: 64px;
-    color: rgb(100, 100, 100);
-}
-
-#features-fee {
-/*    background: rgb(250, 150, 150);*/
-}
-
-#features-fee h2 {
-    font-size: 36px;
-    margin: 40px 0 80px;
-    color: rgb(80, 80, 80);
-}
-
-#features-fee h3 {
-    font-size: 18px;
-    text-align: center;
-    margin: 40px;
-    color: rgb(120, 120, 120);
-}
-
-/*fee*/
-.standard {
-    background: rgb(135, 191, 112);
-    color: rgb(255, 255, 255);
-}
-
-.semi-pro {
-    background: rgb(239, 126, 23);
-    color: rgb(255, 255, 255);
-}
-
-.professional{
-    background: rgb(219, 101, 101);
-    color: rgb(255, 255, 255);
-}
-
-.expart{
-    background: rgb(80, 80, 80);
-    color: rgb(255, 255, 255);
-}
-
-.group {
-    background: rgb(80, 161,192);
-    color: rgb(255, 255, 255);
-}
-
-.fee-grid {
-    position: relative;
-    margin-bottom: 20px;
-    text-align: center;
-    min-height: 200px;
-}
-
-.charge-grid {
-    position: relative;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.fee-grid h4, .charge-grid h4 {
-    padding: 30px 20px 0;
-    font-size: 20px;
-}
-
-.fee-grid p, .charge-grid p {
-    padding: 20px;
-    font-size: 15px;
-}
-
-.fee-grid span {
-    display: block;
-    margin-top: 5px;
-    font-size: 11px;
-}
-
-.fee {
-/*    position: absolute;*/
-    text-align: center;
-    bottom: 0;
-    font-size: 24px;
-    color: rgb(80, 80, 80);
-}
-
-.fee-info {
-    font-size: 11px;
-    text-align: center;
-    color: rgb(120, 120, 120);
-}
-
-/*about*/
-#activity h2 {
-    font-size: 48px;
-    margin-bottom: 40px;
-    color: rgb(120, 120, 120);
-}
-
-#activity a {
-    position: relative;
-    display: block;
-}
-
-#activity span {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    font-size: 36px;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgba(20, 20, 20, .8); ;
-}
-
-/*value*/
-#value {
-    background: rgb(255, 255, 255);  
-}
-
-#value h2 {
-    font-size: 48px;
-    margin-bottom: 40px;
-    color: rgb(120, 120, 120);
-}
-
-.values {
-    margin-bottom: 40px;
-}
-
-.values h3 {
-    margin-bottom: 5px;
-    font-size: 28px;
-}
-
-.values h4 {
-    font-size: 18px;
-}
-
-.values ul li {
-    font-size: 28px;
-    padding: 10px;
-    color: rgb(120, 120, 120);
-}
-
-.values span {
-    font-size: 36px;
-    font-family: 'Lily Script One', cursive;    
-}
-
-.values p {
-    font-size: 18px;
-}
-
-/*team*/
-#team h2 {
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 40px;
-    color: rgb(120, 120, 120);
-    font-family: 'Lily Script One', cursive;
-}
-
-#team div {
-    position: relative;
-/*    width: 160px;
-    height: 160px;*/
-}
-
-.team-img {
-    -webkit-border-radius: 260px;
-    -moz-border-radius: 260px;
-    border-radius: 260px;
-}
-
-#team p {
-    text-align: center;
-    margin-top: 10px;
-/*    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    line-height: 160px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    background: rgba(60, 60, 60, .6);
-    color: rgb(255, 255, 255)*/
-}
-
-.member-wrap {
-    padding: 16%;
-}
-
-.subject-info {
-    color: rgb(180, 180, 180);
-    font-size: 14px;
-}
-
-.work-info {
-    color: rgb(180, 180, 180);
-    font-size: 12px;
-}
-
-#society h3 {
-    /*background: rgb(135, 191, 112);*/
-    color: rgb(135, 191, 112);
-}
-
-#company h3 {
-    /*background: rgb(219, 101, 101);*/
-    color: rgb(219, 101, 101);
-}
-
-#children h3 {
-    /*background: rgb(239, 126, 23);*/
-    color: rgb(239, 126, 23);
-}
-
-/*lesson*/
-.inner-left{
-    float: left;
-    width: 50%;
-}
-
-.inner-right {
-    float:right;
-    width: 50%;
-}
-
-.inner-bottom {
-    clear: both;
-}
-
-/*psychology*/
-#features-psychology {
-    background: rgb(255, 255, 255);
-}
-
-.psychology-header {
-    margin-left: 10%;
-}
-
-#features-psychology h2 {
-    font-size: 36px;
-    margin: 40px 0 80px;
-    color: rgb(80, 80, 80);
-}
-
-#features-psychology h3 span {
-    font-size: 46px;
-}
-
-.psychology-grid {
-    text-align: center;
-    padding: 20px;
-}
-
-.psychology-grid h4 {
-    font-size: 13px;
-    margin: 20px 0;
-}
-
-/**/
-#a {
-    background: url('/img/gallary/13.jpg');
-}
-
-#b {
-    background: url('/img/gallary/14.jpg');
-}
-
-#c {
-    background: url('/img/gallary/15.jpg');
-}
-
-#d {
-    background: url('/img/gallary/16.jpg');
-}
-#e {
-    background: url('/img/gallary/17.jpg');
-}
-#f {
-    background: url('/img/gallary/18.jpg');
-}
-
-/*bubble*/
-#bubble {
-    padding: 80px 40px;
-    font-size: 36px;
-/*    background: rgb(255, 255, 255);*/
-    border-radius: 60px;
-}
-
-/*what*/
-#what {
-    background: rgb(255,255,255);    
-}
-
-#what h2 {
-    margin: 20px 0 80px;
-}
-
-#what h3 {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-#what p {
-    margin-bottom: 20px;
-    color: rgb(80, 80, 80);
-}
-
-#what img:hover {
-    opacity: .8;
-}
-
-.disc-wrapper {
-    padding: 40px;
-}
-
-.preparing {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    opacity: .4;
-}
-
-.coming {
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 28px;
-}
-
-/*new-post*/
-#new-post {
-    background: rgb(235, 235, 235);
-}
-
-#new-post h2 {
-    margin: 20px 0 80px;
-}
-
-#new-post li:nth-child(4n), .recommend-wrap li:nth-child(4n) {
-    margin-right: 0;
-}
-
-/*reputation*/
-#reputation {
-    background: rgb(255,255,255);    
-}
-
-#reputation h2 {
-    margin: 20px 0 80px;
-}
-
-/*gallary*/
-#gallary {
-    /*background: rgb(245,240,245);*/ 
-    background: rgb(80, 80, 80); 
-}
-
-#gallary h2 {
-    margin: 20px 0 80px;
-    color: rgb(255, 255, 255);
-    font-family: 'Lily Script One', cursive;
-}
-
-#gallary .onerow {
-    overflow: hidden;
-}
-
-/*blog*/
-.blog-grid {
-    position: relative;
-    background: rgb(255, 255, 255);
-    border-radius: 2px;
-}
-
-/*blog-info*/
-.single-post-date {
-    position: absolute;
-    top: 40px;
-    left: -16px;
-    padding: 4px 10px;
-    background: rgb(55, 155, 225);
-    font-size: 18px;
-    color: white;
-    text-align: center;
-}
-
-.single-post-date:after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0px;
-    width: 0;
-    height: 0;
-    border-top: 6px solid rgb(0, 85, 165);
-    border-left: 16px solid transparent;
-}
-
-#single-post-info {
-    margin-top: 100px;
-    padding: 20px; 
-}
-
-.widget-header h3 {
-    font-size: 16px;
-}
-
-.widget-header a {
-    font-size: 9px;
-}
-
-#single-post-info .avatar {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    border-radius: 200px;    
-}
-
-#writer-name {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-}
-
-#writer-desc {
-    font-size: 12px;
-    padding: 10px 10px 10px 15px;
-}
-
-.blog-keywords {
-    padding: 10px;
-}
-
-.blog-keywords p {
-    font-size: 12px;
-}
-
-.blog-keywords a {
-    font-size: 12px;
-}
-
-/*writers*/
-.writers li {
-    margin: 0;
-    padding: 10px;
-    border-bottom: 1px solid rgb(220, 220, 220);
-    overflow: hidden;
-}
-
-.writers h4 {
-    margin-left: 5px;
-    font-size: 14px;
-}
-
-/*authors*/
-.authors {
-    padding: 20px 20px 0;
-    border-bottom: 1px solid rgb(220, 220, 220);
-}
-
-.authors > li {
-    padding: 10px 0;
-}
-
-.authors .avatar {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    border-radius: 200px;
-}
-
-.writers .avatar {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    border-radius: 200px;
-}
-
-.authors h3 {
-    text-align: center;
-    padding: 10px;
-    font-size: 16px;
-}
-
-.authors .link {
-    font-size: 11px;
-    text-align: center;
-}
-
-/*tl*/
-.aricle-link {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.article-img, .article-img-tl {
-    position: relative;
-    min-height: 36px;
-}
-
-.article-img-tl {
-    max-height: 360px;
-    overflow: hidden;
-}
-
-.category-label {
-    position: absolute;
+  /* line 28, sass/ui/modules/_ad.scss */
+  .l-banner {
+    display: none;
+  }
+}
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.2.0 Commons
+--------------------------------------------------------------*/
+/* line 10, sass/ui/modules/_menu.scss */
+header {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* line 17, sass/ui/modules/_menu.scss */
+.spectrum {
+  background: url("img/spectrum.png");
+  display: block;
+  width: 100%;
+  height: 8px;
+}
+
+/* line 24, sass/ui/modules/_menu.scss */
+#nav {
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+/* line 28, sass/ui/modules/_menu.scss */
+#nav a {
+  color: white;
+  font-size: 14px;
+}
+
+/* line 34, sass/ui/modules/_menu.scss */
+.menu > li > a {
+  font-weight: bold;
+}
+
+/* line 38, sass/ui/modules/_menu.scss */
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+/* line 43, sass/ui/modules/_menu.scss */
+.nav-scroll {
+  background: rgba(80, 161, 192, 0.6);
+}
+
+/* line 47, sass/ui/modules/_menu.scss */
+#home {
+  position: fixed;
+  display: block;
+  width: 50px;
+  height: 54px;
+  top: 8px;
+  left: 10px;
+  margin-left: -60px;
+  z-index: 10000;
+  background: url("img/symbol_new_0.png") no-repeat scroll 0px 0px/50px 54px transparent;
+  text-indent: -999999px;
+}
+
+/* line 60, sass/ui/modules/_menu.scss */
+#home-blog {
+  position: fixed;
+  top: 8px;
+  left: 10px;
+  margin-left: -60px;
+  z-index: 10000;
+  background: url("img/symbol.png") no-repeat scroll 0px 0px/48px 46px transparent;
+  text-indent: -999999px;
+}
+
+/*--------------------------------------------------------------
+5.2.1 Homepage
+--------------------------------------------------------------*/
+/* line 74, sass/ui/modules/_menu.scss */
+#header {
+  position: relative;
+  height: 68px;
+  z-index: 1001;
+}
+
+/* line 80, sass/ui/modules/_menu.scss */
+#logo {
+  padding-top: 12px;
+  padding-left: 10px;
+}
+/* line 83, sass/ui/modules/_menu.scss */
+#logo a {
+  height: 44px;
+  text-indent: -999999px;
+  float: left;
+  display: block;
+  width: 382px;
+  background: url("img/logo_w.png") no-repeat scroll 0px 0px/382px 44px transparent;
+}
+
+/* line 93, sass/ui/modules/_menu.scss */
+#contact li.topbar-info {
+  text-align: right;
+  margin-right: 20px;
+}
+/* line 96, sass/ui/modules/_menu.scss */
+#contact li.topbar-info p {
+  color: white;
+}
+
+/* line 101, sass/ui/modules/_menu.scss */
+.route {
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+/* line 106, sass/ui/modules/_menu.scss */
+.phone-munber {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 26px;
+  line-height: 1;
+}
+
+/* line 113, sass/ui/modules/_menu.scss */
+.office-hour {
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* line 118, sass/ui/modules/_menu.scss */
+#menu-primary {
+  height: 72px;
+}
+/* line 120, sass/ui/modules/_menu.scss */
+#menu-primary > li {
+  line-height: 72px;
+}
+/* line 122, sass/ui/modules/_menu.scss */
+#menu-primary > li a:hover {
+  color: #50a1c0;
+}
+/* line 126, sass/ui/modules/_menu.scss */
+#menu-primary > .current_page_item a {
+  color: #787878;
+}
+
+/* line 131, sass/ui/modules/_menu.scss */
+#secondary-nav {
+  background: rgba(210, 210, 210, 0.9);
+  width: 100%;
+  height: 40px;
+  z-index: 9999;
+  top: 72px;
+}
+/* line 137, sass/ui/modules/_menu.scss */
+#secondary-nav li {
+  float: left;
+  padding: 0 30px 0;
+  text-align: center;
+  line-height: 40px;
+}
+/* line 142, sass/ui/modules/_menu.scss */
+#secondary-nav li a {
+  font-weight: bold;
+  font-size: 12px;
+  color: #505050;
+}
+/* line 148, sass/ui/modules/_menu.scss */
+#secondary-nav.fixed-secondary {
+  position: fixed;
+  top: 72px;
+}
+
+/* line 154, sass/ui/modules/_menu.scss */
+#contact {
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  z-index: 10000;
+}
+/* line 159, sass/ui/modules/_menu.scss */
+#contact li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media all and (max-width: 768px) {
+  /* line 166, sass/ui/modules/_menu.scss */
+  #header {
+    position: fixed;
     top: 0;
     left: 0;
-    padding: 5px 12px;
-    background-color: rgb(255, 187, 0);
-}
+    width: 100%;
+    height: 60px;
+    background: white;
+  }
 
-.category-label ul li a {
-    color: rgb(255, 255, 255);
-}
-
-/*categories*/
-.categories li {
-    margin: 8px 20px;
-    font-size: 12px;
-}
-
-.post-categories li a {
-    color: rgb(80, 161,192);
-}
-
-/*blog-header*/
-.blog-header {
-}
-
-.wp_social_bookmarking_light {
+  /* line 175, sass/ui/modules/_menu.scss */
+  #logo a {
+    height: 33px;
+    text-indent: -999999px;
     float: left;
+    display: block;
+    width: 294px;
+    background: url("img/logo_new_0.png") no-repeat scroll 0px 0px/294px 33px transparent;
+  }
+
+  /* line 184, sass/ui/modules/_menu.scss */
+  #contact {
+    display: none;
+  }
+
+  /* line 188, sass/ui/modules/_menu.scss */
+  #home, #home-blog {
+    display: none;
+  }
+}
+/*--------------------------------------------------------------
+5.2.2 Blog
+--------------------------------------------------------------*/
+/* line 197, sass/ui/modules/_menu.scss */
+#header-magazine {
+  position: relative;
+  background: #379be1;
+  height: 100px;
+  z-index: 1001;
+}
+/* line 202, sass/ui/modules/_menu.scss */
+#header-magazine h1 a {
+  width: 325px;
+  height: 72px;
+  position: relative;
+  top: 14px;
+  left: 10px;
+  text-indent: -999999px;
+  background: url("img/logo-blog-kana.png") no-repeat scroll 0px 0px/325px 72px transparent;
+  float: left;
 }
 
-.blog-header h1 {
-    padding: 30px 20px 10px;
-    font-size: 28px;
-    line-height: 1.2;
+/* line 214, sass/ui/modules/_menu.scss */
+.magazine-nav {
+  height: 60px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
-.blog-header .author {
-    float: left;
-    color: rgb(120, 120, 120);
-    font-size: 14px;
-    line-height: 1;
-    margin-top: 12px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-} 
+/* line 219, sass/ui/modules/_menu.scss */
+#menu-category a {
+  color: #282828;
+}
 
-.blog-header  img {
-    float: left;
-    display: inline-block;
-    width: 36px;
+/* line 223, sass/ui/modules/_menu.scss */
+#menu-category > li, #menu-primary > li {
+  float: left;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* line 229, sass/ui/modules/_menu.scss */
+#menu-category > li {
+  line-height: 60px;
+}
+
+/* line 233, sass/ui/modules/_menu.scss */
+.sns-contact {
+  display: inline;
+  margin-left: 5px;
+}
+
+/* line 238, sass/ui/modules/_menu.scss */
+#top-description {
+  position: absolute;
+  left: 480px;
+  bottom: 40px;
+  color: white;
+  font-size: 13px;
+}
+/* line 244, sass/ui/modules/_menu.scss */
+#top-description a {
+  color: white;
+}
+/* line 246, sass/ui/modules/_menu.scss */
+#top-description a:hover {
+  color: gainsboro;
+}
+
+@media all and (max-width: 768px) {
+  /* line 254, sass/ui/modules/_menu.scss */
+  #header-magazine {
+    height: 54px;
+  }
+
+  /* line 258, sass/ui/modules/_menu.scss */
+  #header-magazine h1 a {
+    width: 162px;
     height: 36px;
-    margin-top: -12px;
-    margin-right: 5px;
-    border-radius: 18px;
+    top: 8px;
+    background: url("img/logo-blog-kana.png") no-repeat scroll 0px 0px/162px 36px transparent;
+  }
+
+  /* line 264, sass/ui/modules/_menu.scss */
+  #top-description {
+    display: none;
+  }
+}
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+3.3 - Footers
+--------------------------------------------------------------*/
+/* line 8, sass/ui/modules/_footer.scss */
+#footer {
+  padding-top: 40px;
+  background: #50a1c0;
 }
 
+/* line 13, sass/ui/modules/_footer.scss */
+#footer-nav {
+  padding: 40px 0;
+  position: relative;
+}
+
+/* line 18, sass/ui/modules/_footer.scss */
+.footer-nav-about {
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* line 23, sass/ui/modules/_footer.scss */
+.footer-nav-blog {
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* line 28, sass/ui/modules/_footer.scss */
+#footer-nav .menu li {
+  font-size: 14px;
+}
+
+/* line 32, sass/ui/modules/_footer.scss */
+#footer-nav .menu li a {
+  color: white;
+}
+
+/* line 36, sass/ui/modules/_footer.scss */
+#footer-nav img {
+  margin-bottom: 20px;
+  height: 36px;
+  width: auto;
+}
+
+/* line 42, sass/ui/modules/_footer.scss */
+.footer-fb {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+}
+
+/* line 48, sass/ui/modules/_footer.scss */
+.site-info {
+  padding: 30px 10px;
+  background: rgba(52, 73, 80, 0.9);
+  text-align: center;
+  font-size: 12px;
+  color: #d2d2d2;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+6.1 - Single-post
+--------------------------------------------------------------*/
+/* line 8, sass/ui/modules/_post.scss */
+.blog-grid {
+  position: relative;
+  background: white;
+  border-radius: 2px;
+}
+
+/* line 14, sass/ui/modules/_post.scss */
+.single-post-date {
+  position: absolute;
+  top: 40px;
+  left: -16px;
+  padding: 4px 10px;
+  background: #379be1;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+/* line 25, sass/ui/modules/_post.scss */
+.single-post-date:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid #0055a5;
+  border-left: 16px solid transparent;
+}
+
+/* line 36, sass/ui/modules/_post.scss */
+#single-post-info {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+/* line 41, sass/ui/modules/_post.scss */
+.widget-header h3 {
+  font-size: 16px;
+}
+
+/* line 45, sass/ui/modules/_post.scss */
+.widget-header a {
+  font-size: 9px;
+}
+
+/* line 49, sass/ui/modules/_post.scss */
+#single-post-info .avatar {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  border-radius: 200px;
+}
+
+/* line 56, sass/ui/modules/_post.scss */
+#writer-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 63, sass/ui/modules/_post.scss */
+#writer-desc {
+  font-size: 12px;
+  padding: 10px 10px 10px 15px;
+}
+
+/* line 68, sass/ui/modules/_post.scss */
+.blog-keywords {
+  padding: 10px;
+}
+
+/* line 72, sass/ui/modules/_post.scss */
+.blog-keywords p {
+  font-size: 12px;
+}
+
+/* line 76, sass/ui/modules/_post.scss */
+.blog-keywords a {
+  font-size: 12px;
+}
+
+/* line 80, sass/ui/modules/_post.scss */
+.single-bottom-ad {
+  width: 300px;
+  margin: 20px auto;
+}
+
+/* line 85, sass/ui/modules/_post.scss */
+.wp_social_bookmarking_light {
+  float: left;
+}
+
+/* line 89, sass/ui/modules/_post.scss */
+.blog-header h1 {
+  padding: 30px 20px 10px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* line 95, sass/ui/modules/_post.scss */
+.blog-header .author {
+  float: left;
+  color: #787878;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 12px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 105, sass/ui/modules/_post.scss */
+.blog-header img {
+  float: left;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-top: -12px;
+  margin-right: 5px;
+  border-radius: 18px;
+}
+
+/* line 115, sass/ui/modules/_post.scss */
 .blog-header > ul {
-    margin-top: 6px;
-    margin-left: 20px;
+  margin-top: 6px;
+  margin-left: 20px;
 }
 
+/* line 120, sass/ui/modules/_post.scss */
 .blog-header > ul > li {
-    color: rgb(120, 120, 120);
-    font-size: 14px;
-    line-height: 1;
-    margin-right: 20px;
+  color: #787878;
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 20px;
 }
 
+/* line 127, sass/ui/modules/_post.scss */
 .blog-header ul, .blog-header ul li {
-   display: inline-block;
-}    
+  display: inline-block;
+}
 
+/* line 131, sass/ui/modules/_post.scss */
 .blog-body {
-    padding: 40px 20px;
+  padding: 20px;
 }
 
+/* line 135, sass/ui/modules/_post.scss */
 .blog-body p {
-    font-size: 16px;
-    margin-bottom :20px;
-    line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
+/* line 141, sass/ui/modules/_post.scss */
 .blog-body h2 {
-    margin: 80px 0 20px;
-    padding: 24px 20px 20px;
-    font-size: 24px;
-    border-top: 3px solid rgb(80, 161,192);
-    border-bottom: 3px solid rgb(80, 161,192);
-} 
+  margin: 80px 0 20px;
+  padding: 24px 20px 20px;
+  font-size: 24px;
+  border-top: 3px solid #50a1c0;
+  border-bottom: 3px solid #50a1c0;
+}
 
+/* line 149, sass/ui/modules/_post.scss */
 .blog-body h3 {
-    padding: 20px;
-    font-size: 18px;
-} 
+  padding: 20px;
+  font-size: 18px;
+}
 
+/* line 154, sass/ui/modules/_post.scss */
+.blog-body img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* line 160, sass/ui/modules/_post.scss */
 blockquote {
-    quotes: " \201C "" \201D "" \2018 "" \2019 ";
-    font-family: 'Meta Normal Italic';
-    font-size: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 30px;
+  quotes: " \201C " " \201D " " \2018 " " \2019 ";
+  font-family: 'Meta Normal Italic';
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
 }
 
+/* line 169, sass/ui/modules/_post.scss */
 blockquote:before {
-    content: open-quote;
-    padding: 0px 20px 0 0;
-    font-size: 64px;
+  content: open-quote;
+  padding: 0px 20px 0 0;
+  font-size: 64px;
 }
+
+/* line 174, sass/ui/modules/_post.scss */
 blockquote:after {
-    content: close-quote;
-    padding-left: 8px;
-    font-size: 64px;
-    vertical-align: -60px;
-    line-height: 40px;
+  content: close-quote;
+  padding-left: 8px;
+  font-size: 64px;
+  vertical-align: -60px;
+  line-height: 40px;
 }
 
+/* line 182, sass/ui/modules/_post.scss */
 blockquote p {
-    display: inline;
+  display: inline;
+  font-size: 16px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 188, sass/ui/modules/_post.scss */
+  .blog-header h1 {
+    padding: 20px 10px 10px;
     font-size: 16px;
+  }
+}
+/*article*/
+/* line 194, sass/ui/modules/_post.scss */
+#article-side {
+  width: 240px;
 }
 
-/*widget*/
-.widget-header {
-    font-size: 16px;
-    padding: 10px 20px 5px;
-    border-bottom: 1px solid rgb(220, 220, 220);
+/* line 198, sass/ui/modules/_post.scss */
+#article-main {
+  margin-left: 240px;
 }
 
-.widget-content {
-    padding: 10px 20px;
+/* line 202, sass/ui/modules/_post.scss */
+.article-side {
+  position: absolute;
+  top: 0;
 }
 
-.widget-about {
-    font-size: 13px;
+/* line 207, sass/ui/modules/_post.scss */
+.fixed-article-side {
+  position: fixed;
+  top: 40px;
 }
 
-.recomended-article {
-    /*padding: 10px;*/
+/* line 213, sass/ui/modules/_post.scss */
+.fixed-bottom-article-side {
+  top: auto;
+  bottom: 80px;
 }
 
-.recomended-article li {
+@media all and (max-width: 768px) {
+  /* line 219, sass/ui/modules/_post.scss */
+  #article-main, #article-side {
+    width: 100%;
+  }
+
+  /* line 223, sass/ui/modules/_post.scss */
+  #article-main {
     margin: 0;
-    /*padding: 10px 0;*/
-    /*border-bottom: 1px solid rgb(220, 220, 220);*/
-}
+  }
 
-.recomended-article-info h4 {
-    display: block;
-    font-size: 13px;
-    line-height: 1.2;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.recomended-article-info {
-    padding: 15px;
-}
-
-.sidebar-article-img {
+  /* line 227, sass/ui/modules/_post.scss */
+  #article-side {
     position: relative;
-    max-height: 120px;
-    overflow: hidden;
-}
+    top: 0;
+  }
 
-.post-date {
-    font-size: 11px;
-    margin-top: 5px;
-}
-/*blog_team*/
-.article-img-team {
-    position: relative;
-    max-height: 120px;
-    overflow: hidden;
-}
+  /* line 233, sass/ui/modules/_post.scss */
+  #article-side #single-post-info {
+    margin: 0;
+    padding-bottom: 15px;
+  }
 
-/*contact*/
-.contact-form {
-    padding: 40px;
-}
+  /* line 238, sass/ui/modules/_post.scss */
+  #single-post-info li {
+    display: inline-table;
+    vertical-align: middle;
+  }
 
-.contact-form input, .contact-form textarea, .contact-form select {
-    display: block;
-    width: 98%;
-    margin: 10px auto;
-    padding: 1%;
-    font-size: 24px;
-    border: 1px solid rgb(210, 210, 210);
-}
+  /* line 243, sass/ui/modules/_post.scss */
+  .blog-keywords, .single-post-date {
+    display: none;
+  }
 
-.contact-form input[type="submit"] {
-    height: auto;
-}
+  /* line 246, sass/ui/modules/_post.scss */
+  #article-side #single-post-info .avatar {
+    height: 48px;
+    width: 48px;
+    margin: 0 5px 0 15px;
+  }
 
-/*circle*/
-#circle {
-    padding-top: 80px;
-}
-
-#circle h1 {
-    font-size: 36px;
-}
-
-#circle-disc {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-.circle-value {
-    text-align: center;
-}
-
-#circle h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-    
-.circle-value ul {
-    overflow: hidden;
-    margin-bottom: 120px;
-}
-.circle-value li {
-    float: left;
-    width: 320px; 
-}
-
-#circle-problem h3 {
-    margin: 20px;
-    padding: 80px 40px;
-    width: 200px;
-    height: 100px;
-    background: rgb(219, 101, 101);
-    border-radius: 2px;
-    font-size: 22px;
-    color: rgb(255, 255, 255);
-}
-
-#circle-solution h3 {
-    margin: 20px;
-    width: 280px;
-    height: 280px;
-    background: rgb(80, 161,192);
-    border-radius: 140px;
-    line-height: 280px;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-}
-
-.circle-topic p {
-    font-size: 16px;
-    padding: 20px;
-    text-align: center;
-}
-
-.circle-content {
-    
-}
-
-/*404-notfound*/
-.not-found {
-    text-align: center;
-}
-
-.not-found h2 {
-    font-size: 48px;
-    color: rgb(180, 180, 180);
-}
-
-.not-found p {
+  /* line 252, sass/ui/modules/_post.scss */
+  #article-side #writer-name {
     font-size: 28px;
-    color: rgb(120, 120, 120);
+    margin: 0;
+  }
+}
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+6.2 - Timeline
+--------------------------------------------------------------*/
+/* line 7, sass/ui/modules/_tl.scss */
+.aricle-link {
+  margin: 0 auto;
 }
 
-.not-found ul {
-    width: 420px;
-    margin: auto;
+/* line 11, sass/ui/modules/_tl.scss */
+.article-img, .article-img-tl {
+  position: relative;
+  min-height: 36px;
 }
 
-.not-found li {
-    margin: 15px;
-    color: rgb(40, 40, 40);
-    background: rgb(180, 180, 180);
+/* line 16, sass/ui/modules/_tl.scss */
+.article-img-tl {
+  max-height: 360px;
+  overflow: hidden;
 }
 
-.not-found li a {
-    display:block;
-    padding: 8px 20px;
-    color: rgb(80, 80, 80);
-    background: rgb(190, 190, 190);
+/* line 21, sass/ui/modules/_tl.scss */
+.category-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 12px;
+  background-color: #ffbb00;
 }
 
-.not-found li a:hover {
-    color: rgb(80, 161,192);
-    background: rgb(220, 220, 220);
+/* line 29, sass/ui/modules/_tl.scss */
+.category-label ul li a {
+  color: white;
+}
+
+@media all and (max-width: 768px) {
+  /* line 34, sass/ui/modules/_tl.scss */
+  .articles .blog-body {
+    display: none;
+  }
+
+  /* line 37, sass/ui/modules/_tl.scss */
+  .article-img-tl {
+    max-height: 240px;
+    overflow: hidden;
+  }
+}
+/*--------------------------------------------------------------
+6.3 - Recomnded-post
+--------------------------------------------------------------*/
+/* line 47, sass/ui/modules/_tl.scss */
+.recomended-article-info h4 {
+  display: block;
+  font-size: 14px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 56, sass/ui/modules/_tl.scss */
+.recomended-article-info {
+  padding: 10px;
+}
+
+/* line 60, sass/ui/modules/_tl.scss */
+.front-article-img {
+  position: relative;
+  max-height: 160px;
+  overflow: hidden;
+}
+
+/* line 66, sass/ui/modules/_tl.scss */
+.sidebar-article-img {
+  position: relative;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+/* line 72, sass/ui/modules/_tl.scss */
+.post-date {
+  font-size: 11px;
+  color: #787878;
 }
 
 /*paging*/
+/* line 78, sass/ui/modules/_tl.scss */
 .nav-previous a, .nav-next a {
-    display: block;
-    margin: 10px 0;
-    padding: 20px 20px;
-    color: rgb(255, 255, 255);
-    background: rgb(180, 180, 180);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  display: block;
+  margin: 10px 0;
+  padding: 20px 20px;
+  color: white;
+  background: #b4b4b4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
+/* line 89, sass/ui/modules/_tl.scss */
 .nav-previous a:hover, .nav-next a:hover {
-    color: rgb(80, 161,192);
-    background: rgb(220, 220, 220);
+  color: #50a1c0;
+  background: gainsboro;
 }
 
+/* line 94, sass/ui/modules/_tl.scss */
 .nav-previous, .nav-next {
-    width: 49%;
+  width: 49%;
 }
 
+/* line 98, sass/ui/modules/_tl.scss */
 .nav-previous {
-    float: left;
-    text-align: left;
+  float: left;
+  text-align: left;
 }
 
+/* line 103, sass/ui/modules/_tl.scss */
 .nav-next {
-    float: right;
-    text-align: right;
+  float: right;
+  text-align: right;
 }
 
-/*article*/
-#article-side {
-    width: 240px;
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+10.1 Sidebar
+--------------------------------------------------------------*/
+/* line 7, sass/ui/modules/_sidebar.scss */
+.widget-header {
+  font-size: 16px;
+  padding: 10px 20px 5px;
+  border-bottom: 1px solid gainsboro;
 }
 
-#article-main {
-    margin-left: 240px;
+/* line 13, sass/ui/modules/_sidebar.scss */
+.widget-content {
+  padding: 10px 20px;
 }
 
-.article-side {
-    position: absolute;
-    top: 0;
+/* line 17, sass/ui/modules/_sidebar.scss */
+.widget-about {
+  font-size: 13px;
 }
 
-.fixed-article-side {
-    position: fixed;
-    top: 40px;
+/* line 21, sass/ui/modules/_sidebar.scss */
+.powered {
+  font-size: 13px;
+  color: #b4b4b4;
+  font-family: 'Lily Script One', cursive;
 }
 
-
-.fixed-bottom-article-side {
-    top: auto;
-    bottom: 80px;
+/* line 27, sass/ui/modules/_sidebar.scss */
+.sidebar-logo {
+  margin: 5px 0;
 }
 
 @media all and (max-width: 768px) {
-    #article-main, #article-side {
-        width: 100%;
-    }
-    
-    #article-main {
-        margin: 0;
-    }
-    
-    #article-side {
-        position: relative;
-        top: 0;
-    }
-    
-            
-    #article-side #single-post-info {
-        margin: 0;
-        padding-bottom: 15px;
-    }
-
-    #single-post-info li {
-        display: inline-table;
-        vertical-align: middle;
-   }
-
-    .blog-keywords, .single-post-date {
-        display: none;            
-    }
-    #article-side #single-post-info .avatar {
-        height: 48px;
-        width: 48px;
-        margin: 0 5px 0 15px;
-   }
-
-   #article-side #writer-name {
-         font-size: 28px;
-         margin: 0;
-   }
+  /* line 32, sass/ui/modules/_sidebar.scss */
+  .fb, .twtr {
+    display: none;
+  }
+}
+/*writers*/
+/* line 38, sass/ui/modules/_sidebar.scss */
+.writers li {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+  overflow: hidden;
 }
 
-/*summer*/
-#smr-plan {
-    background: rgb(240, 240, 240);
+/* line 45, sass/ui/modules/_sidebar.scss */
+.writers h4 {
+  margin-left: 5px;
+  font-size: 14px;
 }
 
-.plan {
-    margin: 80px 0;
-    padding: 40px;
-    border: 1px solid rgb(220, 220, 220);
-    border-left: 10px solid rgb(90, 90, 90);
-    background: rgb(255, 255, 255);
-    overflow: hidden;
+/*authors*/
+/* line 51, sass/ui/modules/_sidebar.scss */
+.authors {
+  padding: 20px 20px 0;
+  border-bottom: 1px solid white;
 }
 
-.plan table {
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
+/* line 56, sass/ui/modules/_sidebar.scss */
+.authors > li {
+  padding: 10px 0;
 }
 
-.plan table tr {
-    font-size: 12px;
+/* line 60, sass/ui/modules/_sidebar.scss */
+.authors .avatar {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border-radius: 200px;
 }
 
-
-.plan table thead {
-    border-bottom: 1px solid rgb(180, 180, 180);
+/* line 67, sass/ui/modules/_sidebar.scss */
+.writers .avatar {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border-radius: 200px;
 }
 
-
-.plan table tbody th {
-    vertical-align: middle;
-    font-size: 12px;
-    border-right: 1px solid rgb(180, 180, 180);
+/* line 74, sass/ui/modules/_sidebar.scss */
+.authors h3 {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
 }
 
-.plan table th {
-    padding: 5px;
+/* line 80, sass/ui/modules/_sidebar.scss */
+.authors .link {
+  font-size: 11px;
+  text-align: center;
 }
 
-.plan table td {
-    font-size: 12px;
-    border: 1px solid rgb(180, 180, 180);
+/*categories*/
+/* line 86, sass/ui/modules/_sidebar.scss */
+.categories li {
+  margin: 8px 20px;
+  font-size: 12px;
 }
 
-.plan table td p{
-    padding: 5px;
-    margin: 5px;
+/* line 91, sass/ui/modules/_sidebar.scss */
+.post-categories li a {
+  color: #50a1c0;
 }
 
-.lesson, .pink {
-    background: #ff2081;
-    color: rgb(255, 255, 255);
+/*blog_team*/
+/* line 96, sass/ui/modules/_sidebar.scss */
+.article-img-team {
+  position: relative;
+  max-height: 120px;
+  overflow: hidden;
 }
 
-.self, .blue {
-    background:#009cee;
-    color: rgb(255, 255, 255);
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+9.1 Front
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.1.0 Common
+--------------------------------------------------------------*/
+/* line 11, sass/pages/_front.scss */
+#top-content {
+  position: relative;
+  z-index: 999;
 }
 
-.training, .yellow {
-    background:#ffd700;
-    color: rgb(60, 60, 60);
+/* line 16, sass/pages/_front.scss */
+#top-content h2 {
+  margin: 20px 0 80px;
 }
 
-.plan h4 {
-    padding: 10px;
-    margin: 20px 10px;
-    text-align: center;
-    background: rgb(210, 210, 210);
-    font-weight: normal;
-    font-size: 18px;
-    color: rgb(20, 20, 20);
+/* line 20, sass/pages/_front.scss */
+.center {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
 }
 
-.advise {
-    padding: 10px;
-    font-size: 14px;
+/* line 26, sass/pages/_front.scss */
+.articles > li {
+  position: relative;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
-.plan ul li {
-    float: left;
-    width: 33.333333333333333333333333333%;
-    text-align: center;
+/*--------------------------------------------------------------
+9.1.1 Key-visual
+--------------------------------------------------------------*/
+/* line 36, sass/pages/_front.scss */
+#key-visual {
+  position: relative;
+  width: 100%;
 }
 
-.plan-num {
-    font-size: 48px;
-    line-height: 1;
+/* line 41, sass/pages/_front.scss */
+#mv-wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 640px;
+  overflow: hidden;
 }
 
-.plan-dnm {
-    margin-left: 3px;
-    font-size: 14px;
-}
-.plan-cap {
-    font-size: 11px;
+/* line 50, sass/pages/_front.scss */
+#mv-wrap video {
+  display: block;
+  min-height: 640px;
+  width: 100%;
 }
 
-.quotation {
+/* line 56, sass/pages/_front.scss */
+#main-text {
+  padding-top: 18%;
+  padding-bottom: 6%;
+  position: relative;
+}
+
+/* line 62, sass/pages/_front.scss */
+#catch {
+  display: block;
+  color: white;
+  z-index: 998;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* line 70, sass/pages/_front.scss */
+#catch h1 {
+  font-size: 48px;
+  /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
+}
+
+/* line 75, sass/pages/_front.scss */
+#catch h2 {
+  font-family: 'Lily Script One', cursive;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* line 81, sass/pages/_front.scss */
+#catch p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+@media all and (max-width: 768px) {
+  /* line 88, sass/pages/_front.scss */
+  #main-text {
+    padding-top: 30%;
+    padding-bottom: 6%;
     position: relative;
-    margin: 40px;
-    font-size: 24px;
-    text-align: center;
-}
+  }
 
-.quotation:before {
-    content: '❝';
-    position: absolute;
-    left: -40px;
-    top: -40px;
-    height: 64px;
-    font-size: 64px;
-    color: rgb(180, 180, 180);
-}
+  /* line 94, sass/pages/_front.scss */
+  #catch h1 {
+    font-size: 22px;
+    /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
+  }
 
-.quotation:after {
-    content: '❞';
-    position: absolute;
-    right: -40px;
-    bottom: -40px;
-    height: 64px;
-    font-size: 64px;
-    color: rgb(180, 180, 180);
-}
-
-#smr-point li {
-    margin: 40px 0;
-    clear: both;
-}
-
-#smr-point li span {
-    position: absolute;
-    width: 60px;
-    font-size: 48px;
-    font-weight: bold;
-    color: rgb(120, 120, 120);
-    float: left;
-}
-
-#smr-point li h3 {
-    font-size: 24px;
-    margin-left: 60px;
-}
-
-#smr-point li > p {
-    font-size: 14px;
-    margin-left: 60px;
-}
-
-
-#smr-point li a {
+  /* line 99, sass/pages/_front.scss */
+  #catch h2 {
     font-size: 12px;
-    margin-left: 60px;
-    background: #ff2081;
-    color: rgb(255, 255, 255);
-}
+  }
 
-
-#mail-example {
-    margin: 20px;
-    padding: 40px;
-    border: 1px solid rgb(180, 180, 180);
-    overflow: hidden;
-}
-
-#mail-example +button {
-    margin: auto;
-}
-
-#mail-example p {
-    font-size: 12px;
-    padding: 10px;
-}
-
-#training-system {
-    overflow: hidden;
-}
-
-#training-system li {
-    position: relative;
-}
-
-#training-system li div {
-    overflow: hidden;
-}
-
-#training-system li h3 {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-#training-system li p {
-    font-size: 14px;
-}
-
-#training-system li.start, #training-system li.clear {
-    width: 95%;
-    margin: 2.5%;
-}
-
-#training-system li.clear {
-    text-align: center;
-}
-
-#training-system li.step, #training-system li.retry {
-    width: 45%;
-    margin: 2.5%;
-    float: left;
-}
-
-#training-system li.step:before {
-    position: absolute;
-    content:"";
-    top: 40px;
-    right: -16px;
-    border-left: 16px solid rgb(120, 120, 120);
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid transparent;
-}
-
-#training-system li.step:after {
-    position: absolute;
-    content:"";
-    bottom: -16px;
-    left: 40%;
-    border-top: 16px solid rgb(120, 120, 120);
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-}
-
-#training-system li.retry:after {
-    position: absolute;
-    content:"";
-    bottom: -5px;
-    left: -5px;
-    border-left: 26px solid rgb(120, 120, 120);
-    border-top: 26px solid transparent;
-}
-
-#training-system li div {
-    padding: 20px;
-}
-
-#smr-summary h2, #smr-point h2, #smr-plan h2, #smr-training h2, #smr-apply h2 {
-    text-align: center;
-    font-size: 24px;
-    padding: 40px;
-}
-
-#smr-summary >h2, #smr-point >h2, #smr-training >h2 {
-    color: rgb(255, 255, 255);
-    background: rgb(20, 40, 100);
-    margin-bottom: 20px;
-}
-
-#smr-summary dl {
-    width: 100%;
-    border-bottom: 1px solid rgb(120, 120, 120);
-    background: rgb(255, 255, 255);
-}
-
-#smr-summary dl dt {
-    float: left;
-    padding: 40px 10px;
-    min-width: 80px;
-    border-top: 1px solid rgb(120, 120, 120);
-    font-weight: bold;
-}
-
-#smr-summary dl dd {
-    padding: 40px;
-    border-top: 1px solid rgb(120, 120, 120);
-    overflow: hidden;
-    min-width: 160px;
-}
-
-#smr-msg {
-    overflow: hidden;
-}
-
-#smr-msg h2 {
-    margin-top: 60px;
-    font-size: 36px;
-}
-
-#smr-contact {
-    background: rgb(245, 245, 245);
-}
-
-#smr-contact p {
-    text-align: center;
-}
-
-#smr-contact .tel {
-    font-size: 40px;
-}
-
-
-#smr-contact .office-hour {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-
-#smr-contact a {
-    display: block;
-    padding: 40px 20px;
-    height: auto;
-    width: auto;
-    font-size: 32px;
-    text-align: center;
-    border: none;
-    border-radius: 2px;
-    background: rgb(80, 161,192);
-    color: rgb(255, 255, 255);
-}
-
-#training-desc {
-    font-size: 20px;
-    padding: 40px;
-}
-
-#smr-rmd li p {
-    position: relative;
-    padding: 26px;
-    margin: 20px;
-    border-radius: 12px;
-    margin-left: 80px;
-    font-size: 28px;
-    clear: both;
-}
-
-#smr-rmd li p:before {
-    content: '';
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 20px;
-    left: -50px;
-    border-left: 50px solid transparent;
-}
-
-#smr-rmd li .pink:before {
-    border-top: 40px solid #ff2081;
-    
-}
-
-#smr-rmd li .blue:before {
-    border-top: 40px solid #009cee;    
-}
-
-#smr-rmd li .yellow:before {
-    border-top: 40px solid #ffd700;    
-}
-
-#smr-apply li {
-    position: relative;
-}
-
-#smr-apply li div {
-    display: block;
-    padding: 10px;
-}
-
-#smr-apply li span {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-weight: bold;
-    padding: 10px;
-}
-
-#smr-apply li h3 {
-    display: block;
-    margin-left: 40px;
-}
-
-#smr-apply li p {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 14px;
-}
-
-#smr-apply li.pink span {
-    background: rgb(255, 255, 255);
-    color: #ff2081;
-}
-
-#smr-apply li.blue span {
-    background: rgb(255, 255, 255);
-    color: #009cee;
-}
-
-#smr-apply li.yellow span {
-    background: rgb(255, 255, 255);
-    color: #ffd700;
-}
-
-/*faq----------------------------------------------------------------------------------------------------------------------*/
-#faq-catlist {
-    
-}
-
-#faq-catlist li {
-    
-}
-
-#faq-catlist li a {
-    display: block;
-    text-align: center;
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(180, 180, 180);
-    border-radius: 3px;
-}
-
-#faq-catlist li img {
-    width: 60%;
-    margin: auto;
-}
-
-#faq-catlist li h2 {
-    padding: 10px;
+  /* line 103, sass/pages/_front.scss */
+  #catch p {
     font-size: 9px;
+  }
+
+  /* line 107, sass/pages/_front.scss */
+  .mv-btn {
+    padding: 6px 10px 4px;
+    font-size: 16px;
+  }
+
+  /* line 111, sass/pages/_front.scss */
+  #mv-wrap {
+    display: none;
+  }
+
+  /* line 114, sass/pages/_front.scss */
+  #key-visual {
+    background-image: url("img/key-visual.png");
+    background-size: auto 100%;
+  }
+
+  /* line 118, sass/pages/_front.scss */
+  .nav-scroll {
+    background: none;
+  }
+
+  /* line 122, sass/pages/_front.scss */
+  #top-content h2 {
+    font-size: 24px;
+  }
+}
+/*--------------------------------------------------------------
+9.1.2 New-post
+--------------------------------------------------------------*/
+/* line 131, sass/pages/_front.scss */
+#new-post {
+  background: #ebebeb;
 }
 
-#faq-catlist li p {
-    font-size: 6px;
-    color: rgb(180, 180, 180);
+/* line 135, sass/pages/_front.scss */
+#new-post li:nth-child(4n), .recommend-wrap li:nth-child(4n) {
+  margin-right: 0;
 }
 
-#faq-list {
-    clear: both;
+/* line 139, sass/pages/_front.scss */
+#event {
+  background: rgba(80, 161, 192, 0.8);
 }
 
-#faq-list li {
-    padding: 20px;
-    border-bottom: 1px solid rgb(180, 180, 180);
+/* line 143, sass/pages/_front.scss */
+#news {
+  background: #b4b4b4;
 }
 
-#faq-list dl {
-    clear: both;
-    overflow: hidden;
+/*features*/
+/* line 151, sass/pages/_front.scss */
+.article-info {
+  padding: 20px;
 }
 
-#faq-list dl dt {
-    float: left;
-    font-size: 42px;
+/* line 155, sass/pages/_front.scss */
+.article-info h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-#faq-list dl dd {
-    margin-top: 20px;
-    margin-left: 48px;
+/* line 160, sass/pages/_front.scss */
+.article-info p {
+  padding: 0;
+  font-size: 12px;
 }
 
-#faq-list dl.q dt {
-    color: #ff2081;
+/**/
+/* line 166, sass/pages/_front.scss */
+#a {
+  background: url("/img/gallary/13.jpg");
 }
 
-#faq-list dl.q dd {
-    font-weight: bold;
+/* line 170, sass/pages/_front.scss */
+#b {
+  background: url("/img/gallary/14.jpg");
 }
 
-#faq-list dl.a dt {
-    color: #009cee;
+/* line 174, sass/pages/_front.scss */
+#c {
+  background: url("/img/gallary/15.jpg");
 }
 
-#faq-list dl.a dd {
-
+/* line 178, sass/pages/_front.scss */
+#d {
+  background: url("/img/gallary/16.jpg");
 }
 
-/*ad*/
-.l-banner {
-    width: 728px;
-    height: 90px;
-    margin: 0 auto;
-    text-align: center;
+/* line 181, sass/pages/_front.scss */
+#e {
+  background: url("/img/gallary/17.jpg");
 }
 
-.sbr-banner {
-    overflow: hidden;
+/* line 184, sass/pages/_front.scss */
+#f {
+  background: url("/img/gallary/18.jpg");
 }
 
-.fb {
-    overflow: hidden;
+/*bubble*/
+/* line 189, sass/pages/_front.scss */
+.bubble {
+  padding: 40px 20px;
 }
 
-.recommend-wrap {
-    margin: 40px 0;
+/*what*/
+/* line 194, sass/pages/_front.scss */
+#what {
+  background: white;
+}
+
+/* line 198, sass/pages/_front.scss */
+#what h2 {
+  margin: 20px 0 80px;
+}
+
+/* line 202, sass/pages/_front.scss */
+#what h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* line 207, sass/pages/_front.scss */
+#what p {
+  margin-bottom: 20px;
+  color: #505050;
+}
+
+/* line 212, sass/pages/_front.scss */
+#what img:hover {
+  opacity: .8;
+}
+
+/* line 216, sass/pages/_front.scss */
+.disc-wrapper {
+  padding: 40px;
+}
+
+/* line 220, sass/pages/_front.scss */
+.preparing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .4;
+}
+
+/* line 228, sass/pages/_front.scss */
+.coming {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+}
+
+/*reputation*/
+/* line 238, sass/pages/_front.scss */
+#reputation {
+  background: white;
+}
+
+/* line 242, sass/pages/_front.scss */
+#reputation h2 {
+  margin: 20px 0 80px;
+}
+
+/*gallary*/
+/* line 247, sass/pages/_front.scss */
+#gallary {
+  /*background: rgb(245,240,245);*/
+  background: #505050;
+}
+
+/* line 252, sass/pages/_front.scss */
+#gallary h2 {
+  margin: 20px 0 80px;
+  color: white;
+  font-family: 'Lily Script One', cursive;
+}
+
+/* line 258, sass/pages/_front.scss */
+#gallary .onerow {
+  overflow: hidden;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*--------------------------------------------------------------
+9.4 About
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.4.1 Access
+--------------------------------------------------------------*/
+/* line 10, sass/pages/_about.scss */
+#access {
+  position: relative;
+}
+
+/* line 14, sass/pages/_about.scss */
+#gmap {
+  height: 480px;
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 998;
+}
+
+/* line 21, sass/pages/_about.scss */
+#addrress {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  padding: 30px;
+  background: #787878;
+  color: white;
+  z-index: 999;
+}
+
+/* line 31, sass/pages/_about.scss */
+#addrress h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 37, sass/pages/_about.scss */
+#addrress address {
+  font-size: 14px;
+}
+
+/* line 41, sass/pages/_about.scss */
+#addrress ul {
+  padding: 5px;
+  font-size: 12px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 47, sass/pages/_about.scss */
+  #addrress {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  /* line 54, sass/pages/_about.scss */
+  #gmap {
+    height: 360px;
+  }
+}
+/*about*/
+/* line 60, sass/pages/_about.scss */
+#activity h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #787878;
+}
+
+/* line 66, sass/pages/_about.scss */
+#activity a {
+  position: relative;
+  display: block;
+}
+
+/* line 71, sass/pages/_about.scss */
+#activity span {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-size: 36px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(20, 20, 20, 0.8);
+}
+
+/*value*/
+/* line 81, sass/pages/_about.scss */
+#value {
+  background: white;
+}
+
+/* line 85, sass/pages/_about.scss */
+#value h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #787878;
+}
+
+/* line 91, sass/pages/_about.scss */
+.values {
+  margin-bottom: 40px;
+}
+
+/* line 95, sass/pages/_about.scss */
+.values h3 {
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+/* line 100, sass/pages/_about.scss */
+.values h4 {
+  font-size: 18px;
+}
+
+/* line 104, sass/pages/_about.scss */
+.values ul li {
+  font-size: 28px;
+  padding: 10px;
+  color: #787878;
+}
+
+/* line 110, sass/pages/_about.scss */
+.values span {
+  font-size: 36px;
+  font-family: 'Lily Script One', cursive;
+}
+
+/* line 115, sass/pages/_about.scss */
+.values p {
+  font-size: 18px;
+}
+
+/*team*/
+/* line 120, sass/pages/_about.scss */
+#team h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #787878;
+  font-family: 'Lily Script One', cursive;
+}
+
+/* line 128, sass/pages/_about.scss */
+#team div {
+  position: relative;
+  /*    width: 160px;
+      height: 160px;*/
+}
+
+/* line 134, sass/pages/_about.scss */
+.team-img {
+  -webkit-border-radius: 260px;
+  -moz-border-radius: 260px;
+  border-radius: 260px;
+}
+
+/* line 140, sass/pages/_about.scss */
+#team p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 145, sass/pages/_about.scss */
+.member-wrap {
+  padding: 20%;
+}
+
+/* line 149, sass/pages/_about.scss */
+.subject-info {
+  color: #b4b4b4;
+  font-size: 14px;
+}
+
+/* line 154, sass/pages/_about.scss */
+.work-info {
+  color: #b4b4b4;
+  font-size: 12px;
+}
+
+/* line 159, sass/pages/_about.scss */
+#society h3 {
+  /*background: rgb(135, 191, 112);*/
+  color: #87bf70;
+}
+
+/* line 164, sass/pages/_about.scss */
+#company h3 {
+  /*background: rgb(219, 101, 101);*/
+  color: #db6565;
+}
+
+/* line 169, sass/pages/_about.scss */
+#children h3 {
+  /*background: rgb(239, 126, 23);*/
+  color: #ef7e17;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*whiteboard*/
+/* line 6, sass/pages/_lesson.scss */
+.onerow h2 {
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* line 11, sass/pages/_lesson.scss */
+#wb {
+  background-image: url("/img/whiteboard.jpg");
+  height: 640px;
+}
+
+/* line 16, sass/pages/_lesson.scss */
+.features-info {
+  text-align: center;
+}
+
+/* line 20, sass/pages/_lesson.scss */
+.features-info h4 {
+  font-size: 20px;
+}
+
+/* line 24, sass/pages/_lesson.scss */
+.features-info p {
+  padding: 10px 30px;
+  font-size: 14px;
+}
+
+/*case*/
+/* line 31, sass/pages/_lesson.scss */
+#secondary-case-nav {
+  background: gainsboro;
+  width: 100%;
+  height: 80px;
+  z-index: 9999;
+}
+
+/* line 38, sass/pages/_lesson.scss */
+#secondary-case-nav li {
+  display: inline-block;
+  float: left;
+}
+
+/* line 43, sass/pages/_lesson.scss */
+#secondary-case-nav li a {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+/* line 49, sass/pages/_lesson.scss */
+#case-nav-1 a {
+  background-image: url("/img/case/nav/shun.jpg");
+}
+
+/* line 53, sass/pages/_lesson.scss */
+#case-nav-2 a {
+  background-image: url("/img/case/nav/toru.jpg");
+}
+
+/* line 57, sass/pages/_lesson.scss */
+#case-nav-3 a {
+  background-image: url("/img/case/nav/yuta.jpg");
+}
+
+/* line 61, sass/pages/_lesson.scss */
+.case h2 {
+  font-size: 28px;
+  padding: 40px;
+}
+
+/* line 66, sass/pages/_lesson.scss */
+.case p {
+  padding: 20px 40px;
+}
+
+/* line 70, sass/pages/_lesson.scss */
+.case-info p {
+  padding: 40px 20px;
+}
+
+/*lesson-features*/
+/* line 75, sass/pages/_lesson.scss */
+#features-person {
+  background: #db6565;
+  background: #50a1c0;
+  color: #f0f0f0;
+}
+
+/* line 81, sass/pages/_lesson.scss */
+#features-person h2 {
+  font-size: 36px;
+  margin: 40px 0;
+  color: white;
+}
+
+/* line 87, sass/pages/_lesson.scss */
+.person-disc {
+  font-size: 18px;
+  margin: 20px;
+}
+
+/* line 92, sass/pages/_lesson.scss */
+#features-person ul {
+  overflow: hidden;
+}
+
+/* line 96, sass/pages/_lesson.scss */
+#features-person li div {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  border: 1px solid #326584;
+  border-radius: 4px;
+}
+
+/* line 104, sass/pages/_lesson.scss */
+#features-person h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 80px;
+}
+
+/* line 110, sass/pages/_lesson.scss */
+#features-person li h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* line 115, sass/pages/_lesson.scss */
+#features-person li p {
+  padding: 10px;
+}
+
+/* line 119, sass/pages/_lesson.scss */
+#features-person a {
+  color: white;
+}
+
+/* line 123, sass/pages/_lesson.scss */
+#features-person a:hover {
+  color: #b4b4b4;
+}
+
+/* line 127, sass/pages/_lesson.scss */
+.cross {
+  text-align: center;
+  font-size: 128px;
+  margin: 0;
+}
+
+/* line 133, sass/pages/_lesson.scss */
+#features-communication {
+  background: white;
+}
+
+/* line 137, sass/pages/_lesson.scss */
+#features-communication h2 {
+  font-size: 36px;
+  margin: 40px 0 0;
+}
+
+/* line 142, sass/pages/_lesson.scss */
+#features-communication h2 + p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 80px;
+  color: #b4b4b4;
+}
+
+/* line 149, sass/pages/_lesson.scss */
+#features-wb {
+  background: gainsboro;
+}
+
+/* line 153, sass/pages/_lesson.scss */
+#features-wb h2 {
+  font-size: 36px;
+  margin: 40px 0 80px;
+  color: #505050;
+}
+
+/* line 159, sass/pages/_lesson.scss */
+#features-wb h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 60px;
+  color: #646464;
+}
+
+/* line 166, sass/pages/_lesson.scss */
+#features-wb p {
+  font-size: 12px;
+  padding: 0 80px;
+  color: #8c8c8c;
+}
+
+/* line 172, sass/pages/_lesson.scss */
+.quote {
+  font-size: 64px;
+  color: #646464;
+}
+
+/* line 177, sass/pages/_lesson.scss */
+#features-fee {
+  /*    background: rgb(250, 150, 150);*/
+}
+
+/* line 181, sass/pages/_lesson.scss */
+#features-fee h2 {
+  font-size: 36px;
+  margin: 40px 0 80px;
+  color: #505050;
+}
+
+/* line 187, sass/pages/_lesson.scss */
+#features-fee h3 {
+  font-size: 18px;
+  text-align: center;
+  margin: 40px;
+  color: #787878;
+}
+
+/*fee*/
+/* line 195, sass/pages/_lesson.scss */
+.standard {
+  background: #87bf70;
+  color: white;
+}
+
+/* line 200, sass/pages/_lesson.scss */
+.semi-pro {
+  background: #ef7e17;
+  color: white;
+}
+
+/* line 205, sass/pages/_lesson.scss */
+.professional {
+  background: #db6565;
+  color: white;
+}
+
+/* line 210, sass/pages/_lesson.scss */
+.expart {
+  background: #505050;
+  color: white;
+}
+
+/* line 215, sass/pages/_lesson.scss */
+.group {
+  background: #50a1c0;
+  color: white;
+}
+
+/* line 220, sass/pages/_lesson.scss */
+.fee-grid {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  min-height: 200px;
+}
+
+/* line 227, sass/pages/_lesson.scss */
+.charge-grid {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* line 233, sass/pages/_lesson.scss */
+.fee-grid h4, .charge-grid h4 {
+  padding: 30px 20px 0;
+  font-size: 20px;
+}
+
+/* line 238, sass/pages/_lesson.scss */
+.fee-grid p, .charge-grid p {
+  padding: 20px;
+  font-size: 15px;
+}
+
+/* line 243, sass/pages/_lesson.scss */
+.fee-grid span {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+/* line 249, sass/pages/_lesson.scss */
+.fee {
+  /*    position: absolute;*/
+  text-align: center;
+  bottom: 0;
+  font-size: 24px;
+  color: #505050;
+}
+
+/* line 257, sass/pages/_lesson.scss */
+.fee-info {
+  font-size: 11px;
+  text-align: center;
+  color: #787878;
+}
+
+/*lesson*/
+/* line 264, sass/pages/_lesson.scss */
+.inner-left {
+  float: left;
+  width: 50%;
+}
+
+/* line 269, sass/pages/_lesson.scss */
+.inner-right {
+  float: right;
+  width: 50%;
+}
+
+/* line 274, sass/pages/_lesson.scss */
+.inner-bottom {
+  clear: both;
+}
+
+/*psychology*/
+/* line 279, sass/pages/_lesson.scss */
+#features-psychology {
+  background: white;
+}
+
+/* line 283, sass/pages/_lesson.scss */
+.psychology-header {
+  margin-left: 10%;
+}
+
+/* line 287, sass/pages/_lesson.scss */
+#features-psychology h2 {
+  font-size: 36px;
+  margin: 40px 0 80px;
+  color: #505050;
+}
+
+/* line 293, sass/pages/_lesson.scss */
+#features-psychology h3 span {
+  font-size: 46px;
+}
+
+/* line 297, sass/pages/_lesson.scss */
+.psychology-grid {
+  text-align: center;
+  padding: 20px;
+}
+
+/* line 302, sass/pages/_lesson.scss */
+.psychology-grid h4 {
+  font-size: 13px;
+  margin: 20px 0;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*circle*/
+/* line 5, sass/pages/_circle.scss */
+#circle {
+  padding-top: 80px;
+}
+
+/* line 9, sass/pages/_circle.scss */
+#circle h1 {
+  font-size: 36px;
+}
+
+/* line 13, sass/pages/_circle.scss */
+#circle-disc {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* line 19, sass/pages/_circle.scss */
+.circle-value {
+  text-align: center;
+}
+
+/* line 23, sass/pages/_circle.scss */
+#circle h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* line 28, sass/pages/_circle.scss */
+.circle-value ul {
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+
+/* line 32, sass/pages/_circle.scss */
+.circle-value li {
+  float: left;
+  width: 320px;
+}
+
+/* line 37, sass/pages/_circle.scss */
+#circle-problem h3 {
+  margin: 20px;
+  padding: 80px 40px;
+  width: 200px;
+  height: 100px;
+  background: #db6565;
+  border-radius: 2px;
+  font-size: 22px;
+  color: white;
+}
+
+/* line 48, sass/pages/_circle.scss */
+#circle-solution h3 {
+  margin: 20px;
+  width: 280px;
+  height: 280px;
+  background: #50a1c0;
+  border-radius: 140px;
+  line-height: 280px;
+  font-size: 24px;
+  color: white;
+}
+
+/* line 59, sass/pages/_circle.scss */
+.circle-topic p {
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*contact*/
+/* line 5, sass/pages/_contact.scss */
+.contact-form {
+  /*padding: 40px;*/
+}
+
+/* line 9, sass/pages/_contact.scss */
+.contact-form input, .contact-form textarea, .contact-form select {
+  display: block;
+  width: 98%;
+  margin: 10px auto;
+  padding: 1%;
+  font-size: 24px;
+  border: 1px solid #d2d2d2;
+}
+
+/* line 18, sass/pages/_contact.scss */
+.contact-form input[type="submit"] {
+  height: auto;
+}
+
+/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+/*summer*/
+/* line 5, sass/pages/_summer2014.scss */
+#smr-plan {
+  background: #f0f0f0;
+}
+
+/* line 9, sass/pages/_summer2014.scss */
+.plan {
+  margin: 80px 0;
+  padding: 40px;
+  border: 1px solid gainsboro;
+  border-left: 10px solid #5a5a5a;
+  background: white;
+  overflow: hidden;
+}
+
+/* line 18, sass/pages/_summer2014.scss */
+.plan table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+/* line 24, sass/pages/_summer2014.scss */
+.plan table tr {
+  font-size: 12px;
+}
+
+/* line 29, sass/pages/_summer2014.scss */
+.plan table thead {
+  border-bottom: 1px solid #b4b4b4;
+}
+
+/* line 34, sass/pages/_summer2014.scss */
+.plan table tbody th {
+  vertical-align: middle;
+  font-size: 12px;
+  border-right: 1px solid #b4b4b4;
+}
+
+/* line 40, sass/pages/_summer2014.scss */
+.plan table th {
+  padding: 5px;
+}
+
+/* line 44, sass/pages/_summer2014.scss */
+.plan table td {
+  font-size: 12px;
+  border: 1px solid #b4b4b4;
+}
+
+/* line 49, sass/pages/_summer2014.scss */
+.plan table td p {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* line 54, sass/pages/_summer2014.scss */
+.lesson, .pink {
+  background: #ff2081;
+  color: white;
+}
+
+/* line 59, sass/pages/_summer2014.scss */
+.self, .blue {
+  background: #009cee;
+  color: white;
+}
+
+/* line 64, sass/pages/_summer2014.scss */
+.training, .yellow {
+  background: #ffd700;
+  color: #3c3c3c;
+}
+
+/* line 69, sass/pages/_summer2014.scss */
+.plan h4 {
+  padding: 10px;
+  margin: 20px 10px;
+  text-align: center;
+  background: #d2d2d2;
+  font-weight: normal;
+  font-size: 18px;
+  color: #141414;
+}
+
+/* line 79, sass/pages/_summer2014.scss */
+.advise {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* line 84, sass/pages/_summer2014.scss */
+.plan ul li {
+  float: left;
+  width: 33.333333333333333333333333333%;
+  text-align: center;
+}
+
+/* line 90, sass/pages/_summer2014.scss */
+.plan-num {
+  font-size: 48px;
+  line-height: 1;
+}
+
+/* line 95, sass/pages/_summer2014.scss */
+.plan-dnm {
+  margin-left: 3px;
+  font-size: 14px;
+}
+
+/* line 99, sass/pages/_summer2014.scss */
+.plan-cap {
+  font-size: 11px;
+}
+
+/* line 103, sass/pages/_summer2014.scss */
+.quotation {
+  position: relative;
+  margin: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* line 110, sass/pages/_summer2014.scss */
+.quotation:before {
+  content: '?';
+  position: absolute;
+  left: -40px;
+  top: -40px;
+  height: 64px;
+  font-size: 64px;
+  color: #b4b4b4;
+}
+
+/* line 120, sass/pages/_summer2014.scss */
+.quotation:after {
+  content: '?';
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+  height: 64px;
+  font-size: 64px;
+  color: #b4b4b4;
+}
+
+/* line 130, sass/pages/_summer2014.scss */
+#smr-point li {
+  margin: 40px 0;
+  clear: both;
+}
+
+/* line 135, sass/pages/_summer2014.scss */
+#smr-point li span {
+  position: absolute;
+  width: 60px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #787878;
+  float: left;
+}
+
+/* line 144, sass/pages/_summer2014.scss */
+#smr-point li h3 {
+  font-size: 24px;
+  margin-left: 60px;
+}
+
+/* line 149, sass/pages/_summer2014.scss */
+#smr-point li > p {
+  font-size: 14px;
+  margin-left: 60px;
+}
+
+/* line 155, sass/pages/_summer2014.scss */
+#smr-point li a {
+  font-size: 12px;
+  margin-left: 60px;
+  background: #ff2081;
+  color: white;
+}
+
+/* line 163, sass/pages/_summer2014.scss */
+#mail-example {
+  margin: 20px;
+  padding: 40px;
+  border: 1px solid #b4b4b4;
+  overflow: hidden;
+}
+
+/* line 170, sass/pages/_summer2014.scss */
+#mail-example + button {
+  margin: auto;
+}
+
+/* line 174, sass/pages/_summer2014.scss */
+#mail-example p {
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* line 179, sass/pages/_summer2014.scss */
+#training-system {
+  overflow: hidden;
+}
+
+/* line 183, sass/pages/_summer2014.scss */
+#training-system li {
+  position: relative;
+}
+
+/* line 187, sass/pages/_summer2014.scss */
+#training-system li div {
+  overflow: hidden;
+}
+
+/* line 191, sass/pages/_summer2014.scss */
+#training-system li h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* line 197, sass/pages/_summer2014.scss */
+#training-system li p {
+  font-size: 14px;
+}
+
+/* line 201, sass/pages/_summer2014.scss */
+#training-system li.start, #training-system li.clear {
+  width: 95%;
+  margin: 2.5%;
+}
+
+/* line 206, sass/pages/_summer2014.scss */
+#training-system li.clear {
+  text-align: center;
+}
+
+/* line 210, sass/pages/_summer2014.scss */
+#training-system li.step, #training-system li.retry {
+  width: 45%;
+  margin: 2.5%;
+  float: left;
+}
+
+/* line 216, sass/pages/_summer2014.scss */
+#training-system li.step:before {
+  position: absolute;
+  content: "";
+  top: 40px;
+  right: -16px;
+  border-left: 16px solid #787878;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+}
+
+/* line 226, sass/pages/_summer2014.scss */
+#training-system li.step:after {
+  position: absolute;
+  content: "";
+  bottom: -16px;
+  left: 40%;
+  border-top: 16px solid #787878;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+}
+
+/* line 236, sass/pages/_summer2014.scss */
+#training-system li.retry:after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: -5px;
+  border-left: 26px solid #787878;
+  border-top: 26px solid transparent;
+}
+
+/* line 245, sass/pages/_summer2014.scss */
+#training-system li div {
+  padding: 20px;
+}
+
+/* line 249, sass/pages/_summer2014.scss */
+#smr-summary h2, #smr-point h2, #smr-plan h2, #smr-training h2, #smr-apply h2 {
+  text-align: center;
+  font-size: 24px;
+  padding: 40px;
+}
+
+/* line 255, sass/pages/_summer2014.scss */
+#smr-summary > h2, #smr-point > h2, #smr-training > h2 {
+  color: white;
+  background: #142864;
+  margin-bottom: 20px;
+}
+
+/* line 261, sass/pages/_summer2014.scss */
+#smr-summary dl {
+  width: 100%;
+  border-bottom: 1px solid #787878;
+  background: white;
+}
+
+/* line 267, sass/pages/_summer2014.scss */
+#smr-summary dl dt {
+  float: left;
+  padding: 40px 10px;
+  min-width: 80px;
+  border-top: 1px solid #787878;
+  font-weight: bold;
+}
+
+/* line 275, sass/pages/_summer2014.scss */
+#smr-summary dl dd {
+  padding: 40px;
+  border-top: 1px solid #787878;
+  overflow: hidden;
+  min-width: 160px;
+}
+
+/* line 282, sass/pages/_summer2014.scss */
+#smr-msg {
+  overflow: hidden;
+}
+
+/* line 286, sass/pages/_summer2014.scss */
+#smr-msg h2 {
+  margin-top: 60px;
+  font-size: 36px;
+}
+
+/* line 291, sass/pages/_summer2014.scss */
+#smr-contact {
+  background: whitesmoke;
+}
+
+/* line 295, sass/pages/_summer2014.scss */
+#smr-contact p {
+  text-align: center;
+}
+
+/* line 299, sass/pages/_summer2014.scss */
+#smr-contact .tel {
+  font-size: 40px;
+}
+
+/* line 304, sass/pages/_summer2014.scss */
+#smr-contact .office-hour {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* line 310, sass/pages/_summer2014.scss */
+#smr-contact a {
+  display: block;
+  padding: 40px 20px;
+  height: auto;
+  width: auto;
+  font-size: 32px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  background: #50a1c0;
+  color: white;
+}
+
+/* line 323, sass/pages/_summer2014.scss */
+#training-desc {
+  font-size: 20px;
+  padding: 40px;
+}
+
+/* line 328, sass/pages/_summer2014.scss */
+#smr-rmd li p {
+  position: relative;
+  padding: 26px;
+  margin: 20px;
+  border-radius: 12px;
+  margin-left: 80px;
+  font-size: 28px;
+  clear: both;
+}
+
+/* line 338, sass/pages/_summer2014.scss */
+#smr-rmd li p:before {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 20px;
+  left: -50px;
+  border-left: 50px solid transparent;
+}
+
+/* line 348, sass/pages/_summer2014.scss */
+#smr-rmd li .pink:before {
+  border-top: 40px solid #ff2081;
+}
+
+/* line 353, sass/pages/_summer2014.scss */
+#smr-rmd li .blue:before {
+  border-top: 40px solid #009cee;
+}
+
+/* line 357, sass/pages/_summer2014.scss */
+#smr-rmd li .yellow:before {
+  border-top: 40px solid #ffd700;
+}
+
+/* line 361, sass/pages/_summer2014.scss */
+#smr-apply li {
+  position: relative;
+}
+
+/* line 365, sass/pages/_summer2014.scss */
+#smr-apply li div {
+  display: block;
+  padding: 10px;
+}
+
+/* line 370, sass/pages/_summer2014.scss */
+#smr-apply li span {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* line 378, sass/pages/_summer2014.scss */
+#smr-apply li h3 {
+  display: block;
+  margin-left: 40px;
+}
+
+/* line 383, sass/pages/_summer2014.scss */
+#smr-apply li p {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* line 389, sass/pages/_summer2014.scss */
+#smr-apply li.pink span {
+  background: white;
+  color: #ff2081;
+}
+
+/* line 394, sass/pages/_summer2014.scss */
+#smr-apply li.blue span {
+  background: white;
+  color: #009cee;
+}
+
+/* line 399, sass/pages/_summer2014.scss */
+#smr-apply li.yellow span {
+  background: white;
+  color: #ffd700;
+}
+
+/* Welcome to Compass. Use this file to define 404 styles.
+ * use @import "pages/404" */
+/*404-notfound*/
+/* line 5, sass/pages/_404.scss */
+.not-found {
+  text-align: center;
+}
+/* line 7, sass/pages/_404.scss */
+.not-found h2 {
+  font-size: 48px;
+  color: #b4b4b4;
+}
+/* line 11, sass/pages/_404.scss */
+.not-found p {
+  font-size: 28px;
+  color: #787878;
+}
+/* line 15, sass/pages/_404.scss */
+.not-found ul {
+  width: 420px;
+  margin: auto;
+}
+/* line 18, sass/pages/_404.scss */
+.not-found ul li {
+  margin: 15px;
+  color: #282828;
+  background: #b4b4b4;
+}
+/* line 22, sass/pages/_404.scss */
+.not-found ul li a {
+  display: block;
+  padding: 8px 20px;
+  color: #505050;
+  background: #bebebe;
+}
+/* line 27, sass/pages/_404.scss */
+.not-found ul li a:hover {
+  color: #50a1c0;
+  background: gainsboro;
 }

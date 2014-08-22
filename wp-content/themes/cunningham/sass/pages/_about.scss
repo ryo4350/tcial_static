@@ -1,0 +1,172 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+/*--------------------------------------------------------------
+9.4 About
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.4.1 Access
+--------------------------------------------------------------*/
+#access {
+    position: relative;
+}
+
+#gmap {
+    height: 480px;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 998;
+}
+
+#addrress {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    padding: 30px;
+    background: rgb(120, 120, 120);
+    color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+#addrress h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#addrress address {
+    font-size: 14px;
+}
+
+#addrress ul {
+    padding: 5px;
+    font-size: 12px;
+}
+
+@media all and (max-width: 768px) {
+    #addrress {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    #gmap {
+        height: 360px;
+    }
+}
+
+/*about*/
+#activity h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: rgb(120, 120, 120);
+}
+
+#activity a {
+    position: relative;
+    display: block;
+}
+
+#activity span {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(20, 20, 20, .8); ;
+}
+
+/*value*/
+#value {
+    background: rgb(255, 255, 255);  
+}
+
+#value h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: rgb(120, 120, 120);
+}
+
+.values {
+    margin-bottom: 40px;
+}
+
+.values h3 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.values h4 {
+    font-size: 18px;
+}
+
+.values ul li {
+    font-size: 28px;
+    padding: 10px;
+    color: rgb(120, 120, 120);
+}
+
+.values span {
+    font-size: 36px;
+    font-family: 'Lily Script One', cursive;    
+}
+
+.values p {
+    font-size: 18px;
+}
+
+/*team*/
+#team h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: rgb(120, 120, 120);
+    font-family: 'Lily Script One', cursive;
+}
+
+#team div {
+    position: relative;
+/*    width: 160px;
+    height: 160px;*/
+}
+
+.team-img {
+    -webkit-border-radius: 260px;
+    -moz-border-radius: 260px;
+    border-radius: 260px;
+}
+
+#team p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.member-wrap {
+    padding: 20%;
+}
+
+.subject-info {
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+}
+
+.work-info {
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+}
+
+#society h3 {
+    /*background: rgb(135, 191, 112);*/
+    color: rgb(135, 191, 112);
+}
+
+#company h3 {
+    /*background: rgb(219, 101, 101);*/
+    color: rgb(219, 101, 101);
+}
+
+#children h3 {
+    /*background: rgb(239, 126, 23);*/
+    color: rgb(239, 126, 23);
+}

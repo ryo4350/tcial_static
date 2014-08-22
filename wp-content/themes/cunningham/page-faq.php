@@ -3,8 +3,7 @@
 	<!-- Content -->
 	<div id="content">
             <section id="faq">
-                    <h2>よくあるご質問</h2>
-                    <ul id="faq-catlist">
+<!--                    <ul id="faq-catlist">
                         <li class="col2">
                             <a>
                                 <img src="<?php bloginfo('template_directory'); ?>/img/symbol.png">
@@ -61,8 +60,9 @@
                                 <p>講師についてのご質問</p>
                             </a>
                         </li>
-                    </ul>
+                    </ul>-->
                 <div class="container-narrow">
+                    <h1>よくあるご質問</h1>
                     <div id="faq-list">
                         <h2>講師について</h2>
                         <ul>
@@ -98,7 +98,7 @@
                                     <dd>担任制になっておりますので、講師がコロコロ変更することはありません。</dd>
                                 </dl>
                             </li>
-                            <li>
+<!--                            <li>
                                 <dl class="q">
                                     <dt>Q</dt>
                                     <dd>講師を変更することはできますか？</dd>
@@ -107,7 +107,7 @@
                                     <dt>A</dt>
                                     <dd>可能です。</dd>
                                 </dl>
-                            </li>
+                            </li>-->
                         </ul>
                         
                         
@@ -200,7 +200,7 @@
                                     </dd>
                                 </dl>
                             </li>
-                            <li>
+<!--                            <li>
                                 <dl class="q">
                                     <dt>Q</dt>
                                     <dd></dd>
@@ -209,9 +209,9 @@
                                     <dt>A</dt>
                                     <dd></dd>
                                 </dl>
-                            </li>
+                            </li>-->
                         </ul>
-                        <h2>カリキュラム・指導内容について</h2>
+<!--                        <h2>カリキュラム・指導内容について</h2>
                         <ul>
                             <li>
                                 <dl class="q">
@@ -260,8 +260,8 @@
                                     <dd></dd>
                                 </dl>
                             </li>
-                        </ul>
-                        <h2>体験について</h2>
+                        </ul>-->
+<!--                        <h2>体験について</h2>
                         <ul>
                             <li>
                                 <dl class="q">
@@ -310,7 +310,7 @@
                                     <dd></dd>
                                 </dl>
                             </li>
-                        </ul>
+                        </ul>-->
                         <ul>
                             <li>
                                 <h4>Q. 授業料はどれくらいですか？</h4>
@@ -350,42 +350,8 @@
                 </div>
             </section>                
 	</div>
-
 <?php get_footer(); ?>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/script.js"></script>
-<script type="text/javascript">
-$(function(){
-	// デフォルトは非表示
-	$btn.hide();
-
-	$(window).scroll(function () {
-		if( $(this).scrollTop() > 300 ) {
-			if( isHidden ) {
-				$btn.stop(true,true).fadeIn();
-				isHidden = false;
-			}
-		} else {
-			if( !isHidden ) {
-				$btn.stop(true,true).fadeOut();
-				isHidden = true;
-			}
-		}
-	});
-
-	// クリックイベントの登録
-	$btn.click(function(){
-		// ページトップへスクロール
-		$('html, body').animate({
-				'scrollTop': 0
-			}, 900);
-		// デフォルトイベントのキャンセル
-		return false;
-	});
-});
-
-</script>
-
 </body>
 </html>

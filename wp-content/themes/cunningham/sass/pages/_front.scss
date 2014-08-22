@@ -1,0 +1,260 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+
+/*--------------------------------------------------------------
+9.1 Front
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.1.0 Common
+--------------------------------------------------------------*/
+#top-content {
+    position: relative;
+    z-index: 999;
+}
+
+#top-content h2 {
+    margin: 20px 0 80px;
+}
+
+.center {
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.articles > li {
+    position: relative;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+9.1.1 Key-visual
+--------------------------------------------------------------*/
+#key-visual {
+    position: relative;
+    width: 100%;
+}
+
+#mv-wrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 640px;
+    overflow: hidden;
+}
+
+#mv-wrap video {
+    display: block;
+    min-height: 640px;
+    width: 100%;
+}
+
+#main-text {
+    padding-top: 18%;
+    padding-bottom: 6%;
+    position: relative;
+}
+
+#catch {
+    display: block;
+    color: rgb(255, 255, 255);
+    z-index: 998;
+    text-align: center;
+    font-weight: normal;
+}
+
+#catch h1 {
+    font-size: 48px;
+    /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
+}
+
+#catch h2 {
+    font-family: 'Lily Script One', cursive;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#catch p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media all and (max-width: 768px) {
+    #main-text {
+        padding-top: 30%;
+        padding-bottom: 6%;
+        position: relative;
+    }
+
+    #catch h1 {
+        font-size: 22px;
+        /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
+    }
+
+    #catch h2 {
+        font-size: 12px;
+    }
+    
+    #catch p {
+        font-size: 9px;
+    }
+
+    .mv-btn {
+        padding: 6px 10px 4px;
+        font-size: 16px;
+    }
+    #mv-wrap {
+        display: none;
+    }
+    #key-visual {
+        background-image: url('img/key-visual.png');
+        background-size: auto 100%; 
+    }
+    .nav-scroll {
+        background: none;
+    }
+    
+    #top-content h2 {
+        font-size: 24px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+9.1.2 New-post
+--------------------------------------------------------------*/
+#new-post {
+    background: rgb(235, 235, 235);
+}
+
+#new-post li:nth-child(4n), .recommend-wrap li:nth-child(4n) {
+    margin-right: 0;
+}
+
+#event {
+    background: rgba(80, 161,192, .8);
+}
+
+#news {
+    background: rgb(180, 180, 180);
+}
+
+/*features*/
+.features li h4{
+}
+
+.article-info {
+    padding: 20px;
+}
+
+.article-info h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.article-info p {
+    padding: 0;
+    font-size: 12px;
+}
+
+/**/
+#a {
+    background: url('/img/gallary/13.jpg');
+}
+
+#b {
+    background: url('/img/gallary/14.jpg');
+}
+
+#c {
+    background: url('/img/gallary/15.jpg');
+}
+
+#d {
+    background: url('/img/gallary/16.jpg');
+}
+#e {
+    background: url('/img/gallary/17.jpg');
+}
+#f {
+    background: url('/img/gallary/18.jpg');
+}
+
+/*bubble*/
+.bubble {
+    padding: 40px 20px;
+}
+
+/*what*/
+#what {
+    background: rgb(255,255,255);    
+}
+
+#what h2 {
+    margin: 20px 0 80px;
+}
+
+#what h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#what p {
+    margin-bottom: 20px;
+    color: rgb(80, 80, 80);
+}
+
+#what img:hover {
+    opacity: .8;
+}
+
+.disc-wrapper {
+    padding: 40px;
+}
+
+.preparing {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: .4;
+}
+
+.coming {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 28px;
+}
+
+/*reputation*/
+#reputation {
+    background: rgb(255,255,255);    
+}
+
+#reputation h2 {
+    margin: 20px 0 80px;
+}
+
+/*gallary*/
+#gallary {
+    /*background: rgb(245,240,245);*/ 
+    background: rgb(80, 80, 80); 
+}
+
+#gallary h2 {
+    margin: 20px 0 80px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lily Script One', cursive;
+}
+
+#gallary .onerow {
+    overflow: hidden;
+}

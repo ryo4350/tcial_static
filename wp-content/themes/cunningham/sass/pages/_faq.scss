@@ -1,0 +1,74 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+/*faq----------------------------------------------------------------------------------------------------------------------*/
+#faq-catlist {
+    
+}
+
+#faq-catlist li {
+    
+}
+
+#faq-catlist li a {
+    display: block;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 3px;
+}
+
+#faq-catlist li img {
+    width: 60%;
+    margin: auto;
+}
+
+#faq-catlist li h2 {
+    padding: 10px;
+    font-size: 9px;
+}
+
+#faq-catlist li p {
+    font-size: 6px;
+    color: rgb(180, 180, 180);
+}
+
+#faq-list {
+    clear: both;
+}
+
+#faq-list li {
+    padding: 20px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+#faq-list dl {
+    clear: both;
+    overflow: hidden;
+}
+
+#faq-list dl dt {
+    float: left;
+    font-size: 42px;
+}
+
+#faq-list dl dd {
+    margin-top: 20px;
+    margin-left: 48px;
+}
+
+#faq-list dl.q dt {
+    color: #ff2081;
+}
+
+#faq-list dl.q dd {
+    font-weight: bold;
+}
+
+#faq-list dl.a dt {
+    color: #009cee;
+}
+
+#faq-list dl.a dd {
+
+}

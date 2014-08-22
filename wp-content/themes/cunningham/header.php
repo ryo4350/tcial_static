@@ -13,8 +13,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
@@ -35,7 +33,7 @@
         <div id="header-magazine">
             <div class="container">
                 <h1><a href="<?php echo home_url('/magazine'); ?>"><?php bloginfo('name'); ?></a></h1>
-                <h2 id="top-description" class="top-desc-magazine"><a href="/" target="_blank">個別指導塾ティーシャル</a>が運営するウェブマガジン</h2>
+                <h2 id="top-description"><a href="/" target="_blank">個別指導塾ティーシャル</a>が運営するウェブマガジン</h2>
             </div>
         </div>
 
@@ -49,8 +47,8 @@
     <nav class="contact" id="contact">
         <!--<?php wp_nav_menu( array( 'theme_location' => 'primary_magazine' ) ); ?>-->
         <ul class="sns-contact">
-            <li><a class="btn-flat-icon" id="fb-icon" href="https://www.facebook.com/tcialcom" target="_blank">f</a></li>
-            <li><a class="btn-flat-icon" id="tw-icon" href="https://twitter.com/Tcial315" target="_blank">t</a></li>
+            <li><a class="btn btn-flat-icon" id="fb-icon" href="https://www.facebook.com/tcialcom" target="_blank">f</a></li>
+            <li><a class="btn btn-flat-icon" id="tw-icon" href="https://twitter.com/Tcial315" target="_blank">t</a></li>
         </ul>
     </nav>
 

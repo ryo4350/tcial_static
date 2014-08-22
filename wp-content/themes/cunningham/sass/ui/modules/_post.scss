@@ -1,0 +1,256 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+
+/*--------------------------------------------------------------
+6.1 - Single-post
+--------------------------------------------------------------*/
+.blog-grid {
+    position: relative;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.single-post-date {
+    position: absolute;
+    top: 40px;
+    left: -16px;
+    padding: 4px 10px;
+    background: rgb(55, 155, 225);
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.single-post-date:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid rgb(0, 85, 165);
+    border-left: 16px solid transparent;
+}
+
+#single-post-info {
+    margin-top: 100px;
+    padding: 20px; 
+}
+
+.widget-header h3 {
+    font-size: 16px;
+}
+
+.widget-header a {
+    font-size: 9px;
+}
+
+#single-post-info .avatar {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 200px;    
+}
+
+#writer-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#writer-desc {
+    font-size: 12px;
+    padding: 10px 10px 10px 15px;
+}
+
+.blog-keywords {
+    padding: 10px;
+}
+
+.blog-keywords p {
+    font-size: 12px;
+}
+
+.blog-keywords a {
+    font-size: 12px;
+}
+
+.single-bottom-ad {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.wp_social_bookmarking_light {
+    float: left;
+}
+
+.blog-header h1 {
+    padding: 30px 20px 10px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.blog-header .author {
+    float: left;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+} 
+
+.blog-header  img {
+    float: left;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-top: -12px;
+    margin-right: 5px;
+    border-radius: 18px;
+}
+
+.blog-header > ul {
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.blog-header > ul > li {
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+    line-height: 1;
+    margin-right: 20px;
+}
+
+.blog-header ul, .blog-header ul li {
+   display: inline-block;
+}    
+
+.blog-body {
+    padding: 20px;
+}
+
+.blog-body p {
+    font-size: 16px;
+    margin-bottom :20px;
+    line-height: 1.6;
+}
+
+.blog-body h2 {
+    margin: 80px 0 20px;
+    padding: 24px 20px 20px;
+    font-size: 24px;
+    border-top: 3px solid rgb(80, 161,192);
+    border-bottom: 3px solid rgb(80, 161,192);
+} 
+
+.blog-body h3 {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.blog-body img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+blockquote {
+    quotes: " \201C "" \201D "" \2018 "" \2019 ";
+    font-family: 'Meta Normal Italic';
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+
+blockquote:before {
+    content: open-quote;
+    padding: 0px 20px 0 0;
+    font-size: 64px;
+}
+blockquote:after {
+    content: close-quote;
+    padding-left: 8px;
+    font-size: 64px;
+    vertical-align: -60px;
+    line-height: 40px;
+}
+
+blockquote p {
+    display: inline;
+    font-size: 16px;
+}
+
+@media all and (max-width: 768px) {
+    .blog-header h1 {
+        padding: 20px 10px 10px;
+        font-size: 16px;
+    }    
+}
+/*article*/
+#article-side {
+    width: 240px;
+}
+
+#article-main {
+    margin-left: 240px;
+}
+
+.article-side {
+    position: absolute;
+    top: 0;
+}
+
+.fixed-article-side {
+    position: fixed;
+    top: 40px;
+}
+
+
+.fixed-bottom-article-side {
+    top: auto;
+    bottom: 80px;
+}
+
+@media all and (max-width: 768px) {
+    #article-main, #article-side {
+        width: 100%;
+    }
+    
+    #article-main {
+        margin: 0;
+    }
+    
+    #article-side {
+        position: relative;
+        top: 0;
+    }
+    
+            
+    #article-side #single-post-info {
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    #single-post-info li {
+        display: inline-table;
+        vertical-align: middle;
+   }
+
+    .blog-keywords, .single-post-date {
+        display: none;            
+    }
+    #article-side #single-post-info .avatar {
+        height: 48px;
+        width: 48px;
+        margin: 0 5px 0 15px;
+   }
+
+   #article-side #writer-name {
+         font-size: 28px;
+         margin: 0;
+   }
+}

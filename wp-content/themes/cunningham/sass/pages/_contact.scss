@@ -1,0 +1,20 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+/*contact*/
+.contact-form {
+    /*padding: 40px;*/
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    display: block;
+    width: 98%;
+    margin: 10px auto;
+    padding: 1%;
+    font-size: 24px;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.contact-form input[type="submit"] {
+    height: auto;
+}

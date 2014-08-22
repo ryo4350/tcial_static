@@ -288,18 +288,6 @@
                     </div>
                 </div>
             </section>
-<!--		<section>
-                    <div class="container">
-                            <div class="col6">
-                                    <h2>授業の８割が社員によって行われています</h2>
-                                    <div class="chart" data-percent="83">83%</div>
-                            </div>
-                            <div class="col6 last">
-                                    <h2>授業の８割が社員によって行われています</h2>
-                                    <div class="chart" data-percent="83">83%</div>
-                            </div>
-                    </div>
-            </section>-->
 	</div>
 <?php get_footer(); ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

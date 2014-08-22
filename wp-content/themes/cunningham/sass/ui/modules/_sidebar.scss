@@ -1,0 +1,101 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+/*--------------------------------------------------------------
+10.1 Sidebar
+--------------------------------------------------------------*/
+.widget-header {
+    font-size: 16px;
+    padding: 10px 20px 5px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.widget-content {
+    padding: 10px 20px;
+}
+
+.widget-about {
+    font-size: 13px;
+}
+
+.powered {
+    font-size: 13px;
+    color: rgb(180, 180, 180);
+    font-family: 'Lily Script One', cursive;
+}
+
+.sidebar-logo {
+    margin: 5px 0;
+}
+
+@media all and (max-width: 768px) {
+    .fb, .twtr {
+        display: none;
+    }
+}
+
+/*writers*/
+.writers li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    overflow: hidden;
+}
+
+.writers h4 {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/*authors*/
+.authors {
+    padding: 20px 20px 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.authors > li {
+    padding: 10px 0;
+}
+
+.authors .avatar {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 200px;
+}
+
+.writers .avatar {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 200px;
+}
+
+.authors h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.authors .link {
+    font-size: 11px;
+    text-align: center;
+}
+
+/*categories*/
+.categories li {
+    margin: 8px 20px;
+    font-size: 12px;
+}
+
+.post-categories li a {
+    color: rgb(80, 161,192);
+}
+
+/*blog_team*/
+.article-img-team {
+    position: relative;
+    max-height: 120px;
+    overflow: hidden;
+}
+

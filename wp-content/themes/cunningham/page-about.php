@@ -167,16 +167,18 @@
                </div>
             </section>
             <div id="access">
-                <div id="gmap"></div>
                 <div id="addrress">
                     <h2>ACCESS</h2>
                     <address>                        
                         <p>〒221-0844<br />神奈川県横浜市神奈川区沢渡2-2 第二泉ビル3F</p>
-                        <p>横浜駅から徒歩10分</p>
-                        <p>東急東横線反町駅から徒歩10分</p>
-                        <p>横浜市営地下鉄三ッ沢下町から徒歩15分</p>
                     </address>
+                    <ul>
+                        <li>横浜駅から徒歩10分</li>
+                        <li>東急東横線反町駅から徒歩10分</li>
+                        <li>横浜市営地下鉄三ッ沢下町から徒歩15分</li>
+                    </ul> 
                 </div>
+                <div id="gmap"></div>
             </div>
 	</div>
 
@@ -250,35 +252,6 @@ $(function(){
 			}
 		]
 	);
-	var $btn = $('#toPageTop a');
-	var isHidden = true;
-
-	// デフォルトは非表示
-	$btn.hide();
-
-	$(window).scroll(function () {
-		if( $(this).scrollTop() > 300 ) {
-			if( isHidden ) {
-				$btn.stop(true,true).fadeIn();
-				isHidden = false;
-			}
-		} else {
-			if( !isHidden ) {
-				$btn.stop(true,true).fadeOut();
-				isHidden = true;
-			}
-		}
-	});
-
-	// クリックイベントの登録
-	$btn.click(function(){
-		// ページトップへスクロール
-		$('html, body').animate({
-				'scrollTop': 0
-			}, 900);
-		// デフォルトイベントのキャンセル
-		return false;
-	});
 });
 
 </script>

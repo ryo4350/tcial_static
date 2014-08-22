@@ -1,0 +1,26 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "core/reset";
+@import "core/base";
+@import "core/typography";
+@import "core/layout";
+@import "core/images";
+@import "ui/elements/buttons";
+@import "ui/elements/breadcrumb";
+@import "ui/modules/ad";
+@import "ui/modules/menu";
+@import "ui/modules/footer";
+@import "ui/modules/post";
+@import "ui/modules/tl";
+@import "ui/modules/sidebar";
+@import "pages/front";
+@import "pages/about";
+@import "pages/lesson";
+@import "pages/circle";
+@import "pages/contact";
+@import "pages/summer2014";
+@import "pages/404";

@@ -1,0 +1,269 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.2.0 Commons
+--------------------------------------------------------------*/
+header {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.spectrum {
+    background: url('img/spectrum.png');
+    display: block;
+    width: 100%;
+    height: 8px;
+}
+
+#nav {
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    a {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+    }
+}
+
+.menu > li > a{
+    font-weight: bold;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+}
+
+.nav-scroll {
+        background: rgba(80, 161,192, .6);
+}
+
+#home {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 54px;
+    top: 8px;
+    left: 10px;
+    margin-left: -60px;
+    z-index: 10000;
+    background: url('img/symbol_new_0.png') no-repeat scroll 0px 0px / 50px 54px transparent;
+    text-indent: -999999px;
+}
+
+#home-blog {
+    position: fixed;
+    top: 8px;
+    left: 10px;
+    margin-left: -60px;
+    z-index: 10000;
+    background: url('img/symbol.png') no-repeat scroll 0px 0px / 48px 46px transparent;
+    text-indent: -999999px;
+}
+
+
+/*--------------------------------------------------------------
+5.2.1 Homepage
+--------------------------------------------------------------*/
+#header {
+    position: relative;
+    height: 68px;
+    z-index: 1001;
+}
+
+#logo {
+    padding-top: 12px;
+    padding-left: 10px;
+    a {
+        height: 44px;
+        text-indent: -999999px;
+        float: left;
+        display: block;
+        width: 382px;
+        background: url('img/logo_w.png') no-repeat scroll 0px 0px / 382px 44px transparent;   
+    }
+}
+
+#contact li.topbar-info {
+    text-align: right;
+    margin-right: 20px;
+    p {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.route {
+    font-size: 13px;
+    line-height: 1.1;
+}
+
+.phone-munber {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.office-hour {
+    font-size: 11px;
+    line-height: 1;
+}
+
+#menu-primary {
+    height: 72px;
+    > li {
+        line-height: 72px;
+        a:hover {
+           color: rgb(80, 161,192);
+        }
+    }
+    > .current_page_item a {
+        color: rgb(120, 120, 120);
+    }
+}
+
+#secondary-nav {
+    background: rgba(210, 210, 210, .9);
+    width: 100%;
+    height: 40px;
+    z-index: 9999;
+    top: 72px;
+    li {
+        float: left;
+        padding: 0 30px 0;
+        text-align: center;
+        line-height: 40px;
+        a {
+            font-weight: bold;
+            font-size: 12px;
+            color: rgb(80, 80, 80);
+        }
+    }
+    &.fixed-secondary {
+	position: fixed;
+	top:72px;
+    }
+}
+
+#contact {
+    position: fixed;
+    top: 8px;
+    right: 10px;
+    z-index: 10000;
+    li {
+	display: inline-block;
+	vertical-align: middle;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: rgb(255, 255, 255);
+    }
+    
+    #logo a {
+        height: 33px;
+        text-indent: -999999px;
+        float: left;
+        display: block;
+        width: 294px;
+        background: url('img/logo_new_0.png') no-repeat scroll 0px 0px / 294px 33px transparent;   
+    }
+
+    #contact {
+        display: none;
+    }
+    
+    #home, #home-blog {
+        display: none;
+    }
+}
+
+/*--------------------------------------------------------------
+5.2.2 Blog
+--------------------------------------------------------------*/
+
+#header-magazine {
+    position: relative;
+    background: rgb(55, 155, 225);
+    height: 100px;
+    z-index: 1001;
+    h1 a {
+        width: 325px;
+        height: 72px;
+        position: relative;
+        top: 14px;
+        left: 10px;
+        text-indent: -999999px;
+        background: url('img/logo-blog-kana.png') no-repeat scroll 0px 0px / 325px 72px transparent;
+        float: left;
+    }
+}
+
+.magazine-nav {
+    height: 60px;
+    background: rgba(255, 255, 255, .8);
+}
+
+#menu-category a {
+    color: rgb(40, 40, 40);
+}
+
+#menu-category > li, #menu-primary > li {
+    float: left;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#menu-category > li {
+    line-height: 60px;
+}
+
+.sns-contact {
+    display: inline;
+    margin-left: 5px;    
+}
+
+#top-description {
+    position: absolute;
+    left: 480px;
+    bottom: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    a {
+        color: rgb(255, 255, 255);
+        &:hover {
+            color: rgb(220, 220, 220);
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    
+    #header-magazine {
+        height: 54px;
+    }
+
+    #header-magazine h1 a {
+        width: 162px;
+        height: 36px;
+        top: 8px;
+        background: url('img/logo-blog-kana.png') no-repeat scroll 0px 0px / 162px 36px transparent;
+    }
+    #top-description {
+        display: none;
+    }
+
+}
+

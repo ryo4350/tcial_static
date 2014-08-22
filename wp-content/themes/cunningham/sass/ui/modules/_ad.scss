@@ -1,0 +1,31 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+/*ad*/
+.l-banner {
+    width: 728px;
+    height: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sbr-banner {
+    overflow: hidden;
+    width: 250px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.fb {
+    overflow: hidden;
+}
+
+.recommend-wrap {
+    margin: 40px 0;
+}
+
+@media all and (max-width: 768px) {
+    .l-banner {
+        display: none;
+    }
+}

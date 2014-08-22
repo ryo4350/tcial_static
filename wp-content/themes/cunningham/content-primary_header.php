@@ -10,8 +10,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 <?php wp_head(); ?>
@@ -30,23 +28,22 @@
 <body>
     <!-- Header -->
     <header>
-        <!--<div class="spectrum"></div>-->
-        <div id="nav-logo" class="nav-scroll">
+        <div id="header" class="nav-scroll">
             <h1 id="logo"><a href="/" id="logo-tcial">個別指導塾ティーシャル横浜</a></h1>
         </div>
-        <nav id="nav" class="primary-nav nav-scroll" role="navigation">
+        <nav id="nav" class="primary-nav nav-scroll cf" role="navigation">
             <div class="container">
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             </div>
         </nav>
-        <nav class="contact contact-primary">
-            <ul id="contact">
+        <nav id="contact">
+            <ul>
                 <li class="topbar-info">
                     <p class="route">横浜市神奈川区沢渡2-2第二泉ビル3F</p>
                     <p class="phone-munber">☎ 045-620-0679</p>
                     <p class="office-hour">受付時間: 13:00 - 22:00</p>
                 </li>
-                <li><a class="btn-flat" href="/contact/">お問い合わせ</a></li>
+                <li><a class="btn btn-flat" href="/contact/">お問い合わせ</a></li>
             </ul>
         </nav>
         <?php $slug_name = $post->post_name; ?>
@@ -89,9 +86,6 @@
             </ul>
         </nav>
         <?php endif; ?>
-        
-<?php // get_template_part('content', 'logo'); ?>
-        
     </header>
     <!-- /Header -->
 

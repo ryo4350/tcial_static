@@ -9,30 +9,26 @@
 ?>
 	<!-- Footer -->
 	<footer id="footer">
-<!--            <div id="footer-top">
-                <div class="container footer-inner">
-                    <div class="col6">
-                        <h4>お気軽にお問い合わせください。</h4>
-                    </div>
-                    <div class="col6 last">
-                        <a href="/contact/" class="footer-btn">体験授業の申し込みはこちら</a>
-                        <p class="tel">☎045-620-0679</p>
-                        <p class="mail">メールアドレス:info@tcial.jp</p>
+            <div class="container-narrow cf">
+                <div class="footer-fb">
+                    <div class="col12">
+<div class="fb-like-box" data-href="https://www.facebook.com/tcialcom" data-height="240" data-width="925" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
                     </div>
                 </div>
-            </div>-->
-            <div id="footer-bottom">
-                <div class="container footer-inner">
-                    <div class="col3">
-                        <a href="/"><img src="<?php bloginfo('template_directory');?>/img/logo_new_0_w.png" alt="個別指導塾Tcial"></a>
-                        <a href="/magazine/" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/logo-blog-kana.png" alt="ティーシャルスタッフズブログ"></a>
-                    </div>
-                    <div class="col9 last">
-                        <div class="footer-fb">
-<div class="fb-like-box" data-href="https://www.facebook.com/tcialcom" data-height="180" data-width="880" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                <nav id="footer-nav" class="cf">
+                    <div class="col6">
+                        <div class="footer-nav-about">
+                            <h2><a href="/"><img src="<?php bloginfo('template_directory');?>/img/logo_w.png" alt="個別指導塾Tcial"></a></h2>
+                            <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
                         </div>
                     </div>
-                </div>
+                    <div class="col6 last">
+                        <div class="footer-nav-blog">
+                            <h2><a href="/magazine/" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/logo-blog-kana.png" alt="ティーシャルスタッフズブログ"></a></h2>
+                            <?php wp_nav_menu( array( 'theme_location' => 'footer_magazine' ) ); ?>
+                        </div>
+                    </div>
+                </nav>
             </div>
 <!--            <div id="footer-link">
                 <div class="container">

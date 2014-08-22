@@ -1,0 +1,27 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "partials/typography)" */
+
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: bottom;
+}
+
+.front-article-img img, .article-img-tl img, .sidebar-article-img img {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.front-article-img img:hover, .sidebar-article-img img:hover, .article-img-tl img:hover {
+    -webkit-transform:scale(1.2,1.2);
+    -moz-transform:scale(1.2,1.2);
+    -ms-transform:scale(1.2,1.2);
+    -o-transform:scale(1.2,1.2);
+    transform:scale(1.2,1.2);
+    opacity: 1;
+}

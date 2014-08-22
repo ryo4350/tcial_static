@@ -1,0 +1,64 @@
+﻿/* Welcome to Compass. Use this file to define button styles.
+ * use @import "ui/elements/buttons)" */
+
+
+.btn {
+    display: inline-block;
+    border: 0;    
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-flat {
+    height: 48px;
+    width: 140px;
+    line-height: 48px;
+    background: rgb(64, 153, 255);
+    @include border-radius (2px);
+    &:hover {
+        opacity: .7;
+        color: rgb(255, 255, 255);        
+    }
+}
+
+.btn-flat-icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 32px;
+    font-weight: bold;
+    &:hover {
+        opacity: .7;
+        color: rgb(255, 255, 255);        
+    }
+}
+
+.btn-shadow {
+    position: relative;
+    top: 0;
+    @include box-shadow (rgb(24, 83, 155) 0 4px 0);
+    @include border-radius (4px);
+    &:hover {
+        transition: none;
+        top: 2px;
+        color: rgb(255, 255, 255);
+        @include box-shadow (rgb(24, 83, 155) 0 2px 0);
+    }
+}
+
+.mv-btn {
+    margin: 40px auto;
+    padding: 16px 24px 12px;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgb(64, 153, 255);
+}
+
+#fb-icon {
+    background: rgb(59, 89, 152);
+}
+
+#tw-icon {
+    background: rgb(85, 172, 238);
+}

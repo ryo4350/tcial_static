@@ -157,7 +157,7 @@ private function get_bread_crumb_array( $args ) {
 	global $post;
  
 	$bread_crumb_arr = array();
-	$bread_crumb_arr[] = array( 'title' => $args['home_label'], 'link' => get_bloginfo( 'url' ) . '/' );
+	$bread_crumb_arr[] = array( 'title' => $args['home_label'], 'link' => get_bloginfo( 'url' ) . '/magazine' );
 	$bread_crumb_arr = $this->add_posts_page_array( $bread_crumb_arr );
 	if ( is_404() ) {
 		$bread_crumb_arr[] = array( 'title' => $args['404_label'], 'link' => false );
