@@ -21,9 +21,11 @@
 }
 
 #content {
-    margin-top: 180px;
+    margin-top: 141px;
     padding-bottom: 40px;
     overflow: hidden;
+    position: relative;
+    z-index: 999;
 }
 
 .onerow {

@@ -8,10 +8,9 @@
         </div>
         <div id="main-text">
             <div id="catch">
-                <h1>夏期講習、受講生受付中！</h1>
-                <h2>7/21 (mon.) - 8/30 (fri.)</h2>
+                <h1>秋の体験授業、受付中。</h1>
                 <p>個別指導/サークルを通じて、未来を切り拓く人を育てる。</p>
-                <a href="/summer2014/" class="btn btn-shadow mv-btn">夏期講習についてもっと知る</a>
+                <a href="/about/" class="btn btn-shadow mv-btn">ティーシャルについてもっと知る</a>
             </div>
         </div>
     </div>
@@ -45,32 +44,46 @@
            </div>
         </section>
         <section id="what">
-            <div class="container-narrow">
+            <div class="container">
                 <h2 class="center">私たちがやっていること。</h2>
-                <div class="onerow vertical">
-                    <div class="col6">
-                        <div class="disc-wrapper">
-                            <h3>個別指導</h3>
-                            <p>あなたの第一志望へむけて、講師陣が全力サポートしたします。一人ひとりに最適なカリキュラムを作成し効率的な学習をします。</p>
-                            <a href="/lesson/" class="btn btn-flat">詳しく見る≫</a>
-                        </div>
-                    </div>
-                    <div class="col6 last">
-                        <img src="<?php bloginfo('template_directory');?>/img/group.jpg" alt="個別指導" />
-                    </div>
-                </div>
-                <div class="onerow vertical">
-                    <div class="col6">
-                        <img src="<?php bloginfo('template_directory');?>/img/circle.jpg" alt="サークル（脳力開発塾）" />
-                    </div>
-                    <div class="col6 last">
-                        <div class="disc-wrapper">
-                            <h3>サークル（脳力開発塾）</h3>
-                            <p>さまざまなサークル活動を通じて脳を刺激し地頭とコミュニケーションスキルを鍛えます。</p>
-                            <a href="/circle/" class="btn btn-flat">詳しく見る≫</a>
-                        </div>
-                    </div>
-                </div>
+                <ul class="onerow">
+                    <li class="col3">
+                        <a href="/lesson/" id="ie-panel">
+                            <div class="disc-wrapper">
+                                <h3>個別指導</h3>
+                                <p>あなたのための授業</p>
+                            </div>
+                            <div id="what-ie-img" class="panel-img"></div>
+                        </a>
+                    </li>
+                    <li class="col3">
+                        <a href="/lesson/" id="training-panel">
+                            <img src="<?php bloginfo('template_directory');?>/img/group.jpg" alt="個別指導" />
+                            <div class="disc-wrapper">
+                                <h3>個別トレーニング</h3>
+                                <p>演習と反復をゲーム感覚で進めることができます。</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col3">
+                        <a href="/lesson/" id="group-panel">
+                            <div class="disc-wrapper">
+                                <h3>小集団指導</h3>
+                                <p>一人ひとりを見る集団</p>
+                            </div>
+                            <div id="what-group-img" class="panel-img"></div>
+                        </a>
+                    </li>
+                    <li class="col3 last">
+                        <a href="/circle/" id="circle-panel">
+                            <img src="<?php bloginfo('template_directory');?>/img/circle.jpg" alt="サークル（脳力開発塾）" />
+                            <div class="disc-wrapper">
+                                <h3>サークル</h3>
+                                <p>タイピング、プログラミング、ゲーム作り、英検、漢検、カードゲーム、将棋等の16のサークル。脳を刺激しコミュニケーション力を鍛える。</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section id="reputation">

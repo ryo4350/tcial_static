@@ -25,6 +25,8 @@ $(function() {
     var nav = $('#nav.magazine-nav');
     var home = $('#home-blog');
     var contact = $('.contact');
+    var open = $('#menu-open');
+    var category = $('#nav');
     offset = nav.offset();
     $(window).scroll(function () {
         if($(window).scrollTop() > offset.top - 78) {
@@ -39,16 +41,22 @@ $(function() {
             contact.stop().animate({'top' : '24px'}, 200);
         }
     });
-
+    
     $(function(){
-            $("a[href^=#]").click(function(){
-                    var Hash = $(this.hash);
-                    var HashOffset = $(Hash).offset().top - 100;
-                    $("html,body").animate({
-                            scrollTop: HashOffset
-                    }, 1000);
-                    return false;
-            });
+        open.click(function(){
+            category.slideToggle(200);
+        });
+    });
+   
+    $(function(){
+        $("a[href^=#]").click(function(){
+            var Hash = $(this.hash);
+            var HashOffset = $(Hash).offset().top - 100;
+            $("html,body").animate({
+                scrollTop: HashOffset
+            }, 1000);
+            return false;
+        });
     });
 
     $(function(){
