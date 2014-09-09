@@ -1,18 +1,9 @@
-<?php
-/**
- * The template for displaying Archive pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package cunningham
- */
-
-get_header(); ?>
+<?php get_template_part('content', 'magazine_header'); ?>
 	<!-- Content -->
         <div id="content">
             <div class="container">
                 <div class="onerow">
-                    <div class="col9 blog-grid">
+                    <div class="col9">
                         <?php while ( have_posts() ) : the_post(); ?>                        
                         <div class="widget-header">
                             <h1><?php the_title(); ?></h1>    

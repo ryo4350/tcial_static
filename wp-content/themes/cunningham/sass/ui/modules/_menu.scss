@@ -168,23 +168,31 @@ header {
         top: 0;
         left: 0;
         width: 100%;
-        height: 60px;
+        height: 48px;
         background: rgb(255, 255, 255);
     }
     
     #logo a {
-        height: 33px;
+        height: 22px;
         text-indent: -999999px;
         float: left;
         display: block;
-        width: 294px;
-        background: url('img/logo_new_0.png') no-repeat scroll 0px 0px / 294px 33px transparent;   
+        width: 196px;
+        background: url('img/logo.png') no-repeat scroll 0px 0px / 196px 22px transparent;   
     }
 
     #contact {
-        display: none;
+        .topbar-info {
+            display: none;            
+        }
+        .btn-flat {
+            width: 64px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 10px;
+        }
     }
-    
+       
     #home, #home-blog {
         display: none;
     }
@@ -278,7 +286,10 @@ header {
         top: 10px;
         right: 5px;
         width: 75px;
-        z-index: 1000;
+        font-size: 12px;
+        background: rgb(255, 255, 255);
+        color: rgb(40, 40, 40);
+        z-index: 1001;
     }
     
     #menu-category > li, #menu-primary > li {

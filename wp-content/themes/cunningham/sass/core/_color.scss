@@ -1,5 +1,10 @@
-﻿/* Welcome to Compass. Use this file to write IE specific override styles.
+﻿/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+ * <link href="/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$color-1: rgb(14, 153, 235);
+$color-2: rgb(255, 197, 0);
+$color-3: rgb(228, 30, 127);
+$color-tw: rgb(85, 172, 238);
+$color-fb: rgb(59, 89, 152);

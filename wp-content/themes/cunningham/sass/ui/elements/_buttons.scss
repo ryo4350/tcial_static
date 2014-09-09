@@ -14,7 +14,7 @@
     height: 48px;
     width: 140px;
     line-height: 48px;
-    background: rgb(64, 153, 255);
+    background: $color-1;
     @include border-radius (2px);
     &:hover {
         opacity: .7;
@@ -38,7 +38,7 @@
     position: relative;
     top: 0;
     @include box-shadow (rgb(24, 83, 155) 0 4px 0);
-    @include border-radius (4px);
+    @include border-radius (3px);
     &:hover {
         transition: none;
         top: 2px;
@@ -50,15 +50,15 @@
 .mv-btn {
     margin: 40px auto;
     padding: 16px 24px 12px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
-    background: rgb(64, 153, 255);
+    background: $color-1;
 }
 
 #fb-icon {
-    background: rgb(59, 89, 152);
+    background: $color-fb;
 }
 
 #tw-icon {
-    background: rgb(85, 172, 238);
+    background: $color-tw;
 }

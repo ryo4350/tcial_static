@@ -12,16 +12,16 @@
 	<!-- Content -->
         <div id="content">
             <div class="container">
-                <div class="onerow">
+                <div class="">
                     <div class="col12">
+                            <p>Tcialにご興味を持っていただいてありがとうございます。<br />
+ご意見、ご感想等ございましたらお気軽にお問い合わせください。<br />
+また、個別指導やサークルの体験も受け付けております。</p>
                         <?php while ( have_posts() ) : the_post(); ?>                        
                         <div class="widget-header">
                             <h1><?php the_title(); ?></h1>    
                         </div>
-                        <div class="contact-form">
-                            <p>Tcialにご興味を持っていただいてありがとうございます。<br />
-ご意見、ご感想等ございましたらお気軽にお問い合わせください。<br />
-また、個別指導やサークルの体験も受け付けております。</p>
+                        <div class="contact-form cf">
                             <?php the_content(); ?>
                         </div>
                          <?php endwhile; // end of the loop. ?>

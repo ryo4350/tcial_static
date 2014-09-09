@@ -22,9 +22,9 @@
 
     <nav class="contact" id="contact">
         <ul class="sns-contact">
-            <li><a class="btn btn-flat-icon" id="fb-icon" href="https://www.facebook.com/tcialcom" target="_blank">f</a></li>
+<!--            <li><a class="btn btn-flat-icon" id="fb-icon" href="https://www.facebook.com/tcialcom" target="_blank">f</a></li>
             <li><a class="btn btn-flat-icon" id="tw-icon" href="https://twitter.com/Tcial315" target="_blank">t</a></li>
-            <li></li>
+            <li></li>-->
         </ul>
     </nav>
     <a id="menu-open" class="btn btn-flat">メニュー</a>

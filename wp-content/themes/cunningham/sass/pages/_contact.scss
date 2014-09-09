@@ -3,16 +3,36 @@
 
 /*contact*/
 .contact-form {
-    /*padding: 40px;*/
+    padding: 10px;
 }
 
-.contact-form input, .contact-form textarea, .contact-form select {
+.contact-form p {
+    display: none;
+}
+
+.contact-form input, .contact-form textarea {
     display: block;
-    width: 98%;
-    margin: 10px auto;
-    padding: 1%;
+    padding: 12px 3%;
     font-size: 24px;
+    width: 94%;
     border: 1px solid rgb(210, 210, 210);
+}
+
+.contact-form select {
+    width: 100%;
+    padding: 12px;
+    display: block;
+    font-size: 20px;
+    color: rgb(180, 180, 180);
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.contact-form option {
+    color: rgb(120, 120, 120);
+}
+
+.contact-form textarea {
+    height: 180px;
 }
 
 .contact-form input[type="submit"] {
