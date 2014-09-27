@@ -22,14 +22,27 @@
     width: 100%;
     padding: 12px;
     display: block;
-    font-size: 20px;
-    color: rgb(180, 180, 180);
+    font-size: 24px;
+    color: rgb(120, 120, 120);
     border: 1px solid rgb(210, 210, 210);
+
+    position: relative;
+    height: 45px;
+    font-size: 100%;
+    padding: 12px 50px 12px 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: .01px;
+    text-overflow: "";
 }
 
-.contact-form option {
-    color: rgb(120, 120, 120);
-}
+    .menu-991:after {
+        right: 0;
+        top: 0;
+        content: "";
+    }
+
 
 .contact-form textarea {
     height: 180px;

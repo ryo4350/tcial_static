@@ -25,3 +25,9 @@ img {
     transform:scale(1.2,1.2);
     opacity: 1;
 }
+
+.img-rounded {
+    -webkit-border-radius: 260px;
+    -moz-border-radius: 260px;
+    border-radius: 260px;
+}

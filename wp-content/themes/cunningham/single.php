@@ -1,6 +1,6 @@
 <?php get_template_part('content', 'magazine_header'); ?>
         <!-- Content -->
-	<div id="content">
+	<div id="content-blog">
         <div class="l-banner">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- blog-header -->
@@ -69,22 +69,22 @@
                                 <?php cunningham_post_nav(); ?>
                             </div>
                             <?php endwhile; ?>
-                            <div class="recommend-wrap cf">
+                            <div class="cf" id="related-posts">
                                 <h3>新着記事</h3>
-                                <ul class="articles">
+                                <ul>
                                 <?php query_posts('posts_per_page=4'); ?>
                                 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                                    <li class="col3">
+                                    <li class="cf">
                                         <a href="<?php the_permalink(); ?>">
-                                            <div class="front-article-img">
+                                            <div class="col3-gl">
                                                 <?php the_post_thumbnail(); ?>
                                             </div>
                                         </a>
-                                        <div class="recomended-article-info">
+                                        <div class="col-9gl last">
+                                            <div><?php the_category(); ?></div>
                                             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                             <p class="post-date"><?php echo get_the_date(); ?></p>
                                         </div>                                        
-                                        <div class="category-label"><?php the_category(); ?></div>
                                     </li>
                                     <?php endwhile;
                                  else :?>

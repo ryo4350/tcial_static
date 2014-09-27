@@ -29,7 +29,7 @@
 }
 
 @media all and (max-width: 768px) {
-    .fb, .twtr {
+    .fb, .twtr, #sidebar-newpost {
         display: none;
     }
 }
@@ -86,10 +86,6 @@
 .categories li {
     margin: 8px 20px;
     font-size: 12px;
-}
-
-.post-categories li a {
-    color: rgb(80, 161,192);
 }
 
 /*blog_team*/

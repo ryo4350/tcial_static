@@ -7,9 +7,10 @@
  * @package cunningham
  */
 
-get_header(); ?>
+get_template_part('content', 'magazine_header'); 
+?>
 	<!-- Content -->
-        <div id="content">
+        <div id="content-blog">
             <div class="container">
                 <div class="onerow">
                     <div class="col9">

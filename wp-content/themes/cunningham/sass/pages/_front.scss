@@ -21,6 +21,7 @@
     display: block;
     margin-top: 40px;
     text-align: center;
+    font-weight: normal;
 }
 
 .articles > li {
@@ -29,6 +30,7 @@
     overflow: hidden;
     margin-bottom: 20px;
 }
+
 
 /*--------------------------------------------------------------
 9.1.1 Key-visual
@@ -270,10 +272,27 @@
 
 
 @media all and (max-width: 768px) {
-    #what li {
-        width: 50%;
-        margin: 0;
-        float: left;
+    #what {
+        h2 {
+            margin: 20px 0;
+        }
+        li {
+            width: 46%;
+            margin: 2%;
+            float: left;
+            a {
+                height: 240px;
+            }
+            .disc-wrapper {
+                padding: 10px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 11px;
+            }
+        }
     }
 }
 
@@ -289,15 +308,16 @@
 /*gallary*/
 #gallary {
     /*background: rgb(245,240,245);*/ 
-    background: rgb(80, 80, 80); 
-}
-
-#gallary h2 {
-    margin: 20px 0 80px;
-    color: rgb(255, 255, 255);
-    font-family: 'Lily Script One', cursive;
-}
-
-#gallary .onerow {
-    overflow: hidden;
+    background: rgb(80, 80, 80);
+    h2 {
+        margin: 20px 0 80px;
+        color: rgb(255, 255, 255);
+        font-family: 'Lily Script One', cursive;
+    }
+    .onerow {
+        overflow: hidden;
+        div {
+            border: 4px solid rgb(210, 210, 210);
+        }
+    }
 }

@@ -2,8 +2,111 @@
 
 	<!-- Content -->
 	<div id="content">
-            <section id="features-person">
+            <section id="policy">
                 <div class="container-narrow">
+                    <h1>指導の際に大切にしていること</h1>
+                    <div class="">
+                        <h2>勉強と向き合う姿勢は十人十色。<br>ひとり一人の個性と能力を引き出し、自信を育てる。</h2>
+                        <p>Tcial に入会する生徒のほとんどは受験合格や成績向上といった目的を持っています。
+                            しかし勉強と向き合う姿勢は十人十色、難関志望校合格に向けて日々努力してきた生徒もいれば、興味が持てず勉強を避けてきた生徒もいます。
+                            私たちは生徒ひとり一人に向き合い、まずはじっくり話を聞きます。生徒とのコミュニケーションの中で、ときには合格へのカリキュラムをつくることを選びますし、またあるときには立体図形の工作を通じて生徒に算数の楽しさを体験してもらうことを選択します。
+                            生徒の気持ちを無視して何かを押し付けることありません。
+                            それは子供の大切な時間を奪うだけの行為だと知っているからです。
+                            押し付ける教育ではなく引き出す教育を Tcial は大切にしています。</p>
+                    </div>
+                    <section>
+                        <div class="col2-gl">
+                            <img src="<?php bloginfo('template_directory');?>/img/gallary/5.jpg" alt="" />
+                        </div>
+                        <div class="col2-gl">
+                            <img src="<?php bloginfo('template_directory');?>/img/gallary/11.jpg" alt="" />
+                        </div>
+                        <div class="col2-gl">
+                            <img src="<?php bloginfo('template_directory');?>/img/gallary/7.jpg" alt="" />
+                        </div>
+                        <div class="col2-gl">
+                            <img src="<?php bloginfo('template_directory');?>/img/gallary/1.jpg" alt="" />
+                        </div>
+                        <div class="col2-gl">
+                            <img src="<?php bloginfo('template_directory');?>/img/gallary/12.jpg" alt="" />
+                        </div>
+                        <div class="col2-gl last">
+                            <img src="<?php bloginfo('template_directory');?>/img/gallary/15.jpg" alt="" />
+                        </div>
+                    </section>
+　                  <div class="col12" id="step">
+                        <h2>学びの５ステップ</h2>
+                        <ul>
+                            <li>
+                                <div class="onerow vertical cf">
+                                    <div class="col9-gl left">
+                                        <h4><span>1.</span>まねぶ</h4>
+                                        <h3><span class="quote">❝</span>学びの原点は真似ること。<span class="quote">❞</span></h3>
+                                        <p>「まねぶ」とは「学ぶ」「真似る」の語源でもあり、すべての学びの原点です。まずはテキストや講師の解き方を真似ることからはじめます。</p>
+                                    </div>
+                                    <div class="col3-gl right">
+                                        <img src="<?php bloginfo('template_directory');?>/img/gallary/8.jpg" alt="" class="img-rounded" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="onerow vertical cf">
+                                    <div class="col9-gl right">
+                                        <h4><span>2.</span>声に出してみる</h4>
+                                        <h3><span class="quote">❝</span>ひとまず、声に出してみる。<span class="quote">❞</span></h3>
+                                        <p>わかったこと、初めて知ったことは声に出してみましょう。口を動かし自分の声を耳で聞くことで理解度も定着度も高まります。</p>
+                                    </div>
+                                    <div class="col3-gl left">
+                                        <img src="<?php bloginfo('template_directory');?>/img/gallary/14.jpg" alt="" class="img-rounded" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="onerow vertical cf">
+                                    <div class="col9-gl left">
+                                        <h4><span>3.</span>書いてみる</h4>
+                                        <h3><span class="quote">❝</span>気分を変えて、書いてみる。<span class="quote">❞</span></h3>
+                                        <p>解らなくて困ったとき、ちょっと気分を変えたいときはホワイトボードに書いてみましょう。
+                                        いつもとちょっと違った環境で考えるとアイデアが浮かぶかもしれません。
+                                        何といっても、数学の図形も、英作文も、嫌いな社会も、ホワイトボードに書くだけで楽しくなります。</p>
+                                    </div>
+                                    <div class="col3-gl right">
+                                        <img src="<?php bloginfo('template_directory');?>/img/gallary/10.jpg" alt="" class="img-rounded" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="onerow vertical cf">
+                                    <div class="col9-gl right">
+                                        <h4><span>4.</span>体感する</h4>
+                                        <h3><span class="quote">❝</span>つながりを体感する。<span class="quote">❞</span></h3>
+                                        <p>体験が生徒と勉強との距離を近づけます。さまざま体験を通じて勉強とのつながりを感じるとことで勉強が楽しくなります。</p>
+                                    </div>
+                                    <div class="col3-gl left">
+                                        <img src="<?php bloginfo('template_directory');?>/img/gallary/6.jpg" alt="" class="img-rounded" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="onerow vertical cf">
+                                    <div class="col9-gl left">
+                                        <h4><span>5.</span>説明する</h4>
+                                        <h3><span class="quote">❝</span>「理解したつもり」をなくす。<span class="quote">❞</span></h3>
+                                        <p>「理解したつもり」になってしまうことは意外と気づきにくいことです。
+                                            どうすれば他人わかりやすく伝えることができるか考えるプロセスで「理解したつもり」に陥っていることに気づき理解を深めることができます。</p>
+                                    </div>
+                                    <div class="col3-gl right">
+                                        <img src="<?php bloginfo('template_directory');?>/img/gallary/19.jpg" alt="" class="img-rounded" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+<!--            <section id="features-person">
+                <div class="container-narrow">
+
                     <h2 class="center">個別指導力 = 講師のチカラ × 相性 × チームワーク</h2>
                     <h3>講師のチカラ</h3>
                     <p class="person-disc center">学力はもちろん、教育に対する考え方、人間的魅力が子供に与える刺激・影響が個別指導の大きな魅力です。</p>
@@ -69,8 +172,8 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <section id="features-psychology">
+            </section>-->
+<!--            <section id="features-psychology">
                 <h2 class="center">１人ひとりの興味、学力、目標、心に最適の指導を。</h2>
                 <div class="container">
                     <div class="onerow">
@@ -83,28 +186,22 @@
                         </div>
                         <div class="col6 last">
                             <div class="onerow">
-                                <div class="col4">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/heart.png" />
-                                        <div class="skill-overlay">
-                                            <h4>積極的傾聴</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/heart.png" />
+                                    <div class="skill-overlay">
+                                        <h4>積極的傾聴</h4>
                                     </div>
                                 </div>
-                                <div class="col4">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/heart.png" />
-                                        <div class="skill-overlay">
-                                            <h4>ありのままを認める</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/heart.png" />
+                                    <div class="skill-overlay">
+                                        <h4>ありのままを認める</h4>
                                     </div>
                                 </div>
-                                <div class="col4 last">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/heart.png" />
-                                        <div class="skill-overlay">
-                                             <h4>「アイデンティティ」レベルで誉める</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/heart.png" />
+                                    <div class="skill-overlay">
+                                         <h4>「アイデンティティ」レベルで誉める</h4>
                                     </div>
                                 </div>
                             </div>
@@ -120,28 +217,22 @@
                         </div>
                         <div class="col6 last">
                             <div class="onerow">
-                                <div class="col4 skill-wrap">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/try&err.png" />
-                                        <div class="skill-overlay">
-                                            <h4>トライ＆エラー</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/try&err.png" />
+                                    <div class="skill-overlay">
+                                        <h4>トライ＆エラー</h4>
                                     </div>
                                 </div>
-                                <div class="col4">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/exercise.png" />
-                                        <div class="skill-overlay">
-                                            <h4>個別演習コース</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/exercise.png" />
+                                    <div class="skill-overlay">
+                                        <h4>個別演習コース</h4>
                                     </div>
                                 </div>
-                                <div class="col4 last skill-wrap">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/favorite.png" />
-                                        <div class="skill-overlay">
-                                            <h4>得意/好きをつくる</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/favorite.png" />
+                                    <div class="skill-overlay">
+                                        <h4>得意/好きをつくる</h4>
                                     </div>
                                 </div>
                             </div>
@@ -157,115 +248,100 @@
                         </div>
                         <div class="col6 last">
                             <div class="onerow">
-                                <div class="col4 skill-wrap">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/smart.png" />
-                                        <div class="skill-overlay">
-                                            <h4>SMARTな目標設定</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/smart.png" />
+                                    <div class="skill-overlay">
+                                        <h4>SMARTな目標設定</h4>
                                     </div>
                                 </div>
-                                <div class="col4">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/schedule.png" />
-                                        <div class="skill-overlay">
-                                            <h4>戦略と計画</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/schedule.png" />
+                                    <div class="skill-overlay">
+                                        <h4>戦略と計画</h4>
                                     </div>
                                 </div>
-                                <div class="col4 last skill-wrap">
-                                    <div class="psychology-grid">
-                                        <img src="<?php bloginfo('template_directory');?>/img/icon/circle.png" />
-                                        <div class="skill-overlay">
-                                            <h4>サークル</h4>
-                                        </div>
+                                <div class="psychology-grid">
+                                    <img src="<?php bloginfo('template_directory');?>/img/icon/circle.png" />
+                                    <div class="skill-overlay">
+                                        <h4>サークル</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="features-wb">
-                <div class="container-narrow">
-                    <h2 class="center">ホワイトボードを使用したアウトプット型授業</h1>
-                    <div class="onerow vertical article">
-                        <div class="col8 left">
-                            <h3><span class="quote">❝</span>ホワイトボードに書けば勉強が楽しい！<span class="quote">❞</span></h3>
-                            <p>数学の図形も、英作文も、嫌いな社会も、ホワイトボードに書くだけでこんなにも楽しくなります。</p>
-                        </div>
-                        <div class="col4 right">
-                            <img src="<?php bloginfo('template_directory');?>/img/gallary/10.jpg" alt="" class="" />
-                        </div>
-                    </div>
-                    <div class="onerow article vertical">
-                        <div class="col4">
-                            <img src="<?php bloginfo('template_directory');?>/img/gallary/11.jpg" alt="" />
-                        </div>
-                        <div class="col8 right">
-                            <h3><span class="quote">❝</span>アイデアがどんどん浮かぶ!?<span class="quote">❞</span></h3>
-                            <p>解法のアイデアに困ったらいつもとちょっと違うことをするとアイデアが浮かんで切るかもしれません。</p>
-                        </div>
-                    </div>
-                    <div class="onerow article vertical">
-                        <div class="col8">
-                            <h3><span class="quote">❝</span>生徒と先生が逆転？<span class="quote">❞</span></h3>
-                            <p>時には生徒自身に説明してもらいます。他人に説明することで初めて、“本当の理解”が可能になります。</p>
-                        </div>
-                        <div class="col4 right">
-                            <img src="<?php bloginfo('template_directory');?>/img/gallary/9.jpg" alt="" />
-                        </div>
-                    </div>
-               </div>
-            </section>
+            </section>-->
             <section id="features-fee">
                 <h2 class="center">授業料</h2>
-                <div class="container-narrow">
-                    <h3 class="center">個別指導は講師のランクによって授業料が異なります。</h3>
-                    <div class="onerow">
-                        <div class="col4">
-                            <div class="standard fee-grid">
-                                <h4>スタンダード講師</h4>
-                                <p>他塾の個別指導講師に相当するランクの講師です。学校補習や、お子様にじっくり寄り添う形での指導に向いた講師です。</p>
-                            </div>
-                            <p class="fee">￥12,000/月</p>
-                            <p class="fee-info">週１回90分の場合</p>
-                            <p class="fee-info">曜日・時間はご要望に合わせてカスタマイズ可能</p>
-                        </div>
-                        <div class="col4">
-                            <div class="professional fee-grid">
-                                <h4>プロ講師</h4>
-                                <p>Tcialプロフェッショナル規定をクリアした講師です。</p>
-                                <!--<a>プロフェッショナル規定を見る</a>-->
-                            </div>
-                            <p class="fee">￥15,000/月</p>
-                            <p class="fee-info">週１回90分の場合</p>
-                            <p class="fee-info">曜日・時間はご要望に合わせてカスタマイズ可</p>
-                        </div>
-                        <div class="col4 last">
-                            <div class="fee-grid expart">
-                                <h4>エキスパート講師</h4>
-                                <p>Tcialエキスパート講師規定をクリアした講師です。豊富な経験とスキルを持っています。</p>
+                <div class="container-table">
+                    <table class="table" id="fee-table">
+                        <tbody>
+                            <tr>
+                                <th>入会金</th>
+                                <td>
+                                    <s>10,000円</s>  ➡ <span>0円</span>（2014年10月31日まで）
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>施設利用料</th>
+                                <td>
+                                    <s>2,000円</s>  ➡ <span>0円</span>（2014年10月31日まで）
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>教材費</th>
+                                <td>
+                                    実費で頂いております
+                                </td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">授業料</th>
+                                <td>
+                                    週1回<span>18,000円</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    週2回<span>36,000円</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    週3回<span>54,000円</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>お支払方法</th>
+                                <td>
+                                    銀行振り込みまたは自動引き落とし
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+<!--                    <div class="onerow">
+                        <div class="col6">
+                            <div class="charge-grid expart">
+                                <h3>個別指導</h3>
+                                <p>豊富な経験とスキルを持っています講師が授業を行います。</p>
                             </div>
                             <p class="fee">￥18,000～/月</p>
                             <p class="fee-info">週１回90分の場合</p>
                             <p class="fee-info">曜日・時間はご要望に合わせてカスタマイズ可能</p>
                         </div>
-                    </div>
-                </div>
-                <div class="container-narrow">
-                    <h3 class="center">集団指導</h3>
-                    <div class="onerow">
-                        <div class="charge-grid group">
-                            <h4>中学３年生理科社会</h4>
-                            <p>公立高校受験を目指す中学3年生対象の理科・社会</p>
-                        </div>
-                        <p class="fee">￥6,000/月4回</p>
-                        <p class="fee-info">原則理社２科目まとめての受講となります</p>
-                    </div>
 
-                    <h3 class="center">その他の経費</h3>
+                        <div class="col6 last">
+                            <div class="charge-grid group">
+                                <h3>集団指導</h3>
+                                <p>公立高校受験を目指す中学3年生対象の理科・社会</p>
+                            </div>
+                            <p class="fee">￥6,000/月4回</p>
+                            <p class="fee-info">原則理社２科目まとめての受講となります</p>
+                        </div>
+                    </div>
+                    
+
                     <div class="onerow">
+                        <h3 class="center">その他の経費</h3>
                         <div class="col4">
                             <div class="other-charge charge-grid">
                                 <h4 class="">入会金</h4>
@@ -285,7 +361,7 @@
                             <p class="fee">実費</p>
                             <p class="fee-info">１科目あたり\1,000～\1,500程度になることが多いです。</p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </section>
 	</div>

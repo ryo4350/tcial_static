@@ -25,68 +25,16 @@
             <section id="value">                    
                 <div class="container-narrow">
                     <h2>私たちの考え</h2>
-                    <div class="values" id="society">
-                        <h3>Values for Society</h3>
-                        <ul>
-                            <li>
-                                <h4><span>1.</span>1人ひとりの個性と能力を生かす場を作る</h4>
-                            </li>
-                            <li>
-                                <h4><span>2.</span>幸せに生きる方法を知っている人を増やす</h4>
-                            </li>
-                            <li>
-                                <h4><span>3.</span>教育コストを下げる</h4>
-                            </li>
-                            <li>
-                                <h4><span>4.</span>地域教育を活性化させる</h4>
-                            </li>
-                            <li>
-                                <h4><span>5.</span>斜めの関係をつくる</h4>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="values" id="children">
-                        <h3>Values for Children</h3>
-                        <ul>
-                            <li>
-                                <h4><span>1.</span>よりどころになる</h4>
-                                <p>失敗してもに受け入れてもらえる絶対的安心感のあるホームがある。このことがすべての行動の基底になります。</p>
-                            </li>
-                            <li>
-                                <h4><span>2.</span>ワクワク感・刺激</h4>
-                                <p>日常生活では出会うことのない、面白い人、知識、考え方に触れ、わくわくする体験を与えます。</p>
-                            </li>
-                            <li>
-                                <h4><span>3.</span>基礎学力</h4>
-                                <p>何を成し遂げるにも必要なのは基礎力。徹底した反復で基礎を固めます。</p>
-                            </li>
-                            <li>
-                                <h4><span>4.</span>試行錯誤</h4>
-                                <p>試行錯誤の末成し遂げる経験は、ゆるぎない自信を生みます。</p>
-                            </li>
-                            <li>
-                                <h4><span>5.</span>アウトプット</h4>
-                                <p>人に説明する、答案を書く、モノをつくる etc...。アウトプットによって本質的な理解に到達できます。</p>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="values" id="company">
-                        <h3>Values for Company</h3>
                         <ul>
                             <li>
-                                <h4><span>1.</span>生徒、保護者、講師でチームとなりより良い教育を目指し続けます</h4>
+                                <h3><span>1.</span> １人ひとりの個性と能力を生かします</h3>
                             </li>
                             <li>
-                                <h4><span>2.</span>クリエイティブな発想とユーモアを大切にします</h4>
+                                <h3><span>2.</span> クリエイティブな発想とユーモアを大切にします</h3>
                             </li>
                             <li>
-                                <h4><span>3.</span>１人ひとりの個性と能力を生かします</h4>
-                            </li>
-                            <li>
-                                <h4><span>4.</span>私だち自身もともに学び続けます</h4>
-                            </li>
-                            <li>
-                                <h4><span>5.</span>本質を追求し続けます</h4>
+                                <h3><span>3.</span> 私たち自身もともに学び続けます</h3>
                             </li>
                         </ul>
                     </div>
@@ -99,69 +47,69 @@
                     <div class="onerow">
                         <div class="col3">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/team/ryosakamoto.jpg" class="team-img" />
-                                <p>Ryo Sakamoto</p>
-                                <p class="subject-info">数学/国語/理科/社会</p>
-                                <p class="work-info">広報/web/</p>
+                                <img src="<?php bloginfo('template_directory');?>/img/team/ryosakamoto.jpg" class="img-rounded" />
                             </div>
+                            <p class="name">Ryo Sakamoto</p>
+                            <p class="subject-info">数学/国語/理科/社会</p>
+                            <p class="work-info">広報/web/</p>
                         </div>
                         <div class="col3">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/team/keitasakurai.jpg" class="team-img" />
-                                <p>Keita Sakurai</p>
-                                <p class="subject-info">英語</p>
-                                <p class="work-info">代表/経理</p>
+                                <img src="<?php bloginfo('template_directory');?>/img/team/keitasakurai.jpg" class="img-rounded" />
                             </div>
+                            <p class="name">Keita Sakurai</p>
+                            <p class="subject-info">英語</p>
+                            <p class="work-info">代表/経理</p>
                         </div>
                         <div class="col3">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/team/keisukesuzuki.jpg" class="team-img" />
-                                <p>Keisuke Suzuki</p>
-                                <p class="subject-info">国語/英語/社会</p>
-                                <p class="work-info">教室代表</p>
+                                <img src="<?php bloginfo('template_directory');?>/img/team/keisukesuzuki.jpg" class="img-rounded" />
                             </div>
+                            <p class="name">Keisuke Suzuki</p>
+                            <p class="subject-info">国語/英語/社会</p>
+                            <p class="work-info">教室代表</p>
                         </div>
                         <div class="col3 last">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/team/michiharufukagawa.jpg" class="team-img" />
-                                <p>Michiharu Fukagawa</p>
-                                <p class="subject-info">数学/理科</p>
-                                <p class="work-info">ITソリューション</p>
+                                <img src="<?php bloginfo('template_directory');?>/img/team/michiharufukagawa.jpg" class="img-rounded" />
                             </div>
+                            <p class="name">Michiharu Fukagawa</p>
+                            <p class="subject-info">数学/理科</p>
+                            <p class="work-info">ITソリューション</p>
                         </div>
                     </div>
                     <div class="onerow">
                         <div class="col3">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/icon/teacher.png" class="team-img" />
-                                <p>H.A.</p>
+                                <img src="<?php bloginfo('template_directory');?>/img/icon/teacher.png" class="img-rounded" />
+                                <p class="name">H.A.</p>
                                 <p class="subject-info">国語</p>
                                 <p class="work-info">extraエキスパート講師</p>
                            </div>
                         </div>
                         <div class="col3">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/team/arinayamazaki.jpg" class="team-img" />
-                                <p>Arina Yamzaki</p>
-                                <p class="subject-info">数学</p>
-                                <p class="work-info">スタンダード講師</p>
+                                <img src="<?php bloginfo('template_directory');?>/img/team/arinayamazaki.jpg" class="img-rounded" />
                            </div>
+                            <p class="name">Arina Yamzaki</p>
+                            <p class="subject-info">数学</p>
+                            <p class="work-info">スタンダード講師</p>
                         </div>
                         <div class="col3">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/icon/teacher.png" class="team-img" />
-                                <p>Masayosi Kataoka</p>
-                                <p class="subject-info">国語/英語</p>
-                                <p class="work-info">プロフェッショナル講師</p>
+                                <img src="<?php bloginfo('template_directory');?>/img/icon/teacher.png" class="img-rounded" />
                            </div>
+                            <p class="name">Masayosi Kataoka</p>
+                            <p class="subject-info">国語/英語</p>
+                            <p class="work-info">プロフェッショナル講師</p>
                         </div>
                         <div class="col3 last">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/team/join.png" class="team-img" />
-                                <p>YOU</p>
-                                <p class="subject-info">どの科目でも！</p>
-                                <p class="work-info">JOIN US!</p>
+                                <img src="<?php bloginfo('template_directory');?>/img/team/join.png" class="img-rounded" />
                             </div>
+                            <p class="name">YOU</p>
+                            <p class="subject-info">どの科目でも！</p>
+                            <p class="work-info">JOIN US!</p>
                         </div>
                     </div>
                </div>

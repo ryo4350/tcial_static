@@ -1,6 +1,6 @@
 <?php get_template_part('content', 'magazine_header'); ?>
 	<!-- Content -->
-    <div id="content">
+    <div id="content-blog">
         <div class="l-banner">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- blog-header -->
@@ -13,7 +13,7 @@
 </script>
         </div>
         <div class="container">
-            <div class="onerow">
+            <div class="onerow cf">
                 <div id="infobar" class="col2">
                     <?php get_template_part('content', 'infobar') ?>
                 </div>

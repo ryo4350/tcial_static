@@ -5,16 +5,17 @@
 5.1 Links
 --------------------------------------------------------------*/
 a {
-    color: rgb(40, 40, 40);
+    color: $color-1;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    color: rgb(80, 161,192);
+    -webkit-transition: 0.75s;
+    -moz-transition: 0.75s;
+    -o-transition: 0.75s;
+    transition: 0.75s;
+    color: $color-1-hover;
 }
 
 /*--------------------------------------------------------------

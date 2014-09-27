@@ -7,7 +7,7 @@
 ?>
                     <div class="col3 last">
                         <div class="onerow cf">
-                            <div class="col12 blog-grid">
+                            <div class="blog-grid">
                                 <div class="widget-about widget-content">
                                     <p class="powered">powered by</p>
                                     <a href="/" target="_blank">
@@ -36,7 +36,7 @@
                         </div>
                         
                         <div class="onerow cf">
-                            <div class="col12 blog-grid">
+                            <div class="blog-grid">
                                 <div class="widget-header">
                                     <h3>カテゴリー</h3>
                                 </div>
@@ -55,31 +55,29 @@
                             </div>
                         </div>
                         
-                        <div class="onerow"> 
-                            <div class="col12">
-                                <div class="widget-header">
-                                    <h3>新着記事</h3>
-                                </div>
-                                <ul class="articles">
-                                    <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                                    <li>
-                                        <a href="<?php the_permalink(); ?>">
-                                            <div class="sidebar-article-img">
-                                                <?php the_post_thumbnail(); ?>
-                                                <div class="category-label"><?php the_category(); ?></div>
-                                            </div>
-                                            <div class="recomended-article-info">
-                                                <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                                <p class="post-date"><?php echo get_the_date(); ?></p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <?php endwhile; ?> 
-                                </ul>
-                                <?php else :?>
-                                <h5>記事はありません</h5>
-                                <?php endif; ?>
+                        <div class="onerow" id="sidebar-newpost"> 
+                            <div class="widget-header">
+                                <h3>新着記事</h3>
                             </div>
+                            <ul class="articles">
+                                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                                <li>
+                                    <a href="<?php the_permalink(); ?>">
+                                        <div class="sidebar-article-img">
+                                            <?php the_post_thumbnail(); ?>
+                                            <div class="category-label"><?php the_category(); ?></div>
+                                        </div>
+                                        <div class="recomended-article-info">
+                                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                                            <p class="post-date"><?php echo get_the_date(); ?></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <?php endwhile; ?> 
+                            </ul>
+                            <?php else :?>
+                            <h5>記事はありません</h5>
+                            <?php endif; ?>
                         </div>
 
                         <div class="onerow"> 

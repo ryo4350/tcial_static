@@ -2,17 +2,6 @@
  * use @import "partials/typography)" */
 
 
-/*whiteboard*/
-.onerow h2 {
-    padding: 20px;
-    font-size: 18px;
-}
-
-#wb {
-    background-image: url('/img/whiteboard.jpg');
-    height: 640px;
-}
-
 .features-info {
     text-align: center;
 }
@@ -26,49 +15,8 @@
     font-size: 14px;
 }
 
-
-/*case*/
-#secondary-case-nav {
-	background: rgb(220, 220, 220);
-	width: 100%;
-        height: 80px;
-	z-index: 9999;
-}
-
-#secondary-case-nav  li {
-	display: inline-block;
-        float: left;
-}
-
-#secondary-case-nav  li a {
-    display: block;
-    width: 80px;
-    height: 80px;
-}
-
-#case-nav-1 a {
-    background-image: url('/img/case/nav/shun.jpg');
-}
-
-#case-nav-2 a {
-    background-image: url('/img/case/nav/toru.jpg');
-}
-
-#case-nav-3 a {
-    background-image: url('/img/case/nav/yuta.jpg');
-}
-
-.case h2 {
-    font-size: 28px;
-    padding: 40px;
-}
-
-.case p {
-    padding: 20px 40px;
-}
-
-.case-info p {
-    padding: 40px 20px;
+#features-psychology {
+    
 }
 
 /*lesson-features*/
@@ -146,29 +94,6 @@
     color: rgb(180, 180, 180);
 }
 
-#features-wb {
-    background: rgb(220, 220, 220);
-}
-
-#features-wb h2 {
-    font-size: 36px;
-    margin: 40px 0 80px;
-    color: rgb(80, 80, 80);
-}
-
-#features-wb h3 {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 60px;
-    color: rgb(100, 100, 100);
-} 
-
-#features-wb p {
-    font-size: 12px;
-    padding: 0 80px;
-    color: rgb(140, 140, 140);
-}
-
 .quote {
     font-size: 64px;
     color: rgb(100, 100, 100);
@@ -180,85 +105,47 @@
 
 #features-fee h2 {
     font-size: 36px;
-    margin: 40px 0 80px;
+    margin-top: 0;
+    margin-bottom: 40px;
     color: rgb(80, 80, 80);
+    font-weight: normal;
 }
 
-#features-fee h3 {
-    font-size: 18px;
-    text-align: center;
-    margin: 40px;
-    color: rgb(120, 120, 120);
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    th {
+        padding: 10px;
+    }
+    td {
+        padding: 10px;
+    }
+}
+
+#fee-table {
+    th{
+        width: 30%;
+        font-weight: normal;
+        font-size: 16px;
+        padding-right: 15px;
+        text-align: right;
+        border-right: 1px solid rgb(80, 80, 80);
+    }
+    td {
+        width: 70%;
+        padding-left: 15px;
+        font-size: 18px;
+        color: rgb(120, 120, 120);
+        span {
+            font-family: 'Lily Script One', cursive;
+            font-size: 32px;
+            margin: 0 15px;
+            color: $color-1;
+        }
+    }
 }
 
 /*fee*/
-.standard {
-    background: rgb(135, 191, 112);
-    color: rgb(255, 255, 255);
-}
-
-.semi-pro {
-    background: rgb(239, 126, 23);
-    color: rgb(255, 255, 255);
-}
-
-.professional{
-    background: rgb(219, 101, 101);
-    color: rgb(255, 255, 255);
-}
-
-.expart{
-    background: rgb(80, 80, 80);
-    color: rgb(255, 255, 255);
-}
-
-.group {
-    background: rgb(80, 161,192);
-    color: rgb(255, 255, 255);
-}
-
-.fee-grid {
-    position: relative;
-    margin-bottom: 20px;
-    text-align: center;
-    min-height: 200px;
-}
-
-.charge-grid {
-    position: relative;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.fee-grid h4, .charge-grid h4 {
-    padding: 30px 20px 0;
-    font-size: 20px;
-}
-
-.fee-grid p, .charge-grid p {
-    padding: 20px;
-    font-size: 15px;
-}
-
-.fee-grid span {
-    display: block;
-    margin-top: 5px;
-    font-size: 11px;
-}
-
-.fee {
-/*    position: absolute;*/
-    text-align: center;
-    bottom: 0;
-    font-size: 24px;
-    color: rgb(80, 80, 80);
-}
-
-.fee-info {
-    font-size: 11px;
-    text-align: center;
-    color: rgb(120, 120, 120);
-}
 
 /*lesson*/
 .inner-left{
@@ -295,11 +182,87 @@
 }
 
 .psychology-grid {
+    float: left;
+    width: 25%;
+    padding: 4%;
     text-align: center;
-    padding: 20px;
 }
 
 .psychology-grid h4 {
     font-size: 13px;
     margin: 20px 0;
+}
+
+/*policy*/
+#policy {
+    background: rgb(255,255,255);
+    h1 {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px 0;
+        color: rgb(180, 180, 180);
+    }
+    h2 {
+        text-align: center;
+        font-size: 36px;
+        padding: 20px;
+        color: rgb(120, 120, 120);
+        font-weight: normal;
+    }
+    h3 {
+        text-align: center;
+        font-size: 28px;
+        margin: 10px 0;
+        color: rgb(120, 120, 120);
+        font-weight: normal;
+    }
+    h4 {
+        margin-left: 10px;
+    }
+
+    p {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 10px;
+        line-height: 2.1;   
+        font-size: 16px;
+    }
+    span {
+        margin-right: 10px;
+        font-size: 36px;
+        font-family: 'Lily Script One', cursive;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #policy {
+        h2 {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 1.9;
+        }
+        .quote {
+            font-size: 32px;
+        }
+        img {
+            margin-top: 80px;
+        }
+    }
+    #fee-table {
+        th{
+            font-size: 11px;
+        }
+        td {
+            font-size: 12px;
+            span {
+                font-size: 28px;
+            }
+        }
+    }
 }

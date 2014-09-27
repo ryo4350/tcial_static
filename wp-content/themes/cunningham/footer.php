@@ -11,24 +11,8 @@
 	<footer id="footer">
             <div class="container-narrow cf">
                 <div class="footer-fb">
-                    <div class="col12">
 <div class="fb-like-box" data-href="https://www.facebook.com/tcialcom" data-height="240" data-width="925" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-                    </div>
                 </div>
-                <nav id="footer-nav" class="cf">
-                    <div class="col6">
-                        <div class="footer-nav-about">
-                            <h2><a href="/"><img src="<?php bloginfo('template_directory');?>/img/logo_w.png" alt="個別指導塾Tcial"></a></h2>
-                            <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-                        </div>
-                    </div>
-                    <div class="col6 last">
-                        <div class="footer-nav-blog">
-                            <h2><a href="/magazine/" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/logo-blog-kana.png" alt="ティーシャルスタッフズブログ"></a></h2>
-                            <?php wp_nav_menu( array( 'theme_location' => 'footer_magazine' ) ); ?>
-                        </div>
-                    </div>
-                </nav>
             </div>
 <!--            <div id="footer-link">
                 <div class="container">
@@ -41,6 +25,16 @@
                 </div>
             </div>-->
             <div class="site-info">
+                <nav id="footer-nav" class="container-narrow">
+                    <div class="cf">
+                        <h2><a href="/"><img src="<?php bloginfo('template_directory');?>/img/logo_w.png" alt="個別指導塾ティーシャル横浜"></a></h2>
+                        <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+                    </div>
+                    <div class="cf">
+                        <h2><a href="/magazine/" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/logo-blog-kana.png" alt="ティーシャルスタッフズブログ"></a></h2>
+                        <?php wp_nav_menu( array( 'theme_location' => 'footer_magazine' ) ); ?>
+                    </div>
+                </nav>
                 <span>&copy;<?php bloginfo('name'); ?>All Rights Reserved.</span>｜
                 <a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'cunningham' ), 'WordPress' ); ?></a>
                 <span class="sep"> | </span>

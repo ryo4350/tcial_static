@@ -74,6 +74,10 @@ table {
   display: none;
 }
 
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* Welcome to Compass. Use this file to define typography styles.
  * use @import "partials/typography)" */
 /*--------------------------------------------------------------
@@ -81,23 +85,24 @@ table {
 --------------------------------------------------------------*/
 /* line 7, sass/core/_base.scss */
 a {
-  color: #282828;
+  color: #0e99eb;
   text-decoration: none;
+  cursor: pointer;
 }
 
-/* line 12, sass/core/_base.scss */
+/* line 13, sass/core/_base.scss */
 a:hover {
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  color: #50a1c0;
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
+  color: #0071b9;
 }
 
 /*--------------------------------------------------------------
 8.0 - Clearings
 --------------------------------------------------------------*/
-/* line 23, sass/core/_base.scss */
+/* line 24, sass/core/_base.scss */
 .cf:before, .cf:after {
   content: "";
   display: block;
@@ -106,10 +111,6 @@ a:hover {
   clear: both;
 }
 
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* Welcome to Compass. Use this file to define typography styles.
  * use @import "partials/typography)" */
 /* line 4, sass/core/_typography.scss */
@@ -166,6 +167,13 @@ body {
 }
 
 /* line 23, sass/core/_layout.scss */
+.container-table {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 0 0 1%;
+}
+
+/* line 29, sass/core/_layout.scss */
 #content {
   margin-top: 141px;
   padding-bottom: 40px;
@@ -174,13 +182,22 @@ body {
   z-index: 999;
 }
 
-/* line 31, sass/core/_layout.scss */
+/* line 37, sass/core/_layout.scss */
+#content-blog {
+  margin-top: 160px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+}
+
+/* line 45, sass/core/_layout.scss */
 .onerow {
   position: relative;
   margin-bottom: 20px;
 }
 
-/* line 36, sass/core/_layout.scss */
+/* line 50, sass/core/_layout.scss */
 #content section, #top-content section {
   padding: 80px 0;
   overflow: hidden;
@@ -189,161 +206,160 @@ body {
 /*--------------------------------------------------------------
 3.2 - Grids
 --------------------------------------------------------------*/
-/* line 44, sass/core/_layout.scss */
+/* line 58, sass/core/_layout.scss */
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
   float: left;
   margin: 0 3% 0 0;
 }
 
-/* line 49, sass/core/_layout.scss */
+/* line 63, sass/core/_layout.scss */
 .col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
   margin: 0;
 }
 
-/* line 53, sass/core/_layout.scss */
+/* line 67, sass/core/_layout.scss */
 .col1 {
   width: 5.5%;
 }
 
-/* line 54, sass/core/_layout.scss */
+/* line 68, sass/core/_layout.scss */
 .col2 {
   width: 14%;
 }
 
-/* line 55, sass/core/_layout.scss */
+/* line 69, sass/core/_layout.scss */
 .col3 {
   width: 22.5%;
 }
 
-/* line 56, sass/core/_layout.scss */
+/* line 70, sass/core/_layout.scss */
 .col4 {
   width: 31%;
 }
 
-/* line 57, sass/core/_layout.scss */
+/* line 71, sass/core/_layout.scss */
 .col5 {
   width: 39.5%;
 }
 
-/* line 58, sass/core/_layout.scss */
+/* line 72, sass/core/_layout.scss */
 .col6 {
   width: 48%;
 }
 
-/* line 59, sass/core/_layout.scss */
+/* line 73, sass/core/_layout.scss */
 .col7 {
   width: 56.5%;
 }
 
-/* line 60, sass/core/_layout.scss */
+/* line 74, sass/core/_layout.scss */
 .col8 {
   width: 65%;
 }
 
-/* line 61, sass/core/_layout.scss */
+/* line 75, sass/core/_layout.scss */
 .col9 {
   width: 73.5%;
 }
 
-/* line 62, sass/core/_layout.scss */
+/* line 76, sass/core/_layout.scss */
 .col10 {
   width: 82%;
 }
 
-/* line 63, sass/core/_layout.scss */
+/* line 77, sass/core/_layout.scss */
 .col11 {
   width: 90.5%;
 }
 
-/* line 64, sass/core/_layout.scss */
+/* line 78, sass/core/_layout.scss */
 .col12 {
   width: 99%;
   margin: 0;
 }
 
-/* line 66, sass/core/_layout.scss */
+/* line 80, sass/core/_layout.scss */
 .col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 72, sass/core/_layout.scss */
+/* line 86, sass/core/_layout.scss */
 .col1-gl, .col2-gl, .col3-gl, .col4-gl, .col5-gl, .col6-gl, .col7-gl, .col8-gl, .col9-gl, .col10-gl, .col11-gl, .col12-gl {
   float: left;
   margin: 0 1% 0 0;
-  border: 4px solid #d2d2d2;
   box-sizing: border-box;
   border-radius: 2px;
 }
 
-/* line 80, sass/core/_layout.scss */
+/* line 93, sass/core/_layout.scss */
 .col1-gl.last, .col2-gl.last, .col3-gl.last, .col4-gl.last, .col5-gl.last, .col6-gl.last, .col7-gl.last, .col8-gl.last, .col9-gl.last, .col10-gl.last, .col11-gl.last, .col12-gl {
   margin: 0;
 }
 
-/* line 84, sass/core/_layout.scss */
+/* line 97, sass/core/_layout.scss */
 .col1-gl {
   width: 7.4166666666666666666666%;
 }
 
-/* line 85, sass/core/_layout.scss */
+/* line 98, sass/core/_layout.scss */
 .col2-gl {
   width: 15.8333333333333333333333%;
 }
 
-/* line 86, sass/core/_layout.scss */
+/* line 99, sass/core/_layout.scss */
 .col3-gl {
   width: 24.25%;
 }
 
-/* line 87, sass/core/_layout.scss */
+/* line 100, sass/core/_layout.scss */
 .col4-gl {
   width: 32.6666666666666666666666%;
 }
 
-/* line 88, sass/core/_layout.scss */
+/* line 101, sass/core/_layout.scss */
 .col5-gl {
   width: 41.0833333333333333333333%;
 }
 
-/* line 89, sass/core/_layout.scss */
+/* line 102, sass/core/_layout.scss */
 .col6-gl {
   width: 49.5%;
 }
 
-/* line 90, sass/core/_layout.scss */
+/* line 103, sass/core/_layout.scss */
 .col7-gl {
   width: 57.9166666666666666666666%;
 }
 
-/* line 91, sass/core/_layout.scss */
+/* line 104, sass/core/_layout.scss */
 .col8-gl {
   width: 66.3333333333333333333333%;
 }
 
-/* line 92, sass/core/_layout.scss */
+/* line 105, sass/core/_layout.scss */
 .col9-gl {
   width: 74.7499999999999999999999%;
 }
 
-/* line 93, sass/core/_layout.scss */
+/* line 106, sass/core/_layout.scss */
 .col10-gl {
   width: 83.1666666666666666666666%;
 }
 
-/* line 94, sass/core/_layout.scss */
+/* line 107, sass/core/_layout.scss */
 .col11-gl {
   width: 91.5833333333333333333333%;
 }
 
-/* line 95, sass/core/_layout.scss */
+/* line 108, sass/core/_layout.scss */
 .col12-gl {
   width: 100%;
   margin: 0;
 }
 
-/* line 97, sass/core/_layout.scss */
+/* line 110, sass/core/_layout.scss */
 .col1-gl img, .col2-gl img, .col3-gl img, .col4-gl img, .col5-gl img, .col6-gl img, .col7-gl img, .col8-gl img, .col9-gl img, .col1-gl img, .col11-gl img, .col12-gl img {
   width: 100%;
   height: auto;
@@ -351,34 +367,40 @@ body {
 }
 
 @media all and (max-width: 1024px) {
-  /* line 104, sass/core/_layout.scss */
+  /* line 117, sass/core/_layout.scss */
   #tl {
     width: 73.5%;
   }
 
-  /* line 107, sass/core/_layout.scss */
+  /* line 120, sass/core/_layout.scss */
   #infobar {
     display: none;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 113, sass/core/_layout.scss */
+  /* line 126, sass/core/_layout.scss */
   .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col6-nm, #tl {
     float: none;
-    width: 100%;
+    width: 99%;
+    margin-right: 1%;
   }
 
-  /* line 118, sass/core/_layout.scss */
+  /* line 132, sass/core/_layout.scss */
   #menu-primary, #home, #secondary-nav, #secondary-case-nav, #gallary, #reputation {
     display: none;
   }
 
-  /* line 122, sass/core/_layout.scss */
+  /* line 136, sass/core/_layout.scss */
   #content {
-    margin-top: 120px;
+    margin-top: 40px;
   }
 
-  /* line 126, sass/core/_layout.scss */
+  /* line 140, sass/core/_layout.scss */
+  #content-blog {
+    margin-top: 80px;
+  }
+
+  /* line 144, sass/core/_layout.scss */
   #smr-msg {
     display: none;
   }
@@ -386,13 +408,13 @@ body {
 /*--------------------------------------------------------------
 3.4 - Others
 --------------------------------------------------------------*/
-/* line 136, sass/core/_layout.scss */
+/* line 154, sass/core/_layout.scss */
 .right {
   margin: 0;
   float: right;
 }
 
-/* line 141, sass/core/_layout.scss */
+/* line 159, sass/core/_layout.scss */
 .vertical {
   margin-bottom: 80px;
 }
@@ -424,6 +446,13 @@ img {
   -o-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
   opacity: 1;
+}
+
+/* line 29, sass/core/_images.scss */
+.img-rounded {
+  -webkit-border-radius: 260px;
+  -moz-border-radius: 260px;
+  border-radius: 260px;
 }
 
 /* Welcome to Compass. Use this file to define button styles.
@@ -538,7 +567,7 @@ img {
 .l-banner {
   width: 728px;
   height: 90px;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
 }
 
@@ -764,9 +793,10 @@ header {
     width: 100%;
     height: 48px;
     background: white;
+    border-bottom: 1px solid #d2d2d2;
   }
 
-  /* line 175, sass/ui/modules/_menu.scss */
+  /* line 176, sass/ui/modules/_menu.scss */
   #logo a {
     height: 22px;
     text-indent: -999999px;
@@ -776,11 +806,11 @@ header {
     background: url("img/logo.png") no-repeat scroll 0px 0px/196px 22px transparent;
   }
 
-  /* line 185, sass/ui/modules/_menu.scss */
+  /* line 186, sass/ui/modules/_menu.scss */
   #contact .topbar-info {
     display: none;
   }
-  /* line 188, sass/ui/modules/_menu.scss */
+  /* line 189, sass/ui/modules/_menu.scss */
   #contact .btn-flat {
     width: 64px;
     height: 32px;
@@ -788,7 +818,7 @@ header {
     font-size: 10px;
   }
 
-  /* line 196, sass/ui/modules/_menu.scss */
+  /* line 197, sass/ui/modules/_menu.scss */
   #home, #home-blog {
     display: none;
   }
@@ -796,14 +826,14 @@ header {
 /*--------------------------------------------------------------
 5.2.2 Blog
 --------------------------------------------------------------*/
-/* line 205, sass/ui/modules/_menu.scss */
+/* line 206, sass/ui/modules/_menu.scss */
 #header-magazine {
   position: relative;
   background: #379be1;
   height: 100px;
   z-index: 1001;
 }
-/* line 210, sass/ui/modules/_menu.scss */
+/* line 211, sass/ui/modules/_menu.scss */
 #header-magazine h1 a {
   width: 325px;
   height: 72px;
@@ -815,40 +845,41 @@ header {
   float: left;
 }
 
-/* line 222, sass/ui/modules/_menu.scss */
+/* line 223, sass/ui/modules/_menu.scss */
 .magazine-nav {
   height: 60px;
-  background: rgba(255, 255, 255, 0.8);
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-/* line 227, sass/ui/modules/_menu.scss */
+/* line 229, sass/ui/modules/_menu.scss */
 #menu-category a {
   color: #282828;
 }
 
-/* line 231, sass/ui/modules/_menu.scss */
+/* line 233, sass/ui/modules/_menu.scss */
 #menu-category > li, #menu-primary > li {
   float: left;
   text-align: center;
 }
-/* line 234, sass/ui/modules/_menu.scss */
+/* line 236, sass/ui/modules/_menu.scss */
 #menu-category > li a, #menu-primary > li a {
   padding: 0 20px;
 }
 
-/* line 239, sass/ui/modules/_menu.scss */
+/* line 241, sass/ui/modules/_menu.scss */
 #menu-category > li {
   color: #282828;
   line-height: 60px;
 }
 
-/* line 244, sass/ui/modules/_menu.scss */
+/* line 246, sass/ui/modules/_menu.scss */
 .sns-contact {
   display: inline;
   margin-left: 5px;
 }
 
-/* line 249, sass/ui/modules/_menu.scss */
+/* line 251, sass/ui/modules/_menu.scss */
 #top-description {
   position: absolute;
   left: 480px;
@@ -856,22 +887,33 @@ header {
   color: white;
   font-size: 13px;
 }
-/* line 255, sass/ui/modules/_menu.scss */
+/* line 257, sass/ui/modules/_menu.scss */
 #top-description a {
   color: white;
 }
-/* line 257, sass/ui/modules/_menu.scss */
+/* line 259, sass/ui/modules/_menu.scss */
 #top-description a:hover {
   color: gainsboro;
 }
 
+/* line 265, sass/ui/modules/_menu.scss */
+#menu-open {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 75px;
+  font-size: 12px;
+  background: white;
+  color: #282828;
+}
+
 @media all and (max-width: 768px) {
-  /* line 265, sass/ui/modules/_menu.scss */
+  /* line 277, sass/ui/modules/_menu.scss */
   #header-magazine {
     height: 72px;
   }
 
-  /* line 269, sass/ui/modules/_menu.scss */
+  /* line 281, sass/ui/modules/_menu.scss */
   #header-magazine h1 a {
     width: 216px;
     height: 48px;
@@ -879,30 +921,23 @@ header {
     background: url("img/logo-blog-kana.png") no-repeat scroll 0px 0px/216px 48px transparent;
   }
 
-  /* line 275, sass/ui/modules/_menu.scss */
+  /* line 287, sass/ui/modules/_menu.scss */
   #top-description, #nav {
     display: none;
   }
 
-  /* line 279, sass/ui/modules/_menu.scss */
+  /* line 291, sass/ui/modules/_menu.scss */
   #nav {
     position: relative;
     z-index: 10000;
   }
 
-  /* line 284, sass/ui/modules/_menu.scss */
+  /* line 296, sass/ui/modules/_menu.scss */
   #menu-open {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    width: 75px;
-    font-size: 12px;
-    background: white;
-    color: #282828;
     z-index: 1001;
   }
 
-  /* line 295, sass/ui/modules/_menu.scss */
+  /* line 300, sass/ui/modules/_menu.scss */
   #menu-category > li, #menu-primary > li {
     display: inline-block;
     width: 50%;
@@ -918,7 +953,7 @@ header {
 /* line 8, sass/ui/modules/_footer.scss */
 #footer {
   padding-top: 40px;
-  background: #50a1c0;
+  background: white;
 }
 
 /* line 13, sass/ui/modules/_footer.scss */
@@ -926,47 +961,43 @@ header {
   padding: 40px 0;
   position: relative;
 }
-
-/* line 18, sass/ui/modules/_footer.scss */
-.footer-nav-about {
-  overflow: hidden;
-  padding: 20px;
+/* line 16, sass/ui/modules/_footer.scss */
+#footer-nav h2 {
+  float: left;
 }
-
-/* line 23, sass/ui/modules/_footer.scss */
-.footer-nav-blog {
-  overflow: hidden;
-  padding: 20px;
+/* line 19, sass/ui/modules/_footer.scss */
+#footer-nav .menu {
+  float: right;
 }
-
-/* line 28, sass/ui/modules/_footer.scss */
+/* line 22, sass/ui/modules/_footer.scss */
 #footer-nav .menu li {
+  float: left;
   font-size: 14px;
+  margin: 10px;
 }
-
-/* line 32, sass/ui/modules/_footer.scss */
+/* line 26, sass/ui/modules/_footer.scss */
 #footer-nav .menu li a {
   color: white;
 }
 
-/* line 36, sass/ui/modules/_footer.scss */
+/* line 32, sass/ui/modules/_footer.scss */
 #footer-nav img {
   margin-bottom: 20px;
-  height: 36px;
+  height: 32px;
   width: auto;
 }
 
-/* line 42, sass/ui/modules/_footer.scss */
+/* line 38, sass/ui/modules/_footer.scss */
 .footer-fb {
   padding: 10px;
   background: rgba(255, 255, 255, 0.6);
   overflow: hidden;
 }
 
-/* line 48, sass/ui/modules/_footer.scss */
+/* line 44, sass/ui/modules/_footer.scss */
 .site-info {
   padding: 30px 10px;
-  background: rgba(52, 73, 80, 0.9);
+  background: #5a5a5a;
   text-align: center;
   font-size: 12px;
   color: #d2d2d2;
@@ -1072,14 +1103,18 @@ header {
   float: left;
 }
 
-/* line 89, sass/ui/modules/_post.scss */
+/* line 90, sass/ui/modules/_post.scss */
 .blog-header h1 {
-  padding: 30px 20px 10px;
+  padding: 30px 20px 20px;
   font-size: 24px;
   line-height: 1.2;
+  color: #3c3c3c;
 }
-
-/* line 95, sass/ui/modules/_post.scss */
+/* line 96, sass/ui/modules/_post.scss */
+.blog-header a {
+  color: #282828;
+}
+/* line 99, sass/ui/modules/_post.scss */
 .blog-header .author {
   float: left;
   color: #787878;
@@ -1089,8 +1124,7 @@ header {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-
-/* line 105, sass/ui/modules/_post.scss */
+/* line 108, sass/ui/modules/_post.scss */
 .blog-header img {
   float: left;
   display: inline-block;
@@ -1100,14 +1134,13 @@ header {
   margin-right: 5px;
   border-radius: 18px;
 }
-
-/* line 115, sass/ui/modules/_post.scss */
+/* line 117, sass/ui/modules/_post.scss */
 .blog-header > ul {
   margin-top: 6px;
   margin-left: 20px;
 }
 
-/* line 120, sass/ui/modules/_post.scss */
+/* line 123, sass/ui/modules/_post.scss */
 .blog-header > ul > li {
   color: #787878;
   font-size: 14px;
@@ -1115,46 +1148,55 @@ header {
   margin-right: 20px;
 }
 
-/* line 127, sass/ui/modules/_post.scss */
+/* line 130, sass/ui/modules/_post.scss */
 .blog-header ul, .blog-header ul li {
   display: inline-block;
 }
 
-/* line 131, sass/ui/modules/_post.scss */
+/* line 134, sass/ui/modules/_post.scss */
 .blog-body {
-  padding: 20px;
+  padding: 10px;
 }
-
-/* line 135, sass/ui/modules/_post.scss */
+/* line 136, sass/ui/modules/_post.scss */
 .blog-body p {
   font-size: 16px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
   line-height: 1.6;
 }
-
-/* line 141, sass/ui/modules/_post.scss */
+/* line 142, sass/ui/modules/_post.scss */
 .blog-body h2 {
-  margin: 80px 0 20px;
-  padding: 24px 20px 20px;
-  font-size: 24px;
-  border-top: 3px solid #50a1c0;
-  border-bottom: 3px solid #50a1c0;
+  margin: 60px 0 20px;
+  padding: 12px 15px 8px;
+  font-size: 22px;
+  color: #323232;
+  border-left: 4px solid #e41e7f;
+  border-bottom: 2px dashed #e41e7f;
 }
-
-/* line 149, sass/ui/modules/_post.scss */
+/* line 150, sass/ui/modules/_post.scss */
 .blog-body h3 {
-  padding: 20px;
-  font-size: 18px;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px dashed #d2d2d2;
 }
-
-/* line 154, sass/ui/modules/_post.scss */
+/* line 156, sass/ui/modules/_post.scss */
 .blog-body img {
   max-width: 100%;
   width: auto;
   height: auto;
 }
+/* line 161, sass/ui/modules/_post.scss */
+.blog-body ul {
+  margin-left: 30px;
+}
+/* line 164, sass/ui/modules/_post.scss */
+.blog-body li {
+  list-style-type: disc;
+  font-size: 15px;
+}
 
-/* line 160, sass/ui/modules/_post.scss */
+/* line 170, sass/ui/modules/_post.scss */
 blockquote {
   quotes: " \201C " " \201D " " \2018 " " \2019 ";
   font-family: 'Meta Normal Italic';
@@ -1164,14 +1206,14 @@ blockquote {
   margin-top: 30px;
 }
 
-/* line 169, sass/ui/modules/_post.scss */
+/* line 179, sass/ui/modules/_post.scss */
 blockquote:before {
   content: open-quote;
   padding: 0px 20px 0 0;
   font-size: 64px;
 }
 
-/* line 174, sass/ui/modules/_post.scss */
+/* line 185, sass/ui/modules/_post.scss */
 blockquote:after {
   content: close-quote;
   padding-left: 8px;
@@ -1180,90 +1222,101 @@ blockquote:after {
   line-height: 40px;
 }
 
-/* line 182, sass/ui/modules/_post.scss */
+/* line 193, sass/ui/modules/_post.scss */
 blockquote p {
   display: inline;
   font-size: 16px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 188, sass/ui/modules/_post.scss */
+  /* line 199, sass/ui/modules/_post.scss */
   .blog-header h1 {
     padding: 20px 10px 10px;
     font-size: 16px;
   }
 }
 /*article*/
-/* line 194, sass/ui/modules/_post.scss */
+/* line 205, sass/ui/modules/_post.scss */
 #article-side {
   width: 240px;
 }
 
-/* line 198, sass/ui/modules/_post.scss */
+/* line 209, sass/ui/modules/_post.scss */
 #article-main {
   margin-left: 240px;
 }
 
-/* line 202, sass/ui/modules/_post.scss */
+/* line 213, sass/ui/modules/_post.scss */
 .article-side {
   position: absolute;
   top: 0;
 }
 
-/* line 207, sass/ui/modules/_post.scss */
+/* line 218, sass/ui/modules/_post.scss */
 .fixed-article-side {
   position: fixed;
   top: 40px;
 }
 
-/* line 213, sass/ui/modules/_post.scss */
+/* line 224, sass/ui/modules/_post.scss */
 .fixed-bottom-article-side {
   top: auto;
   bottom: 80px;
 }
 
+/* line 229, sass/ui/modules/_post.scss */
+#related-posts {
+  padding: 20px;
+  background: white;
+}
+/* line 232, sass/ui/modules/_post.scss */
+#related-posts h3 {
+  padding: 20px;
+  font-weight: normal;
+}
+
 @media all and (max-width: 768px) {
-  /* line 219, sass/ui/modules/_post.scss */
+  /* line 239, sass/ui/modules/_post.scss */
   #article-main, #article-side {
     width: 100%;
   }
 
-  /* line 223, sass/ui/modules/_post.scss */
+  /* line 243, sass/ui/modules/_post.scss */
   #article-main {
     margin: 0;
   }
 
-  /* line 227, sass/ui/modules/_post.scss */
+  /* line 247, sass/ui/modules/_post.scss */
   #article-side {
     position: relative;
     top: 0;
   }
 
-  /* line 233, sass/ui/modules/_post.scss */
+  /* line 253, sass/ui/modules/_post.scss */
   #article-side #single-post-info {
     margin: 0;
     padding-bottom: 15px;
   }
 
-  /* line 238, sass/ui/modules/_post.scss */
+  /* line 258, sass/ui/modules/_post.scss */
   #single-post-info li {
     display: inline-table;
     vertical-align: middle;
   }
 
-  /* line 243, sass/ui/modules/_post.scss */
+  /* line 263, sass/ui/modules/_post.scss */
   .blog-keywords, .single-post-date {
     display: none;
   }
 
-  /* line 246, sass/ui/modules/_post.scss */
+  /* line 266, sass/ui/modules/_post.scss */
   #article-side #single-post-info .avatar {
     height: 48px;
     width: 48px;
     margin: 0 5px 0 15px;
   }
 
-  /* line 252, sass/ui/modules/_post.scss */
+  /* line 272, sass/ui/modules/_post.scss */
   #article-side #writer-name {
     font-size: 28px;
     margin: 0;
@@ -1296,22 +1349,23 @@ blockquote p {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 5px 12px;
-  background-color: #ffbb00;
+  padding: 4px 12px;
+  background-color: #ffc500;
 }
 
 /* line 29, sass/ui/modules/_tl.scss */
 .category-label ul li a {
   color: white;
+  font-size: 14px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 34, sass/ui/modules/_tl.scss */
+  /* line 35, sass/ui/modules/_tl.scss */
   .articles .blog-body {
     display: none;
   }
 
-  /* line 37, sass/ui/modules/_tl.scss */
+  /* line 38, sass/ui/modules/_tl.scss */
   .article-img-tl {
     max-height: 240px;
     overflow: hidden;
@@ -1320,7 +1374,7 @@ blockquote p {
 /*--------------------------------------------------------------
 6.3 - Recomnded-post
 --------------------------------------------------------------*/
-/* line 47, sass/ui/modules/_tl.scss */
+/* line 48, sass/ui/modules/_tl.scss */
 .recomended-article-info h4 {
   display: block;
   font-size: 14px;
@@ -1330,33 +1384,33 @@ blockquote p {
   text-overflow: ellipsis;
 }
 
-/* line 56, sass/ui/modules/_tl.scss */
+/* line 57, sass/ui/modules/_tl.scss */
 .recomended-article-info {
   padding: 10px;
 }
 
-/* line 60, sass/ui/modules/_tl.scss */
+/* line 61, sass/ui/modules/_tl.scss */
 .front-article-img {
   position: relative;
   max-height: 160px;
   overflow: hidden;
 }
 
-/* line 66, sass/ui/modules/_tl.scss */
+/* line 67, sass/ui/modules/_tl.scss */
 .sidebar-article-img {
   position: relative;
   max-height: 120px;
   overflow: hidden;
 }
 
-/* line 72, sass/ui/modules/_tl.scss */
+/* line 73, sass/ui/modules/_tl.scss */
 .post-date {
   font-size: 11px;
   color: #787878;
 }
 
 /*paging*/
-/* line 78, sass/ui/modules/_tl.scss */
+/* line 79, sass/ui/modules/_tl.scss */
 .nav-previous a, .nav-next a {
   display: block;
   margin: 10px 0;
@@ -1368,24 +1422,24 @@ blockquote p {
   white-space: nowrap;
 }
 
-/* line 89, sass/ui/modules/_tl.scss */
+/* line 90, sass/ui/modules/_tl.scss */
 .nav-previous a:hover, .nav-next a:hover {
   color: #50a1c0;
   background: gainsboro;
 }
 
-/* line 94, sass/ui/modules/_tl.scss */
+/* line 95, sass/ui/modules/_tl.scss */
 .nav-previous, .nav-next {
   width: 49%;
 }
 
-/* line 98, sass/ui/modules/_tl.scss */
+/* line 99, sass/ui/modules/_tl.scss */
 .nav-previous {
   float: left;
   text-align: left;
 }
 
-/* line 103, sass/ui/modules/_tl.scss */
+/* line 104, sass/ui/modules/_tl.scss */
 .nav-next {
   float: right;
   text-align: right;
@@ -1427,7 +1481,7 @@ blockquote p {
 
 @media all and (max-width: 768px) {
   /* line 32, sass/ui/modules/_sidebar.scss */
-  .fb, .twtr {
+  .fb, .twtr, #sidebar-newpost {
     display: none;
   }
 }
@@ -1494,13 +1548,8 @@ blockquote p {
   font-size: 12px;
 }
 
-/* line 91, sass/ui/modules/_sidebar.scss */
-.post-categories li a {
-  color: #50a1c0;
-}
-
 /*blog_team*/
-/* line 96, sass/ui/modules/_sidebar.scss */
+/* line 92, sass/ui/modules/_sidebar.scss */
 .article-img-team {
   position: relative;
   max-height: 120px;
@@ -1531,9 +1580,10 @@ blockquote p {
   display: block;
   margin-top: 40px;
   text-align: center;
+  font-weight: normal;
 }
 
-/* line 26, sass/pages/_front.scss */
+/* line 27, sass/pages/_front.scss */
 .articles > li {
   position: relative;
   background: white;
@@ -1544,13 +1594,13 @@ blockquote p {
 /*--------------------------------------------------------------
 9.1.1 Key-visual
 --------------------------------------------------------------*/
-/* line 36, sass/pages/_front.scss */
+/* line 38, sass/pages/_front.scss */
 #key-visual {
   position: relative;
   width: 100%;
 }
 
-/* line 41, sass/pages/_front.scss */
+/* line 43, sass/pages/_front.scss */
 #mv-wrap {
   position: absolute;
   top: 0;
@@ -1560,20 +1610,20 @@ blockquote p {
   overflow: hidden;
 }
 
-/* line 50, sass/pages/_front.scss */
+/* line 52, sass/pages/_front.scss */
 #mv-wrap video {
   display: block;
   width: 100%;
 }
 
-/* line 55, sass/pages/_front.scss */
+/* line 57, sass/pages/_front.scss */
 #main-text {
   padding-top: 18%;
   padding-bottom: 6%;
   position: relative;
 }
 
-/* line 61, sass/pages/_front.scss */
+/* line 63, sass/pages/_front.scss */
 #catch {
   display: block;
   color: white;
@@ -1582,20 +1632,20 @@ blockquote p {
   font-weight: normal;
 }
 
-/* line 69, sass/pages/_front.scss */
+/* line 71, sass/pages/_front.scss */
 #catch h1 {
   font-size: 48px;
   /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
 }
 
-/* line 74, sass/pages/_front.scss */
+/* line 76, sass/pages/_front.scss */
 #catch h2 {
   font-family: 'Lily Script One', cursive;
   font-size: 24px;
   font-weight: normal;
 }
 
-/* line 80, sass/pages/_front.scss */
+/* line 82, sass/pages/_front.scss */
 #catch p {
   margin-top: 20px;
   font-size: 16px;
@@ -1603,52 +1653,52 @@ blockquote p {
 }
 
 @media all and (max-width: 768px) {
-  /* line 87, sass/pages/_front.scss */
+  /* line 89, sass/pages/_front.scss */
   #main-text {
     padding-top: 30%;
     padding-bottom: 6%;
     position: relative;
   }
 
-  /* line 93, sass/pages/_front.scss */
+  /* line 95, sass/pages/_front.scss */
   #catch h1 {
     font-size: 28px;
     /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
   }
 
-  /* line 98, sass/pages/_front.scss */
+  /* line 100, sass/pages/_front.scss */
   #catch h2 {
     font-size: 16px;
   }
 
-  /* line 102, sass/pages/_front.scss */
+  /* line 104, sass/pages/_front.scss */
   #catch p {
     font-size: 9px;
   }
 
-  /* line 106, sass/pages/_front.scss */
+  /* line 108, sass/pages/_front.scss */
   .mv-btn {
     padding: 8px 12px 6px;
     font-size: 14px;
   }
 
-  /* line 110, sass/pages/_front.scss */
+  /* line 112, sass/pages/_front.scss */
   #mv-wrap {
     display: none;
   }
 
-  /* line 113, sass/pages/_front.scss */
+  /* line 115, sass/pages/_front.scss */
   #key-visual {
     background-image: url("img/key-visual.png");
     background-size: auto 100%;
   }
 
-  /* line 117, sass/pages/_front.scss */
+  /* line 119, sass/pages/_front.scss */
   .nav-scroll {
     background: none;
   }
 
-  /* line 121, sass/pages/_front.scss */
+  /* line 123, sass/pages/_front.scss */
   #top-content h2 {
     font-size: 24px;
   }
@@ -1656,99 +1706,99 @@ blockquote p {
 /*--------------------------------------------------------------
 9.1.2 New-post
 --------------------------------------------------------------*/
-/* line 130, sass/pages/_front.scss */
+/* line 132, sass/pages/_front.scss */
 #new-post {
   background: #ebebeb;
 }
 
-/* line 134, sass/pages/_front.scss */
+/* line 136, sass/pages/_front.scss */
 #new-post li:nth-child(4n), .recommend-wrap li:nth-child(4n) {
   margin-right: 0;
 }
 
-/* line 138, sass/pages/_front.scss */
+/* line 140, sass/pages/_front.scss */
 #event {
   background: rgba(80, 161, 192, 0.8);
 }
 
-/* line 142, sass/pages/_front.scss */
+/* line 144, sass/pages/_front.scss */
 #news {
   background: #b4b4b4;
 }
 
 /*features*/
-/* line 150, sass/pages/_front.scss */
+/* line 152, sass/pages/_front.scss */
 .article-info {
   padding: 20px;
 }
 
-/* line 154, sass/pages/_front.scss */
+/* line 156, sass/pages/_front.scss */
 .article-info h4 {
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-/* line 159, sass/pages/_front.scss */
+/* line 161, sass/pages/_front.scss */
 .article-info p {
   padding: 0;
   font-size: 12px;
 }
 
 /**/
-/* line 165, sass/pages/_front.scss */
+/* line 167, sass/pages/_front.scss */
 #a {
   background: url("/img/gallary/13.jpg");
 }
 
-/* line 169, sass/pages/_front.scss */
+/* line 171, sass/pages/_front.scss */
 #b {
   background: url("/img/gallary/14.jpg");
 }
 
-/* line 173, sass/pages/_front.scss */
+/* line 175, sass/pages/_front.scss */
 #c {
   background: url("/img/gallary/15.jpg");
 }
 
-/* line 177, sass/pages/_front.scss */
+/* line 179, sass/pages/_front.scss */
 #d {
   background: url("/img/gallary/16.jpg");
 }
 
-/* line 180, sass/pages/_front.scss */
+/* line 182, sass/pages/_front.scss */
 #e {
   background: url("/img/gallary/17.jpg");
 }
 
-/* line 183, sass/pages/_front.scss */
+/* line 185, sass/pages/_front.scss */
 #f {
   background: url("/img/gallary/18.jpg");
 }
 
 /*bubble*/
-/* line 188, sass/pages/_front.scss */
+/* line 190, sass/pages/_front.scss */
 .bubble {
   padding: 40px 20px;
 }
 
 /*what*/
-/* line 193, sass/pages/_front.scss */
+/* line 195, sass/pages/_front.scss */
 #what {
   background: white;
 }
 
-/* line 197, sass/pages/_front.scss */
+/* line 199, sass/pages/_front.scss */
 #what h2 {
   margin: 20px 0 80px;
 }
 
-/* line 201, sass/pages/_front.scss */
+/* line 203, sass/pages/_front.scss */
 #what h3 {
   margin-bottom: 5px;
   font-size: 26px;
 }
 
-/* line 207, sass/pages/_front.scss */
+/* line 209, sass/pages/_front.scss */
 #what li a {
   position: relative;
   display: block;
@@ -1756,12 +1806,12 @@ blockquote p {
   color: white;
   height: 400px;
 }
-/* line 213, sass/pages/_front.scss */
+/* line 215, sass/pages/_front.scss */
 #what li a:hover {
   opacity: .8;
 }
 
-/* line 219, sass/pages/_front.scss */
+/* line 221, sass/pages/_front.scss */
 .panel-img {
   position: absolute;
   top: 0;
@@ -1770,35 +1820,35 @@ blockquote p {
   right: 0;
 }
 
-/* line 227, sass/pages/_front.scss */
+/* line 229, sass/pages/_front.scss */
 #training-panel {
   background: #ffc500;
 }
-/* line 229, sass/pages/_front.scss */
+/* line 231, sass/pages/_front.scss */
 #training-panel .disc-wrapper {
   padding-top: 60px;
 }
 
-/* line 234, sass/pages/_front.scss */
+/* line 236, sass/pages/_front.scss */
 #circle-panel {
   background: #e41e7f;
 }
-/* line 236, sass/pages/_front.scss */
+/* line 238, sass/pages/_front.scss */
 #circle-panel .disc-wrapper {
   padding-top: 30px;
 }
 
-/* line 242, sass/pages/_front.scss */
+/* line 244, sass/pages/_front.scss */
 #ie-panel .disc-wrapper {
   padding-top: 60px;
 }
 
-/* line 248, sass/pages/_front.scss */
+/* line 250, sass/pages/_front.scss */
 #gourp-panel .disc-wrapper {
   padding-top: 60px;
 }
 
-/* line 254, sass/pages/_front.scss */
+/* line 256, sass/pages/_front.scss */
 #what-ie-img {
   background: url("img/sakurai.jpg");
   -webkit-background-size: cover;
@@ -1807,7 +1857,7 @@ blockquote p {
   background-size: cover;
 }
 
-/* line 259, sass/pages/_front.scss */
+/* line 261, sass/pages/_front.scss */
 #what-group-img {
   background: url("img/handsup.jpg");
   -webkit-background-size: cover;
@@ -1816,7 +1866,7 @@ blockquote p {
   background-size: cover;
 }
 
-/* line 264, sass/pages/_front.scss */
+/* line 266, sass/pages/_front.scss */
 .disc-wrapper {
   position: relative;
   padding: 30px 20px;
@@ -1825,41 +1875,63 @@ blockquote p {
 }
 
 @media all and (max-width: 768px) {
-  /* line 273, sass/pages/_front.scss */
+  /* line 276, sass/pages/_front.scss */
+  #what h2 {
+    margin: 20px 0;
+  }
+  /* line 279, sass/pages/_front.scss */
   #what li {
-    width: 50%;
-    margin: 0;
+    width: 46%;
+    margin: 2%;
     float: left;
+  }
+  /* line 283, sass/pages/_front.scss */
+  #what li a {
+    height: 240px;
+  }
+  /* line 286, sass/pages/_front.scss */
+  #what li .disc-wrapper {
+    padding: 10px;
+  }
+  /* line 289, sass/pages/_front.scss */
+  #what li h3 {
+    font-size: 18px;
+  }
+  /* line 292, sass/pages/_front.scss */
+  #what li p {
+    font-size: 11px;
   }
 }
 /*reputation*/
-/* line 281, sass/pages/_front.scss */
+/* line 300, sass/pages/_front.scss */
 #reputation {
   background: white;
 }
 
-/* line 285, sass/pages/_front.scss */
+/* line 304, sass/pages/_front.scss */
 #reputation h2 {
   margin: 20px 0 80px;
 }
 
 /*gallary*/
-/* line 290, sass/pages/_front.scss */
+/* line 309, sass/pages/_front.scss */
 #gallary {
   /*background: rgb(245,240,245);*/
   background: #505050;
 }
-
-/* line 295, sass/pages/_front.scss */
+/* line 312, sass/pages/_front.scss */
 #gallary h2 {
   margin: 20px 0 80px;
   color: white;
   font-family: 'Lily Script One', cursive;
 }
-
-/* line 301, sass/pages/_front.scss */
+/* line 317, sass/pages/_front.scss */
 #gallary .onerow {
   overflow: hidden;
+}
+/* line 319, sass/pages/_front.scss */
+#gallary .onerow div {
+  border: 4px solid #d2d2d2;
 }
 
 /* Welcome to Compass. Use this file to define typography styles.
@@ -1929,18 +2001,19 @@ blockquote p {
 /*about*/
 /* line 60, sass/pages/_about.scss */
 #activity h2 {
-  font-size: 48px;
+  font-size: 42px;
+  font-weight: normal;
   margin-bottom: 40px;
   color: #787878;
 }
 
-/* line 66, sass/pages/_about.scss */
+/* line 67, sass/pages/_about.scss */
 #activity a {
   position: relative;
   display: block;
 }
 
-/* line 71, sass/pages/_about.scss */
+/* line 72, sass/pages/_about.scss */
 #activity span {
   position: absolute;
   bottom: 10%;
@@ -1951,228 +2024,140 @@ blockquote p {
 }
 
 /*value*/
-/* line 81, sass/pages/_about.scss */
+/* line 82, sass/pages/_about.scss */
 #value {
   background: white;
+  text-align: center;
 }
 
-/* line 85, sass/pages/_about.scss */
+/* line 87, sass/pages/_about.scss */
 #value h2 {
-  font-size: 48px;
+  font-size: 42px;
+  font-weight: normal;
   margin-bottom: 40px;
   color: #787878;
 }
 
-/* line 91, sass/pages/_about.scss */
+/* line 94, sass/pages/_about.scss */
 .values {
   margin-bottom: 40px;
 }
 
-/* line 95, sass/pages/_about.scss */
+/* line 98, sass/pages/_about.scss */
 .values h3 {
-  margin-bottom: 5px;
-  font-size: 28px;
-}
-
-/* line 100, sass/pages/_about.scss */
-.values h4 {
   font-size: 18px;
 }
 
-/* line 104, sass/pages/_about.scss */
+/* line 102, sass/pages/_about.scss */
 .values ul li {
   font-size: 28px;
   padding: 10px;
   color: #787878;
 }
 
-/* line 110, sass/pages/_about.scss */
+/* line 108, sass/pages/_about.scss */
 .values span {
   font-size: 36px;
   font-family: 'Lily Script One', cursive;
 }
 
-/* line 115, sass/pages/_about.scss */
+/* line 113, sass/pages/_about.scss */
 .values p {
   font-size: 18px;
 }
 
 /*team*/
-/* line 120, sass/pages/_about.scss */
+/* line 118, sass/pages/_about.scss */
 #team h2 {
   text-align: center;
   font-size: 48px;
+  font-weight: normal;
   margin-bottom: 40px;
   color: #787878;
   font-family: 'Lily Script One', cursive;
 }
 
-/* line 128, sass/pages/_about.scss */
+/* line 127, sass/pages/_about.scss */
 #team div {
   position: relative;
   /*    width: 160px;
       height: 160px;*/
 }
 
-/* line 134, sass/pages/_about.scss */
-.team-img {
-  -webkit-border-radius: 260px;
-  -moz-border-radius: 260px;
-  border-radius: 260px;
-}
-
-/* line 140, sass/pages/_about.scss */
+/* line 133, sass/pages/_about.scss */
 #team p {
   text-align: center;
   margin-top: 10px;
 }
 
-/* line 145, sass/pages/_about.scss */
-.member-wrap {
-  padding: 20%;
+/* line 138, sass/pages/_about.scss */
+#team .name {
+  font-size: 20px;
+  font-family: 'Lily Script One', cursive;
 }
 
-/* line 149, sass/pages/_about.scss */
+/* line 143, sass/pages/_about.scss */
+.member-wrap {
+  padding: 10px 20%;
+}
+
+/* line 147, sass/pages/_about.scss */
 .subject-info {
   color: #b4b4b4;
   font-size: 14px;
 }
 
-/* line 154, sass/pages/_about.scss */
+/* line 152, sass/pages/_about.scss */
 .work-info {
   color: #b4b4b4;
   font-size: 12px;
 }
 
-/* line 159, sass/pages/_about.scss */
-#society h3 {
-  /*background: rgb(135, 191, 112);*/
-  color: #87bf70;
-}
-
-/* line 164, sass/pages/_about.scss */
-#company h3 {
-  /*background: rgb(219, 101, 101);*/
-  color: #db6565;
-}
-
-/* line 169, sass/pages/_about.scss */
-#children h3 {
-  /*background: rgb(239, 126, 23);*/
-  color: #ef7e17;
-}
-
 /* Welcome to Compass. Use this file to define typography styles.
  * use @import "partials/typography)" */
-/*whiteboard*/
-/* line 6, sass/pages/_lesson.scss */
-.onerow h2 {
-  padding: 20px;
-  font-size: 18px;
-}
-
-/* line 11, sass/pages/_lesson.scss */
-#wb {
-  background-image: url("/img/whiteboard.jpg");
-  height: 640px;
-}
-
-/* line 16, sass/pages/_lesson.scss */
+/* line 5, sass/pages/_lesson.scss */
 .features-info {
   text-align: center;
 }
 
-/* line 20, sass/pages/_lesson.scss */
+/* line 9, sass/pages/_lesson.scss */
 .features-info h4 {
   font-size: 20px;
 }
 
-/* line 24, sass/pages/_lesson.scss */
+/* line 13, sass/pages/_lesson.scss */
 .features-info p {
   padding: 10px 30px;
   font-size: 14px;
 }
 
-/*case*/
-/* line 31, sass/pages/_lesson.scss */
-#secondary-case-nav {
-  background: gainsboro;
-  width: 100%;
-  height: 80px;
-  z-index: 9999;
-}
-
-/* line 38, sass/pages/_lesson.scss */
-#secondary-case-nav li {
-  display: inline-block;
-  float: left;
-}
-
-/* line 43, sass/pages/_lesson.scss */
-#secondary-case-nav li a {
-  display: block;
-  width: 80px;
-  height: 80px;
-}
-
-/* line 49, sass/pages/_lesson.scss */
-#case-nav-1 a {
-  background-image: url("/img/case/nav/shun.jpg");
-}
-
-/* line 53, sass/pages/_lesson.scss */
-#case-nav-2 a {
-  background-image: url("/img/case/nav/toru.jpg");
-}
-
-/* line 57, sass/pages/_lesson.scss */
-#case-nav-3 a {
-  background-image: url("/img/case/nav/yuta.jpg");
-}
-
-/* line 61, sass/pages/_lesson.scss */
-.case h2 {
-  font-size: 28px;
-  padding: 40px;
-}
-
-/* line 66, sass/pages/_lesson.scss */
-.case p {
-  padding: 20px 40px;
-}
-
-/* line 70, sass/pages/_lesson.scss */
-.case-info p {
-  padding: 40px 20px;
-}
-
 /*lesson-features*/
-/* line 75, sass/pages/_lesson.scss */
+/* line 23, sass/pages/_lesson.scss */
 #features-person {
   background: #db6565;
   background: #50a1c0;
   color: #f0f0f0;
 }
 
-/* line 81, sass/pages/_lesson.scss */
+/* line 29, sass/pages/_lesson.scss */
 #features-person h2 {
   font-size: 36px;
   margin: 40px 0;
   color: white;
 }
 
-/* line 87, sass/pages/_lesson.scss */
+/* line 35, sass/pages/_lesson.scss */
 .person-disc {
   font-size: 18px;
   margin: 20px;
 }
 
-/* line 92, sass/pages/_lesson.scss */
+/* line 40, sass/pages/_lesson.scss */
 #features-person ul {
   overflow: hidden;
 }
 
-/* line 96, sass/pages/_lesson.scss */
+/* line 44, sass/pages/_lesson.scss */
 #features-person li div {
   text-align: center;
   padding: 30px;
@@ -2182,53 +2167,53 @@ blockquote p {
   border-radius: 4px;
 }
 
-/* line 104, sass/pages/_lesson.scss */
+/* line 52, sass/pages/_lesson.scss */
 #features-person h3 {
   text-align: center;
   font-size: 28px;
   margin-top: 80px;
 }
 
-/* line 110, sass/pages/_lesson.scss */
+/* line 58, sass/pages/_lesson.scss */
 #features-person li h4 {
   font-size: 22px;
   margin-bottom: 10px;
 }
 
-/* line 115, sass/pages/_lesson.scss */
+/* line 63, sass/pages/_lesson.scss */
 #features-person li p {
   padding: 10px;
 }
 
-/* line 119, sass/pages/_lesson.scss */
+/* line 67, sass/pages/_lesson.scss */
 #features-person a {
   color: white;
 }
 
-/* line 123, sass/pages/_lesson.scss */
+/* line 71, sass/pages/_lesson.scss */
 #features-person a:hover {
   color: #b4b4b4;
 }
 
-/* line 127, sass/pages/_lesson.scss */
+/* line 75, sass/pages/_lesson.scss */
 .cross {
   text-align: center;
   font-size: 128px;
   margin: 0;
 }
 
-/* line 133, sass/pages/_lesson.scss */
+/* line 81, sass/pages/_lesson.scss */
 #features-communication {
   background: white;
 }
 
-/* line 137, sass/pages/_lesson.scss */
+/* line 85, sass/pages/_lesson.scss */
 #features-communication h2 {
   font-size: 36px;
   margin: 40px 0 0;
 }
 
-/* line 142, sass/pages/_lesson.scss */
+/* line 90, sass/pages/_lesson.scss */
 #features-communication h2 + p {
   font-size: 14px;
   text-align: center;
@@ -2236,193 +2221,203 @@ blockquote p {
   color: #b4b4b4;
 }
 
-/* line 149, sass/pages/_lesson.scss */
-#features-wb {
-  background: gainsboro;
-}
-
-/* line 153, sass/pages/_lesson.scss */
-#features-wb h2 {
-  font-size: 36px;
-  margin: 40px 0 80px;
-  color: #505050;
-}
-
-/* line 159, sass/pages/_lesson.scss */
-#features-wb h3 {
-  font-size: 18px;
-  text-align: center;
-  margin-top: 60px;
-  color: #646464;
-}
-
-/* line 166, sass/pages/_lesson.scss */
-#features-wb p {
-  font-size: 12px;
-  padding: 0 80px;
-  color: #8c8c8c;
-}
-
-/* line 172, sass/pages/_lesson.scss */
+/* line 97, sass/pages/_lesson.scss */
 .quote {
   font-size: 64px;
   color: #646464;
 }
 
-/* line 177, sass/pages/_lesson.scss */
+/* line 102, sass/pages/_lesson.scss */
 #features-fee {
   /*    background: rgb(250, 150, 150);*/
 }
 
-/* line 181, sass/pages/_lesson.scss */
+/* line 106, sass/pages/_lesson.scss */
 #features-fee h2 {
   font-size: 36px;
-  margin: 40px 0 80px;
+  margin-top: 0;
+  margin-bottom: 40px;
   color: #505050;
+  font-weight: normal;
 }
 
-/* line 187, sass/pages/_lesson.scss */
-#features-fee h3 {
+/* line 114, sass/pages/_lesson.scss */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* line 117, sass/pages/_lesson.scss */
+.table th {
+  padding: 10px;
+}
+/* line 120, sass/pages/_lesson.scss */
+.table td {
+  padding: 10px;
+}
+
+/* line 126, sass/pages/_lesson.scss */
+#fee-table th {
+  width: 30%;
+  font-weight: normal;
+  font-size: 16px;
+  padding-right: 15px;
+  text-align: right;
+  border-right: 1px solid #505050;
+}
+/* line 134, sass/pages/_lesson.scss */
+#fee-table td {
+  width: 70%;
+  padding-left: 15px;
   font-size: 18px;
-  text-align: center;
-  margin: 40px;
   color: #787878;
+}
+/* line 139, sass/pages/_lesson.scss */
+#fee-table td span {
+  font-family: 'Lily Script One', cursive;
+  font-size: 32px;
+  margin: 0 15px;
+  color: #0e99eb;
 }
 
 /*fee*/
-/* line 195, sass/pages/_lesson.scss */
-.standard {
-  background: #87bf70;
-  color: white;
-}
-
-/* line 200, sass/pages/_lesson.scss */
-.semi-pro {
-  background: #ef7e17;
-  color: white;
-}
-
-/* line 205, sass/pages/_lesson.scss */
-.professional {
-  background: #db6565;
-  color: white;
-}
-
-/* line 210, sass/pages/_lesson.scss */
-.expart {
-  background: #505050;
-  color: white;
-}
-
-/* line 215, sass/pages/_lesson.scss */
-.group {
-  background: #50a1c0;
-  color: white;
-}
-
-/* line 220, sass/pages/_lesson.scss */
-.fee-grid {
-  position: relative;
-  margin-bottom: 20px;
-  text-align: center;
-  min-height: 200px;
-}
-
-/* line 227, sass/pages/_lesson.scss */
-.charge-grid {
-  position: relative;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* line 233, sass/pages/_lesson.scss */
-.fee-grid h4, .charge-grid h4 {
-  padding: 30px 20px 0;
-  font-size: 20px;
-}
-
-/* line 238, sass/pages/_lesson.scss */
-.fee-grid p, .charge-grid p {
-  padding: 20px;
-  font-size: 15px;
-}
-
-/* line 243, sass/pages/_lesson.scss */
-.fee-grid span {
-  display: block;
-  margin-top: 5px;
-  font-size: 11px;
-}
-
-/* line 249, sass/pages/_lesson.scss */
-.fee {
-  /*    position: absolute;*/
-  text-align: center;
-  bottom: 0;
-  font-size: 24px;
-  color: #505050;
-}
-
-/* line 257, sass/pages/_lesson.scss */
-.fee-info {
-  font-size: 11px;
-  text-align: center;
-  color: #787878;
-}
-
 /*lesson*/
-/* line 264, sass/pages/_lesson.scss */
+/* line 151, sass/pages/_lesson.scss */
 .inner-left {
   float: left;
   width: 50%;
 }
 
-/* line 269, sass/pages/_lesson.scss */
+/* line 156, sass/pages/_lesson.scss */
 .inner-right {
   float: right;
   width: 50%;
 }
 
-/* line 274, sass/pages/_lesson.scss */
+/* line 161, sass/pages/_lesson.scss */
 .inner-bottom {
   clear: both;
 }
 
 /*psychology*/
-/* line 279, sass/pages/_lesson.scss */
+/* line 166, sass/pages/_lesson.scss */
 #features-psychology {
   background: white;
 }
 
-/* line 283, sass/pages/_lesson.scss */
+/* line 170, sass/pages/_lesson.scss */
 .psychology-header {
   margin-left: 10%;
 }
 
-/* line 287, sass/pages/_lesson.scss */
+/* line 174, sass/pages/_lesson.scss */
 #features-psychology h2 {
   font-size: 36px;
   margin: 40px 0 80px;
   color: #505050;
 }
 
-/* line 293, sass/pages/_lesson.scss */
+/* line 180, sass/pages/_lesson.scss */
 #features-psychology h3 span {
   font-size: 46px;
 }
 
-/* line 297, sass/pages/_lesson.scss */
+/* line 184, sass/pages/_lesson.scss */
 .psychology-grid {
+  float: left;
+  width: 25%;
+  padding: 4%;
   text-align: center;
-  padding: 20px;
 }
 
-/* line 302, sass/pages/_lesson.scss */
+/* line 191, sass/pages/_lesson.scss */
 .psychology-grid h4 {
   font-size: 13px;
   margin: 20px 0;
 }
 
+/*policy*/
+/* line 197, sass/pages/_lesson.scss */
+#policy {
+  background: white;
+}
+/* line 199, sass/pages/_lesson.scss */
+#policy h1 {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  color: #b4b4b4;
+}
+/* line 205, sass/pages/_lesson.scss */
+#policy h2 {
+  text-align: center;
+  font-size: 36px;
+  padding: 20px;
+  color: #787878;
+  font-weight: normal;
+}
+/* line 212, sass/pages/_lesson.scss */
+#policy h3 {
+  text-align: center;
+  font-size: 28px;
+  margin: 10px 0;
+  color: #787878;
+  font-weight: normal;
+}
+/* line 219, sass/pages/_lesson.scss */
+#policy h4 {
+  margin-left: 10px;
+}
+/* line 223, sass/pages/_lesson.scss */
+#policy p {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 10px;
+  line-height: 2.1;
+  font-size: 16px;
+}
+/* line 230, sass/pages/_lesson.scss */
+#policy span {
+  margin-right: 10px;
+  font-size: 36px;
+  font-family: 'Lily Script One', cursive;
+}
+
+@media all and (max-width: 768px) {
+  /* line 239, sass/pages/_lesson.scss */
+  #policy h2 {
+    font-size: 28px;
+  }
+  /* line 242, sass/pages/_lesson.scss */
+  #policy h3 {
+    font-size: 14px;
+  }
+  /* line 246, sass/pages/_lesson.scss */
+  #policy p {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+  /* line 250, sass/pages/_lesson.scss */
+  #policy .quote {
+    font-size: 32px;
+  }
+  /* line 253, sass/pages/_lesson.scss */
+  #policy img {
+    margin-top: 80px;
+  }
+
+  /* line 258, sass/pages/_lesson.scss */
+  #fee-table th {
+    font-size: 11px;
+  }
+  /* line 261, sass/pages/_lesson.scss */
+  #fee-table td {
+    font-size: 12px;
+  }
+  /* line 263, sass/pages/_lesson.scss */
+  #fee-table td span {
+    font-size: 28px;
+  }
+}
 /* Welcome to Compass. Use this file to define typography styles.
  * use @import "partials/typography)" */
 /*circle*/
@@ -2523,22 +2518,33 @@ blockquote p {
   width: 100%;
   padding: 12px;
   display: block;
-  font-size: 20px;
-  color: #b4b4b4;
-  border: 1px solid #d2d2d2;
-}
-
-/* line 30, sass/pages/_contact.scss */
-.contact-form option {
+  font-size: 24px;
   color: #787878;
+  border: 1px solid #d2d2d2;
+  position: relative;
+  height: 45px;
+  font-size: 100%;
+  padding: 12px 50px 12px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: .01px;
+  text-overflow: "";
 }
 
-/* line 34, sass/pages/_contact.scss */
+/* line 40, sass/pages/_contact.scss */
+.menu-991:after {
+  right: 0;
+  top: 0;
+  content: "";
+}
+
+/* line 47, sass/pages/_contact.scss */
 .contact-form textarea {
   height: 180px;
 }
 
-/* line 38, sass/pages/_contact.scss */
+/* line 51, sass/pages/_contact.scss */
 .contact-form input[type="submit"] {
   height: auto;
 }

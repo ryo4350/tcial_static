@@ -3,49 +3,22 @@
     <div id="key-visual">
         <div id="mv-wrap">
             <video autoplay loop poster="<?php bloginfo('template_directory');?>/img/key-visual.png">
+                <source src="<?php bloginfo('template_directory');?>/video/key-visual_2.mp4">
                 <source src="<?php bloginfo('template_directory');?>/video/key-visual.mp4">
             </video>
         </div>
         <div id="main-text">
             <div id="catch">
-                <h1>秋の体験授業、受付中。</h1>
-                <p>個別指導/サークルを通じて、未来を切り拓く人を育てる。</p>
+                <h1>秋の体験授業、受付中</h1>
+                <p>個別指導/サークルを通じて、未来を切り拓く人を育てる</p>
                 <a href="/about/" class="btn btn-shadow mv-btn">ティーシャルについてもっと知る</a>
             </div>
         </div>
     </div>
     <div id="top-content">
-        <section id="new-post">
-            <div class="container">
-                <h2 class="center">スタッフブログ</h2>
-                <ul class="articles">
-                <?php query_posts('posts_per_page=4'); ?>
-                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                    <li class="col3 onerow">
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="front-article-img">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
-                            <div class="recomended-article-info">
-                                <h4><?php the_title(); ?></h4>
-                                <p class="post-date"><?php echo get_the_date(); ?></p>
-                            </div>
-                        </a>
-                        <div class="category-label"><?php the_category(); ?></div>
-                    </li>
-                    <?php endwhile;
-                else :?>
-                    <?php get_template_part( 'content', 'none' ); ?>
-                <?php endif; ?>
-                </ul>
-                <div class="center">
-                    <a href="magazine/" target="_blank" class=" font-blue">もっと記事をみる≫</a>
-                </div>
-           </div>
-        </section>
         <section id="what">
             <div class="container">
-                <h2 class="center">私たちがやっていること。</h2>
+                <h2 class="center">私たちがやっていること</h2>
                 <ul class="onerow">
                     <li class="col3">
                         <a href="/lesson/" id="ie-panel">
@@ -207,6 +180,34 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="new-post">
+            <div class="container">
+                <h2 class="center">スタッフブログ</h2>
+                <ul class="articles">
+                <?php query_posts('posts_per_page=4'); ?>
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                    <li class="col3 onerow">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="front-article-img">
+                                <?php the_post_thumbnail(); ?>
+                            </div>
+                            <div class="recomended-article-info">
+                                <h4><?php the_title(); ?></h4>
+                                <p class="post-date"><?php echo get_the_date(); ?></p>
+                            </div>
+                        </a>
+                        <div class="category-label"><?php the_category(); ?></div>
+                    </li>
+                    <?php endwhile;
+                else :?>
+                    <?php get_template_part( 'content', 'none' ); ?>
+                <?php endif; ?>
+                </ul>
+                <div class="center">
+                    <a href="magazine/" target="_blank">≫もっと記事をみる</a>
+                </div>
+           </div>
         </section>
     </div>
 <?php get_footer(); ?>

@@ -29,9 +29,11 @@
         <?php if($slug_name == 'lesson') :?>
         <nav id="secondary-nav">
             <ul class="container">
-                <li><a class="menu" href="#features-person">個別指導力 = ?</a></li>
+<!--                <li><a class="menu" href="#features-person">個別指導力 = ?</a></li>
                 <li><a class="menu" href="#features-psychology">９つのアプローチ</a></li>
-                <li><a class="menu" href="#features-wb">ホワイトボードを使った授業</a></li>
+                <li><a class="menu" href="#features-wb">ホワイトボードを使った授業</a></li>-->
+                <li><a class="menu" href="#policy">指導方針</a></li>
+                <li><a class="menu" href="#step">5つのステップ</a></li>
                 <li><a class="menu" href="#features-fee">授業料</a></li>
                 <!--<li><a class="menu" href="#features-entry">入会までの流れ</a></li>-->
             </ul>
