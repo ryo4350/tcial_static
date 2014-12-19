@@ -9,9 +9,12 @@
         <div id="header-magazine">
             <div class="container">
                 <h1><a href="<?php echo home_url('/magazine'); ?>"><?php bloginfo('name'); ?></a></h1>
-                <h2 id="top-description"><a href="/" target="_blank">個別指導塾ティーシャル</a>が運営するウェブマガジン</h2>
+<!--                <h2 id="top-description"><a href="/" target="_blank">個別指導塾ティーシャル</a>が運営するウェブマガジン</h2>-->
             </div>
+            
         </div>
+        
+
 
         <nav id="nav" class="magazine-nav" role="navigation">
             <div class="container">

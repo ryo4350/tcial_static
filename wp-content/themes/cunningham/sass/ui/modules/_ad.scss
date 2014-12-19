@@ -3,10 +3,10 @@
 
 /*ad*/
 .l-banner {
-    width: 728px;
-    height: 90px;
-    margin: 10px auto;
-    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 5%;
+    z-index: 1001;
 }
 
 .sbr-banner {
@@ -22,6 +22,21 @@
 
 .recommend-wrap {
     margin: 40px 0;
+}
+
+@media all and (max-width: 1320px) {
+    .l-banner {
+        right: 5px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .l-banner {
+        position: relative;
+        width: 728px;
+        margin: auto;
+        top: 170px;
+    }
 }
 
 @media all and (max-width: 768px) {

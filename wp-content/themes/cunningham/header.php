@@ -12,10 +12,12 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name=”format-detection” content=”telephone=no” />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
-<?php wp_head(); ?>
+<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    <?php wp_head(); ?>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

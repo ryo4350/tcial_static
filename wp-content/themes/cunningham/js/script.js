@@ -113,6 +113,12 @@ $(function(){
 		return false;
 	});
 });
+$(function() {
+    $("#toggle").on("click", function() {
+        $("#menu-primary").slideToggle();
+    });
+});
+
 
 
 

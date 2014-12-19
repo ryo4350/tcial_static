@@ -2,15 +2,9 @@
  * use @import "partials/typography)" */
 
 body {
-    color: rgb(40, 40, 40);
+    color: rgb(0, 0, 0);
     font-family:
-        "メイリオ", Meiryo,
-        "ヒラギノ角ゴ Pro W3",
-        "HIragino Kaku Gothic Pro W3",
-        "HIragino Kaku Gothic Pro",
-        Osaka,
-        "ＭＳ Ｐゴシック", "MS P Gothic",
-        sans-serif;
+       'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .font-green {

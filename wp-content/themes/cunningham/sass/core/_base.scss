@@ -5,9 +5,10 @@
 5.1 Links
 --------------------------------------------------------------*/
 a {
-    color: $color-1;
+    /*color: $color-1;*/
     text-decoration: none;
     cursor: pointer;
+    color: rgb(40, 20, 20);
 }
 
 a:hover {

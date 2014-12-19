@@ -1,9 +1,8 @@
-<?php get_template_part('content', 'magazine_header'); ?>
+<?php get_template_part('content', 'primary_header'); ?>
         <!-- Content -->
-	<div id="content-blog">
-        <div class="l-banner">
+<!--        <div class="l-banner">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- blog-header -->
+ blog-header 
 <ins class="adsbygoogle"
      style="display:inline-block;width:728px;height:90px"
      data-ad-client="ca-pub-3257663944757805"
@@ -11,7 +10,8 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-        </div>
+        </div>-->
+	<div id="content-blog">
             <div class="container">
                 <div class="breadcrumb">
                     <?php if(class_exists('WP_SiteManager_bread_crumb')){WP_SiteManager_bread_crumb::bread_crumb('home_label=top&type=string');} ?>
@@ -20,6 +20,10 @@
                     <div class="col9">
                         <div class="onerow">
                             <?php while(have_posts()) : the_post(); ?>
+                            <?php
+                                $cat = get_the_category();
+                                $cat = $cat[0];
+                            ?>
                             <div class="blog-grid" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                 <div id="article-main">
                                     <div class="blog-header">
@@ -30,7 +34,7 @@
                                     </div>
                                     <div class="article-img">
                                         <?php the_post_thumbnail(); ?>
-                                        <div class="category-label"><?php the_category(); ?></div>
+                                        <span class="category-label <?php echo $cat->category_nicename; ?>"><?php the_category($separator); ?></span>
                                     </div>
                                     <div class="blog-body">
                                         <p><?php the_content(); ?></p>

@@ -1,4 +1,4 @@
-<?php get_template_part('content', 'magazine_header'); ?>
+<?php get_template_part('content', 'primary_header'); ?>
 	<!-- Content -->
         <div id="content-blog">
             <div class="container">

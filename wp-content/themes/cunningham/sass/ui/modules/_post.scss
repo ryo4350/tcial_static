@@ -17,7 +17,7 @@
     left: -16px;
     padding: 4px 10px;
     background: rgb(55, 155, 225);
-    font-size: 18px;
+    font-size: 24px;
     color: white;
     text-align: center;
 }
@@ -56,7 +56,7 @@
 #writer-name {
     margin-top: 10px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: lighter;
     text-align: center;
 }
 
@@ -115,7 +115,7 @@
         border-radius: 18px;
     }
     > ul {
-        margin-top: 6px;
+        margin-top: 8px;
         margin-left: 20px;
     }
 }
@@ -123,7 +123,6 @@
 .blog-header > ul > li {
     color: rgb(120, 120, 120);
     font-size: 14px;
-    line-height: 1;
     margin-right: 20px;
 }
 
@@ -134,14 +133,14 @@
 .blog-body {
     padding: 10px;
     p {
-        font-size: 16px;
+        font-size: 18px;
         padding: 10px;
         margin-bottom :10px;
         line-height: 1.6;
     }
     h2 {
         margin: 60px 0 20px;
-        padding: 12px 15px 8px;
+        padding: 11px 15px 8px;
         font-size: 22px;
         color: rgb(50, 50, 50);
         border-left: 4px solid $color-3;
@@ -150,7 +149,7 @@
     h3 {
         padding: 5px;
         margin: 10px 0;
-        font-size: 16px;
+        font-size: 18px;
         border-bottom: 1px dashed rgb(210, 210, 210);
     }
     img {
@@ -163,32 +162,42 @@
     }
     li {
         list-style-type: disc;
-        font-size: 15px;
+        padding: 5px;
     }
 }
 
 blockquote {
-    quotes: " \201C "" \201D "" \2018 "" \2019 ";
-    font-family: 'Meta Normal Italic';
+    position: relative;
+    quotes: "\201C""\201D";
     font-size: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 30px;
+    padding-left: 16%;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;;
+    margin: 20px;
+    background: rgb(140, 140, 140);
+    color: rgb(255, 255, 255);
+    border-radius: 18px;
 }
 
 blockquote:before {
+    position: absolute;
+    font-family: 'Meta Normal Italic';
     content: open-quote;
-    padding: 0px 20px 0 0;
-    font-size: 64px;
+    left: 0;
+    top: 0;
+    font-size: 192px;
+    color: rgb(255, 255, 255);
 }
-
+/*
 blockquote:after {
     content: close-quote;
+    font-family: 'Meta Normal Italic';
     padding-left: 8px;
     font-size: 64px;
     vertical-align: -60px;
     line-height: 40px;
-}
+}*/
 
 blockquote p {
     display: inline;

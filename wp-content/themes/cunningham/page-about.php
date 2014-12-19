@@ -48,34 +48,38 @@
                         <div class="col3">
                             <div class="member-wrap">
                                 <img src="<?php bloginfo('template_directory');?>/img/team/ryosakamoto.jpg" class="img-rounded" />
-                            </div>
-                            <p class="name">Ryo Sakamoto</p>
-                            <p class="subject-info">数学/国語/理科/社会</p>
-                            <p class="work-info">広報/web/</p>
+                                <p class="name">Ryo Sakamoto</p>
+                                <h3>坂本 諒</h3>
+                                <p class="subject-info">数学/国語/理科/社会</p>
+                                <p class="work-info">広報/web/</p>
+                            </div>                            
                         </div>
                         <div class="col3">
                             <div class="member-wrap">
                                 <img src="<?php bloginfo('template_directory');?>/img/team/keitasakurai.jpg" class="img-rounded" />
+                                <p class="name">Keita Sakurai</p>
+                                <h3>櫻井 啓太</h3>
+                                <p class="subject-info">英語</p>
+                                <p class="work-info">代表/経理</p>
                             </div>
-                            <p class="name">Keita Sakurai</p>
-                            <p class="subject-info">英語</p>
-                            <p class="work-info">代表/経理</p>
                         </div>
                         <div class="col3">
                             <div class="member-wrap">
                                 <img src="<?php bloginfo('template_directory');?>/img/team/keisukesuzuki.jpg" class="img-rounded" />
+                                <p class="name">Keisuke Suzuki</p>
+                                <h3>鈴木 啓祐</h3>
+                                <p class="subject-info">国語/英語/社会</p>
+                                <p class="work-info">教室代表</p>
                             </div>
-                            <p class="name">Keisuke Suzuki</p>
-                            <p class="subject-info">国語/英語/社会</p>
-                            <p class="work-info">教室代表</p>
                         </div>
                         <div class="col3 last">
                             <div class="member-wrap">
                                 <img src="<?php bloginfo('template_directory');?>/img/team/michiharufukagawa.jpg" class="img-rounded" />
+                                <p class="name">Michiharu Fukagawa</p>
+                                <h3>深川 道陽</h3>
+                                <p class="subject-info">数学/理科</p>
+                                <p class="work-info">ITソリューション</p>
                             </div>
-                            <p class="name">Michiharu Fukagawa</p>
-                            <p class="subject-info">数学/理科</p>
-                            <p class="work-info">ITソリューション</p>
                         </div>
                     </div>
                     <div class="onerow">
@@ -83,33 +87,36 @@
                             <div class="member-wrap">
                                 <img src="<?php bloginfo('template_directory');?>/img/icon/teacher.png" class="img-rounded" />
                                 <p class="name">H.A.</p>
+                                <h3>A. O.</h3>
                                 <p class="subject-info">国語</p>
-                                <p class="work-info">extraエキスパート講師</p>
+                                <p class="work-info">講師</p>
                            </div>
                         </div>
                         <div class="col3">
                             <div class="member-wrap">
                                 <img src="<?php bloginfo('template_directory');?>/img/team/arinayamazaki.jpg" class="img-rounded" />
-                           </div>
-                            <p class="name">Arina Yamzaki</p>
-                            <p class="subject-info">数学</p>
-                            <p class="work-info">スタンダード講師</p>
+                                <p class="name">Arina Yamzaki</p>
+                                <h3>山崎 有菜</h3>
+                                <p class="subject-info">数学</p>
+                                <p class="work-info">講師</p>
+                            </div>
                         </div>
                         <div class="col3">
                             <div class="member-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/img/icon/teacher.png" class="img-rounded" />
+                                <img src="<?php bloginfo('template_directory');?>/img/team/masayoshikataoka.jpg" class="img-rounded" />
+                                <p class="name">Masayosi Kataoka</p>
+                                <h3>片岡 正義</h3>
+                                <p class="subject-info">国語/英語</p>
+                                <p class="work-info">講師</p>
                            </div>
-                            <p class="name">Masayosi Kataoka</p>
-                            <p class="subject-info">国語/英語</p>
-                            <p class="work-info">プロフェッショナル講師</p>
                         </div>
                         <div class="col3 last">
-                            <div class="member-wrap">
+                            <a href="/recruite" class="member-wrap">
                                 <img src="<?php bloginfo('template_directory');?>/img/team/join.png" class="img-rounded" />
-                            </div>
-                            <p class="name">YOU</p>
-                            <p class="subject-info">どの科目でも！</p>
-                            <p class="work-info">JOIN US!</p>
+                                <p class="name">YOU</p>
+                                <p class="subject-info">どの科目でも！</p>
+                                <p class="work-info">JOIN US!</p>
+                            </a>
                         </div>
                     </div>
                </div>

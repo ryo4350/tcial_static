@@ -10,20 +10,11 @@
 	<!-- Footer -->
 	<footer id="footer">
             <div class="container-narrow cf">
-                <div class="footer-fb">
+                <div id="footer-fb">
+                    <h2>facebook<span>フェイスブック</span></h2>
 <div class="fb-like-box" data-href="https://www.facebook.com/tcialcom" data-height="240" data-width="925" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
                 </div>
             </div>
-<!--            <div id="footer-link">
-                <div class="container">
-                    <h5>協力団体</h5>
-                    <ul>
-                        <li><a href="http://www.budo.or.jp/"><img src="<?php bloginfo('template_directory') ?>/img/banner/bnr_budo.png"></a></li>
-                        <li><a href="http://www.dhyana-jp.com/"><img src="<?php bloginfo('template_directory') ?>/img/banner/bnr_dhyana.png"></a></li>
-                        <li><a href="http://www.zendokai.jp/"><img src="<?php bloginfo('template_directory') ?>/img/banner/bnr_zendohkai.png"></a></li>
-                    </ul>
-                </div>
-            </div>-->
             <div class="site-info">
                 <nav id="footer-nav" class="container-narrow">
                     <div class="cf">

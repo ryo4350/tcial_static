@@ -115,41 +115,90 @@
 }
 
 /*team*/
-#team h2 {
+#team {
     text-align: center;
-    font-size: 48px;
-    font-weight: normal;
-    margin-bottom: 40px;
-    color: rgb(120, 120, 120);
-    font-family: 'Lily Script One', cursive;
-}
-
-#team div {
-    position: relative;
-/*    width: 160px;
-    height: 160px;*/
-}
-
-#team p {
-    text-align: center;
-    margin-top: 10px;
-}
-
-#team .name {
-    font-size: 20px;
-    font-family: 'Lily Script One', cursive;
-}
+    h2 {
+        font-size: 48px;
+        font-weight: normal;
+        margin-bottom: 40px;
+        color: rgb(120, 120, 120);
+        font-family: 'Lily Script One', cursive;
+    }
+} 
 
 .member-wrap {
-    padding: 10px 20%;
+    display: block;
+    padding: 40px;
+    margin-bottom: 20px;
+    &:hover{
+        background: $color-topbar;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(60, 60, 60);
+    }
+    p {
+    }
+    .name {
+        margin-top: 5px;
+        font-size: 18px;
+        color: rgb(80, 80, 80);
+    }
+    .subject-info {
+        color: rgb(80, 80, 80);
+        font-size: 14px;
+    }
+    .work-info {
+        color: rgb(80, 80, 80);
+        font-size: 12px;
+    }
 }
 
-.subject-info {
-    color: rgb(180, 180, 180);
-    font-size: 14px;
+
+
+/*team-img*/
+.team-img {
+    padding: 20px 40px;
+}
+.team-img img {
+    background: rgb(255, 255, 255);
+    border-radius: 360px;
 }
 
-.work-info {
+.team-name-jp {
+    font-size: 36px;
+}
+
+.team-name-en {
+    font-size: 24px;
     color: rgb(180, 180, 180);
-    font-size: 12px;
+    font-weight: normal;
+}
+
+#team-post li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sns-list {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    li {
+        float: left;
+        margin: 10px;
+    }
+}
+
+.team-detail {
+    padding: 20px;
+    position: relative;
+}
+
+@media all and (max-width: 768px) {
+    .sns-list {
+        position: relative;
+        top: 10px;
+        right: 0;
+    }
 }

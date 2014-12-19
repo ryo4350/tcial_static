@@ -127,7 +127,7 @@ if (function_exists('add_theme_support')) {
 add_filter( 'show_admin_bar', '__return_false' );
 
 function new_excerpt_more($more) {
-    return '...';
+    return '…';
 }  
 
 add_filter('excerpt_more', 'new_excerpt_more');
@@ -135,5 +135,28 @@ add_filter('excerpt_more', 'new_excerpt_more');
 remove_action( 'wp_head', 'rsd_link' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'wp_generator' );
-remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 )
-        ?>
+remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
+        
+function custom_excerpt_length( $length) {
+     return 120;
+}	
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function create_post_type_team() {
+    $labels = array(
+        'name' => 'チーム',
+        'all_items' => 'チーム一覧'
+    );
+    $args = array(
+        'labels' => $labels,
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+        'public' => true,
+        'show_ui' => true,
+        'menu-position' => 2,
+        'has_archive' => true,
+    );
+    register_post_type('team', $args);
+}
+add_action('init', 'create_post_type_team', 0);
+
+?>

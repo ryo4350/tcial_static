@@ -4,7 +4,7 @@
  */
 ?>
 <?php get_header(); ?>
-<body>
+<body <?php body_class(); ?>>
     <!-- Header -->
     <header>
         <div id="header" class="nav-scroll">
@@ -12,9 +12,18 @@
         </div>
         <nav id="nav" class="primary-nav nav-scroll cf" role="navigation">
             <div class="container">
+                <div id="toggle">
+                    <a href="#">
+                        <p>menu</p>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             </div>
         </nav>
+
         <nav id="contact">
             <ul>
                 <li class="topbar-info">
@@ -22,9 +31,11 @@
                     <p class="phone-munber">☎ 045-620-0679</p>
                     <p class="office-hour">受付時間: 13:00 - 22:00</p>
                 </li>
-                <li><a class="btn btn-flat" href="/contact/">お問い合わせ</a></li>
+                <li><a class="btn" href="/contact/">お問い合わせはこちら</a></li>
+                <li><a class="btn tel" href="tel:0456200679">電話をかける</a></li>
             </ul>
         </nav>
+        
         <?php $slug_name = $post->post_name; ?>
         <?php if($slug_name == 'lesson') :?>
         <nav id="secondary-nav">
@@ -70,7 +81,4 @@
     </header>
     <!-- /Header -->
 
-
-    <nav id="home">
-        <a href="/" class="btn-flat-icon" title="ホームに戻る">T</a>
-    </nav>
+    <a id="home" href="/" title="ホームに戻る">T</a>

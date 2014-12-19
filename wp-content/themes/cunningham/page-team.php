@@ -7,67 +7,83 @@
  * @package cunningham
  */
 
-get_template_part('content', 'magazine_header'); 
+get_template_part('content', 'primary_header'); 
 ?>
 	<!-- Content -->
         <div id="content-blog">
-            <div class="container">
-                <div class="onerow">
-                    <div class="col9">
-                        <div class="widget-header">
-                            <h1><?php the_title(); ?></h1>
+            <section id="team">
+                <div class="container">
+                    <h2>Team Member</h2>
+                    <div class="onerow">
+                        <div class="col3">
+                            <div class="member-wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/team/ryosakamoto.jpg" class="img-rounded" />
+                            </div>
+                            <p class="name">Ryo Sakamoto</p>
+                            <p class="subject-info">数学/国語/理科/社会</p>
+                            <p class="work-info">広報/web/</p>
                         </div>
-                        <?php $users = get_users();
-                        foreach($users as $user) :?>
-                        <ul class="authors">
-                            <li class="onerow cf">
-                                <div class="col3">
-                                    <div class="col12">
-                                        <?php echo get_simple_local_avatar($user->ID, 200); ?>
-                                    </div>
-                                    <div class="col12">
-                                        <h3><?php echo $user->display_name; ?></h3>
-                                        <div class="link">
-                                            <a href="">プロフィールを見る</a>
-                                            <span>/</span>
-                                            <a href="<?php echo home_url('author/').$user->user_login; ?>">記事一覧を見る</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col9 last">
-                                    <?php 
-                                    $id = $user->ID;
-                                    $posts = get_posts(array(
-                                        'author' => $id,
-                                        'posts_per_page' => 3,    
-                                    )); ?>
-                                    <ul class="articles">
-                                    <?php if($posts) : foreach ($posts as $key => $post) : ?>
-                                        <li class="col4 <?php if($key === 2)echo "last"; ?>">
-                                            <a href="<?php the_permalink(); ?>">
-                                                <div class="front-article-img">
-                                                    <?php the_post_thumbnail(); ?>
-                                                    <div class="category-label"><?php the_category(); ?></div>
-                                                </div>
-                                            </a>
-                                            <div class="recomended-article-info">
-                                                <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                                <p class="post-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></p>
-                                            </div>
-                                        </li>
-                                    <?php endforeach;
-                                    else :?>
-                                        <h2>記事はありません</h2>
-                                    <?php endif; ?>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <?php endforeach; ?>
+                        <div class="col3">
+                            <div class="member-wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/team/keitasakurai.jpg" class="img-rounded" />
+                            </div>
+                            <p class="name">Keita Sakurai</p>
+                            <p class="subject-info">英語</p>
+                            <p class="work-info">代表/経理</p>
+                        </div>
+                        <div class="col3">
+                            <div class="member-wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/team/keisukesuzuki.jpg" class="img-rounded" />
+                            </div>
+                            <p class="name">Keisuke Suzuki</p>
+                            <p class="subject-info">国語/英語/社会</p>
+                            <p class="work-info">教室代表</p>
+                        </div>
+                        <div class="col3 last">
+                            <div class="member-wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/team/michiharufukagawa.jpg" class="img-rounded" />
+                            </div>
+                            <p class="name">Michiharu Fukagawa</p>
+                            <p class="subject-info">数学/理科</p>
+                            <p class="work-info">ITソリューション</p>
+                        </div>
                     </div>
-                    <?php get_sidebar(); ?>
-                </div>
-            </div>
+                    <div class="onerow">
+                        <div class="col3">
+                            <div class="member-wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/icon/teacher.png" class="img-rounded" />
+                                <p class="name">H.A.</p>
+                                <p class="subject-info">国語</p>
+                                <p class="work-info">extraエキスパート講師</p>
+                           </div>
+                        </div>
+                        <div class="col3">
+                            <div class="member-wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/team/arinayamazaki.jpg" class="img-rounded" />
+                           </div>
+                            <p class="name">Arina Yamzaki</p>
+                            <p class="subject-info">数学</p>
+                            <p class="work-info">スタンダード講師</p>
+                        </div>
+                        <div class="col3">
+                            <div class="member-wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/icon/teacher.png" class="img-rounded" />
+                           </div>
+                            <p class="name">Masayosi Kataoka</p>
+                            <p class="subject-info">国語/英語</p>
+                            <p class="work-info">プロフェッショナル講師</p>
+                        </div>
+                        <div class="col3 last">
+                            <div class="member-wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/team/join.png" class="img-rounded" />
+                            </div>
+                            <p class="name">YOU</p>
+                            <p class="subject-info">どの科目でも！</p>
+                            <p class="work-info">JOIN US!</p>
+                        </div>
+                    </div>
+               </div>
+            </section>
 	</div>
         <!-- /Content -->
 <?php get_footer(); ?>

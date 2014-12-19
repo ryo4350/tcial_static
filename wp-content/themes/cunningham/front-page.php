@@ -2,25 +2,62 @@
     <!-- Content -->
     <div id="key-visual">
         <div id="mv-wrap">
-            <video autoplay loop poster="<?php bloginfo('template_directory');?>/img/key-visual.png">
-                <source src="<?php bloginfo('template_directory');?>/video/key-visual_2.mp4">
+            <video autoplay loop poster="<?php bloginfo('template_directory');?>/img/key-visual.png" muted>
                 <source src="<?php bloginfo('template_directory');?>/video/key-visual.mp4">
             </video>
+            <div class="filter"></div>
         </div>
         <div id="main-text">
             <div id="catch">
-                <h1>秋の体験授業、受付中</h1>
-                <p>個別指導/サークルを通じて、未来を切り拓く人を育てる</p>
-                <a href="/about/" class="btn btn-shadow mv-btn">ティーシャルについてもっと知る</a>
+                <h1>冬期受講生募集中！</h1>
+<!--                <div class="container-narrow">
+                    <ul id="catch-menu">
+                        <li class="col4"><a href="/lesson/">個別指導で学ぶ</a></li>
+                        <li class="col4"><a href="/magazine/category/information/event/">イベントで学ぶ</a></li>
+                        <li class="col4 last"><a>オンラインで学ぶ</a><span class="parepareing">coming soon...</span></li>
+                    </ul>
+                </div>-->
             </div>
         </div>
     </div>
     <div id="top-content">
+        <section id="information-list">
+            <div class="container-narrow">
+                <h2 class="center">news</h2>
+                <?php
+                    $event = get_posts(array(
+                        'category_name' => 'information',
+                        'post_per_page' => '6'
+                    ));                   
+                ?>
+                <ul class="onerow cf post-list" id="information-list">
+                    <?php foreach($event as $post) : setup_postdata($post)?>
+                    <li class="col4">
+                        <?php
+                            $cat = get_the_category();
+                            $cat = $cat[0];
+                        ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="event-img-wrap">
+                                <?php the_post_thumbnail(); ?>
+                            </div>
+                            <div class="event-detail">
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php the_excerpt(); ?></p>
+                            </div>
+                        </a>
+                        <span class="category-label <?php echo $cat->category_nicename; ?>"><?php the_category($separator); ?></span>
+                    </li>
+                    <?php endforeach; ?>
+                    <?php wp_reset_postdata(); ?>
+                </ul>
+            </div>
+        </section>
         <section id="what">
             <div class="container">
                 <h2 class="center">私たちがやっていること</h2>
                 <ul class="onerow">
-                    <li class="col3">
+                    <li class="col3-gl">
                         <a href="/lesson/" id="ie-panel">
                             <div class="disc-wrapper">
                                 <h3>個別指導</h3>
@@ -29,7 +66,7 @@
                             <div id="what-ie-img" class="panel-img"></div>
                         </a>
                     </li>
-                    <li class="col3">
+                    <li class="col3-gl">
                         <a href="/lesson/" id="training-panel">
                             <img src="<?php bloginfo('template_directory');?>/img/group.jpg" alt="個別指導" />
                             <div class="disc-wrapper">
@@ -38,7 +75,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="col3">
+                    <li class="col3-gl">
                         <a href="/lesson/" id="group-panel">
                             <div class="disc-wrapper">
                                 <h3>小集団指導</h3>
@@ -47,7 +84,7 @@
                             <div id="what-group-img" class="panel-img"></div>
                         </a>
                     </li>
-                    <li class="col3 last">
+                    <li class="col3-gl last">
                         <a href="/circle/" id="circle-panel">
                             <img src="<?php bloginfo('template_directory');?>/img/circle.jpg" alt="サークル（脳力開発塾）" />
                             <div class="disc-wrapper">
@@ -187,7 +224,10 @@
                 <ul class="articles">
                 <?php query_posts('posts_per_page=4'); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-                    <li class="col3 onerow">
+                    <?php
+                            $cat = get_the_category();
+                            $cat = $cat[0];
+                        ?><li class="col3 onerow">
                         <a href="<?php the_permalink(); ?>">
                             <div class="front-article-img">
                                 <?php the_post_thumbnail(); ?>
@@ -197,7 +237,7 @@
                                 <p class="post-date"><?php echo get_the_date(); ?></p>
                             </div>
                         </a>
-                        <div class="category-label"><?php the_category(); ?></div>
+                        <span class="category-label <?php echo $cat->category_nicename; ?>"><?php the_category($separator); ?></span>                        
                     </li>
                     <?php endwhile;
                 else :?>
@@ -220,7 +260,7 @@ $(function() {
         nav.removeClass('nav-scroll');
         header.removeClass('nav-scroll');
     $(window).scroll(function () {
-        if($(window).scrollTop() > 540){
+        if($(window).scrollTop() > 420){
             nav.addClass('fixed');
             nav.addClass('nav-scroll');
         } else if($(window).scrollTop() > 4) {
@@ -251,6 +291,12 @@ $(function() {
             $cat.show();
         }).mouseout(function(){
             $cat.hide();
+        });
+    });
+    
+    $(function() {
+        $("#toggle").on("click", function() {
+            $("#menu-primary").slideToggle();
         });
     });
 });</script>
