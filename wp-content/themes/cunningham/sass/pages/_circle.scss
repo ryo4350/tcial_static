@@ -3,65 +3,27 @@
 
 /*circle*/
 #circle {
-    padding-top: 80px;
-}
-
-#circle h1 {
-    font-size: 36px;
-}
-
-#circle-disc {
-    font-size: 18px;
-    line-height: 1.6;
+    .jp {font-size: 18px;}
 }
 
 
-.circle-value {
-    text-align: center;
+#events-list {
+    &> li {
+        display: table;
+        position: relative;
+    }
 }
 
-#circle h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
+.evemts-item {
+    padding: 40px;
+    border-bottom: 1px solid rgb(230, 221, 207);
 }
-    
-.circle-value ul {
+
+.events-item__img {
+    height: 240px;
     overflow: hidden;
-    margin-bottom: 120px;
-}
-.circle-value li {
-    float: left;
-    width: 320px; 
 }
 
-#circle-problem h3 {
-    margin: 20px;
-    padding: 80px 40px;
-    width: 200px;
-    height: 100px;
-    background: rgb(219, 101, 101);
-    border-radius: 2px;
-    font-size: 22px;
-    color: rgb(255, 255, 255);
-}
-
-#circle-solution h3 {
-    margin: 20px;
-    width: 280px;
-    height: 280px;
-    background: rgb(80, 161,192);
-    border-radius: 140px;
-    line-height: 280px;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-}
-
-.circle-topic p {
-    font-size: 16px;
-    padding: 20px;
-    text-align: center;
-}
-
-.circle-content {
+.events-item__body {
     
 }

@@ -43,7 +43,7 @@ function cunningham_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'cunningham' ),
-		'primary_magazine' => __( 'Primary Menu Mgazine', 'cunningham' ),
+		'mini' => __( 'Mini Menu', 'cunningham' ),
                 'category' => __( 'Category Menu', 'cunningham' ),
                 'footer' => __( 'Footer Menu', 'cunningham' ),
                 'footer_magazine' => __( 'Footer Magazine Menu', 'cunningham' ),

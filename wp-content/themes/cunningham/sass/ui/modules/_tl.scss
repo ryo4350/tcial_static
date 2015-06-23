@@ -4,26 +4,37 @@
 /*--------------------------------------------------------------
 6.2 - Timeline
 --------------------------------------------------------------*/
-.aricle-link {
-    margin: 0 auto;
+.articles >li {
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
 }
 
-.article-img, .article-img-tl {
+.aricle-link {
+    @include border-radius(0px 0px 2px 2px);
+    display: block;
+    background :$color-1;
+}
+
+.post__img {
     position: relative;
     min-height: 36px;
 }
 
-.article-img-tl {
+.post__img--tl {
     max-height: 360px;
     overflow: hidden;
 }
 
+.post-list__wrap {
+    position: relative;
+}
+
 @media all and (max-width: 768px) {
-    .articles .blog-body {
+    .articles .post__body {
         display: none;
     }
-    .article-img-tl {
-        max-height: 240px;
+    .post__img--tl {
+        /*max-height: 120px;*/
         overflow: hidden;
     }
 }

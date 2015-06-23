@@ -4,59 +4,58 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+<?php $cats = get_the_category();
+       $cat = $cats[0];
+?>
 
-		<div class="entry-meta">
-			<?php cunningham_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+<article class="blog-grid" id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="main">
+    <div id="article__main">
+        <header class="post__header">
+            <h1 class="post__title"><?php the_title(); ?></h1>
+            <div>
+                <?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>
+            </div>
+        </header>
+        <div class="post__img">
+            <?php the_post_thumbnail(); ?>
+            <span class="category-label <?php echo $cat->category_nicename; ?>"><?php the_category($separator); ?></span>
+        </div>
+        <div class="post__body">
+            <?php the_content(); ?>
+            <?php
+                wp_link_pages( array(
+                        'before' => '<div class="page-links">' . __( 'Pages:', 'cunningham' ),
+                        'after'  => '</div>',
+                ) );
+            ?>
+        </div>
+        <div>
+            <?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>
+        </div>
+        <aside class="post__ad--bottom">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- blog-single-bottom -->
+<ins class="adsbygoogle"
+ style="display:inline-block;width:336px;height:280px"
+ data-ad-client="ca-pub-3257663944757805"
+ data-ad-slot="8503877979"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </aside>
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'cunningham' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-meta">
-		<?php
-			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'cunningham' ) );
-
-			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'cunningham' ) );
-
-			if ( ! cunningham_categorized_blog() ) {
-				// This blog only has 1 category so we just need to worry about tags in the meta text
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'cunningham' );
-				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'cunningham' );
-				}
-
-			} else {
-				// But this blog has loads of categories so we should probably display them here
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'cunningham' );
-				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'cunningham' );
-				}
-
-			} // end check for categories on this blog
-
-			printf(
-				$meta_text,
-				$category_list,
-				$tag_list,
-				get_permalink()
-			);
-		?>
-
-		<?php edit_post_link( __( 'Edit', 'cunningham' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
-</article><!-- #post-## -->
+    </div>
+    <div id="article__side" class="article__side">
+        <p class="post__date"><?php echo get_the_date(); ?></p>
+        <ul id="post__info">
+            <li><?php echo get_simple_local_avatar($post->post_author, auto); ?></li>
+            <li id="writer-name"><?php the_author(); ?></p></li>
+            <li id="writer-desc"><?php the_author_description(); ?></p></li>
+            <ul class="blog-keywords">
+                <li><p>カテゴリ</p><a><?php the_category(); ?></a></li>
+                <li><p>タグ</p><a><?php the_tags(); ?></a></li>
+            </ul>
+        </ul>
+    </div>
+    <?php cunningham_post_nav(); ?>
+</article>

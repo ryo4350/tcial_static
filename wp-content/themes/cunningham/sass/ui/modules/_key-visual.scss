@@ -1,0 +1,115 @@
+﻿/* Welcome to Compass. Use this file to define typography styles.
+ * use @import "ui/modules/_key-visual.scss)" */
+/*--------------------------------------------------------------
+9.1.1 Key-visual
+--------------------------------------------------------------*/
+
+.key-visual {
+    height: 100%;
+    min-height: 580px;
+    max-height: 580px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.key-visual__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    @include background-size(cover);
+}
+#key-visual__img--top {
+    background-image: url('img/bg_top.png');
+}
+
+.crousel {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.crousel:hover {
+    -webkit-transform:scale(1.05,1.05);
+    -moz-transform:scale(1.05,1.05);
+    -ms-transform:scale(1.05,1.05);
+    -o-transform:scale(1.05,1.05);
+    transform:scale(1.05,1.05);
+    opacity: 1;
+}
+
+#key-visual__img--about {
+    background-image: url('img/bg_about.png');
+}    
+
+#key-visual__img--lsn {
+    background-image: url('img/bg_lesson.png');
+}
+
+#catch {
+    position: relative;
+    margin-top: 200px;
+    display: block;
+    color: rgb(255, 255, 255);
+    z-index: 998;
+    text-align: center;
+    font-weight: normal;
+}
+
+.catch-msg-l {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+
+.catch-en {
+    font-size: 76px;
+    font-style: italic;
+}
+
+.catch-msg-s{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+
+
+@media all and (max-width: 768px) {
+    #catch {
+        margin-top: 120px;
+        position: relative;
+    }
+
+    .catch-msg-l {
+        font-size: 52px;
+        /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
+    }
+
+    .catch-msg-s {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .key-visual {
+        background-size: auto 100%; 
+        min-height: 260px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .catch-msg-l {
+        font-size: 32px;
+    }
+    .catch-en {
+        font-size: 36px;
+    }
+    .catch-msg-s {
+        font-size: 12px;
+    }
+}
+

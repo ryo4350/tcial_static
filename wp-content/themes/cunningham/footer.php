@@ -9,6 +9,12 @@
 ?>
 	<!-- Footer -->
 	<footer id="footer">
+            <aside id="footer-contact">
+                <a class="cf" href="/contact">
+                    <h2 class="heading thin center">お問い合わせはこちらから</h2>
+                    <p class="center">教室見学や体験授業はこちらから！<br>お気軽にお問い合わせください。</p>
+                </a>
+            </aside>
             <div class="container-narrow cf">
                 <div id="footer-fb">
                     <h2>facebook<span>フェイスブック</span></h2>
@@ -16,14 +22,10 @@
                 </div>
             </div>
             <div class="site-info">
-                <nav id="footer-nav" class="container-narrow">
+                <nav id="footer-nav" class="container">
                     <div class="cf">
-                        <h2><a href="/"><img src="<?php bloginfo('template_directory');?>/img/logo_w.png" alt="個別指導塾ティーシャル横浜"></a></h2>
+                        <h3 class="footer__logo"><a href="/">個別指導塾ティーシャル横浜</a></h3>
                         <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-                    </div>
-                    <div class="cf">
-                        <h2><a href="/magazine/" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/logo-blog-kana.png" alt="ティーシャルスタッフズブログ"></a></h2>
-                        <?php wp_nav_menu( array( 'theme_location' => 'footer_magazine' ) ); ?>
                     </div>
                 </nav>
                 <span>&copy;<?php bloginfo('name'); ?>All Rights Reserved.</span>｜
@@ -31,6 +33,16 @@
                 <span class="sep"> | </span>
                 <?php printf( __( 'Theme: %1$s by %2$s.', 'cunningham' ), 'cunningham', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
             </div><!-- .site-info -->
-            <div class="spectrum"></div>
 	</footer>
         <!-- /Footer -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- mobile -->
+<div id="mobile-ad">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-3257663944757805"
+     data-ad-slot="3858195570"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>

@@ -2,32 +2,39 @@
  * use @import "ui/elements/buttons)" */
 
 
-.btn {
+.btn, .btn:visited {
     display: inline-block;
     border: 0;    
     color: rgb(255, 255, 255);
     cursor: pointer;
     text-align: center;
+    &:hover {
+        color:rgb(255, 255, 255);
+    }
+}
+
+.btn-contact {
+    background: $color-1;
+    height: 48px;
+    line-height: 48px;
+    width: 160px;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-contact {
+        height: auto;
+        line-height: auto;
+        width: auto;
+        background: none;
+    }
 }
 
 .btn-flat {
     height: 48px;
-    width: 140px;
     line-height: 48px;
+    color: rgb(255, 255, 255);
     background: $color-1;
     @include border-radius (2px);
-    &:hover {
-        opacity: .7;
-        color: rgb(255, 255, 255);        
-    }
-}
-
-.btn-flat-icon {
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    font-size: 32px;
-    font-weight: bold;
     &:hover {
         opacity: .7;
         color: rgb(255, 255, 255);        
@@ -61,4 +68,19 @@
 
 #tw-icon {
     background: $color-tw;
+}
+
+.tags {
+    li {
+        float: left;
+        a {
+               display: inline-block;
+               margin: 10px;
+               padding: 4px 8px 5px;
+               line-height: 1;
+               border: 0;
+               background: rgb(220, 220, 220);
+               @include border-radius(2px);
+        }
+    }
 }

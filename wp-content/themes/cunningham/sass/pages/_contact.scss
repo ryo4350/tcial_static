@@ -2,15 +2,15 @@
  * use @import "partials/typography)" */
 
 /*contact*/
-.contact-form {
+#contact-form {
+    padding: 40px 0;
+}
+
+.contact-form__text {
     padding: 10px;
 }
-
-.contact-form p {
-    display: none;
-}
-
-.contact-form input, .contact-form textarea {
+    
+.contact-form__wrap input[type=email], .contact-form__wrap input[type=text], .contact-form__wrap input[type=tel], .contact-form__wrap textarea {
     display: block;
     padding: 12px 3%;
     font-size: 24px;
@@ -18,23 +18,29 @@
     border: 1px solid rgb(210, 210, 210);
 }
 
-.contact-form select {
+.contact-form__wrap {
+    margin: 20px;
+}
+
+.contact-form__wrap select {
     width: 100%;
-    padding: 12px;
     display: block;
-    font-size: 24px;
+    padding: 12px 3%;
+    font-size: 22px;
+    font-weight: bold;
     color: rgb(120, 120, 120);
     border: 1px solid rgb(210, 210, 210);
-
     position: relative;
-    height: 45px;
-    font-size: 100%;
-    padding: 12px 50px 12px 12px;
+    width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     text-indent: .01px;
     text-overflow: "";
+    option {
+        font-size: 18px;
+        margin: 10px;
+    }
 }
 
     .menu-991:after {
@@ -44,10 +50,11 @@
     }
 
 
-.contact-form textarea {
+.contact-form__wrap textarea {
     height: 180px;
 }
 
-.contact-form input[type="submit"] {
-    height: auto;
+.contact-form__wrap input[type="submit"] {
+    width: 100%;
+    font-size: 22px;
 }

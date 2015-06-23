@@ -14,7 +14,6 @@
 #gmap {
     height: 480px;
     width: 100%;
-    margin-bottom: 10px;
     z-index: 998;
 }
 
@@ -23,8 +22,7 @@
     top: 80px;
     left: 100px;
     padding: 30px;
-    background: rgb(120, 120, 120);
-    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     z-index: 999;
 }
 
@@ -57,81 +55,113 @@
 }
 
 /*about*/
-#activity h2 {
-    font-size: 42px;
-    font-weight: normal;
-    margin-bottom: 40px;
-    color: rgb(120, 120, 120);
+#activity { 
+    h2 {
+        font-size: 42px;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+    .en {
+        font-size: 64px;
+        font-weight: normal;
+        margin-top: 20px;
+    }
+    .jp {
+        font-size: 22px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
 }
 
-#activity a {
-    position: relative;
-    display: block;
+.activity-title {
+    margin: 10px 0 20px;
+    font-size: 32px;
 }
 
-#activity span {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    font-size: 36px;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgba(20, 20, 20, .8); ;
+.activity-list-wrap {
+    padding: 20px;
+    img {
+        width: auto;
+        margin: auto;
+    }
+}
+
+.activity-body {
+    font-size: 14px;
+    margin: 20px;
+}
+
+.tag-cloud {
+    span {
+        font-size: 12px;
+        padding: 8px;
+        margin: 4px;
+        border-radius: 12px;
+        background: rgb(210, 210, 210);
+        color: rgb(0, 0, 0); 
+    }
+}
+
+#content--kv #greeting {
+    padding: 80px 0;
+}
+
+.greeting__body {
+    padding: 10px;
+}
+
+.value__body {
+    padding: 10px;
+}
+
+#values {
+    padding: 80px 0;
+    background: rgb(255, 255, 255);
 }
 
 /*value*/
-#value {
-    background: rgb(255, 255, 255);  
-    text-align: center;
-}
 
-#value h2 {
-    font-size: 42px;
-    font-weight: normal;
-    margin-bottom: 40px;
-    color: rgb(120, 120, 120);
+#values h2 {
+    font-size: 36px;
 }
-
-.values {
-    margin-bottom: 40px;
-}
-
-.values h3 {
+#values h3 {
     font-size: 18px;
 }
 
-.values ul li {
+#values ul li {
     font-size: 28px;
     padding: 10px;
-    color: rgb(120, 120, 120);
 }
 
-.values span {
-    font-size: 36px;
-    font-family: 'Lily Script One', cursive;    
+#values span {
+    font-size: 28px;
 }
 
-.values p {
-    font-size: 18px;
+#values p {
+    font-size: 16px;
 }
 
 /*team*/
 #team {
     text-align: center;
-    h2 {
-        font-size: 48px;
+    .en {
+        font-size: 64px;
         font-weight: normal;
-        margin-bottom: 40px;
-        color: rgb(120, 120, 120);
-        font-family: 'Lily Script One', cursive;
+        margin-top: 20px;
+    }
+    .jp {
+        font-size: 22px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    li:nth-child(4n) {
+        margin-right: 0;
     }
 } 
 
-.member-wrap {
-    display: block;
-    padding: 40px;
-    margin-bottom: 20px;
+.member__wrap {
     &:hover{
-        background: $color-topbar;
+        background:lighten($color-1, 20%);
     }
     h3 {
         font-size: 20px;
@@ -153,17 +183,50 @@
         color: rgb(80, 80, 80);
         font-size: 12px;
     }
+    img {
+        -webkit-border-radius: 260px;
+        -moz-border-radius: 260px;
+        border-radius: 260px;
+    }
 }
-
-
 
 /*team-img*/
-.team-img {
+.team__header {
+    position: relative;
+    @include display-flex();
+    @include align-content(stretch);
+}
+
+.team__header--left {
+    width: 33%;
+    float: left;
+}
+
+.team__header--right {
+    width: 67%;
+}
+
+.team__img {
     padding: 20px 40px;
 }
-.team-img img {
+
+.team__img img {
     background: rgb(255, 255, 255);
-    border-radius: 360px;
+    @include border-radius(260px);
+}
+
+.team__body {
+    padding: 20px;
+    position: relative;
+}
+
+.team__copy {
+    font-size: 36px;
+}
+
+.team__heading {
+    font-size: 28px;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .team-name-jp {
@@ -172,8 +235,52 @@
 
 .team-name-en {
     font-size: 24px;
-    color: rgb(180, 180, 180);
+    color: darken($color-1, 40%);
     font-weight: normal;
+}
+
+.team-q {
+    padding: 10px 120px;
+}
+
+.team-q__item {
+    margin-bottom: 20px;
+}
+
+.team-q__heading {
+    padding: 0;
+    font-size: 22px;
+}
+
+.team-q__body {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.review__item {
+    position: relative;
+    padding: 40px;
+    margin: 40px 120px;
+    font-size: 18px;
+    background: $color-2;
+    color: rgb(255, 255, 255);
+    @include border-radius(30px);
+    &:before {
+        content: "";
+        position: absolute;
+        top: 60px;
+        left: -80px;
+        border-bottom: 20px solid $color-2;
+        border-left: 80px solid transparent;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 80px;
+        left: -80px;
+        border-top: 40px solid $color-2;
+        border-left: 80px solid transparent;
+    }
 }
 
 #team-post li:nth-child(4n) {
@@ -190,15 +297,110 @@
     }
 }
 
-.team-detail {
-    padding: 20px;
-    position: relative;
+.flexbox {
+    @include display-flex();
+    @include flex-wrap(wrap);
+    @include align-content(stretch);
 }
 
+.member__wrap {
+    width: 17%;
+    padding: 4%;
+
+}
+
+
 @media all and (max-width: 768px) {
+    #team {
+        .en {
+            font-size: 32px;
+        }
+        .jp {
+            font-size: 12px;
+        }
+        li {
+            float: left;
+            width: 48%;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    .member__wrap {
+        h3 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        p {
+        }
+        .name {
+            margin-top: 5px;
+            font-size: 11px;
+            color: rgb(80, 80, 80);
+        }
+        .subject-info {
+            color: rgb(80, 80, 80);
+            font-size: 9px;
+        }
+        .work-info {
+            color: rgb(80, 80, 80);
+            font-size: 9px;
+        }
+        img {
+            -webkit-border-radius: 260px;
+            -moz-border-radius: 260px;
+            border-radius: 260px;
+        }
+    }
+    
+    .team__img {
+        padding: 10px 20px;
+    }
+
+    .team-q {
+        padding: 10px;
+    }
+
+    .team-q__item {
+        margin-bottom: 10px;
+    }
+
+    .team-q__heading {
+        font-size: 18px;
+    }
+
+    .team-q__body {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    .review__item {
+        padding: 20px;
+        margin: 20px 40px;
+        font-size: 16px;
+        @include border-radius(20px);
+        &:before {
+            top: 40px;
+            left: -40px;
+            border-bottom: 10px solid $color-2;
+            border-left: 40px solid transparent;
+        }
+        &:after {
+            top: 50px;
+            left: -40px;
+            border-top: 20px solid $color-2;
+            border-left: 40px solid transparent;
+        }
+
+    }
+
     .sns-list {
         position: relative;
         top: 10px;
         right: 0;
+    }
+    .member__wrap {
+        width: 34%;
+        padding: 8%; 
     }
 }

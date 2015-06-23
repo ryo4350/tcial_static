@@ -1,56 +1,52 @@
 <?php get_template_part('content', 'primary_header'); ?>
-	<!-- Content -->
-<!--        <div class="l-banner">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
- blog-header 
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-3257663944757805"
-     data-ad-slot="2251011573"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        </div>-->
-    <div id="content-blog">
+    <!-- Content -->
+    <div id="content--blog">
         <div class="container">
+            <div class="breadcrumb">
+                <?php if(class_exists('WP_SiteManager_bread_crumb')){WP_SiteManager_bread_crumb::bread_crumb('home_label=top&type=string');} ?>
+            </div>
             <div class="onerow cf">
                 <div id="infobar" class="col2">
                     <?php get_template_part('content', 'infobar') ?>
                 </div>
                 <ul class="col7 articles"id="tl">
                     <?php $paged = get_query_var('paged'); ?>
-                    <?php query_posts('cat='.$cat.'&posts_per_page=10&paged='.$paged); ?>
+                    <?php query_posts("posts_per_page=12&paged=$paged"); ?>
                     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                     <?php $user = get_the_author_login(); ?>
-                    <?php
-                            $cat = get_the_category();
-                            $cat = $cat[0];
-                        ?><li>
-                        <div class="blog-header cf">
-                            <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                            <span class="author">
-                                <a href="<?php echo home_url('magazine/author/').$user; ?>">
-                                    <?php echo get_simple_local_avatar($post->post_author); ?>
-                                    <span>
-                                        <?php the_author(); ?>
-                                    </span>
-                                </a>
-                            </span>
-                            <ul>
-                                <li><?php echo get_the_date(); ?></li>
-                                <li>カテゴリ - <?php the_category(); ?></li>
-                                <li>タグ - <?php the_tags(); ?></li>
+                    <li class="cf">
+                        <?php
+                            $cats = get_the_category();
+                            $cat = $cats[0];
+                        ?>
+                        <div class="post__header cf">
+                            <h1 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                            <ul class="post__info--tl cf">
+                                <li>
+                                    <a href="<?php echo home_url('magazine/author/').$user; ?>">
+                                        <?php echo get_simple_local_avatar($post->post_author); ?>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo home_url('magazine/author/').$user; ?>">
+                                        <span>
+                                            <?php the_author(); ?>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="post__date--tl"><?php echo get_the_date(); ?></li>
+                                <li class="post__category--tl">カテゴリ - <?php echo the_category(); ?></li>
+                                <li class="post__tag--tl">タグ - <?php echo the_tags(); ?></li>
                             </ul>
                         </div>
-                        <div class="article-img-tl">
+                        <div class="post__img post__img--tl">
                             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                            <span class="category-label <?php echo $cat->category_nicename; ?>"><?php the_category($separator); ?></span>
+                            <span class="category-label  <?php echo $cat->category_nicename; ?>"><?php the_category($separator); ?></span>
                         </div>
-                        <div class="blog-body">
+                        <div class="post__body">
                             <?php the_excerpt(); ?>
-                            <a href="<?php the_permalink(); ?>" class="aricle-link btn btn-flat">続きを読む</a>
-                            <!--<span class="comment-num"><?php comments_popup_link('Comment : 0', 'Comment : 1', 'Comments : %'); ?></span>-->
                         </div>
+                        <a href="<?php the_permalink(); ?>" class="aricle-link btn btn-flat">続きを読む</a>
                     </li>
                     <?php endwhile; ?>
                     <?php cunningham_paging_nav(); ?>

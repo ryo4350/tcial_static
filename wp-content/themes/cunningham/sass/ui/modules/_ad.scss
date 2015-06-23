@@ -24,6 +24,10 @@
     margin: 40px 0;
 }
 
+#mobile-ad {
+    display: none;
+}
+
 @media all and (max-width: 1320px) {
     .l-banner {
         right: 5px;
@@ -42,5 +46,13 @@
 @media all and (max-width: 768px) {
     .l-banner {
         display: none;
+    }
+    #mobile-ad {
+        display:block;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        margin-left: -160px;
+        z-index: 10000;
     }
 }

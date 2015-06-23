@@ -83,9 +83,12 @@
 }
 
 /*categories*/
+.categories {
+    overflow: hidden;
+}
 .categories li {
-    margin: 8px 20px;
-    font-size: 12px;
+    margin: 10px 20px;
+    font-size: 14px;
 }
 
 /*blog_team*/

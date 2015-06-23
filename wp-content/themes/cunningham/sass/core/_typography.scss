@@ -2,9 +2,20 @@
  * use @import "partials/typography)" */
 
 body {
-    color: rgb(0, 0, 0);
+    color: darken($color-1, 50%);
     font-family:
-       'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+       'Quicksand',
+       "游ゴシック体",
+       "Yu Gothic",
+       YuGothic,
+       "ヒラギノ角ゴシック Pro",
+       "Hiragino Kaku Gothic Pro",
+       'メイリオ' ,
+       Meiryo,
+       Osaka,
+       "ＭＳ Ｐゴシック",
+       "MS PGothic",
+       sans-serif;
 }
 
 .font-green {
@@ -22,6 +33,10 @@ body {
 .font-blue {
     color: rgb(80, 161,192);    
 }
-#top-content h2 {
+.heading {
     font-size: 36px;
+}
+
+.script {
+        font-family: 'Lily Script One', cursive;    
 }

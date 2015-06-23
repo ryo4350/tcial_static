@@ -41,16 +41,16 @@
                                     <h3>カテゴリー</h3>
                                 </div>
                                 <div class="categories">
+                                <ul class="post-categories">
                                 <?php
                                 $cats = get_terms( "category", "fields=all&get=all" );
                                 foreach($cats as $cat):
                                 ?>
-                                <ul class="post-categories">
                                     <li>
                                         <a href="<?php echo get_category_link($cat->term_id); ?>"><?php echo $cat->name; ?></a>
                                     </li>
-                                <ul>
                                 <?php endforeach; ?>
+                                <ul>
                                 </div>
                             </div>
                         </div>

@@ -4,7 +4,7 @@
 	<div id="content">
             <section id="faq">
                 <div class="container-narrow">
-                    <h1>よくあるご質問</h1>
+                    <h1 class="heading center thin">よくあるご質問</h1>
                     <div id="faq-list">
                         <h2>講師について</h2>
                         <ul>

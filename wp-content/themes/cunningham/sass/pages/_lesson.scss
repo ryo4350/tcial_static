@@ -1,22 +1,284 @@
 ﻿/* Welcome to Compass. Use this file to define typography styles.
  * use @import "partials/typography)" */
 
+.header--lsn {
+/*    position: relative;    
+    height: 80px;
+    background: lighten($color-1, 32%);
+    z-index: 1001;
+    li a {
+        float: left;
+        width: 25%;
+        line-height: 80px;
+        font-size: 20px;
+        font-weight: bold;
+        &:hover {
+            background: lighten($color-1, 5%);
+            color: lighten($color-1, 45%);
+        }
+    }*/
+    position: relative;
+    @include display-flex();
+    @include align-content(stretch);
+    height: 60px;
+    background: lighten($color-1, 32%);
+    z-index: 1001;
+    li {
+        flex-grow: 1;
+         a {
+            display: block;
+            text-align: center;
+            line-height: 60px;
+            font-size: 16px;
+            &:hover {
+                background: lighten($color-1, 5%);
+                color: lighten($color-1, 45%);
+            }
+        }
+    }
+}
 
-.features-info {
+.header--lsn--mini {
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    height: 36px;
+    background: lighten($color-1, 36%);
+    z-index: 1001;
+    li a {
+        float: left;
+        width: 33.3333333333333333333333%;
+        line-height: 36px;
+        &:hover {
+            background: lighten($color-1, 5%);
+            color: lighten($color-1, 45%);
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .header--lsn, .header--lsn--mini {
+        display: none;
+    }
+}
+
+.link--lesson {
+    display: block;
+    padding: 6px 18px 3px;
+    background: rgb(40,40,40);
+    color: rgb(255, 255, 255);
+    &:visited {
+        color: rgb(255, 255, 255);
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
+    &:hover {
+        background: $color-1;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/*system*/
+.invite__wrapper {
+    display: block;
+    border: 4px solid darken($color-1, 50%);
+    padding: 20px 20px 10px;
+    background: rgb(255, 255, 255);
+    &:hover {
+        /*background: lighten($color-1, 20%);*/
+        border: 4px solid darken($color-1, 20%);
+    }
+}
+
+.invite__header {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    color: $color-1;
+}
+
+.invite__copy {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.invite__description {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.invite__anchor {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*subject*/
+#subject {
+    
+}
+
+.subject-list {
+    li {
+        display: inline-block;
+        padding: 4px 12px 5px;
+    }
+}
+
+/*plan*/
+#plan{
+    article {
+        padding: 80px 0;
+    }
+}
+
+#plan--light {
+    background: lighten($color-3, 0%);
+    color: lighten($color-3, 50%);
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        padding-left: 5px;
+        font-size: 16px;
+        border-left: 4px solid darken($color-3, 10%);
+    }
+}
+
+.light {
+    background: lighten($color-3, 10%);
+    color: darken($color-3, 50%);
+}
+
+.lighter {
+    background: lighten($color-3, 25%);
+    color: darken($color-3, 50%);
+}
+
+.plan--light--inner {
+    padding: 80px;
+    background: lighten($color-3, 50%);
+    color: darken($color-3, 50%);
+    @include border-radius(12px);
+}
+
+.plan__header {
+    padding: 40px;
+    background: rgb(255, 255, 255);
+    font-size: 36px;
+}
+
+.plan__header--light {
+    padding-left: 10px;
+    border-left: 6px solid darken($color-3, 10%);
+}
+
+#plan--standard {
+    background: lighten($color-5, 10%);
+}
+
+.standard {
+    background: lighten($color-5, 20%);
+}
+
+#plan--delax {
+    background: lighten($color-1, 10%);
+}
+
+.delax {
+    background: lighten($color-1, 20%);
+}
+
+.subject-list {
+    li{
+        display: block;
+        float: left;
+        margin: 4px;
+        padding: 8px 18px;
+        font-size: 16px;
+        line-height: 1;
+        color: rgb(255, 255, 255);
+        @include border-radius(2px);
+    }
+}
+
+.math {background: $color-5;}
+.eng {background: $color-1;}
+.jpn {background: $color-6;}
+.sci {background: $color-3;}
+.soci {background: $color-4;}
+.programing {background: $color-2;}
+
+
+.recomend-list {
+    margin-left: 20px;
+    li {
+        list-style-type: disc;
+        font-size: 18px;
+    }
+}
+
+.plan__info{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+    li {
+        display: table-cell;
+        padding-right: 8px;
+    }
+}
+
+.plan__info-num {
+    font-size: 48px;
+    line-height: 1;   
+}
+
+.plan__info-dnm {
+    margin-left: 3px;
+    font-size: 18px;
+}
+
+.plan__info-cap {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.plan__table--schedule {
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.features-info h4 {
-    font-size: 20px;
+.plan__table--fee {
+    margin-top: 10px;
+    /*border: 1px solid darken($color-1, 50%);*/
+    background: lighten($color-3, 10%);
+    color: rgb(255, 255, 255);
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    line-height: 1;
+    dl {
+        padding: 40px 20px;
+        display: table-cell;
+        text-align: center;
+        dt{
+            font-size: 12px;
+        }
+        dd {
+            font-size: 12px;
+            span {font-size: 36px;}
+        }
+    }
 }
 
-.features-info p {
-    padding: 10px 30px;
-    font-size: 14px;
-}
-
-#features-psychology {
-    
+@media all and (max-width: 768px) {
+    .plan--light--inner {
+        padding: 10px;
+    }
 }
 
 /*lesson-features*/
@@ -99,11 +361,11 @@
     color: rgb(100, 100, 100);
 }
 
-#features-fee {
+#fee {
 /*    background: rgb(250, 150, 150);*/
 }
 
-#features-fee h2 {
+#fee h2 {
     font-size: 36px;
     margin-top: 0;
     margin-bottom: 40px;
@@ -146,6 +408,9 @@
 }
 
 /*fee*/
+.fee__text--material {
+    font-size: 24px;
+}
 
 /*lesson*/
 .inner-left{
@@ -194,32 +459,26 @@
 }
 
 /*policy*/
-#policy {
-    background: rgb(255,255,255);
-    h1 {
-        text-align: center;
-        font-size: 18px;
-        padding: 20px 0;
-        color: rgb(180, 180, 180);
-    }
-    h2 {
-        text-align: center;
-        font-size: 36px;
-        padding: 20px;
-        color: rgb(120, 120, 120);
-        font-weight: normal;
-    }
-    h3 {
-        text-align: center;
-        font-size: 28px;
-        margin: 10px 0;
-        color: rgb(120, 120, 120);
-        font-weight: normal;
-    }
-    h4 {
-        margin-left: 10px;
+#content--kv {
+    #policy {
+        padding: 80px 0;
     }
 
+    #system {
+        padding-top: 80px;
+    }
+
+    #other {
+        padding-bottom: 80px;
+    }
+}
+
+.policy__header {
+    color: rgb(160, 160, 160);
+}
+
+#policy {
+    background: rgb(255,255,255);
     p {
         width: 90%;
         margin: 0 auto;
@@ -227,42 +486,329 @@
         line-height: 2.1;   
         font-size: 16px;
     }
-    span {
-        margin-right: 10px;
-        font-size: 36px;
-        font-family: 'Lily Script One', cursive;
+}
+
+.policy-gallary__item {
+    margin: 0 2% 0 0;
+    float: left;
+    width: 15%;
+    &.last {
+        margin-right: 0;
     }
 }
 
-@media all and (max-width: 768px) {
-    #policy {
-        h2 {
-            font-size: 28px;
-        }
-        h3 {
-            font-size: 14px;
-        }
+#junior {
+}
 
-        p {
-            font-size: 12px;
-            line-height: 1.9;
-        }
-        .quote {
-            font-size: 32px;
-        }
-        img {
-            margin-top: 80px;
+.lesson__header {
+    font-size: 48px;
+}
+
+.lesson__body {
+    h2 {
+        padding: 20px;
+        background: lighten($color-3, 30%);
+        &:first-letter {
+            font-size: 64px;
         }
     }
-    #fee-table {
-        th{
-            font-size: 11px;
+    h3 {
+        padding: 10px;
+        font-size: 24px;
+        border-bottom: 1px solid $color-3;
+    }
+    p {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+.dl--lsn {
+    font-size: 20px;
+    dt {
+        float: left;
+        padding: 5px;
+    }
+    dd {
+        padding: 5px;
+        padding-left: 240px;
+        border-bottom: 1px solid darken($color-3, 30%);
+    }
+}
+
+.dl--lsn--v {
+    font-size: 18px;
+    dt {
+        margin: 10px;
+        font-weight: bold;
+    }
+    dd {
+        margin: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px dotted darken($color-3, 30%);
+    }
+}
+
+.table--lsn {
+    thead {
+        color: $color-3;
+        font-weight: bold;
+    }
+    td {
+        border-bottom: 1px solid darken($color-3, 30%);
+    }
+}
+
+.fig__wrapper {
+    margin: 20px;
+    padding: 30px;
+    @include border-radius(12px);    
+    background: rgb(255, 255, 255);
+}
+
+
+.blockquote--lsn {
+    position: relative;
+    quotes: "\201C""\201D";
+    min-height: 80px;
+    padding: 20px 20px 10px 80px;
+    margin: 10px;
+    background: lighten($color-3, 36%);
+    border-radius: 18px;
+    p {
+        font-size: 22px;
+    }
+    &:before {
+        position: absolute;
+        font-family: 'Georgia';
+        content: open-quote;
+        left: 10px;
+        top: -10px;
+        font-size: 186px;
+        color: lighten($color-3, 5%);
+    }
+    .ref {
+        float: right;
+        font-size: 18px;
+    }
+}
+
+
+.needs-list {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 40px;
+    background: rgb(255, 255, 255);
+    border: 4px solid rgb(40, 40, 40);
+    li {
+        margin-left: 160px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &:before {
+        position: absolute;
+        top: -40px;
+        left: 20px;
+        content: "?";
+        font-size: 180px;
+        color: $color-4;
+    }
+}
+
+.max {width: 100%;}
+
+.checkbox li:before {
+        content: "□";
+        margin-right: 5px;
+        color: $color-4;
+}
+
+.check {
+    &:before {
+        content: "✔";
+    }
+}
+
+.junior__header {
+    font-size: 24px;
+    color: $color-1;
+}
+
+.junior__header--s {
+    margin: 40px 0 0;
+    font-size: 22px;
+}
+
+.junior__catch {
+    font-size: 36px;
+    margin: 40px 0;
+    transform: rotate(-2deg);
+}
+
+.results-list--middle {
+    li {
+        float: left;
+        width: 49.6%;
+        margin: 0.2%;
+        height: 280px;
+        font-size: 32px;
+        background: $color-5;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.results-list {
+    li {
+        float: left;
+        width: 24.6%;
+        margin: 0.2%;
+        height: 120px;
+        font-size: 32px;
+        text-align: center;
+        background: $color-5;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.result__wrapper {
+    padding: 20px;
+}
+
+.result__title {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.result__title--s {
+    font-size: 18px;
+}
+
+.result__comment {
+    font-size: 14px;
+}
+
+.prefix {
+    font-size: 14px;
+}
+
+.block--formality {
+    background: lighten($color-5, 30%);
+}
+
+.block--feature {
+    background: lighten($color-2, 30%);
+}
+
+.block {
+    padding-bottom: 10px;
+}
+
+.table-cell {
+    display:table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.system__header {
+    /*margin: 0 0 10px;*/
+    padding: 40px;
+    background: rgb(255, 255, 255);
+}
+
+.system__wrapper {
+    position: relative;
+    margin: 10px;
+    background: lighten($color-1, 50%);
+}
+
+.u-const {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 40, 40, .8);
+    color: rgb(255, 255, 255);
+    p {
+        line-height: 4;
+    }
+}
+
+.system__inner {
+    padding: 20px;
+}
+
+.system__item {
+    display: table-cell;
+    width: 50%;
+    background: lighten($color-1, 50%);
+}
+
+.system__text {
+    color: rgb(40, 40, 40);
+}
+
+.formality__item__section {
+    border-bottom: 1px solid rgb(40, 40, 40);
+}
+
+
+.system__inner--left {
+    border-right: 5px solid lighten($color-5, 30%);
+}
+
+.system__inner--right {
+    border-left: 5px solid lighten($color-5, 30%);
+}
+
+.individual {
+    color: lighten($color-1, 1%);
+}
+
+.training {
+    color: lighten($color-3, 1%);
+}
+
+.fee-table {
+    line-height: 1;
+    display: table;
+    dt{
+        display: inline-block;
+        width: 40%;
+        margin-bottom: 10px;
+        font-weight: normal;
+        text-align: right;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+    dd {
+        width: 60%;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 24px;
+        vertical-align: middle;
+        span {
+            font-family: 'Lily Script One', cursive;
+            color: $color-1;
+            padding: 0 8px;
+            font-size: 28px;
+            vertical-align: middle;
         }
-        td {
-            font-size: 12px;
-            span {
-                font-size: 28px;
-            }
-        }
+    }    
+}
+
+/*timetable*/
+.timetable {
+    /*padding: 10px 40px;*/
+    font-size: 24px;
+    line-height: 1;
+    dt{
+        float: left;
+        padding: 6px 10px;
+    }
+    dd {
+        padding: 6px 10px;
+        padding-left: 160px;
+        border-bottom: 1px solid lighten($color-5, 30%);
     }
 }
