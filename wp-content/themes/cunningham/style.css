@@ -2261,20 +2261,19 @@ img {
   }
 }
 @media all and (max-width: 360px) {
-  /* line 268, sass/pages/_front.scss */
-  .post-list > li {
-    /*height: 100px;*/
-  }
-  /* line 270, sass/pages/_front.scss */
-  .post-list > li p {
-    display: none;
-  }
-
-  /* line 276, sass/pages/_front.scss */
-  .event-img-wrap img {
-    height: 100px;
-  }
-
+  /*    .post-list {
+          >li {
+              height: 100px;
+              p {
+                      display: none;
+              }
+          }
+      }
+      .event-img-wrap {
+          img {
+              height: 100px;
+          }
+      }*/
   /* line 281, sass/pages/_front.scss */
   .post-list--s__img-wrap img, .post-list--m__img-wrap img {
     width: auto;

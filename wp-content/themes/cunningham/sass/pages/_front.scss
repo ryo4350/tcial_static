@@ -264,9 +264,9 @@
 }
 
 @media all and (max-width: 360px) {
-    .post-list {
+/*    .post-list {
         >li {
-            /*height: 100px;*/
+            height: 100px;
             p {
                     display: none;
             }
@@ -276,7 +276,7 @@
         img {
             height: 100px;
         }
-    }   
+    }*/   
     .post-list--s__img-wrap, .post-list--m__img-wrap {
         img {
             width: auto;
