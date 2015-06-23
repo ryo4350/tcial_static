@@ -106,7 +106,7 @@
 }
 
 
-.post--pick {
+.post-list--s__item {
     position: relative;
     height: 160px;
     overflow: hidden;    
@@ -125,12 +125,10 @@
     font-size: 14px;
 }
 
-.post-list--m {
-    >li {
-        height: 260px;
-        &:nth-child(3n) {
-            margin-right: 0;            
-        }
+.post-list--m__item {
+    height: 260px;
+    &:nth-child(3n) {
+        margin-right: 0;            
     }
 }
 
@@ -171,7 +169,7 @@
 
     .post-list {
         >li {
-            height: 80px;
+            /*height: 80px;*/
             overflow: hidden;
             margin-bottom: 0;
             border-bottom: 1px solid rgb(180, 180, 180);
@@ -184,7 +182,7 @@
     .post-list--hover {
         >li {
             &> a {
-                /*padding: 0;*/
+                padding: 0;
                 &:hover {
                     background:none;
                 }            
@@ -192,7 +190,7 @@
         }
     }
 
-    .post-list--m__img-wrap {
+/*    .post-list--m__img-wrap {
         width: 40%;
         height: 80px;
         float: left;
@@ -210,10 +208,9 @@
         margin-left: 10px;
         font-size: 13px;
         margin-top: 0;
-    }
+    }*/
     .post-list--m__date {
-        margin-left: 10px;
-        font-size: 13px;
+        display: none;
     }
     
     .category-label {
@@ -230,19 +227,25 @@
         top: 0;
         .en {display: none;}
     }
+    
+    .post-list--m__item{
+        &:nth-child(3n) {
+            margin-right: 2%;            
+        }
+    }
 
-    .post--pick {
+    .post-list--s__item, .post-list--m__item {
         float: left;
         width: 46%;
         height: auto;
         margin: 2%;
     }
            
-    .post-list--s__img-wrap {
+    .post-list--s__img-wrap, .post-list--m__img-wrap {
         height: 100px;
     }
     
-    .post-list--s__header {
+    .post-list--s__header, .post-list--m__header {
         position: absolute;
         top: 0;
         left: 0;
@@ -251,7 +254,7 @@
         background: rgba(darken($color-1, 50%), .6);
     }
 
-    .post-list--s__title {
+    .post-list--s__title, .post-list--m__title {
         font-size: 13px;
         margin: 25px 10px 0;
         line-height: 1.4;
@@ -263,7 +266,7 @@
 @media all and (max-width: 360px) {
     .post-list {
         >li {
-            height: 100px;
+            /*height: 100px;*/
             p {
                     display: none;
             }
@@ -274,7 +277,7 @@
             height: 100px;
         }
     }   
-    .post-list--s__img-wrap {
+    .post-list--s__img-wrap, .post-list--m__img-wrap {
         img {
             width: auto;
             height: 140%;

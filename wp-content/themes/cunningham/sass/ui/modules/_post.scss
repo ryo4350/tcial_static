@@ -258,15 +258,10 @@
     bottom: 80px;
 }
 
-#related-posts {
-    padding: 10px;
+.recommend-posts {
     background: rgb(255, 255, 255);
-    h2 {
-        padding: 10px;
-        font-weight: normal;
-    }
-    li:nth-child(3n) {
-        margin-right: 0;
+    .heading {
+        margin-bottom: 10px;
     }
 }
 

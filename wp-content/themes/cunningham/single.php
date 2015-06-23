@@ -12,34 +12,31 @@
                             <?php get_template_part('content', 'single'); ?>
                         <?php endwhile; ?>
                     </main>
-                    <aside class="cf" id="related-posts">
-                        <h2>新着記事</h2>
-                        <?php
-                            $new_posts = get_posts(array(
-                                'posts_per_page' => '6'
-                            ));                   
-                        ?>
-                        <ul class="post-list post-list--m post-list--hover">
-                        <?php foreach($new_posts as $post) : setup_postdata($post)?>
-                            <li class="col4">
-                                <?php
-                                    $cats = get_the_category();
-                                    $cat = $cats[0];
-                                ?>
-                                <a href="<?php the_permalink(); ?>">
-                                    <div class="post-list--m__img-wrap">
-                                        <?php the_post_thumbnail(); ?>
-                                    </div>
-                                    <div class="post-list--m__header">
-                                        <span class="post-list--m__date"><?php echo get_the_date() ?></span>
-                                        <h3 class="post-list--m__title"><?php the_title(); ?></h3>
-                                    </div>
-                                </a>
-                                <span class="category-label <?php echo $cat->category_nicename; ?>"><?php the_category($separator); ?></span>
-                            </li>
-                            <?php endforeach; ?>
-                            <?php wp_reset_postdata(); ?>
-                        </ul>
+                    <aside class="recommend-posts">
+                        <div class="onerow cf">
+                            <h2 class="heading">この記事と同じカテゴリーの記事</h2>
+                            <?php
+                                $cats = get_the_category();
+                                $cat = $cats[0];
+                                $posts = get_posts(array(
+                                    'category__in' => $cat->cat_ID,
+                                    'post__not_in' => array($post->ID),
+                                    'showposts' => 6,
+                                    'caller_get_posts' => 1
+                                ));                   
+                            ?>
+    <?php get_template_part('content', 'post_list_m'); ?>
+                        </div>
+
+                        <div class="onerow cf">
+                            <h2 class="heading">新着記事</h2>
+                            <?php
+                                $posts = get_posts(array(
+                                    'posts_per_page' => '6'
+                                ));                   
+                            ?>
+    <?php get_template_part('content', 'post_list_m'); ?>
+                        </div>
                     </aside>
                 </div>
                 <?php query_posts('posts_per_page=4'); ?>
