@@ -287,27 +287,27 @@
 }
 
 .news {
-    background: $color-2;
-}
-
-.event {
-    background: $color-3;
-}
-
-.about, .mailexample, .howtoteach, .feedback, .instructors {
     background: $color-1;
 }
 
-.howto, .howtolearn {
+.event {
+    background: $color-2;
+}
+
+.about, .mailexample, .howtoteach, .feedback, .instructors {
     background: $color-4;
 }
 
+.howto, .howtolearn {
+    background: $color-3;
+}
+
 .opinion, .explanation, .reading {
-    background: $color-5;
+    background: $color-3;
 }
 
 .information {
-    background: $color-6;
+    background: $color-1;
 }
 
 /**/
@@ -333,8 +333,16 @@
     background: url('/img/gallary/18.jpg');
 }
 
-#about {
-    background: lighten($color-1, 30%);
+#hellow {
+    background: lighten($color-1, 25%);
+}
+.hellow__heading {
+    color: rgb(20, 20, 20);
+    .jp {
+        font-size: 18px;
+        display: inline-block;
+        border-bottom: 3px solid rgb(20, 20, 20);
+    }
 }
 
 /*what*/
@@ -376,11 +384,11 @@
     }
 }
 .what__heading {
-    color: $color-1;
+    /*color: $color-4;*/
     .jp {
         font-size: 18px;
         display: inline-block;
-        border-bottom: 3px solid $color-1;
+        border-bottom: 3px solid rgb(20, 20, 20);
     }
 }
 
@@ -422,10 +430,10 @@
 }
 
 .why__heading {
-    color: $color-3;
+    color: $color-2;
     .jp {
         font-size: 18px;
-        border-bottom: 3px solid $color-3;
+        border-bottom: 3px solid $color-2;
     }
 }
 
@@ -438,11 +446,11 @@
 }
 
 .blog-list__heading {
-    color: $color-5;
+    /*color: $color-3;*/
     .jp {
         font-size: 18px;
         display: inline-block;
-        border-bottom: 3px solid $color-5;
+        border-bottom: 3px solid rgb(20, 20, 20);
     }
 }
 

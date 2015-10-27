@@ -5,9 +5,10 @@
 5.1 Links
 --------------------------------------------------------------*/
 a {
-    color: darken($color-1, 50%);
+    /*color: darken($color-1, 60%);*/
     text-decoration: none;
     cursor: pointer;
+    color: rgb(0, 0, 0);
 }
 
 a:hover, a:visited:hover {
@@ -15,11 +16,13 @@ a:hover, a:visited:hover {
     -moz-transition: 0.75s;
     -o-transition: 0.75s;
     transition: 0.75s;
-    color: darken($color-1, 20%);
+    /*color: darken($color-1, 20%);*/
+    color: rgb(0, 0, 0);
 }
 
 a:visited {
-    color: darken($color-1, 50%);    
+    /*color: darken($color-1, 60%);*/   
+    color: rgb(0, 0, 0);
 }
 
 a[target="_blank"]:after {

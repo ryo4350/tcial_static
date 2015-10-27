@@ -14,7 +14,7 @@
                     <?php query_posts("posts_per_page=12&paged=$paged"); ?>
                     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                     <?php $user = get_the_author_login(); ?>
-                    <li class="cf">
+                    <li class="blog-grid">
                         <?php
                             $cats = get_the_category();
                             $cat = $cats[0];
@@ -46,8 +46,10 @@
                         <div class="post__body">
                             <?php the_excerpt(); ?>
                         </div>
-                        <a href="<?php the_permalink(); ?>" class="aricle-link btn btn-flat">続きを読む</a>
-                    </li>
+                        <div class="center">
+                            <a href="<?php the_permalink(); ?>" class="btn btn--bordered btn--bk btn--s btn--hv">続きを読む</a>
+                        </div>
+                     </li>
                     <?php endwhile; ?>
                     <?php cunningham_paging_nav(); ?>
                     <?php else :?>

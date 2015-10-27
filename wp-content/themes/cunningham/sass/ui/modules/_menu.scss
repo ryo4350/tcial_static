@@ -50,10 +50,12 @@
     height: 88px;
     width: 100%;
     background: $color-topbar;
+    border-bottom: 1px solid rgb(210, 210, 210);
 }
 
 .header--v {
     background: none;
+    border-bottom: none;
 }
 
 .header__logo {
@@ -98,7 +100,7 @@
         }
     }
     > .current_page_item a {
-        color: darken($color-1, 25%);
+        color: darken($color-3, 25%);
         font-weight: bold;
     }
 }
@@ -153,7 +155,7 @@
             font-size: 12px;
             line-height: 1;
             color: rgb(0, 0, 0);
-            background: rgba(255, 255, 255, .4);
+            background: rgba(255, 255, 255, .7);
             text-align: center;
             @include border-radius (0 0 3px 3px);
         }
@@ -307,7 +309,7 @@
 
     .header--v #menu-primary {
         a {
-            color: darken($color-1, 50%);
+            color: darken($color-3, 50%);
             &:visit {
             }
             &:hover {
@@ -326,10 +328,11 @@
     height: 58px;
     width: 100%;
     background: $color-topbar;
+    border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .logo--mini {
-    padding-top: 16px;
+    padding-top: 19px;
     padding-left: 10px;
     float: left;
     display: inline;
@@ -351,11 +354,11 @@
     > li {
         line-height: 58px;
         a:hover {
-           color: $color-1;
+           color: darken($color-3, 10%)
         }
     }
     > .current_page_item a {
-        color: darken($color-1, 25%);
+        color: darken($color-3, 30%);
         font-weight: bold;
     }
 }
@@ -384,7 +387,7 @@
             display: block;    
             font-size: 11px;
             line-height: 1;
-            color: darken($color-1, 50%);
+            color: darken($color-3, 50%);
             text-align: center;
         }
     }
@@ -483,7 +486,7 @@
             width: 30px;
             margin: 1.5px 0 3px;
             border-radius: 1px;
-            background: darken($color-1, 15%);
+            background: darken($color-3, 15%);
             display: block;
         }
     }

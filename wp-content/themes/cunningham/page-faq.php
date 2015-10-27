@@ -2,7 +2,7 @@
 
 	<!-- Content -->
 	<div id="content">
-            <section id="faq">
+            <section id="faq" class="section">
                 <div class="container-narrow">
                     <h1 class="heading center thin">よくあるご質問</h1>
                     <div id="faq-list">

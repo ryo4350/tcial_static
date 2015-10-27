@@ -74,7 +74,7 @@
         }
     }
     &:hover {
-        background: $color-1;
+        background: darken($color-3, 20%);
         color: rgb(255, 255, 255);
     }
 }
@@ -96,7 +96,7 @@
     margin-top: 20px;
     margin-bottom: 5px;
     border-bottom: 1px solid rgb(180, 180, 180);
-    color: $color-1;
+    /*color: $color-1;*/
 }
 
 .invite__copy {
@@ -174,11 +174,11 @@
 }
 
 #plan--standard {
-    background: lighten($color-5, 10%);
+    background: lighten($color-3, 10%);
 }
 
 .standard {
-    background: lighten($color-5, 20%);
+    background: lighten($color-3, 20%);
 }
 
 #plan--delax {
@@ -202,12 +202,15 @@
     }
 }
 
-.math {background: $color-5;}
+.math {background: $color-3;}
 .eng {background: $color-1;}
-.jpn {background: $color-6;}
+.jpn {background: $color-3;}
 .sci {background: $color-3;}
 .soci {background: $color-4;}
 .programing {background: $color-2;}
+
+
+.math, .eng, .jpn, .sci, .soci, .programing {background: rgb(120, 120, 120);}
 
 
 .recomend-list {
@@ -507,7 +510,8 @@
 .lesson__body {
     h2 {
         padding: 20px;
-        background: lighten($color-3, 30%);
+        color: rgb(255, 255, 255);
+        background: darken($color-3, 10%);
         &:first-letter {
             font-size: 64px;
         }
@@ -515,7 +519,7 @@
     h3 {
         padding: 10px;
         font-size: 24px;
-        border-bottom: 1px solid $color-3;
+        border-bottom: 1px solid darken($color-3, 30%);
     }
     p {
         padding: 10px;
@@ -620,7 +624,7 @@
 .checkbox li:before {
         content: "□";
         margin-right: 5px;
-        color: $color-4;
+        color: $color-3;
 }
 
 .check {
@@ -652,7 +656,7 @@
         margin: 0.2%;
         height: 280px;
         font-size: 32px;
-        background: $color-5;
+        background: $color-3;
         color: rgb(255, 255, 255);
     }
 }
@@ -665,7 +669,7 @@
         height: 120px;
         font-size: 32px;
         text-align: center;
-        background: $color-5;
+        background: $color-3;
         color: rgb(255, 255, 255);
     }
 }
@@ -692,11 +696,11 @@
 }
 
 .block--formality {
-    background: lighten($color-5, 30%);
+    background: darken($color-3, 10%);
 }
 
 .block--feature {
-    background: lighten($color-2, 30%);
+    background: darken($color-2, 10%);
 }
 
 .block {
@@ -718,7 +722,7 @@
 .system__wrapper {
     position: relative;
     margin: 10px;
-    background: lighten($color-1, 50%);
+    background: rgb(255, 255, 255);
 }
 
 .u-const {
@@ -741,7 +745,7 @@
 .system__item {
     display: table-cell;
     width: 50%;
-    background: lighten($color-1, 50%);
+    background: rgb(255, 255, 255);
 }
 
 .system__text {
@@ -754,19 +758,19 @@
 
 
 .system__inner--left {
-    border-right: 5px solid lighten($color-5, 30%);
+    border-right: 5px solid darken($color-3, 5%);
 }
 
 .system__inner--right {
-    border-left: 5px solid lighten($color-5, 30%);
+    border-left: 5px solid darken($color-3, 5%);
 }
 
 .individual {
-    color: lighten($color-1, 1%);
+    color: darken($color-2, 10%);
 }
 
 .training {
-    color: lighten($color-3, 1%);
+    color: darken($color-4, 10%);
 }
 
 .fee-table {
@@ -789,7 +793,7 @@
         vertical-align: middle;
         span {
             font-family: 'Lily Script One', cursive;
-            color: $color-1;
+            color: $color-3;
             padding: 0 8px;
             font-size: 28px;
             vertical-align: middle;
@@ -809,6 +813,24 @@
     dd {
         padding: 6px 10px;
         padding-left: 160px;
-        border-bottom: 1px solid lighten($color-5, 30%);
+        border-bottom: 1px solid darken($color-3, 30%);
     }
 }
+
+.lesson__content, #content--blog {
+    background: rgb(235, 235, 235);
+}
+
+.system-fig {
+    margin: 20px 0;
+}
+
+.system-fig__title {
+    display: inline-block;
+    padding: 3px 8px 2px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    background: $color-4;
+    color: rgb(255, 255, 255);
+}
+

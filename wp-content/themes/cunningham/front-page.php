@@ -2,11 +2,20 @@
     <!-- Content -->
     <div class="key-visual">
         <div id="key-visual__img--top" class="key-visual__img crousel"></div>
+        <div class="dotoverlay"></div>
         <div id="catch">
-            <h1 class="catch-msg-l">
-                <span class="">体験受講生募集中!</span>
+            <h1 class="catch-msg-l thin">
+                個別指導塾ティーシャル
             </h1>
-            <h2 class="catch-msg-s">学ぶこと、つくることが大好きな人が集まる学習塾</h2>
+            <h2 class="catch-msg-s">学ぶこと、つくることが大好きな人が集まる学習塾。</h2>
+<!--        <a  class="btn btn--catch">ティーシャルの成績の伸ばし方</a>-->
+        <a href="/trial" class="btn btn--catch btn--l btn--bordered">
+            <div class="free">
+                <p class="free--en script">Free</p>
+                <p class="free--jp">無料</p>
+            </div>
+            体験授業についてもっと知る
+        </a>
         </div>
     </div>
     <div id="content--kv">
@@ -47,9 +56,9 @@
             </div>
         </section> 
         
-        <section id="about" class="section">
+        <section id="hellow" class="section">
             <div class="container">
-                <h2 class="heading center what__heading">
+                <h2 class="heading center hellow__heading">
                     <p class="en">Hello, we're tcial !</p>
                     <p class="jp">ようこそ！私たちがティーシャルです。</p>
                 </h2>
@@ -57,6 +66,9 @@
                     ティーシャルは<!--『学ぶはもっと、おもしろい！』をキーワードに-->受験指導/定期テスト指導/学校の予復習/学びなおし/ものづくり/ワークショップ/セミナー/読書会等を行う塾であり、学びのコミュニティです。
                     小学生/中学生/高校生/社会人等様々な人が集まり、スタッフの支援の下それぞれの学びを実践しています。
                 </p>
+            </div>
+            <div class="center">
+                <a href="/about" class="btn btn--bordered btn--m btn--bk btn--hv">ティーシャルについてもっと知る</a>
             </div>
         </section>
 
@@ -145,6 +157,9 @@
                     </ul>
                 </div>
             </div>
+            <div class="center">
+                <a href="/lesson" class="btn btn--bordered btn--m btn--bk btn--hv">ティーシャルの指導についてもっと知る</a>
+            </div>
         </section>
         <section id="how" class="section">
             <div class="container">
@@ -186,6 +201,9 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="center">
+                <a href="/lesson" class="btn btn--bordered btn--m btn--hv">ティーシャルの教え方についてもっと知る</a>
             </div>
         </section>
         <section id="reputation" class="cf section">
@@ -254,7 +272,9 @@
 <?php get_template_part('content', 'post_list_m'); ?>
                 </div>
             </div>
-            <a href="<?php echo home_url()."/magazine" ?>" class="center">>>もっと記事をみる</a>
+            <div class="center">
+                <a href="<?php echo home_url()."/magazine" ?>" class="btn btn--bordered btn--hv btn--m btn--bk">もっと記事をみる</a>
+            </div>
         </section>
      </div>
 <?php get_footer(); ?>

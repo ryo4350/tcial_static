@@ -1,8 +1,9 @@
 <?php get_template_part('content', 'primary_header_v'); ?>
         <div class="key-visual">
             <div id="key-visual__img--lsn" class="crousel key-visual__img"></div>
+            <div class="dotoverlay"></div>
             <div id="catch">
-                <h1 class="catch-msg-l">
+                <h1 class="catch-msg-l thin">
                     <span class="">個性と能力を引き出し、自信を育てる。</span>
                 </h1>
                 <div class="container-table">

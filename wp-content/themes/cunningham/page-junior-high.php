@@ -7,7 +7,7 @@
                     <?php if(class_exists('WP_SiteManager_bread_crumb')){WP_SiteManager_bread_crumb::bread_crumb('home_label=top&type=string');} ?>
                 </div>
             </nav>
-            <section class="section">
+            <section class="section lesson__content">
                 <div class="container-table">
                     <h1 class="lesson__header thin center">神奈川県で公立高校受験をする人なら絶対に知っておきたいこと。</h1>
                     <div class="lesson__body">

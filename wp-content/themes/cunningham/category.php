@@ -10,8 +10,6 @@
                     <?php get_template_part('content', 'infobar') ?>
                 </div>
                 <ul class="col7 articles"id="tl">
-                    <?php $paged = get_query_var('paged'); ?>
-                    <?php query_posts("posts_per_page=12&paged=$paged"); ?>
                     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                     <?php $user = get_the_author_login(); ?>
                     <li class="cf">

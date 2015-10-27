@@ -62,13 +62,13 @@
                             <ul class="articles">
                                 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                                 <?php
-                                    $cat = get_the_category();
-                                    $cat = $cat[0];
+                                    $cats = get_the_category();
+                                    $cat = $cats[0];
                                 ?>
                                 <li>
                                     <a href="<?php the_permalink(); ?>">
                                         <div class="sidebar-article-img">
-                                            <?php the_post_thumbnail(); ?>
+                                            <?php the_post_thumbnail('large'); ?>
                                             <div class="category-label <?php echo $cat->category_nicename; ?>"><?php the_category(); ?></div>
                                         </div>
                                         <div class="recomended-article-info">

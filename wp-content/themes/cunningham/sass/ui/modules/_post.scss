@@ -9,16 +9,19 @@
     position: relative;
     background: rgb(255, 255, 255);
     border-radius: 2px;
+    /*border: 1px solid rgb(210, 210, 210);*/
 }
 
 .post__date {
     position: absolute;
     top: 40px;
     left: -16px;
-    padding: 4px 10px;
-    background: $color-1;
+    padding: 4px 20px 2px 10px;
+    /*background: darken($color-3, 40%);*/
+    font-style: italic;
+    background: lighten($color-4, 20%);
+    color: rgb(40, 40, 40);
     font-size: 24px;
-    color: white;
     text-align: center;
 }
 
@@ -29,7 +32,7 @@
     left: 0px;
     width: 0;
     height: 0;
-    border-top: 6px solid rgb(0, 85, 165);
+    border-top: 6px solid darken($color-3, 40%);
     border-left: 16px solid transparent;
 }
 
@@ -133,9 +136,9 @@
         margin: 60px 0 20px;
         padding: 11px 15px 8px;
         font-size: 22px;
-        color: darken($color-1, 20%);
-        border-left: 4px solid darken($color-1, 20%);
-        border-bottom: 2px dashed darken($color-1, 20%);
+        color: darken($color-3, 20%);
+        border-left: 4px solid darken($color-3, 20%);
+        border-bottom: 2px dashed darken($color-3, 20%);
     }
     h3 {
         padding: 5px;
@@ -163,9 +166,9 @@
         padding: 5px;
     }
     a {
-        color: $color-1;
+        color: $color-4;
         &:hover {
-            color: darken($color-1, 20%);            
+            color: darken($color-4, 20%);            
         }
     }
     
@@ -175,7 +178,7 @@
         font-size: 14px;
         padding: 20px 20px 10px 80px;
         margin: 10px;
-        background: lighten($color-1, 36%);
+        background: lighten($color-3, 36%);
         border-radius: 18px;
         p {
             font-size: 16px;
@@ -189,7 +192,7 @@
         left: 10px;
         top: -10px;
         font-size: 186px;
-        color: lighten($color-1, 5%);
+        color: lighten($color-3, 5%);
     }
 }
 

@@ -17,22 +17,26 @@
                             <h3 class="thin heading">授業形式</h3>
                             <div class="onerow cf">                            
                                 <div class="col6">
-                                    <h4 class="thin individual">個別授業</h4>
-                                    <dl class="timetable">
-                                        <dt>講師生徒比</dt><dd>講師１：～生徒２</dd>
-                                        <dt>授業時間</dt><dd>80分</dd>
-                                        <dt>回数</dt><dd>週一回から</dd>
-                                        <dt>講師</dt><dd>科目ごとに固定</dd>
-                                    </dl>
-                               </div>
+                                    <div class="system-fig">
+                                        <h4 class="system-fig__title thin">個別授業</h4>
+                                        <dl class="timetable">
+                                            <dt>講師生徒比</dt><dd>講師１：～生徒２</dd>
+                                            <dt>授業時間</dt><dd>80分</dd>
+                                            <dt>回数</dt><dd>週一回から</dd>
+                                            <dt>講師</dt><dd>科目ごとに固定</dd>
+                                        </dl>
+                                    </div>
+                                </div>
                                 <div class="col6 last">
-                                    <h4 class="thin training">個別トレーニング</h4>
-                                    <dl class="timetable">
-                                        <dt>講師生徒比</dt><dd>講師１：～生徒１０</dd>
-                                        <dt>授業時間</dt><dd>80分</dd>
-                                        <dt>回数</dt><dd>週一回から</dd>
-                                        <dt>講師</dt><dd>曜日によって異なる</dd>
-                                    </dl>
+                                    <div class="system-fig">
+                                        <h4 class="system-fig__title thin">個別トレーニング</h4>
+                                        <dl class="timetable">
+                                            <dt>講師生徒比</dt><dd>講師１：～生徒１０</dd>
+                                            <dt>授業時間</dt><dd>80分</dd>
+                                            <dt>回数</dt><dd>週一回から</dd>
+                                            <dt>講師</dt><dd>曜日によって異なる</dd>
+                                        </dl>
+                                    </div>
                                </div>
                             </div>
                         </div>

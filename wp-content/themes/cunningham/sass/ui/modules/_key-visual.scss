@@ -21,8 +21,20 @@
     height: 100%;
     @include background-size(cover);
 }
+
 #key-visual__img--top {
     background-image: url('img/bg_top.png');
+}
+
+.dotoverlay {
+    background: url('img/dot.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 900;
 }
 
 .crousel {
@@ -52,7 +64,7 @@
 
 #catch {
     position: relative;
-    margin-top: 200px;
+    margin-top: 180px;
     display: block;
     color: rgb(255, 255, 255);
     z-index: 998;
@@ -61,10 +73,10 @@
 }
 
 .catch-msg-l {
-    font-size: 56px;
+    font-size: 64px;
     line-height: 1.2;
-    font-weight: normal;
     margin-bottom: 24px;
+    @include text-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
 }
 
 .catch-en {
@@ -78,6 +90,48 @@
     letter-spacing: 5px;
 }
 
+.btn--catch {
+    margin: 60px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.free {
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    height: 100px;
+    width: 100px;
+    @include border-radius(60px);
+    background: $color-1;
+    color: rgb(0, 0, 0);
+    @include transform(rotate(5deg));
+}
+
+.free--en {
+    font-size: 22px;
+    margin: 20px auto 0;
+}
+
+.free--jp {
+    font-size: 24px;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+.btn--catch:hover{
+    animation: rumble 0.3s linear infinite;
+}
+ 
+@keyframes rumble{
+    0%	{transform:rotate(0deg)	translate(0,0);}
+    12.5%	{transform:rotate(0.3deg)	translate(1px,-1px);}
+    25%	{transform:rotate(0.6deg)	translate(0px,1px);}
+    37.5%	{transform:rotate(0.3deg)	translate(-1px,0);}
+    50%	{transform:rotate(0deg)	translate(0,0);}
+    62.5%	{transform:rotate(-0.3deg)	translate(1px,0);}
+    75%	{transform:rotate(-0.6deg)	translate(0,1px);}
+    87.5%	{transform:rotate(-0.3deg)	translate(-1px,-1px);}
+    100%	{transform:rotate(0deg)	translate(0,0);}
+}
 
 
 @media all and (max-width: 768px) {
@@ -87,7 +141,7 @@
     }
 
     .catch-msg-l {
-        font-size: 52px;
+        font-size: 48px;
         /*text-shadow: 0 1px 2px rgba(255,255,255,.8), 0 2px rgba(255,255,255,.6);*/
     }
 
@@ -103,7 +157,7 @@
 
 @media all and (max-width: 360px) {
     .catch-msg-l {
-        font-size: 32px;
+        font-size: 28px;
     }
     .catch-en {
         font-size: 36px;

@@ -33,14 +33,14 @@
                     </li>
                     <li><a href="/about#access"><span class="header__linktext header__acccess">アクセス</span></a></li>
                     <li><a href="/contact"><span class="header__linktext header__phone">お問い合わせ</span></a></li>
-                    <li><a href="/contact"><span class="header__linktext header__pencil">無料体験</span></a></li>
+                    <li><a href="/trial"><span class="header__linktext header__pencil">無料体験</span></a></li>
                 </ul>
             </nav>
             <nav class="header--mobile">
                 <ul>
                     <li><a href="/about#access"><span class="header__acccess--mobile">アクセス</span></a></li>
                     <li><a href="tel:0456200679"><span class="header__phone--mobile">電話をする</span></a></li>
-                    <li><a href="/contact"><span class="header__pencil--mobile">無料体験</span></a></li>
+                    <li><a href="/trial"><span class="header__pencil--mobile">無料体験</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -62,7 +62,7 @@
                     </li>
                     <li><a href="/about#access"><span class="header__linktext--mini header__acccess--mini">アクセス</span></a></li>
                     <li><a href="/contact"><span class="header__linktext--mini header__phone--mini">お問い合わせ</span></a></li>
-                    <li><a href="/contact"><span class="header__linktext--mini header__pencil--mini">無料体験</span></a></li>
+                    <li><a href="/trial"><span class="header__linktext--mini header__pencil--mini">無料体験</span></a></li>
                 </ul>
             </nav>
         </div>

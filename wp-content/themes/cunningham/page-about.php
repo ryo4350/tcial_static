@@ -1,8 +1,9 @@
 <?php get_template_part('content', 'primary_header_v'); ?>
         <div class="key-visual">
             <div id="key-visual__img--about" class="crousel key-visual__img"></div>
+            <div class="dotoverlay"></div>
             <div id="catch">
-                <h1 class="catch-msg-l">
+                <h1 class="catch-msg-l thin">
                     <span class="script">We are tcial !</span>
                 </h1>
                 <h2 class="catch-msg-s">ようこそ！私達がティーシャルです。</h2>
@@ -52,59 +53,48 @@
             </section>
             
             <section id="activity" class="section">
-                <div class="container">
+                <div class="container-narrow">
                     <h2 class="thin center">                        
-                        <p class="en">Activity</p>
+                        <p class="en">What we do</p>
                         <p class="jp">私たちの活動</p>
                     </h2>
-                    <div class="onerow">
-                        <ul>
-                            <li class="col6">
-                                <div class="activity-list-wrap">
-                                    <h3 class="thin center activity-title">個別指導</h3>
-                                    <p class="activity-body"></p>
-                                    <div class="tag-cloud">
-                                        <span>中学受験</span>
-                                        <span>高校受験</span>
-                                        <span>大学受験</span>
-                                        <span>中高一貫</span>
-                                        <span>内申対策</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col6 last">
-                                <div class="activity-list-wrap">
-                                    <h3 class="thin center activity-title">セミナー・勉強会等</h3>
-                                    <p class="activity-body"></p>
-                                    <div class="tag-cloud">
-                                        <span>心理学</span>
-                                        <span>情報リテラシー</span>                               
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col6">
-                                <div class="activity-list-wrap">
-                                    <h3 class="thin center activity-title">ものづくり</h3>
-                                    <p class="activity-body"></p>
-                                    <div class="tag-cloud">
-                                        <span>教室改装</span>
-                                        <span>ぬいぐるみづくり</span>
-                                        <span>ペットボトルロケット</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col6 last">
-                                <div class="activity-list-wrap">
-                                    <h3 class="thin center activity-title">テクノロジー</h3>
-                                    <p class="activity-body"></p>
-                                    <div class="tag-cloud">
-                                        <span>ゲームづくり</span>
-                                        <span>ホームページづくり</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <section class="activity-list-wrap">
+                        <h3 class="thin activity-title">個別学科指導</h3>
+                        <div class="tag-cloud ">
+                            <span>中学受験</span>
+                            <span>高校受験</span>
+                            <span>大学受験</span>
+                            <span>中高一貫</span>
+                            <span>内申対策</span>
+                            <span>検定指導</span>
+                            <span>学びなおし</span>
+                        </div>
+                    </section>
+                   <section class="activity-list-wrap">
+                        <h3 class="thin activity-title">セミナー・勉強会</h3>
+                        <div class="tag-cloud">
+                            <span>心理学</span>
+                            <span>情報リテラシー</span>                               
+                            <span>政治と経済</span>
+                        </div>
+                    </section>
+                   <section class="activity-list-wrap">
+                        <h3 class="thin activity-title">ものづくり</h3>
+                        <div class="tag-cloud">
+                            <span>教室改装</span>
+                            <span>ぬいぐるみづくり</span>
+                            <span>ペットボトルロケット</span>
+                            <span>ゲームづくり</span>
+                            <span>ホームページづくり</span>
+                        </div>
+                    </section>
+                   <section class="activity-list-wrap">
+                        <h3 class="thin activity-title">食イベント</h3>
+                        <div class="tag-cloud">
+                            <span>たこ焼きパーティ</span>
+                            <span>中華料理の日</span>
+                        </div>
+                    </section>
                 </div>
             </section>
                 
@@ -169,7 +159,63 @@
                     </div>
                </div>
             </section>
-            <div id="access">
+            <section class="section">
+                <div class="container">
+                    <h2 class="heading thin center">
+                        <p class="en">Floor</p>
+                        <p class="jp">教室紹介</p>
+                    </h2>
+                    <div class="onerow cf">
+                        <div class="col6">
+                            <figure class="floor__img__wrap">
+                                <img src="<?php bloginfo('template_directory');?>/img/floor/floor.png"  class="floor__img" alt="教室の平面図">
+                            </figure>
+                        </div>
+                        <div class="col6 last">
+                            <div class="floor__detail">
+                                <h3 class="floor__detail__heading thin">自習/個トレエリア</h3>
+                                <p>
+                                    真ん中に向かい合せの机で4席、壁向きに13席用意しています。受講生はいつでも利用することができます。<br>
+                                    イベントの際にはセミナースペースや作業スペースになります。
+                                </p>
+                            </div>
+                            <div class="floor__detail">
+                                <h3 class="floor__detail__heading thin">授業エリア</h3>
+                                <p>講師の両隣に生徒が一人ずつ座ります。生徒一人に一つのホワイトボードがあり、講師だけでなく生徒も使います。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onerow cf">
+                        <div class="col3">
+                            <img src="<?php bloginfo('template_directory');?>/img/floor/1.jpg" class="" />
+                        </div>
+                        <div class="col3">
+                            <img src="<?php bloginfo('template_directory');?>/img/floor/2.jpg" class="" />
+                        </div>
+                        <div class="col3">
+                            <img src="<?php bloginfo('template_directory');?>/img/floor/3.jpg" class="" />
+                        </div>
+                        <div class="col3 last">
+                            <img src="<?php bloginfo('template_directory');?>/img/floor/4.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="onerow cf">
+                        <div class="col3">
+                            <img src="<?php bloginfo('template_directory');?>/img/floor/5.jpg" class="" />
+                        </div>
+                        <div class="col3">
+                            <img src="<?php bloginfo('template_directory');?>/img/floor/6.jpg" class="" />
+                        </div>
+                        <div class="col3">
+                            <img src="<?php bloginfo('template_directory');?>/img/floor/7.jpg" class="" />
+                        </div>
+                        <div class="col3 last">
+                            <img src="<?php bloginfo('template_directory');?>/img/floor/8.jpg" class="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="access">
                 <div id="addrress">
                     <h2>アクセス</h2>
                     <address>                        
@@ -182,7 +228,7 @@
                     </ul> 
                 </div>
                 <div id="gmap"></div>
-            </div>
+            </section>
 	</div>
 
 <?php get_footer(); ?>

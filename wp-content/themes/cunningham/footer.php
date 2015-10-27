@@ -9,11 +9,20 @@
 ?>
 	<!-- Footer -->
 	<footer id="footer">
-            <aside id="footer-contact">
-                <a class="cf" href="/contact">
-                    <h2 class="heading thin center">お問い合わせはこちらから</h2>
-                    <p class="center">教室見学や体験授業はこちらから！<br>お気軽にお問い合わせください。</p>
-                </a>
+            <aside class="footer-contact">
+                <div class="footer-contact__bg-img"></div>
+                <div  class="cf container section">
+                    <h2 class="heading center contact__heading">
+                        <p class="en">Contact.</p>
+                        <p class="jp">お気軽にお問い合わせください</p>
+                    </h2>
+                    <div class="col6 center">
+                        <a class="btn btn--bordered btn--l btn--hv" href="/trial">教室見学や体験授業に興味がある</a>
+                    </div>
+                    <div class="col6 last center">
+                        <a class="btn btn--bordered btn--l btn--hv" href="/contact">わからない/聞いてみたいことがある</a>
+                    </div>
+                </div>
             </aside>
             <div class="container-narrow cf">
                 <div id="footer-fb">

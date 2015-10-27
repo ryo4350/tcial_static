@@ -14,7 +14,7 @@
                     </main>
                     <aside class="recommend-posts">
                         <div class="onerow cf">
-                            <h2 class="heading">この記事と同じカテゴリーの記事</h2>
+                            <h2 class="heading thin">この記事と同じカテゴリーの記事</h2>
                             <?php
                                 $cats = get_the_category();
                                 $cat = $cats[0];
@@ -29,7 +29,7 @@
                         </div>
 
                         <div class="onerow cf">
-                            <h2 class="heading">新着記事</h2>
+                            <h2 class="heading thin">新着記事</h2>
                             <?php
                                 $posts = get_posts(array(
                                     'posts_per_page' => '6'
